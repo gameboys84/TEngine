@@ -1,3 +1,5 @@
+#define ENABLE_TEXTMESHPRO
+
 using System.Collections.Generic;
 using System.Text;
 using UnityEditor;

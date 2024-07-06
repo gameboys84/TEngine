@@ -1,11 +1,15 @@
+#define ENABLE_TEXTMESHPRO
+
 using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+
 #if UNITY_EDITOR
 // using Sirenix.OdinInspector;
 using UnityEditor;
 #endif
+
 
 /// <summary>
 /// 资源存放地址。

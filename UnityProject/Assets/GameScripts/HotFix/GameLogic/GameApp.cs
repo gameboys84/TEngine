@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Reflection;
+using Cysharp.Threading.Tasks;
 using GameBase;
 using TEngine;
 
@@ -37,7 +38,16 @@ public partial class GameApp:Singleton<GameApp>
     /// </summary>
     private void StartGameLogic()
     {
+        // GameLogic Start Here!!!
+
+        LoadMainScene().Forget();
+    }
+
+    private async UniTaskVoid LoadMainScene()
+    {
+        await GameModule.Scene.LoadScene("Main").ToUniTask();
         
+        MainSceneSystem.Instance.LoadScene().Forget();
     }
 
     /// <summary>

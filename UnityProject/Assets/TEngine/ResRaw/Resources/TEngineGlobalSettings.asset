@@ -44,17 +44,17 @@ MonoBehaviour:
       componentName: GameObject
     - uiElementRegex: m_tf
       componentName: Transform
-    - uiElementRegex: m_rect
+    - uiElementRegex: m_rt
       componentName: RectTransform
-    - uiElementRegex: m_text
+    - uiElementRegex: m_txt
       componentName: Text
-    - uiElementRegex: m_richText
+    - uiElementRegex: m_rtxt
       componentName: RichTextItem
     - uiElementRegex: m_btn
       componentName: Button
     - uiElementRegex: m_img
       componentName: Image
-    - uiElementRegex: m_rimg
+    - uiElementRegex: m_raw
       componentName: RawImage
     - uiElementRegex: m_scrollBar
       componentName: Scrollbar
@@ -78,6 +78,8 @@ MonoBehaviour:
       componentName: AnimationCurve
     - uiElementRegex: m_canvasGroup
       componentName: CanvasGroup
+    - uiElementRegex: m_tmp
+      componentName: TextMeshProUGUI
   m_HybridCLRCustomGlobalSettings:
     HotUpdateAssemblies:
     - GameBase.dll

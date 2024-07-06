@@ -1,7 +1,10 @@
+#define ENABLE_TEXTMESHPRO
+
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
+
 #region
 //作者:Saber
 #endregion
