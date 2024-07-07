@@ -1,5 +1,3 @@
-#define ENABLE_TEXTMESHPRO
-
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -148,7 +146,7 @@ public class FrameworkGlobalSettings
         new ScriptGenerateRuler("m_group", "ToggleGroup"),
         new ScriptGenerateRuler("m_curve", "AnimationCurve"),
         new ScriptGenerateRuler("m_canvasGroup", "CanvasGroup"),
-#if ENABLE_TEXTMESHPRO
+#if TextMeshPro
         new ScriptGenerateRuler("m_tmp","TextMeshProUGUI"),
 #endif
     };
