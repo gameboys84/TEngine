@@ -8,8 +8,8 @@
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 /EditorBuild/
-/[Aa]ssets/StreamingAssets
-/[Aa]ssets/StreamingAssets.meta
+[Aa]ssets/StreamingAssets/
+[Aa]ssets/StreamingAssets.meta
 /BuildBundleInfo/
 UserSettings/
 
@@ -96,3 +96,8 @@ package/
 yoo/
 [Aa]ssets/TEngine/AssetSetting/Resources/BuiltinFileManifest.asset
 [Aa]ssets/TEngine/AssetSetting/Resources/BuiltinFileManifest.asset.meta
+/Bin/
+
+# DLL
+[Aa]ssets/AssetRaw/DLL/*.bytes
+[Aa]ssets/AssetRaw/DLL/*.bytes.meta

@@ -206,7 +206,7 @@ namespace YooAsset.Editor
                 _packageListView.makeItem = MakePackageListViewItem;
                 _packageListView.bindItem = BindPackageListViewItem;
 #if UNITY_2020_1_OR_NEWER
-                _packageListView.onSelectionChange += PackageListView_onSelectionChange;
+                _packageListView.selectionChanged += PackageListView_onSelectionChange;
 #else
                 _packageListView.onSelectionChanged += PackageListView_onSelectionChange;
 #endif
@@ -251,7 +251,7 @@ namespace YooAsset.Editor
                 _groupListView.makeItem = MakeGroupListViewItem;
                 _groupListView.bindItem = BindGroupListViewItem;
 #if UNITY_2020_1_OR_NEWER
-                _groupListView.onSelectionChange += GroupListView_onSelectionChange;
+                _groupListView.selectionChanged += GroupListView_onSelectionChange;
 #else
                 _groupListView.onSelectionChanged += GroupListView_onSelectionChange;
 #endif
