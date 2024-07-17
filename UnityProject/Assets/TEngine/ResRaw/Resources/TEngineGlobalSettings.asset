@@ -78,8 +78,12 @@ MonoBehaviour:
       componentName: AnimationCurve
     - uiElementRegex: m_canvasGroup
       componentName: CanvasGroup
-    - uiElementRegex: m_tmp
+    - uiElementRegex: m_tmpTxt
       componentName: TextMeshProUGUI
+    - uiElementRegex: m_tmpInput
+      componentName: TMP_InputField
+    - uiElementRegex: m_tmpDrop
+      componentName: TMP_Dropdown
   m_HybridCLRCustomGlobalSettings:
     HotUpdateAssemblies:
     - GameBase.dll

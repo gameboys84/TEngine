@@ -40,9 +40,10 @@ namespace GameFramework.Editor
 
     public static class EditorSpriteSaveInfo
     {
+        public static readonly string UIRawDir = "SpriteImage"; // UIRaw
         private const string NormalAtlasDir = "Assets/AssetArt/Atlas";
-        private const string UISpritePath = "Assets/AssetRaw/UIRaw";
-        private const string UIAtlasPath = "Assets/AssetRaw/UIRaw/Atlas";
+        private static readonly string UISpritePath = $"Assets/AssetRaw/Texture/{UIRawDir}";
+        private static readonly string UIAtlasPath = $"Assets/AssetRaw/Texture/{UIRawDir}/Atlas";
         private static readonly List<string> _dirtyAtlasList = new List<string>();
         private static readonly Dictionary<string, List<string>> _allASprites = new Dictionary<string, List<string>>();
         private static readonly Dictionary<string, string> _uiAtlasMap = new Dictionary<string, string>();
@@ -111,7 +112,7 @@ namespace GameFramework.Editor
                         }
                     }
 
-                    bool isUI = atlasName.StartsWith("UIRaw");
+                    bool isUI = atlasName.StartsWith(UIRawDir);
                     SaveAtlas(atlasName, isUI);
                 }
 
@@ -229,7 +230,7 @@ namespace GameFramework.Editor
         /// <returns></returns>
         public static bool IsKeepRawImage(string dirPath)
         {
-            return dirPath.Contains("UIRaw/Raw/") || dirPath.Contains("UIRaw_Raw_");
+            return dirPath.Contains($"{UIRawDir}/Raw/") || dirPath.Contains($"{UIRawDir}_Raw_");
         }
 
         public static string GetSpritePath(string assetPath)
@@ -247,7 +248,7 @@ namespace GameFramework.Editor
         public static string GetPackageTag(string fullName)
         {
             fullName = fullName.Replace("\\", "/");
-            int idx = fullName.LastIndexOf("UIRaw", StringComparison.Ordinal);
+            int idx = fullName.LastIndexOf(UIRawDir, StringComparison.Ordinal);
             if (idx == -1)
             {
                 return "";
@@ -272,7 +273,7 @@ namespace GameFramework.Editor
                 return;
             }
 
-            if (assetPath.StartsWith("Assets/UIRaw_Delete"))
+            if (assetPath.StartsWith($"Assets/Texture/{UIRawDir}_Delete"))
             {
                 return;
             }
@@ -327,7 +328,7 @@ namespace GameFramework.Editor
 
         public static void OnDeleteSprite(string assetPath)
         {
-            if (assetPath.StartsWith("Assets/UIRaw_Delete"))
+            if (assetPath.StartsWith($"Assets/Texture/{UIRawDir}_Delete"))
             {
                 return;
             }

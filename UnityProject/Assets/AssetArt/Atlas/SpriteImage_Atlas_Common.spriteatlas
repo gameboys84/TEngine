@@ -6,7 +6,7 @@ SpriteAtlas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UIRaw_Atlas_Common
+  m_Name: SpriteImage_Atlas_Common
   m_EditorData:
     serializedVersion: 2
     textureSettings:
@@ -95,5 +95,5 @@ SpriteAtlas:
   - white_background
   - white_button
   m_RenderDataMap: {}
-  m_Tag: UIRaw_Atlas_Common
+  m_Tag: SpriteImage_Atlas_Common
   m_IsVariant: 0

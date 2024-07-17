@@ -21,8 +21,8 @@ MonoBehaviour:
     EnableAddressable: 1
     LocationToLower: 0
     IncludeAssetGUID: 0
-    IgnoreDefaultType: 1
     AutoCollectShaders: 1
+    IgnoreRuleName: NormalIgnoreRule
     Groups:
     - GroupName: Actor
       GroupDesc: "\u89D2\u8272"
@@ -37,21 +37,21 @@ MonoBehaviour:
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
-    - GroupName: UIRaw
-      GroupDesc: "\u56FE\u7247\u8D44\u6E90"
-      AssetTags: UIRaw
+    - GroupName: UITexture
+      GroupDesc: "UI\u56FE\u7247\u8D44\u6E90"
+      AssetTags: UITexture
       ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: Assets/AssetRaw/UIRaw/Atlas
-        CollectorGUID: 6d11fa91acc253840a648b58f23db139
+      - CollectPath: Assets/AssetRaw/Texture/SpriteImage/Atlas
+        CollectorGUID: 3e20876f4da1f1c43b414d22e5c35708
         CollectorType: 0
         AddressRuleName: AddressByFileName
         PackRuleName: PackDirectory
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
-      - CollectPath: Assets/AssetRaw/UIRaw/Raw
-        CollectorGUID: 6bc134b912ac6bb4399ea1bec4c11636
+      - CollectPath: Assets/AssetRaw/Texture/SpriteImage/Raw
+        CollectorGUID: 7e44a1b0384a3e9448d2b77f79bf58f0
         CollectorType: 0
         AddressRuleName: AddressByFileName
         PackRuleName: PackDirectory
@@ -169,6 +169,19 @@ MonoBehaviour:
       Collectors:
       - CollectPath: Assets/AssetRaw/Fonts
         CollectorGUID: 2473375c9ee163a4b861278b38091455
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: RawImage
+      GroupDesc: "\u539F\u59CB\u56FE\u7247"
+      AssetTags: RawImage
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/AssetRaw/Texture/RawImage
+        CollectorGUID: 28c363afb9698874a94871f9eca0f87c
         CollectorType: 0
         AddressRuleName: AddressByFileName
         PackRuleName: PackDirectory
