@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "com.code-philosophy.hybridclr": "https://gitee.com/focus-creative-games/hybridclr_unity.git",
+    "com.cysharp.unitask": "2.5.5",
+    "com.tuyoogame.yooasset": "2.1.2",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.tilemap": "1.0.0",
     "com.unity.ide.rider": "3.0.31",
@@ -37,13 +38,15 @@
     "com.unity.modules.unitywebrequestwww": "1.0.0",
     "com.unity.modules.vehicles": "1.0.0",
     "com.unity.modules.video": "1.0.0",
-    "com.unity.modules.wind": "1.0.0"
+    "com.unity.modules.wind": "1.0.0",
+    "com.code-philosophy.hybridclr": "6.3.0"
   },
   "scopedRegistries": [
     {
       "name": "package.openupm.com",
       "url": "https://package.openupm.com",
       "scopes": [
+        "com.code-philosophy.hybridclr",
         "com.cysharp.unitask",
         "com.tuyoogame.yooasset"
       ]

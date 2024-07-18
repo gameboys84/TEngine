@@ -43,8 +43,8 @@ namespace GameLogic
         #region 事件
         private void OnClickVersionBtn()
         {
-            string version1 = GameModule.Resource.PackageName + "_" + GameModule.Resource.PackageVersion;
-            string version2 = GameModule.Resource.ApplicableGameVersion + "_" + GameModule.Resource.InternalResourceVersion;
+            string version1 = $"{GameModule.Resource.PackageName}_{GameModule.Resource.PackageVersion}";
+            string version2 = $"{GameModule.Resource.ApplicableGameVersion}_{GameModule.Resource.InternalResourceVersion}";
             m_tmpTxtVersion.text = $"Version: {Application.version}, {version1}, {version2}";
         }
         private void OnClickQuitBtn()

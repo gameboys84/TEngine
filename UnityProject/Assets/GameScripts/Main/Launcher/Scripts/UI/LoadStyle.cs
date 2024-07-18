@@ -46,7 +46,7 @@ namespace GameMain
         /// </summary>
         private class StyleItem
         {
-            public Alignment Align;//对其方式
+            public Alignment Align;//对齐方式
             public bool Show;//是否隐藏
             public string Desc;//按钮描述
         }

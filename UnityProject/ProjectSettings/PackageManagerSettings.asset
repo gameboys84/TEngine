@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EnablePreReleasePackages: 0
-  m_EnablePackageDependencies: 0
   m_AdvancedSettingsExpanded: 1
   m_ScopedRegistriesSettingsExpanded: 1
   m_SeeAllPackageVersions: 0
+  m_DismissPreviewPackagesInUse: 0
   oneTimeWarningShown: 0
   m_Registries:
   - m_Id: main
@@ -30,6 +30,7 @@ MonoBehaviour:
     m_Name: package.openupm.com
     m_Url: https://package.openupm.com
     m_Scopes:
+    - com.code-philosophy.hybridclr
     - com.cysharp.unitask
     - com.tuyoogame.yooasset
     m_IsDefault: 0

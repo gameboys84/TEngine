@@ -32,6 +32,10 @@ namespace YooAsset.Editor
             // 忽略文件夹
             if (AssetDatabase.IsValidFolder(assetInfo.AssetPath))
                 return true;
+            
+            // 忽略所有带Gizmos的文件（Editor专用）
+            if (assetInfo.AssetPath.Contains("Gizmos", System.StringComparison.OrdinalIgnoreCase))
+                return true;
 
             // 忽略编辑器下的类型资源
             if (assetInfo.AssetType == typeof(LightingDataAsset))
