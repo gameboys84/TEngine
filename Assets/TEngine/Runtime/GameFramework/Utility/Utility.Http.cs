@@ -41,7 +41,7 @@ namespace TEngine
                 var cts = new CancellationTokenSource();
                 cts.CancelAfterSlim(TimeSpan.FromSeconds(timeout));
 
-                UnityWebRequest unityWebRequest = UnityWebRequest.Post(url, postData);
+                UnityWebRequest unityWebRequest = UnityWebRequest.PostWwwForm(url, postData);
                 return await SendWebRequest(unityWebRequest, cts);
             }
 

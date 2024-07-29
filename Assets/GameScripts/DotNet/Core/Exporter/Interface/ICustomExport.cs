@@ -34,6 +34,10 @@ public abstract class ACustomExport : ICustomExport
                 {
                     Directory.CreateDirectory(Define.ServerCustomExportDirectory);
                 }
+                if (File.Exists($"{Define.ServerCustomExportDirectory}/{fileName}"))
+                {
+                    File.Delete($"{Define.ServerCustomExportDirectory}/{fileName}");
+                }
                 
                 File.WriteAllText($"{Define.ServerCustomExportDirectory}/{fileName}", fileContent);
                 return;

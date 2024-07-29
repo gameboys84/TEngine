@@ -123,7 +123,7 @@ namespace TEngine
                         //前向渲染使用的像素灯的最大数量，建议最少为1。
                         QualitySettings.pixelLightCount = 2;
                         //你可以设置使用最大分辨率的纹理或者部分纹理（低分辨率纹理的处理开销低）。选项有 0_完整分辨率，1_1/2分辨率，2_1/4分辨率，3_1/8分辨率。
-                        QualitySettings.masterTextureLimit = 1;
+                        QualitySettings.globalTextureMipmapLimit = 1;
                         //设置抗锯齿级别。选项有​​ 0_不开启抗锯齿，2_2倍，4_4倍和8_8倍采样。
                         QualitySettings.antiAliasing = 0;
                         //是否使用粒子软融合

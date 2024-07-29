@@ -29,7 +29,7 @@
             "Comment": "Excel生成服务器代码的文件夹位置"
         },
         "ExcelClientFileDirectory": {
-            "Value": "../../../Config/Client/Entity/",
+            "Value": "../../../Logic/src/Generate/Client/Entity/",
             "Comment": "Excel生成客户端代码文件夹位置"
         },
         "ExcelServerBinaryDirectory": {

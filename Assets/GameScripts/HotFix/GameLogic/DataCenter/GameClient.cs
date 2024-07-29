@@ -3,6 +3,7 @@ using System.IO;
 using GameBase;
 using TEngine;
 using TEngine.Core.Network;
+using TEngine.Logic;
 
 namespace GameLogic
 {
@@ -44,6 +45,7 @@ namespace GameLogic
     {
         public readonly NetworkProtocolType ProtocolType = NetworkProtocolType.KCP;
         public GameClientStatus Status { get; set; } = GameClientStatus.StatusInit;
+        public bool IsConnect => Status == GameClientStatus.StatusConnected || Status == GameClientStatus.StatusLogin || Status == GameClientStatus.StatusEnter;
         public Scene Scene { private set; get; }
         
         private string _lastAddress = String.Empty;
@@ -55,7 +57,7 @@ namespace GameLogic
         
         public void Connect(string address, bool reconnect = false)
         {
-            if (Status == GameClientStatus.StatusConnected || Status == GameClientStatus.StatusLogin || Status == GameClientStatus.StatusEnter)
+            if (IsConnect)
             {
                 return;
             }
@@ -76,6 +78,10 @@ namespace GameLogic
             _lastAddress = address;
 
             Status = reconnect ? GameClientStatus.StatusReconnect : GameClientStatus.StatusInit;
+            // if (Scene.Session != null)
+            // {
+            //     Scene.Session.Dispose();
+            // }
 
             if (Scene.Session == null || Scene.Session.IsDisposed)
             {
@@ -83,9 +89,40 @@ namespace GameLogic
             }
         }
 
+        public void Reconnect()
+        {
+            if (string.IsNullOrEmpty(_lastAddress))
+                return;
+
+            if (Scene.Session == null || Scene.Session.IsDisposed)
+            {
+                Connect(_lastAddress, true);
+            }
+            else
+            {
+                Scene.CreateSession(_lastAddress, ProtocolType, OnConnectComplete, OnConnectFail, OnConnectDisconnect);
+            }
+        }
+        
+        public void Disconnect()
+        {
+            var sessionHeartbeatComponent = Scene.Session.GetComponent<SessionHeartbeatComponent>();
+            if (sessionHeartbeatComponent != null)
+            {
+                sessionHeartbeatComponent.Dispose();
+            }
+            Scene.Session.Dispose();
+            // if (Scene.Session != null)
+            // {
+            //     Scene.Session.Dispose();
+            // }
+            // Status = GameClientStatus.StatusClose;
+        }
+
         private void OnConnectComplete()
         {
             Status = GameClientStatus.StatusConnected;
+            Scene.Session.AddComponent<SessionHeartbeatComponent>().Start(15000);
             Log.Info("Connect to server success");
         }
 
@@ -101,6 +138,12 @@ namespace GameLogic
             Log.Warning("OnConnectDisconnect server");
         }
         
+        /// <summary>
+        /// 无回应请求
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="rpcId"></param>
+        /// <param name="routeId"></param>
         public virtual void Send(object message, uint rpcId = 0, long routeId = 0)
         {
             if (Scene.Session == null)
@@ -111,6 +154,12 @@ namespace GameLogic
             Scene.Session.Send(message,rpcId,routeId);
         }
 
+        /// <summary>
+        /// 无回应请求
+        /// </summary>
+        /// <param name="routeMessage"></param>
+        /// <param name="rpcId"></param>
+        /// <param name="routeId"></param>
         public virtual void Send(IRouteMessage routeMessage, uint rpcId = 0, long routeId = 0)
         {
             if (Scene.Session == null)
@@ -121,6 +170,13 @@ namespace GameLogic
             Scene.Session.Send(routeMessage,rpcId,routeId);
         }
 
+        /// <summary>
+        /// 无回应请求
+        /// </summary>
+        /// <param name="memoryStream"></param>
+        /// <param name="rpcId"></param>
+        /// <param name="routeTypeOpCode"></param>
+        /// <param name="routeId"></param>
         public virtual void Send(MemoryStream memoryStream, uint rpcId = 0, long routeTypeOpCode = 0, long routeId = 0)
         {
             if (Scene.Session == null)
@@ -131,6 +187,12 @@ namespace GameLogic
             Scene.Session.Send(memoryStream,rpcId,routeTypeOpCode,routeId);
         }
         
+        /// <summary>
+        /// 有回应请求
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="routeId"></param>
+        /// <returns></returns>
         public virtual async FTask<IResponse> Call(IRequest request, long routeId = 0)
         {
             if (Scene == null || Scene.Session == null || Scene.Session.IsDisposed)
@@ -143,14 +205,26 @@ namespace GameLogic
             return requestCallback;
         }
         
-        public void RegisterMsgHandler(uint protocolCode,Action<IResponse> ctx)
-        {
-            MessageDispatcherSystem.Instance.RegisterMsgHandler(protocolCode,ctx);
-        }
+        // 处理ntf消息, 不用注册，直接处理即可
+        // public class H_G2C_ReceiveMessageToServerHandler : Message<H_G2C_ReceiveMessageToServer>
+        // {
+        //     protected override async FTask Run(Session session, H_G2C_ReceiveMessageToServer message)
+        //     {
+        //         // DO SOMETHING
+        //         var networkEntryComponent = session.Scene.GetComponent<NetworkEntryComponent>();
+        //         networkEntryComponent.Action($"收到服务器推送的消息 message:{message.Message}");
+        //         await FTask.CompletedTask;
+        //     }
+        // }
         
-        public void UnRegisterMsgHandler(uint protocolCode,Action<IResponse> ctx)
-        {
-            MessageDispatcherSystem.Instance.UnRegisterMsgHandler(protocolCode,ctx);
-        }
+        // public void RegisterMsgHandler(uint protocolCode,Action<IResponse> ctx)
+        // {
+        //     MessageDispatcherSystem.Instance.RegisterMsgHandler(protocolCode,ctx);
+        // }
+        //
+        // public void UnRegisterMsgHandler(uint protocolCode,Action<IResponse> ctx)
+        // {
+        //     MessageDispatcherSystem.Instance.UnRegisterMsgHandler(protocolCode,ctx);
+        // }
     }
 }

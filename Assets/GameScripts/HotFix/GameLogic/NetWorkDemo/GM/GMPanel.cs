@@ -116,7 +116,7 @@ public class GMPanel : UIWindow
         m_input.onEndEdit.AddListener(OnEndEditor);
         m_closeBtn.onClick.AddListener(OnClose);
 
-        GameClient.Instance.RegisterMsgHandler(OuterOpcode.CmdGmRes, HandleGmRes);
+        // GameClient.Instance.RegisterMsgHandler(OuterOpcode.CmdGmRes, HandleGmRes);
 
         CreateQuickButton();
 
@@ -133,7 +133,7 @@ public class GMPanel : UIWindow
 
     public override void OnDestroy()
     {
-        GameClient.Instance.UnRegisterMsgHandler(OuterOpcode.CmdGmRes, HandleGmRes);
+        // GameClient.Instance.UnRegisterMsgHandler(OuterOpcode.CmdGmRes, HandleGmRes);
     }
 
     // public override void SetWindowParam(UIWindowParam param)

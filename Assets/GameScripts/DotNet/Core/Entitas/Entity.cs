@@ -723,6 +723,7 @@ namespace TEngine
                 return;
             }
             UnityEngine.Object.Destroy(this.ViewGO);;
+            ViewGO = null;
 #endif
         }
 

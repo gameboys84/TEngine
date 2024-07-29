@@ -11,17 +11,17 @@ namespace GameLogic
     /// </summary>
     public class PlayerNetSys:DataCenterModule<PlayerNetSys>
     {
-        /// <summary>
-        /// 网络模块初始化。
-        /// </summary>
-        public override void Init()
-        {
-            base.Init();
-            //注册登录消息回调。
-            GameClient.Instance.RegisterMsgHandler(OuterOpcode.H_G2C_LoginResponse,OnLoginRes);
-            //注册注册账号消息回调。
-            GameClient.Instance.RegisterMsgHandler(OuterOpcode.H_G2C_RegisterResponse,OnRegisterRes);
-        }
+        // /// <summary>
+        // /// 网络模块初始化。
+        // /// </summary>
+        // public override void Init()
+        // {
+        //     base.Init();
+        //     //注册登录消息回调。
+        //     GameClient.Instance.RegisterMsgHandler(OuterOpcode.H_G2C_LoginResponse,OnLoginRes);
+        //     //注册注册账号消息回调。
+        //     GameClient.Instance.RegisterMsgHandler(OuterOpcode.H_G2C_RegisterResponse,OnRegisterRes);
+        // }
 
         #region Login
         /// <summary>
@@ -58,11 +58,26 @@ namespace GameLogic
                 UserName = userName,
                 Password = passWord
             };
-            GameClient.Instance.Send(loginRequest);
-            GameClient.Instance.Status = GameClientStatus.StatusLogin;
+            DoLoginReq(loginRequest).Coroutine();
         }
         
+        private async FTask DoLoginReq(H_C2G_LoginRequest request)
+        {
+            // 登录中
+            GameClient.Instance.Status = GameClientStatus.StatusLogin;
+            
+            var response = await GameClient.Instance.Scene.Session.Call(request);
 
+            OnLoginRes(response);
+            
+            if (response.ErrorCode == 0)
+            {
+                Log.Info("登录成功:{0}", GameClient.Instance.Status); // GameClientStatus.StatusEnter
+                return;
+            }
+            
+            Log.Error($"登录失败 ErrorCode:{response.ErrorCode}");
+        }
         #endregion
 
 
@@ -93,10 +108,18 @@ namespace GameLogic
                 UserName = userName,
                 Password = passWord
             };
-            GameClient.Instance.Send(registerQuest);
+            
+            DoRegisterReq(registerQuest).Coroutine();
+            // GameClient.Instance.Send(registerQuest);
         }
-        
 
+        private async FTask DoRegisterReq(H_C2G_RegisterRequest request)
+        {
+            var response = await GameClient.Instance.Scene.Session.Call(request);
+            OnRegisterRes(response);
+        }
+
+        
         #endregion
         
     }
