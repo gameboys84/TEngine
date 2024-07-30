@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "App": {
+      "commandName": "Project",
+      "commandLineArgs": "--Mode Develop --AppType Game --AppId 1025",
+      "workingDirectory": "..\\Bin\\App\\net7.0"
+    },
+    "Exporter": {
+      "commandName": "Project",
+      "commandLineArgs": "--Mode Develop --AppType Export --AppId 1025",
+      "workingDirectory": "..\\Bin\\App\\net7.0"
+    }
+  }
+}

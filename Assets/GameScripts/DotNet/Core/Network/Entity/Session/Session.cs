@@ -115,7 +115,7 @@ namespace TEngine.Core.Network
             
             foreach (var requestCallback in RequestCallback.Values.ToArray())
             {
-                requestCallback.SetException(new Exception($"session is dispose: {Id}"));
+                // requestCallback.SetException(new Exception($"session is dispose: {Id}"));
             }
 
             if (networkId != 0 && channelId != 0)

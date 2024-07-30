@@ -122,7 +122,7 @@ namespace GameLogic
         private void OnConnectComplete()
         {
             Status = GameClientStatus.StatusConnected;
-            Scene.Session.AddComponent<SessionHeartbeatComponent>().Start(15000);
+            // Scene.Session.AddComponent<SessionHeartbeatComponent>().Start(15000);
             Log.Info("Connect to server success");
         }
 
@@ -135,6 +135,7 @@ namespace GameLogic
         private void OnConnectDisconnect()
         {
             Status = GameClientStatus.StatusClose;
+            Disconnect();
             Log.Warning("OnConnectDisconnect server");
         }
         

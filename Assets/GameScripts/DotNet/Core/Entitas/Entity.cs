@@ -259,7 +259,7 @@ namespace TEngine
 #if UNITY_EDITOR
             entity.ViewGO = new UnityEngine.GameObject(entity.ViewName);
             entity.ViewGO.AddComponent<ComponentView>().Component = entity;
-            entity.ViewGO.transform.SetParent(entity.Parent == null? 
+            entity.ViewGO.transform.SetParent((entity.Parent == null || entity.Parent.ViewGO == null) ? 
                 UnityEngine.GameObject.Find("[EntitySystem]").transform : entity.Parent.ViewGO.transform);
 #endif
             return entity;

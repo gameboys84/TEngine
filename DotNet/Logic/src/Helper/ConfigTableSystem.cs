@@ -7,7 +7,7 @@ namespace TEngine.Logic;
 
 public static class ConfigTableSystem
 {
-    public static async void Bind()
+    public static void Bind()
     {
         LoadConfigAsync();
         
