@@ -7,34 +7,34 @@ namespace TEngine.Editor
     /// </summary>
     public static class LogScriptingDefineSymbols
     {
-        private const string EnableLogScriptingDefineSymbol = "ENABLE_LOG";
-        private const string EnableDebugAndAboveLogScriptingDefineSymbol = "ENABLE_DEBUG_AND_ABOVE_LOG";
-        private const string EnableInfoAndAboveLogScriptingDefineSymbol = "ENABLE_INFO_AND_ABOVE_LOG";
-        private const string EnableWarningAndAboveLogScriptingDefineSymbol = "ENABLE_WARNING_AND_ABOVE_LOG";
-        private const string EnableErrorAndAboveLogScriptingDefineSymbol = "ENABLE_ERROR_AND_ABOVE_LOG";
-        private const string EnableFatalAndAboveLogScriptingDefineSymbol = "ENABLE_FATAL_AND_ABOVE_LOG";
-        private const string EnableDebugLogScriptingDefineSymbol = "ENABLE_DEBUG_LOG";
-        private const string EnableInfoLogScriptingDefineSymbol = "ENABLE_INFO_LOG";
-        private const string EnableWarningLogScriptingDefineSymbol = "ENABLE_WARNING_LOG";
-        private const string EnableErrorLogScriptingDefineSymbol = "ENABLE_ERROR_LOG";
-        private const string EnableFatalLogScriptingDefineSymbol = "ENABLE_FATAL_LOG";
+        private const string ENABLE_LOG_SCRIPTING_DEFINE_SYMBOL = "ENABLE_LOG";
+        private const string ENABLE_DEBUG_AND_ABOVE_LOG_SCRIPTING_DEFINE_SYMBOL = "ENABLE_DEBUG_AND_ABOVE_LOG";
+        private const string ENABLE_INFO_AND_ABOVE_LOG_SCRIPTING_DEFINE_SYMBOL = "ENABLE_INFO_AND_ABOVE_LOG";
+        private const string ENABLE_WARNING_AND_ABOVE_LOG_SCRIPTING_DEFINE_SYMBOL = "ENABLE_WARNING_AND_ABOVE_LOG";
+        private const string ENABLE_ERROR_AND_ABOVE_LOG_SCRIPTING_DEFINE_SYMBOL = "ENABLE_ERROR_AND_ABOVE_LOG";
+        private const string ENABLE_FATAL_AND_ABOVE_LOG_SCRIPTING_DEFINE_SYMBOL = "ENABLE_FATAL_AND_ABOVE_LOG";
+        private const string ENABLE_DEBUG_LOG_SCRIPTING_DEFINE_SYMBOL = "ENABLE_DEBUG_LOG";
+        private const string ENABLE_INFO_LOG_SCRIPTING_DEFINE_SYMBOL = "ENABLE_INFO_LOG";
+        private const string ENABLE_WARNING_LOG_SCRIPTING_DEFINE_SYMBOL = "ENABLE_WARNING_LOG";
+        private const string ENABLE_ERROR_LOG_SCRIPTING_DEFINE_SYMBOL = "ENABLE_ERROR_LOG";
+        private const string ENABLE_FATAL_LOG_SCRIPTING_DEFINE_SYMBOL = "ENABLE_FATAL_LOG";
 
         private static readonly string[] AboveLogScriptingDefineSymbols = new string[]
         {
-            EnableDebugAndAboveLogScriptingDefineSymbol,
-            EnableInfoAndAboveLogScriptingDefineSymbol,
-            EnableWarningAndAboveLogScriptingDefineSymbol,
-            EnableErrorAndAboveLogScriptingDefineSymbol,
-            EnableFatalAndAboveLogScriptingDefineSymbol
+            ENABLE_DEBUG_AND_ABOVE_LOG_SCRIPTING_DEFINE_SYMBOL,
+            ENABLE_INFO_AND_ABOVE_LOG_SCRIPTING_DEFINE_SYMBOL,
+            ENABLE_WARNING_AND_ABOVE_LOG_SCRIPTING_DEFINE_SYMBOL,
+            ENABLE_ERROR_AND_ABOVE_LOG_SCRIPTING_DEFINE_SYMBOL,
+            ENABLE_FATAL_AND_ABOVE_LOG_SCRIPTING_DEFINE_SYMBOL
         };
 
         private static readonly string[] SpecifyLogScriptingDefineSymbols = new string[]
         {
-            EnableDebugLogScriptingDefineSymbol,
-            EnableInfoLogScriptingDefineSymbol,
-            EnableWarningLogScriptingDefineSymbol,
-            EnableErrorLogScriptingDefineSymbol,
-            EnableFatalLogScriptingDefineSymbol
+            ENABLE_DEBUG_LOG_SCRIPTING_DEFINE_SYMBOL,
+            ENABLE_INFO_LOG_SCRIPTING_DEFINE_SYMBOL,
+            ENABLE_WARNING_LOG_SCRIPTING_DEFINE_SYMBOL,
+            ENABLE_ERROR_LOG_SCRIPTING_DEFINE_SYMBOL,
+            ENABLE_FATAL_LOG_SCRIPTING_DEFINE_SYMBOL
         };
 
         /// <summary>
@@ -43,7 +43,7 @@ namespace TEngine.Editor
         [MenuItem("TEngine/Log Scripting Define Symbols/Disable All Logs", false, 30)]
         public static void DisableAllLogs()
         {
-            ScriptingDefineSymbols.RemoveScriptingDefineSymbol(EnableLogScriptingDefineSymbol);
+            ScriptingDefineSymbols.RemoveScriptingDefineSymbol(ENABLE_LOG_SCRIPTING_DEFINE_SYMBOL);
 
             foreach (string specifyLogScriptingDefineSymbol in SpecifyLogScriptingDefineSymbols)
             {
@@ -63,7 +63,7 @@ namespace TEngine.Editor
         public static void EnableAllLogs()
         {
             DisableAllLogs();
-            ScriptingDefineSymbols.AddScriptingDefineSymbol(EnableLogScriptingDefineSymbol);
+            ScriptingDefineSymbols.AddScriptingDefineSymbol(ENABLE_LOG_SCRIPTING_DEFINE_SYMBOL);
         }
 
         /// <summary>
@@ -72,7 +72,7 @@ namespace TEngine.Editor
         [MenuItem("TEngine/Log Scripting Define Symbols/Enable Debug And Above Logs", false, 32)]
         public static void EnableDebugAndAboveLogs()
         {
-            SetAboveLogScriptingDefineSymbol(EnableDebugAndAboveLogScriptingDefineSymbol);
+            SetAboveLogScriptingDefineSymbol(ENABLE_DEBUG_AND_ABOVE_LOG_SCRIPTING_DEFINE_SYMBOL);
         }
 
         /// <summary>
@@ -81,7 +81,7 @@ namespace TEngine.Editor
         [MenuItem("TEngine/Log Scripting Define Symbols/Enable Info And Above Logs", false, 33)]
         public static void EnableInfoAndAboveLogs()
         {
-            SetAboveLogScriptingDefineSymbol(EnableInfoAndAboveLogScriptingDefineSymbol);
+            SetAboveLogScriptingDefineSymbol(ENABLE_INFO_AND_ABOVE_LOG_SCRIPTING_DEFINE_SYMBOL);
         }
 
         /// <summary>
@@ -90,7 +90,7 @@ namespace TEngine.Editor
         [MenuItem("TEngine/Log Scripting Define Symbols/Enable Warning And Above Logs", false, 34)]
         public static void EnableWarningAndAboveLogs()
         {
-            SetAboveLogScriptingDefineSymbol(EnableWarningAndAboveLogScriptingDefineSymbol);
+            SetAboveLogScriptingDefineSymbol(ENABLE_WARNING_AND_ABOVE_LOG_SCRIPTING_DEFINE_SYMBOL);
         }
 
         /// <summary>
@@ -99,7 +99,7 @@ namespace TEngine.Editor
         [MenuItem("TEngine/Log Scripting Define Symbols/Enable Error And Above Logs", false, 35)]
         public static void EnableErrorAndAboveLogs()
         {
-            SetAboveLogScriptingDefineSymbol(EnableErrorAndAboveLogScriptingDefineSymbol);
+            SetAboveLogScriptingDefineSymbol(ENABLE_ERROR_AND_ABOVE_LOG_SCRIPTING_DEFINE_SYMBOL);
         }
 
         /// <summary>
@@ -108,7 +108,7 @@ namespace TEngine.Editor
         [MenuItem("TEngine/Log Scripting Define Symbols/Enable Fatal And Above Logs", false, 36)]
         public static void EnableFatalAndAboveLogs()
         {
-            SetAboveLogScriptingDefineSymbol(EnableFatalAndAboveLogScriptingDefineSymbol);
+            SetAboveLogScriptingDefineSymbol(ENABLE_FATAL_AND_ABOVE_LOG_SCRIPTING_DEFINE_SYMBOL);
         }
 
         /// <summary>

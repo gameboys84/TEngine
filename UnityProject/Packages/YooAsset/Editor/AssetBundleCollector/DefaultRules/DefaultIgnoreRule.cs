@@ -10,7 +10,7 @@ namespace YooAsset.Editor
         /// <summary>
         /// 忽略的文件类型
         /// </summary>
-        public readonly static HashSet<string> IgnoreFileExtensions = new HashSet<string>() { "", ".so", ".dll", ".cs", ".js", ".boo", ".meta", ".cginc", ".hlsl" };
+        public readonly static HashSet<string> IgnoreFileExtensions = new HashSet<string>() { "", ".so", ".cs", ".js", ".boo", ".meta", ".cginc", ".hlsl" };
     }
 
     /// <summary>
@@ -35,6 +35,14 @@ namespace YooAsset.Editor
             
             // 忽略所有带Gizmos的文件（Editor专用）
             if (assetInfo.AssetPath.Contains("Gizmos", System.StringComparison.OrdinalIgnoreCase))
+                return true;
+
+            // 忽略编辑器图标资源
+            if (assetInfo.AssetPath.Contains("/Gizmos/"))
+                return true;
+
+            // 忽略编辑器专属资源
+            if (assetInfo.AssetPath.Contains("/Editor/") || assetInfo.AssetPath.Contains("/Editor Resources/"))
                 return true;
 
             // 忽略编辑器下的类型资源

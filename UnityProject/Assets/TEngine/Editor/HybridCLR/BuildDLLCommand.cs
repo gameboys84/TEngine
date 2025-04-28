@@ -9,7 +9,7 @@ using UnityEngine;
 public static class BuildDLLCommand
 {
     private const string EnableHybridClrScriptingDefineSymbol = "ENABLE_HYBRIDCLR";
-    
+
     /// <summary>
     /// 禁用HybridCLR宏定义。
     /// </summary>
@@ -17,8 +17,10 @@ public static class BuildDLLCommand
     public static void Disable()
     {
         ScriptingDefineSymbols.RemoveScriptingDefineSymbol(EnableHybridClrScriptingDefineSymbol);
+#if ENABLE_HYBRIDCLR
         HybridCLR.Editor.SettingsUtil.Enable = false;
-        SyncAssemblyContent.RefreshAssembly();
+        UpdateSettingEditor.ForceUpdateAssemblies();
+#endif
     }
 
     /// <summary>
@@ -29,10 +31,12 @@ public static class BuildDLLCommand
     {
         ScriptingDefineSymbols.RemoveScriptingDefineSymbol(EnableHybridClrScriptingDefineSymbol);
         ScriptingDefineSymbols.AddScriptingDefineSymbol(EnableHybridClrScriptingDefineSymbol);
+#if ENABLE_HYBRIDCLR
         HybridCLR.Editor.SettingsUtil.Enable = true;
-        SyncAssemblyContent.RefreshAssembly();
+        UpdateSettingEditor.ForceUpdateAssemblies();
+#endif
     }
-    
+
     [MenuItem("HybridCLR/Build/BuildAssets And CopyTo AssemblyTextAssetPath")]
     public static void BuildAndCopyDlls()
     {
@@ -42,7 +46,7 @@ public static class BuildDLLCommand
         CopyAOTHotUpdateDlls(target);
 #endif
     }
-    
+
     public static void BuildAndCopyDlls(BuildTarget target)
     {
 #if ENABLE_HYBRIDCLR
@@ -50,22 +54,22 @@ public static class BuildDLLCommand
         CopyAOTHotUpdateDlls(target);
 #endif
     }
-    
+
     public static void CopyAOTHotUpdateDlls(BuildTarget target)
     {
         CopyAOTAssembliesToAssetPath();
         CopyHotUpdateAssembliesToAssetPath();
         AssetDatabase.Refresh();
     }
-    
+
     public static void CopyAOTAssembliesToAssetPath()
     {
 #if ENABLE_HYBRIDCLR
         var target = EditorUserBuildSettings.activeBuildTarget;
         string aotAssembliesSrcDir = SettingsUtil.GetAssembliesPostIl2CppStripDir(target);
-        string aotAssembliesDstDir = Application.dataPath +"/"+ SettingsUtils.HybridCLRCustomGlobalSettings.AssemblyTextAssetPath;
+        string aotAssembliesDstDir = Application.dataPath +"/"+ TEngine.Settings.UpdateSetting.AssemblyTextAssetPath;
 
-        foreach (var dll in SettingsUtils.HybridCLRCustomGlobalSettings.AOTMetaAssemblies)
+        foreach (var dll in TEngine.Settings.UpdateSetting.AOTMetaAssemblies)
         {
             string srcDllPath = $"{aotAssembliesSrcDir}/{dll}";
             if (!System.IO.File.Exists(srcDllPath))
@@ -79,14 +83,14 @@ public static class BuildDLLCommand
         }
 #endif
     }
-    
+
     public static void CopyHotUpdateAssembliesToAssetPath()
     {
 #if ENABLE_HYBRIDCLR
         var target = EditorUserBuildSettings.activeBuildTarget;
 
         string hotfixDllSrcDir = SettingsUtil.GetHotUpdateDllsOutputDirByTarget(target);
-        string hotfixAssembliesDstDir = Application.dataPath +"/"+ SettingsUtils.HybridCLRCustomGlobalSettings.AssemblyTextAssetPath;
+        string hotfixAssembliesDstDir = Application.dataPath +"/"+ TEngine.Settings.UpdateSetting.AssemblyTextAssetPath;
         foreach (var dll in SettingsUtil.HotUpdateAssemblyFilesExcludePreserved)
         {
             string dllPath = $"{hotfixDllSrcDir}/{dll}";

@@ -341,7 +341,7 @@ namespace TEngine
         [StructLayout(LayoutKind.Auto)]
         public struct Enumerator : IEnumerator<T>, IEnumerator
         {
-            private LinkedList<T>.Enumerator m_Enumerator;
+            private LinkedList<T>.Enumerator _enumerator;
 
             internal Enumerator(LinkedList<T> linkedList)
             {
@@ -350,25 +350,25 @@ namespace TEngine
                     throw new GameFrameworkException("Linked list is invalid.");
                 }
 
-                m_Enumerator = linkedList.GetEnumerator();
+                _enumerator = linkedList.GetEnumerator();
             }
 
             /// <summary>
             /// 获取当前结点。
             /// </summary>
-            public T Current => m_Enumerator.Current;
+            public T Current => _enumerator.Current;
 
             /// <summary>
             /// 获取当前的枚举数。
             /// </summary>
-            object IEnumerator.Current => m_Enumerator.Current;
+            object IEnumerator.Current => _enumerator.Current;
 
             /// <summary>
             /// 清理枚举数。
             /// </summary>
             public void Dispose()
             {
-                m_Enumerator.Dispose();
+                _enumerator.Dispose();
             }
 
             /// <summary>
@@ -377,7 +377,7 @@ namespace TEngine
             /// <returns>返回下一个结点。</returns>
             public bool MoveNext()
             {
-                return m_Enumerator.MoveNext();
+                return _enumerator.MoveNext();
             }
 
             /// <summary>
@@ -385,7 +385,7 @@ namespace TEngine
             /// </summary>
             void IEnumerator.Reset()
             {
-                ((IEnumerator<T>)m_Enumerator).Reset();
+                ((IEnumerator<T>)_enumerator).Reset();
             }
         }
     }

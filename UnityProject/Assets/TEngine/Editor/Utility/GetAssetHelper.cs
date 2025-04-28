@@ -21,7 +21,7 @@ namespace TEngine.Editor
                 Debug.Log($"Asset path is {assetPath}");
             }
         }
-        
+
         [MenuItem("Assets/Get Addressable Path", priority = 3)]
         static void GetAddressablePath()
         {

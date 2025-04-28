@@ -5,7 +5,7 @@ using System.IO;
 [CanEditMultipleObjects, CustomEditor(typeof(DefaultAsset), false)]
 public class DefaultAssetInspector : Editor
 {
-    private const int MaxColum = 10240;
+    private const int MAX_COLUM = 10240;
     
     private GUIStyle _textStyle;
 
@@ -34,9 +34,9 @@ public class DefaultAssetInspector : Editor
             else
             {
                 text = luaFile;
-                if (text.Length > MaxColum)
+                if (text.Length > MAX_COLUM)
                 {
-                    text = text.Substring(0, MaxColum) + "...\n\n<...etc...>";
+                    text = text.Substring(0, MAX_COLUM) + "...\n\n<...etc...>";
                 }
             }
 

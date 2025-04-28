@@ -10,29 +10,25 @@ namespace TEngine.Editor
     [CustomEditor(typeof(RootModule))]
     internal sealed class RootModuleInspector : GameFrameworkInspector
     {
-        private const string NoneOptionName = "<None>";
+        private const string NONE_OPTION_NAME = "<None>";
         private static readonly float[] GameSpeed = new float[] { 0f, 0.01f, 0.1f, 0.25f, 0.5f, 1f, 1.5f, 2f, 4f, 8f };
         private static readonly string[] GameSpeedForDisplay = new string[] { "0x", "0.01x", "0.1x", "0.25x", "0.5x", "1x", "1.5x", "2x", "4x", "8x" };
 
-        private SerializedProperty m_EditorLanguage = null;
-        private SerializedProperty m_TextHelperTypeName = null;
-        private SerializedProperty m_VersionHelperTypeName = null;
-        private SerializedProperty m_LogHelperTypeName = null;
-        private SerializedProperty m_CompressionHelperTypeName = null;
-        private SerializedProperty m_JsonHelperTypeName = null;
-        private SerializedProperty m_FrameRate = null;
-        private SerializedProperty m_GameSpeed = null;
-        private SerializedProperty m_RunInBackground = null;
-        private SerializedProperty m_NeverSleep = null;
+        private SerializedProperty _editorLanguage = null;
+        private SerializedProperty _textHelperTypeName = null;
+        private SerializedProperty _logHelperTypeName = null;
+        private SerializedProperty _jsonHelperTypeName = null;
+        private SerializedProperty _frameRate = null;
+        private SerializedProperty _gameSpeed = null;
+        private SerializedProperty _runInBackground = null;
+        private SerializedProperty _neverSleep = null;
 
-        private string[] m_TextHelperTypeNames = null;
-        private int m_TextHelperTypeNameIndex = 0;
-        private string[] m_VersionHelperTypeNames = null;
-        private int m_VersionHelperTypeNameIndex = 0;
-        private string[] m_LogHelperTypeNames = null;
-        private int m_LogHelperTypeNameIndex = 0;
-        private string[] m_JsonHelperTypeNames = null;
-        private int m_JsonHelperTypeNameIndex = 0;
+        private string[] _textHelperTypeNames = null;
+        private int _textHelperTypeNameIndex = 0;
+        private string[] _logHelperTypeNames = null;
+        private int _logHelperTypeNameIndex = 0;
+        private string[] _jsonHelperTypeNames = null;
+        private int _jsonHelperTypeNameIndex = 0;
 
         public override void OnInspectorGUI()
         {
@@ -44,46 +40,39 @@ namespace TEngine.Editor
 
             EditorGUI.BeginDisabledGroup(EditorApplication.isPlayingOrWillChangePlaymode);
             {
-                EditorGUILayout.PropertyField(m_EditorLanguage);
+                EditorGUILayout.PropertyField(_editorLanguage);
                 
                 EditorGUILayout.BeginVertical("box");
                 {
                     EditorGUILayout.LabelField("Global Helpers", EditorStyles.boldLabel);
 
-                    int textHelperSelectedIndex = EditorGUILayout.Popup("Text Helper", m_TextHelperTypeNameIndex, m_TextHelperTypeNames);
-                    if (textHelperSelectedIndex != m_TextHelperTypeNameIndex)
+                    int textHelperSelectedIndex = EditorGUILayout.Popup("Text Helper", _textHelperTypeNameIndex, _textHelperTypeNames);
+                    if (textHelperSelectedIndex != _textHelperTypeNameIndex)
                     {
-                        m_TextHelperTypeNameIndex = textHelperSelectedIndex;
-                        m_TextHelperTypeName.stringValue = textHelperSelectedIndex <= 0 ? null : m_TextHelperTypeNames[textHelperSelectedIndex];
+                        _textHelperTypeNameIndex = textHelperSelectedIndex;
+                        _textHelperTypeName.stringValue = textHelperSelectedIndex <= 0 ? null : _textHelperTypeNames[textHelperSelectedIndex];
                     }
 
-                    int versionHelperSelectedIndex = EditorGUILayout.Popup("Version Helper", m_VersionHelperTypeNameIndex, m_VersionHelperTypeNames);
-                    if (versionHelperSelectedIndex != m_VersionHelperTypeNameIndex)
+                    int logHelperSelectedIndex = EditorGUILayout.Popup("Log Helper", _logHelperTypeNameIndex, _logHelperTypeNames);
+                    if (logHelperSelectedIndex != _logHelperTypeNameIndex)
                     {
-                        m_VersionHelperTypeNameIndex = versionHelperSelectedIndex;
-                        m_VersionHelperTypeName.stringValue = versionHelperSelectedIndex <= 0 ? null : m_VersionHelperTypeNames[versionHelperSelectedIndex];
+                        _logHelperTypeNameIndex = logHelperSelectedIndex;
+                        _logHelperTypeName.stringValue = logHelperSelectedIndex <= 0 ? null : _logHelperTypeNames[logHelperSelectedIndex];
                     }
 
-                    int logHelperSelectedIndex = EditorGUILayout.Popup("Log Helper", m_LogHelperTypeNameIndex, m_LogHelperTypeNames);
-                    if (logHelperSelectedIndex != m_LogHelperTypeNameIndex)
+                    int jsonHelperSelectedIndex = EditorGUILayout.Popup("JSON Helper", _jsonHelperTypeNameIndex, _jsonHelperTypeNames);
+                    if (jsonHelperSelectedIndex != _jsonHelperTypeNameIndex)
                     {
-                        m_LogHelperTypeNameIndex = logHelperSelectedIndex;
-                        m_LogHelperTypeName.stringValue = logHelperSelectedIndex <= 0 ? null : m_LogHelperTypeNames[logHelperSelectedIndex];
-                    }
-
-                    int jsonHelperSelectedIndex = EditorGUILayout.Popup("JSON Helper", m_JsonHelperTypeNameIndex, m_JsonHelperTypeNames);
-                    if (jsonHelperSelectedIndex != m_JsonHelperTypeNameIndex)
-                    {
-                        m_JsonHelperTypeNameIndex = jsonHelperSelectedIndex;
-                        m_JsonHelperTypeName.stringValue = jsonHelperSelectedIndex <= 0 ? null : m_JsonHelperTypeNames[jsonHelperSelectedIndex];
+                        _jsonHelperTypeNameIndex = jsonHelperSelectedIndex;
+                        _jsonHelperTypeName.stringValue = jsonHelperSelectedIndex <= 0 ? null : _jsonHelperTypeNames[jsonHelperSelectedIndex];
                     }
                 }
                 EditorGUILayout.EndVertical();
             }
             EditorGUI.EndDisabledGroup();
 
-            int frameRate = EditorGUILayout.IntSlider("Frame Rate", m_FrameRate.intValue, 1, 120);
-            if (frameRate != m_FrameRate.intValue)
+            int frameRate = EditorGUILayout.IntSlider("Frame Rate", _frameRate.intValue, 1, 120);
+            if (frameRate != _frameRate.intValue)
             {
                 if (EditorApplication.isPlaying)
                 {
@@ -91,20 +80,20 @@ namespace TEngine.Editor
                 }
                 else
                 {
-                    m_FrameRate.intValue = frameRate;
+                    _frameRate.intValue = frameRate;
                 }
             }
 
             EditorGUILayout.BeginVertical("box");
             {
-                float gameSpeed = EditorGUILayout.Slider("Game Speed", m_GameSpeed.floatValue, 0f, 8f);
+                float gameSpeed = EditorGUILayout.Slider("Game Speed", _gameSpeed.floatValue, 0f, 8f);
                 int selectedGameSpeed = GUILayout.SelectionGrid(GetSelectedGameSpeed(gameSpeed), GameSpeedForDisplay, 5);
                 if (selectedGameSpeed >= 0)
                 {
                     gameSpeed = GetGameSpeed(selectedGameSpeed);
                 }
 
-                if (Math.Abs(gameSpeed - m_GameSpeed.floatValue) > 0.01f)
+                if (Math.Abs(gameSpeed - _gameSpeed.floatValue) > 0.01f)
                 {
                     if (EditorApplication.isPlaying)
                     {
@@ -112,14 +101,14 @@ namespace TEngine.Editor
                     }
                     else
                     {
-                        m_GameSpeed.floatValue = gameSpeed;
+                        _gameSpeed.floatValue = gameSpeed;
                     }
                 }
             }
             EditorGUILayout.EndVertical();
 
-            bool runInBackground = EditorGUILayout.Toggle("Run in Background", m_RunInBackground.boolValue);
-            if (runInBackground != m_RunInBackground.boolValue)
+            bool runInBackground = EditorGUILayout.Toggle("Run in Background", _runInBackground.boolValue);
+            if (runInBackground != _runInBackground.boolValue)
             {
                 if (EditorApplication.isPlaying)
                 {
@@ -127,12 +116,12 @@ namespace TEngine.Editor
                 }
                 else
                 {
-                    m_RunInBackground.boolValue = runInBackground;
+                    _runInBackground.boolValue = runInBackground;
                 }
             }
 
-            bool neverSleep = EditorGUILayout.Toggle("Never Sleep", m_NeverSleep.boolValue);
-            if (neverSleep != m_NeverSleep.boolValue)
+            bool neverSleep = EditorGUILayout.Toggle("Never Sleep", _neverSleep.boolValue);
+            if (neverSleep != _neverSleep.boolValue)
             {
                 if (EditorApplication.isPlaying)
                 {
@@ -140,7 +129,7 @@ namespace TEngine.Editor
                 }
                 else
                 {
-                    m_NeverSleep.boolValue = neverSleep;
+                    _neverSleep.boolValue = neverSleep;
                 }
             }
 
@@ -156,16 +145,14 @@ namespace TEngine.Editor
 
         private void OnEnable()
         {
-            m_EditorLanguage = serializedObject.FindProperty("m_EditorLanguage");
-            m_TextHelperTypeName = serializedObject.FindProperty("m_TextHelperTypeName");
-            m_VersionHelperTypeName = serializedObject.FindProperty("m_VersionHelperTypeName");
-            m_LogHelperTypeName = serializedObject.FindProperty("m_LogHelperTypeName");
-            m_CompressionHelperTypeName = serializedObject.FindProperty("m_CompressionHelperTypeName");
-            m_JsonHelperTypeName = serializedObject.FindProperty("m_JsonHelperTypeName");
-            m_FrameRate = serializedObject.FindProperty("m_FrameRate");
-            m_GameSpeed = serializedObject.FindProperty("m_GameSpeed");
-            m_RunInBackground = serializedObject.FindProperty("m_RunInBackground");
-            m_NeverSleep = serializedObject.FindProperty("m_NeverSleep");
+            _editorLanguage = serializedObject.FindProperty("editorLanguage");
+            _textHelperTypeName = serializedObject.FindProperty("textHelperTypeName");
+            _logHelperTypeName = serializedObject.FindProperty("logHelperTypeName"); 
+            _jsonHelperTypeName = serializedObject.FindProperty("jsonHelperTypeName");
+            _frameRate = serializedObject.FindProperty("frameRate");
+            _gameSpeed = serializedObject.FindProperty("gameSpeed");
+            _runInBackground = serializedObject.FindProperty("runInBackground");
+            _neverSleep = serializedObject.FindProperty("neverSleep");
 
             RefreshTypeNames();
         }
@@ -174,73 +161,55 @@ namespace TEngine.Editor
         {
             List<string> textHelperTypeNames = new List<string>
             {
-                NoneOptionName
+                NONE_OPTION_NAME
             };
 
             textHelperTypeNames.AddRange(Type.GetRuntimeTypeNames(typeof(Utility.Text.ITextHelper)));
-            m_TextHelperTypeNames = textHelperTypeNames.ToArray();
-            m_TextHelperTypeNameIndex = 0;
-            if (!string.IsNullOrEmpty(m_TextHelperTypeName.stringValue))
+            _textHelperTypeNames = textHelperTypeNames.ToArray();
+            _textHelperTypeNameIndex = 0;
+            if (!string.IsNullOrEmpty(_textHelperTypeName.stringValue))
             {
-                m_TextHelperTypeNameIndex = textHelperTypeNames.IndexOf(m_TextHelperTypeName.stringValue);
-                if (m_TextHelperTypeNameIndex <= 0)
+                _textHelperTypeNameIndex = textHelperTypeNames.IndexOf(_textHelperTypeName.stringValue);
+                if (_textHelperTypeNameIndex <= 0)
                 {
-                    m_TextHelperTypeNameIndex = 0;
-                    m_TextHelperTypeName.stringValue = null;
-                }
-            }
-
-            List<string> versionHelperTypeNames = new List<string>
-            {
-                NoneOptionName
-            };
-
-            versionHelperTypeNames.AddRange(Type.GetRuntimeTypeNames(typeof(Version.IVersionHelper)));
-            m_VersionHelperTypeNames = versionHelperTypeNames.ToArray();
-            m_VersionHelperTypeNameIndex = 0;
-            if (!string.IsNullOrEmpty(m_VersionHelperTypeName.stringValue))
-            {
-                m_VersionHelperTypeNameIndex = versionHelperTypeNames.IndexOf(m_VersionHelperTypeName.stringValue);
-                if (m_VersionHelperTypeNameIndex <= 0)
-                {
-                    m_VersionHelperTypeNameIndex = 0;
-                    m_VersionHelperTypeName.stringValue = null;
+                    _textHelperTypeNameIndex = 0;
+                    _textHelperTypeName.stringValue = null;
                 }
             }
 
             List<string> logHelperTypeNames = new List<string>
             {
-                NoneOptionName
+                NONE_OPTION_NAME
             };
 
             logHelperTypeNames.AddRange(Type.GetRuntimeTypeNames(typeof(GameFrameworkLog.ILogHelper)));
-            m_LogHelperTypeNames = logHelperTypeNames.ToArray();
-            m_LogHelperTypeNameIndex = 0;
-            if (!string.IsNullOrEmpty(m_LogHelperTypeName.stringValue))
+            _logHelperTypeNames = logHelperTypeNames.ToArray();
+            _logHelperTypeNameIndex = 0;
+            if (!string.IsNullOrEmpty(_logHelperTypeName.stringValue))
             {
-                m_LogHelperTypeNameIndex = logHelperTypeNames.IndexOf(m_LogHelperTypeName.stringValue);
-                if (m_LogHelperTypeNameIndex <= 0)
+                _logHelperTypeNameIndex = logHelperTypeNames.IndexOf(_logHelperTypeName.stringValue);
+                if (_logHelperTypeNameIndex <= 0)
                 {
-                    m_LogHelperTypeNameIndex = 0;
-                    m_LogHelperTypeName.stringValue = null;
+                    _logHelperTypeNameIndex = 0;
+                    _logHelperTypeName.stringValue = null;
                 }
             }
 
             List<string> jsonHelperTypeNames = new List<string>
             {
-                NoneOptionName
+                NONE_OPTION_NAME
             };
 
             jsonHelperTypeNames.AddRange(Type.GetRuntimeTypeNames(typeof(Utility.Json.IJsonHelper)));
-            m_JsonHelperTypeNames = jsonHelperTypeNames.ToArray();
-            m_JsonHelperTypeNameIndex = 0;
-            if (!string.IsNullOrEmpty(m_JsonHelperTypeName.stringValue))
+            _jsonHelperTypeNames = jsonHelperTypeNames.ToArray();
+            _jsonHelperTypeNameIndex = 0;
+            if (!string.IsNullOrEmpty(_jsonHelperTypeName.stringValue))
             {
-                m_JsonHelperTypeNameIndex = jsonHelperTypeNames.IndexOf(m_JsonHelperTypeName.stringValue);
-                if (m_JsonHelperTypeNameIndex <= 0)
+                _jsonHelperTypeNameIndex = jsonHelperTypeNames.IndexOf(_jsonHelperTypeName.stringValue);
+                if (_jsonHelperTypeNameIndex <= 0)
                 {
-                    m_JsonHelperTypeNameIndex = 0;
-                    m_JsonHelperTypeName.stringValue = null;
+                    _jsonHelperTypeNameIndex = 0;
+                    _jsonHelperTypeName.stringValue = null;
                 }
             }
 
@@ -266,7 +235,7 @@ namespace TEngine.Editor
         {
             for (int i = 0; i < GameSpeed.Length; i++)
             {
-                if (gameSpeed == GameSpeed[i])
+                if (Mathf.Approximately(gameSpeed, GameSpeed[i]))
                 {
                     return i;
                 }

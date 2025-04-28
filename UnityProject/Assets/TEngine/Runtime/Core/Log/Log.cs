@@ -2776,5 +2776,10 @@ namespace TEngine
                 Fatal(message);
             }
         }
+
+        public static void Fatal(System.Exception exception)
+        {
+            Fatal(exception.ToString());
+        }
     }
 }

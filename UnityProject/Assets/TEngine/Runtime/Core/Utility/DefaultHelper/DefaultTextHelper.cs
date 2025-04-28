@@ -8,7 +8,7 @@ namespace TEngine
     /// </summary>
     public class DefaultTextHelper : Utility.Text.ITextHelper
     {
-        private const int StringBuilderCapacity = 1024;
+        private const int STRING_BUILDER_CAPACITY = 1024;
 
         [ThreadStatic]
         private static StringBuilder s_CachedStringBuilder = null;
@@ -577,7 +577,7 @@ namespace TEngine
         {
             if (s_CachedStringBuilder == null)
             {
-                s_CachedStringBuilder = new StringBuilder(StringBuilderCapacity);
+                s_CachedStringBuilder = new StringBuilder(STRING_BUILDER_CAPACITY);
             }
         }
     }

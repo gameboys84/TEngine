@@ -64,29 +64,28 @@ Net Core现在已经更新到了8.0的版本，在性能和设计上其实是远
 ## <strong>项目结构概览
 ```
 Assets
+├── AssetArt            // 美术资源目录
+│   └── Atlas           // 自动生成图集目录
 ├── AssetRaw            // 热更资源目录
-├── Atlas               // 自动生成图集目录
+│   ├── UIRaw           // UI图片目录
+│   │   ├── Atlas       // 需要自动生成图集的UI素材目录
+│   │   └── Raw         // 不需要自动生成图集的UI素材目录
+├── Editor              // 编辑器脚本目录
 ├── HybridCLRData       // hybridclr相关目录
+├── Scenes              // 主场景目录
 ├── TEngine             // 框架核心目录
 └── GameScripts         // 程序集目录
-    ├── Editor          // 编辑器程序集
-    ├── Main            // 主程序程序集(启动器与流程)
+    ├── Procedure       // 启动器与流程
     └── HotFix          // 游戏热更程序集目录 [Folder]
-        ├── GameBase    // 游戏基础框架程序集 [Dll]
-        ├── GameProto   // 游戏配置协议程序集 [Dll]  
-        ├── BattleCore  // 游戏核心战斗程序集 [Dll] 
+        ├── GameProto   // 游戏配置协议程序集 [Dll]
         └── GameLogic   // 游戏业务逻辑程序集 [Dll]
-            ├── GameApp.cs                  // 热更主入口
-            └── GameApp_RegisterSystem.cs   // 热更主入口注册系统   
+            └── GameApp.cs                  // 热更主入口
 
 
 TEngine
 ├── Editor              // TEngine编辑器核心代码
 └── Runtime             // TEngine运行时核心代码
 ```
-
- - 必要：项目使用了以下第三方插件，请自行购买导入：
-   - /Unity/Assets/Plugins/Sirenix
 
 ---
 ## <strong>优质开源项目推荐
@@ -100,9 +99,6 @@ TEngine
 #### <a href="https://github.com/qq362946/Fantasy"><strong>Fantasy</strong></a> - Fantasy是一套源于ETServer但极为简洁，更好上手的一套商业级服务器框架。
 
 #### <a href="https://github.com/ALEXTANGXIAO/GameNetty"><strong>GameNetty</strong></a> - GameNetty是一套源于ETServer，首次拆分最新的ET8.1的前后端解决方案（包），客户端最精简大约750k，完美做成包的形式，几乎零成本 无侵入的嵌入进你的框架。
-
-## <strong>交流群
-### <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=MzOcQIzGVLQ5AC5LHaqqA3h_F6lZ_DX4&authKey=LctqAWGHkJ7voQvuj1oaSe5tsGrc1XmQG3U4QniieGUlxY3lC7FtDIpEvPOX0vT8&noverify=0&group_code=862987645">群   号：862987645 </strong></a>
 
 
 ## <strong>Buy me a 奶茶.

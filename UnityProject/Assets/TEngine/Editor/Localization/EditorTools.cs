@@ -724,7 +724,12 @@ namespace TEngine.Localization
 		{
             if (s_RecycledEditor==null)
             {
-                FieldInfo info = typeof(EditorGUI).GetField("s_RecycledEditor", BindingFlags.NonPublic | BindingFlags.Static);
+#if UNITY_6000_0_OR_NEWER
+	            FieldInfo info = typeof(EditorGUI).GetField("s_RecycledEditorInternal", BindingFlags.NonPublic | BindingFlags.Static);
+#else
+				FieldInfo info = typeof(EditorGUI).GetField("s_RecycledEditor", BindingFlags.NonPublic | BindingFlags.Static);
+#endif
+                
                 s_RecycledEditor = info.GetValue(null);
             }
 

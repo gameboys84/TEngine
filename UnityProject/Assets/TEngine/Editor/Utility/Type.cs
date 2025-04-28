@@ -12,8 +12,7 @@ namespace TEngine.Editor
         {
             "TEngine.Runtime",
             "Assembly-CSharp",
-            "GameMain.Runtime",
-            "GameMain",
+            "Launcher",
         };
 
         private static readonly string[] RuntimeOrEditorAssemblyNames =
@@ -22,8 +21,7 @@ namespace TEngine.Editor
             "Assembly-CSharp",
             "TEngine.Editor",
             "Assembly-CSharp-Editor",
-            "GameMain",
-            "GameMain.Editor"
+            "Launcher",
         };
 
         /// <summary>

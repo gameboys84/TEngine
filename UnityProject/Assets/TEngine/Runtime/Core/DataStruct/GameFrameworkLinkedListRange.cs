@@ -118,9 +118,9 @@ namespace TEngine
         [StructLayout(LayoutKind.Auto)]
         public struct Enumerator : IEnumerator<T>, IEnumerator
         {
-            private readonly GameFrameworkLinkedListRange<T> m_GameFrameworkLinkedListRange;
-            private LinkedListNode<T> m_Current;
-            private T m_CurrentValue;
+            private readonly GameFrameworkLinkedListRange<T> _gameFrameworkLinkedListRange;
+            private LinkedListNode<T> _current;
+            private T _currentValue;
 
             internal Enumerator(GameFrameworkLinkedListRange<T> range)
             {
@@ -129,20 +129,20 @@ namespace TEngine
                     throw new GameFrameworkException("Range is invalid.");
                 }
 
-                m_GameFrameworkLinkedListRange = range;
-                m_Current = m_GameFrameworkLinkedListRange._first;
-                m_CurrentValue = default(T);
+                _gameFrameworkLinkedListRange = range;
+                _current = _gameFrameworkLinkedListRange._first;
+                _currentValue = default(T);
             }
 
             /// <summary>
             /// 获取当前结点。
             /// </summary>
-            public T Current => m_CurrentValue;
+            public T Current => _currentValue;
 
             /// <summary>
             /// 获取当前的枚举数。
             /// </summary>
-            object IEnumerator.Current => m_CurrentValue;
+            object IEnumerator.Current => _currentValue;
 
             /// <summary>
             /// 清理枚举数。
@@ -157,13 +157,13 @@ namespace TEngine
             /// <returns>返回下一个结点。</returns>
             public bool MoveNext()
             {
-                if (m_Current == null || m_Current == m_GameFrameworkLinkedListRange._terminal)
+                if (_current == null || _current == _gameFrameworkLinkedListRange._terminal)
                 {
                     return false;
                 }
 
-                m_CurrentValue = m_Current.Value;
-                m_Current = m_Current.Next;
+                _currentValue = _current.Value;
+                _current = _current.Next;
                 return true;
             }
 
@@ -172,8 +172,8 @@ namespace TEngine
             /// </summary>
             void IEnumerator.Reset()
             {
-                m_Current = m_GameFrameworkLinkedListRange._first;
-                m_CurrentValue = default(T);
+                _current = _gameFrameworkLinkedListRange._first;
+                _currentValue = default(T);
             }
         }
     }

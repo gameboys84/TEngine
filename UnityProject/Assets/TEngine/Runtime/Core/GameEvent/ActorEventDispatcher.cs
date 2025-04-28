@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 #region Class Documentation
+
 /************************************************************************************************************
 Class Name:     ActorEventDispatcher.cs  局部单位事件分发器。
 Type:           Actor, Event
@@ -13,13 +14,14 @@ Example:
                 /// <remark>只分发和监听这个Event内部的事件</remark>
                 /// </summary>
                 public ActorEventDispatcher Event => _event ??= MemoryPool.Acquire<ActorEventDispatcher>();
-                
+
                 // owner局部发送事件。
                 owner.Event.Send(eventId,xxx);
-                
+
                 // owner监听自身事件并绑定持有对象为owner。 比如是组件的情况下。移除时调用RemoveAllListenerByOwner(owner)会根据持有对象（组件）移除。
                 owner.Event.AddEventListener(eventId,xxx,owner);
 ************************************************************************************************************/
+
 #endregion
 
 namespace TEngine
@@ -32,24 +34,17 @@ namespace TEngine
         /// <summary>
         /// 所有事件。
         /// </summary>
-        private readonly Dictionary<int, List<EventRegInfo>> _allEventListenerMap;
+        private readonly Dictionary<int, List<EventRegInfo>> _allEventListenerMap = new();
 
         /// <summary>
         /// 用于标记一个事件是不是正在处理。
         /// </summary>
-        private readonly List<int> _processEventList;
+        private readonly List<int> _processEventList = new();
 
         /// <summary>
         /// 用于标记一个事件是不是被移除。
         /// </summary>
-        private readonly List<int> _delayDeleteEventList;
-
-        public ActorEventDispatcher()
-        {
-            _processEventList = new List<int>();
-            _delayDeleteEventList = new List<int>();
-            _allEventListenerMap = new Dictionary<int, List<EventRegInfo>>();
-        }
+        private readonly List<int> _delayDeleteEventList = new();
 
         /// <summary>
         /// 移除所有事件监听。
@@ -65,6 +60,7 @@ namespace TEngine
                 {
                     EventRegInfo.Release(eventRegInfo);
                 }
+
                 kv.Value.Clear();
             }
 
@@ -96,15 +92,13 @@ namespace TEngine
             {
                 if (_allEventListenerMap.TryGetValue(eventId, out var listListener))
                 {
-                    for (int i = 0; i < listListener.Count; i++)
+                    for (int i = listListener.Count - 1; i >= 0; i--)
                     {
                         if (listListener[i].IsDeleted)
                         {
                             Log.Info("remove delay delete eventId[{0}]", eventId);
-                            listListener[i] = listListener[^1];
-                            EventRegInfo.Release(listListener[^1]);
-                            listListener.RemoveAt(listListener.Count - 1);
-                            i--;
+                            EventRegInfo.Release(listListener[i]);
+                            listListener.RemoveAt(i);
                         }
                     }
                 }
@@ -462,7 +456,7 @@ namespace TEngine
                 bool isProcessing = _processEventList.Contains(eventId);
                 bool delayDeleted = false;
 
-                for (int i = 0; i < list.Count; i++)
+                for (int i = list.Count - 1; i >= 0; i--)
                 {
                     var regInfo = list[i];
                     if (regInfo.Owner == owner)
@@ -474,10 +468,8 @@ namespace TEngine
                         }
                         else
                         {
-                            list[i] = list[^1];
-                            EventRegInfo.Release(list[^1]);
-                            list.RemoveAt(list.Count - 1);
-                            i--;
+                            EventRegInfo.Release(list[i]);
+                            list.RemoveAt(i);
                         }
                     }
                 }
@@ -590,7 +582,7 @@ namespace TEngine
             DestroyAllEventListener();
         }
     }
-    
+
     /// <summary>
     /// 事件注册信息。
     /// </summary>
@@ -617,8 +609,10 @@ namespace TEngine
             Owner = owner;
             IsDeleted = false;
         }
-        
-        public EventRegInfo() { }
+
+        public EventRegInfo()
+        {
+        }
 
         public void Clear()
         {
@@ -635,7 +629,7 @@ namespace TEngine
             ret.IsDeleted = false;
             return ret;
         }
-        
+
         public static void Release(EventRegInfo eventRegInfo)
         {
             MemoryPool.Release(eventRegInfo);

@@ -10,8 +10,8 @@ namespace TEngine
         /// </summary>
         public static class Converter
         {
-            private const float InchesToCentimeters = 2.54f; // 1 inch = 2.54 cm
-            private const float CentimetersToInches = 1f / InchesToCentimeters; // 1 cm = 0.3937 inches
+            private const float INCHES_TO_CENTIMETERS = 2.54f; // 1 inch = 2.54 cm
+            private const float CENTIMETERS_TO_INCHES = 1f / INCHES_TO_CENTIMETERS; // 1 cm = 0.3937 inches
 
             /// <summary>
             /// 获取数据在此计算机结构中存储时的字节顺序。
@@ -39,7 +39,7 @@ namespace TEngine
                     throw new GameFrameworkException("You must set screen DPI first.");
                 }
 
-                return InchesToCentimeters * pixels / ScreenDpi;
+                return INCHES_TO_CENTIMETERS * pixels / ScreenDpi;
             }
 
             /// <summary>
@@ -54,7 +54,7 @@ namespace TEngine
                     throw new GameFrameworkException("You must set screen DPI first.");
                 }
 
-                return CentimetersToInches * centimeters * ScreenDpi;
+                return CENTIMETERS_TO_INCHES * centimeters * ScreenDpi;
             }
 
             /// <summary>

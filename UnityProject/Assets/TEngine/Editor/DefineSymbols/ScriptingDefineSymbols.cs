@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEditor;
+using UnityEditor.Build;
 
 namespace TEngine.Editor
 {
@@ -14,8 +15,7 @@ namespace TEngine.Editor
             BuildTargetGroup.iOS,
             BuildTargetGroup.Android,
             BuildTargetGroup.WSA,
-            BuildTargetGroup.WebGL,
-            BuildTargetGroup.PS5
+            BuildTargetGroup.WebGL
         };
 
         /// <summary>
@@ -135,7 +135,12 @@ namespace TEngine.Editor
         /// <returns>平台的脚本宏定义。</returns>
         public static string[] GetScriptingDefineSymbols(BuildTargetGroup buildTargetGroup)
         {
+#if UNITY_6000_0_OR_NEWER
+            PlayerSettings.GetScriptingDefineSymbols(NamedBuildTarget.FromBuildTargetGroup(buildTargetGroup), out var result);
+            return result;
+#else
             return PlayerSettings.GetScriptingDefineSymbolsForGroup(buildTargetGroup).Split(';');
+#endif
         }
 
         /// <summary>
@@ -145,7 +150,11 @@ namespace TEngine.Editor
         /// <param name="scriptingDefineSymbols">要设置的脚本宏定义。</param>
         public static void SetScriptingDefineSymbols(BuildTargetGroup buildTargetGroup, string[] scriptingDefineSymbols)
         {
+#if UNITY_6000_0_OR_NEWER
+            PlayerSettings.SetScriptingDefineSymbols(NamedBuildTarget.FromBuildTargetGroup(buildTargetGroup), scriptingDefineSymbols);
+#else
             PlayerSettings.SetScriptingDefineSymbolsForGroup(buildTargetGroup, string.Join(";", scriptingDefineSymbols));
+#endif
         }
     }
 }

@@ -13,12 +13,12 @@ namespace TEngine
         /// Key->字符串 | Value->RuntimeIdTable)
         /// </summary>
         private static readonly Dictionary<string, int> _eventString2RuntimeMap = new Dictionary<string, int>();
-        
+
         /// <summary>
         /// Key->RuntimeId    | Value->字符串 (Table)
         /// </summary>
         private static readonly Dictionary<int, string> _eventRuntimeToStringMap = new Dictionary<int, string>();
-        
+
         /// <summary>
         /// 当前运行时Id。
         /// </summary>

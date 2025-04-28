@@ -10,7 +10,7 @@ namespace TEngine
         /// <remarks>非托管内存相关的实用函数。</remarks>
         public static class Marshal
         {
-            private const int BlockSize = 1024 * 4;
+            private const int BLOCK_SIZE = 1024 * 4;
             private static IntPtr _cachedHGlobalPtr = IntPtr.Zero;
             private static int _cachedHGlobalSize = 0;
 
@@ -33,7 +33,7 @@ namespace TEngine
                 if (_cachedHGlobalPtr == IntPtr.Zero || _cachedHGlobalSize < ensureSize)
                 {
                     FreeCachedHGlobal();
-                    int size = (ensureSize - 1 + BlockSize) / BlockSize * BlockSize;
+                    int size = (ensureSize - 1 + BLOCK_SIZE) / BLOCK_SIZE * BLOCK_SIZE;
                     _cachedHGlobalPtr = System.Runtime.InteropServices.Marshal.AllocHGlobal(size);
                     _cachedHGlobalSize = size;
                 }

@@ -7,7 +7,7 @@ namespace TEngine
     /// 类型和名称的组合值。
     /// </summary>
     [StructLayout(LayoutKind.Auto)]
-    internal readonly struct TypeNamePair : IEquatable<TypeNamePair>
+    public readonly struct TypeNamePair : IEquatable<TypeNamePair>
     {
         private readonly Type _type;
         private readonly string _name;

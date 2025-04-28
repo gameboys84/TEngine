@@ -207,7 +207,7 @@ namespace TEngine
         [StructLayout(LayoutKind.Auto)]
         public struct Enumerator : IEnumerator<KeyValuePair<TKey, GameFrameworkLinkedListRange<TValue>>>, IEnumerator
         {
-            private Dictionary<TKey, GameFrameworkLinkedListRange<TValue>>.Enumerator m_Enumerator;
+            private Dictionary<TKey, GameFrameworkLinkedListRange<TValue>>.Enumerator _enumerator;
 
             internal Enumerator(Dictionary<TKey, GameFrameworkLinkedListRange<TValue>> dictionary)
             {
@@ -216,25 +216,25 @@ namespace TEngine
                     throw new GameFrameworkException("Dictionary is invalid.");
                 }
 
-                m_Enumerator = dictionary.GetEnumerator();
+                _enumerator = dictionary.GetEnumerator();
             }
 
             /// <summary>
             /// 获取当前结点。
             /// </summary>
-            public KeyValuePair<TKey, GameFrameworkLinkedListRange<TValue>> Current => m_Enumerator.Current;
+            public KeyValuePair<TKey, GameFrameworkLinkedListRange<TValue>> Current => _enumerator.Current;
 
             /// <summary>
             /// 获取当前的枚举数。
             /// </summary>
-            object IEnumerator.Current => m_Enumerator.Current;
+            object IEnumerator.Current => _enumerator.Current;
 
             /// <summary>
             /// 清理枚举数。
             /// </summary>
             public void Dispose()
             {
-                m_Enumerator.Dispose();
+                _enumerator.Dispose();
             }
 
             /// <summary>
@@ -243,7 +243,7 @@ namespace TEngine
             /// <returns>返回下一个结点。</returns>
             public bool MoveNext()
             {
-                return m_Enumerator.MoveNext();
+                return _enumerator.MoveNext();
             }
 
             /// <summary>
@@ -251,7 +251,7 @@ namespace TEngine
             /// </summary>
             void IEnumerator.Reset()
             {
-                ((IEnumerator<KeyValuePair<TKey, GameFrameworkLinkedListRange<TValue>>>)m_Enumerator).Reset();
+                ((IEnumerator<KeyValuePair<TKey, GameFrameworkLinkedListRange<TValue>>>)_enumerator).Reset();
             }
         }
     }

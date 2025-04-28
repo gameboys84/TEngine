@@ -26,6 +26,12 @@ namespace TEngine
         /// </summary>
         public static class File
         {
+            /// <summary>
+            /// 创建文件实例。
+            /// </summary>
+            /// <param name="filePath">文件夹路径。</param>
+            /// <param name="isCreateDir">是否需要创建不存在的文件夹。</param>
+            /// <returns></returns>
             public static bool CreateFile(string filePath, bool isCreateDir = true)
             {
                 if (!System.IO.File.Exists(filePath))
@@ -35,7 +41,10 @@ namespace TEngine
                     {
                         if (isCreateDir)
                         {
-                            Directory.CreateDirectory(dir);
+                            if (dir != null)
+                            {
+                                Directory.CreateDirectory(dir);
+                            }
                         }
                         else
                         {
@@ -50,6 +59,13 @@ namespace TEngine
                 return true;
             }
 
+            /// <summary>
+            /// 创建文件实例。
+            /// </summary>
+            /// <param name="filePath">文件夹路径。</param>
+            /// <param name="info">文件实例信息。</param>
+            /// <param name="isCreateDir">是否需要创建不存在的文件夹。</param>
+            /// <returns></returns>
             public static bool CreateFile(string filePath, string info, bool isCreateDir = true)
             {
                 StreamWriter sw;
@@ -86,11 +102,16 @@ namespace TEngine
                 return true;
             }
 
+            /// <summary>
+            /// 获取沙盒路径。
+            /// </summary>
+            /// <param name="filePath">路径。</param>
+            /// <returns>沙盒路径。</returns>
             public static string GetPersistentDataPlatformPath(string filePath)
             {
                 filePath =
 #if UNITY_ANDROID && !UNITY_EDITOR
-             Application.dataPath + "!assets" + "/" + filePath;
+                    Application.dataPath + "!assets" + "/" + filePath;
 #else
                     Application.streamingAssetsPath + "/" + filePath;
 #endif
@@ -191,10 +212,10 @@ namespace TEngine
             }
 
             /// <summary>
-            /// 数据格式转换
+            /// 数据格式转换。
             /// </summary>
-            /// <param name="data">数据</param>
-            /// <returns></returns>
+            /// <param name="data">数据。</param>
+            /// <returns>转换后的数据。</returns>
             public static string FormatData(long data)
             {
                 string result = "";
@@ -218,10 +239,10 @@ namespace TEngine
             }
 
             /// <summary>
-            /// 获取文件大小
+            /// 获取文件大小。
             /// </summary>
-            /// <param name="path">文件路径</param>
-            /// <returns></returns>
+            /// <param name="path">文件路径。</param>
+            /// <returns>文件大小。</returns>
             public static long GetFileSize(string path)
             {
                 using (FileStream file = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))

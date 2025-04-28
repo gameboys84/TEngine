@@ -1,9 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.Internal;
-using Object = UnityEngine.Object;
 
 namespace TEngine
 {
@@ -14,10 +13,84 @@ namespace TEngine
         /// </summary>
         public static partial class Unity
         {
-            private static GameObject _entity;
-            private static MainBehaviour _behaviour;
+            private static IUpdateDriver _updateDriver;
 
             #region 控制协程Coroutine
+
+            public static GameCoroutine StartCoroutine(string name, IEnumerator routine, MonoBehaviour bindBehaviour)
+            {
+                if (bindBehaviour == null)
+                {
+                    Log.Error("StartCoroutine {0} failed, bindBehaviour is null", name);
+                    return null;
+                }
+
+                var behaviour = bindBehaviour;
+                return StartCoroutine(behaviour, name, routine);
+            }
+
+            public static GameCoroutine StartCoroutine(string name, IEnumerator routine, GameObject bindGo)
+            {
+                if (bindGo == null)
+                {
+                    Log.Error("StartCoroutine {0} failed, BindGo is null", name);
+                    return null;
+                }
+
+                var behaviour = GetDefaultBehaviour(bindGo);
+                return StartCoroutine(behaviour, name, routine);
+            }
+
+            public static GameCoroutine StartGlobalCoroutine(string name, IEnumerator routine)
+            {
+                var coroutine = StartCoroutine(routine);
+                var gameCoroutine = new GameCoroutine();
+                gameCoroutine.Coroutine = coroutine;
+                gameCoroutine.Name = name;
+                gameCoroutine.BindBehaviour = null;
+                return gameCoroutine;
+            }
+
+            public static void StopCoroutine(GameCoroutine coroutine)
+            {
+                if (coroutine.Coroutine != null)
+                {
+                    var behaviour = coroutine.BindBehaviour;
+                    if (behaviour != null)
+                    {
+                        behaviour.StopCoroutine(coroutine.Coroutine);
+                    }
+
+                    coroutine.Coroutine = null;
+                    coroutine.BindBehaviour = null;
+                }
+            }
+
+            private static GameCoroutine StartCoroutine(MonoBehaviour behaviour, string name, IEnumerator routine)
+            {
+                var coroutine = behaviour.StartCoroutine(routine);
+                var gameCoroutine = new GameCoroutine();
+                gameCoroutine.Coroutine = coroutine;
+                gameCoroutine.Name = name;
+                gameCoroutine.BindBehaviour = behaviour;
+                return gameCoroutine;
+            }
+
+            private static GameCoroutineAgent GetDefaultBehaviour(GameObject bindGameObject)
+            {
+                if (bindGameObject != null)
+                {
+                    if (bindGameObject.TryGetComponent(out GameCoroutineAgent coroutineBehaviour))
+                    {
+                        return coroutineBehaviour;
+                    }
+
+                    return bindGameObject.AddComponent<GameCoroutineAgent>();
+                }
+
+                return null;
+            }
+
 
             public static Coroutine StartCoroutine(string methodName)
             {
@@ -27,7 +100,7 @@ namespace TEngine
                 }
 
                 _MakeEntity();
-                return _behaviour.StartCoroutine(methodName);
+                return _updateDriver.StartCoroutine(methodName);
             }
 
             public static Coroutine StartCoroutine(IEnumerator routine)
@@ -38,7 +111,7 @@ namespace TEngine
                 }
 
                 _MakeEntity();
-                return _behaviour.StartCoroutine(routine);
+                return _updateDriver.StartCoroutine(routine);
             }
 
             public static Coroutine StartCoroutine(string methodName, [DefaultValue("null")] object value)
@@ -49,7 +122,7 @@ namespace TEngine
                 }
 
                 _MakeEntity();
-                return _behaviour.StartCoroutine(methodName, value);
+                return _updateDriver.StartCoroutine(methodName, value);
             }
 
             public static void StopCoroutine(string methodName)
@@ -59,10 +132,8 @@ namespace TEngine
                     return;
                 }
 
-                if (_entity != null)
-                {
-                    _behaviour.StopCoroutine(methodName);
-                }
+                _MakeEntity();
+                _updateDriver.StopCoroutine(methodName);
             }
 
             public static void StopCoroutine(IEnumerator routine)
@@ -72,30 +143,26 @@ namespace TEngine
                     return;
                 }
 
-                if (_entity != null)
-                {
-                    _behaviour.StopCoroutine(routine);
-                }
+                _MakeEntity();
+                _updateDriver.StopCoroutine(routine);
             }
 
             public static void StopCoroutine(Coroutine routine)
             {
                 if (routine == null)
-                    return;
-
-                if (_entity != null)
                 {
-                    _behaviour.StopCoroutine(routine);
-                    routine = null;
+                    return;
                 }
+
+                _MakeEntity();
+                _updateDriver.StopCoroutine(routine);
+                routine = null;
             }
 
             public static void StopAllCoroutines()
             {
-                if (_entity != null)
-                {
-                    _behaviour.StopAllCoroutines();
-                }
+                _MakeEntity();
+                _updateDriver.StopAllCoroutines();
             }
 
             #endregion
@@ -106,303 +173,179 @@ namespace TEngine
             /// 为给外部提供的 添加帧更新事件。
             /// </summary>
             /// <param name="fun"></param>
-            public static void AddUpdateListener(UnityAction fun)
+            public static void AddUpdateListener(Action fun)
             {
                 _MakeEntity();
                 AddUpdateListenerImp(fun).Forget();
             }
-            
-            private static async UniTaskVoid AddUpdateListenerImp(UnityAction fun)
+
+            private static async UniTaskVoid AddUpdateListenerImp(Action fun)
             {
-                await UniTask.Yield(/*PlayerLoopTiming.LastPreUpdate*/);
-                _behaviour.AddUpdateListener(fun);
+                await UniTask.Yield( /*PlayerLoopTiming.LastPreUpdate*/);
+                _updateDriver.AddUpdateListener(fun);
             }
 
             /// <summary>
             /// 为给外部提供的 添加物理帧更新事件。
             /// </summary>
             /// <param name="fun"></param>
-            public static void AddFixedUpdateListener(UnityAction fun)
+            public static void AddFixedUpdateListener(Action fun)
             {
                 _MakeEntity();
                 AddFixedUpdateListenerImp(fun).Forget();
             }
-            
-            private static async UniTaskVoid AddFixedUpdateListenerImp(UnityAction fun)
+
+            private static async UniTaskVoid AddFixedUpdateListenerImp(Action fun)
             {
                 await UniTask.Yield(PlayerLoopTiming.LastEarlyUpdate);
-                _behaviour.AddFixedUpdateListener(fun);
+                _updateDriver.AddFixedUpdateListener(fun);
             }
 
             /// <summary>
             /// 为给外部提供的 添加Late帧更新事件。
             /// </summary>
             /// <param name="fun"></param>
-            public static void AddLateUpdateListener(UnityAction fun)
+            public static void AddLateUpdateListener(Action fun)
             {
                 _MakeEntity();
                 AddLateUpdateListenerImp(fun).Forget();
             }
 
-            private static async UniTaskVoid AddLateUpdateListenerImp(UnityAction fun)
+            private static async UniTaskVoid AddLateUpdateListenerImp(Action fun)
             {
-                await UniTask.Yield(/*PlayerLoopTiming.LastPreLateUpdate*/);
-                _behaviour.AddLateUpdateListener(fun);
+                await UniTask.Yield( /*PlayerLoopTiming.LastPreLateUpdate*/);
+                _updateDriver.AddLateUpdateListener(fun);
             }
 
             /// <summary>
             /// 移除帧更新事件。
             /// </summary>
             /// <param name="fun"></param>
-            public static void RemoveUpdateListener(UnityAction fun)
+            public static void RemoveUpdateListener(Action fun)
             {
                 _MakeEntity();
-                _behaviour.RemoveUpdateListener(fun);
+                _updateDriver.RemoveUpdateListener(fun);
             }
 
             /// <summary>
             /// 移除物理帧更新事件。
             /// </summary>
             /// <param name="fun"></param>
-            public static void RemoveFixedUpdateListener(UnityAction fun)
+            public static void RemoveFixedUpdateListener(Action fun)
             {
                 _MakeEntity();
-                _behaviour.RemoveFixedUpdateListener(fun);
+                _updateDriver.RemoveFixedUpdateListener(fun);
             }
 
             /// <summary>
             /// 移除Late帧更新事件。
             /// </summary>
             /// <param name="fun"></param>
-            public static void RemoveLateUpdateListener(UnityAction fun)
+            public static void RemoveLateUpdateListener(Action fun)
             {
                 _MakeEntity();
-                _behaviour.RemoveLateUpdateListener(fun);
+                _updateDriver.RemoveLateUpdateListener(fun);
             }
 
             #endregion
 
             #region Unity Events 注入
+
             /// <summary>
             /// 为给外部提供的Destroy注册事件。
             /// </summary>
             /// <param name="fun"></param>
-            public static void AddDestroyListener(UnityAction fun)
+            public static void AddDestroyListener(Action fun)
             {
                 _MakeEntity();
-                _behaviour.AddDestroyListener(fun);
+                _updateDriver.AddDestroyListener(fun);
             }
 
             /// <summary>
             /// 为给外部提供的Destroy反注册事件。
             /// </summary>
             /// <param name="fun"></param>
-            public static void RemoveDestroyListener(UnityAction fun)
+            public static void RemoveDestroyListener(Action fun)
             {
                 _MakeEntity();
-                _behaviour.RemoveDestroyListener(fun);
+                _updateDriver.RemoveDestroyListener(fun);
             }
-                
+
             /// <summary>
             /// 为给外部提供的OnDrawGizmos注册事件。
             /// </summary>
             /// <param name="fun"></param>
-            public static void AddOnDrawGizmosListener(UnityAction fun)
+            public static void AddOnDrawGizmosListener(Action fun)
             {
                 _MakeEntity();
-                _behaviour.AddOnDrawGizmosListener(fun);
+                _updateDriver.AddOnDrawGizmosListener(fun);
             }
 
             /// <summary>
             /// 为给外部提供的OnDrawGizmos反注册事件。
             /// </summary>
             /// <param name="fun"></param>
-            public static void RemoveOnDrawGizmosListener(UnityAction fun)
+            public static void RemoveOnDrawGizmosListener(Action fun)
             {
                 _MakeEntity();
-                _behaviour.RemoveOnDrawGizmosListener(fun);
+                _updateDriver.RemoveOnDrawGizmosListener(fun);
             }
-                
+
             /// <summary>
             /// 为给外部提供的OnApplicationPause注册事件。
             /// </summary>
             /// <param name="fun"></param>
-            public static void AddOnApplicationPauseListener(UnityAction<bool> fun)
+            public static void AddOnApplicationPauseListener(Action<bool> fun)
             {
                 _MakeEntity();
-                _behaviour.AddOnApplicationPauseListener(fun);
+                _updateDriver.AddOnApplicationPauseListener(fun);
             }
 
             /// <summary>
             /// 为给外部提供的OnApplicationPause反注册事件。
             /// </summary>
             /// <param name="fun"></param>
-            public static void RemoveOnApplicationPauseListener(UnityAction<bool> fun)
+            public static void RemoveOnApplicationPauseListener(Action<bool> fun)
             {
                 _MakeEntity();
-                _behaviour.RemoveOnApplicationPauseListener(fun);
+                _updateDriver.RemoveOnApplicationPauseListener(fun);
             }
+
             #endregion
-            
+
             private static void _MakeEntity()
             {
-                if (_entity != null)
+                if (_updateDriver != null)
                 {
                     return;
                 }
 
-                _entity = new GameObject("[Unity.Utility]");
-                _entity.SetActive(true);
-                _entity.transform.SetParent(GameModule.Base.transform);
-
-                UnityEngine.Assertions.Assert.IsFalse(_behaviour);
-                _behaviour = _entity.AddComponent<MainBehaviour>();
+                _updateDriver = ModuleSystem.GetModule<IUpdateDriver>();
             }
 
-            /// <summary>
-            /// 释放Behaviour生命周期。
-            /// </summary>
-            public static void Shutdown()
+            #region FindObjectOfType
+            public static T FindObjectOfType<T>() where T : UnityEngine.Object
             {
-                if (_behaviour != null)
-                {
-                    _behaviour.Shutdown();
-                }
-                if (_entity != null)
-                {
-                    Object.Destroy(_entity);
-                }
-                _entity = null;
+#if UNITY_2022_3_OR_NEWER
+                return UnityEngine.Object.FindFirstObjectByType<T>();
+#else
+                return UnityEngine.Object.FindObjectOfType<T>();
+
+#endif
             }
 
-            private class MainBehaviour : MonoBehaviour
-            {
-                private event UnityAction UpdateEvent;
-                private event UnityAction FixedUpdateEvent;
-                private event UnityAction LateUpdateEvent;
-                private event UnityAction DestroyEvent;
-                private event UnityAction OnDrawGizmosEvent; 
-                private event UnityAction<bool> OnApplicationPauseEvent;
+            #endregion
+        }
 
-                void Update()
-                {
-                    if (UpdateEvent != null)
-                    {
-                        UpdateEvent();
-                    }
-                }
+        public class GameCoroutine
+        {
+            public string Name;
+            public Coroutine Coroutine;
+            public MonoBehaviour BindBehaviour;
+        }
 
-                void FixedUpdate()
-                {
-                    if (FixedUpdateEvent != null)
-                    {
-                        FixedUpdateEvent();
-                    }
-                }
-
-                void LateUpdate()
-                {
-                    if (LateUpdateEvent != null)
-                    {
-                        LateUpdateEvent();
-                    }
-                }
-
-                private void OnDestroy()
-                {
-                    if (DestroyEvent != null)
-                    {
-                        DestroyEvent();
-                    }
-                }
-
-                private void OnDrawGizmos()
-                {
-                    if (OnDrawGizmosEvent != null)
-                    {
-                        OnDrawGizmosEvent();
-                    }
-                }
-
-                private void OnApplicationPause(bool pauseStatus)
-                {
-                    if (OnApplicationPauseEvent != null)
-                    {
-                        OnApplicationPauseEvent(pauseStatus);
-                    }
-                }
-
-                public void AddLateUpdateListener(UnityAction fun)
-                {
-                    LateUpdateEvent += fun;
-                }
-
-                public void RemoveLateUpdateListener(UnityAction fun)
-                {
-                    LateUpdateEvent -= fun;
-                }
-
-                public void AddFixedUpdateListener(UnityAction fun)
-                {
-                    FixedUpdateEvent += fun;
-                }
-
-                public void RemoveFixedUpdateListener(UnityAction fun)
-                {
-                    FixedUpdateEvent -= fun;
-                }
-
-                public void AddUpdateListener(UnityAction fun)
-                {
-                    UpdateEvent += fun;
-                }
-
-                public void RemoveUpdateListener(UnityAction fun)
-                {
-                    UpdateEvent -= fun;
-                }
-                
-                public void AddDestroyListener(UnityAction fun)
-                {
-                    DestroyEvent += fun;
-                }
-
-                public void RemoveDestroyListener(UnityAction fun)
-                {
-                    DestroyEvent -= fun;
-                }
-                
-                public void AddOnDrawGizmosListener(UnityAction fun)
-                {
-                    OnDrawGizmosEvent += fun;
-                }
-
-                public void RemoveOnDrawGizmosListener(UnityAction fun)
-                {
-                    OnDrawGizmosEvent -= fun;
-                }
-                
-                public void AddOnApplicationPauseListener(UnityAction<bool> fun)
-                {
-                    OnApplicationPauseEvent += fun;
-                }
-
-                public void RemoveOnApplicationPauseListener(UnityAction<bool> fun)
-                {
-                    OnApplicationPauseEvent -= fun;
-                }
-
-                internal void Shutdown()
-                {
-                    DestroyEvent?.Invoke();
-                    UpdateEvent = null;
-                    FixedUpdateEvent = null;
-                    LateUpdateEvent = null;
-                    OnDrawGizmosEvent = null;
-                    DestroyEvent = null;
-                    OnApplicationPauseEvent = null;
-                }
-            }
+        class GameCoroutineAgent : MonoBehaviour
+        {
         }
     }
 }

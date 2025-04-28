@@ -14,7 +14,6 @@ namespace Luban
         {
             foreach (var p in o.GetType().GetFields())
             {
-
                 sb.Append($"{p.Name} = {p.GetValue(o)},");
             }
 

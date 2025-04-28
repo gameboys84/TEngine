@@ -49,7 +49,7 @@ namespace GameLogic
         }
         private void OnClickExitBtn()
         {
-            ModuleSystem.Shutdown(ShutdownType.Quit);
+            ModuleSystem.Shutdown();
         }
         #endregion
 

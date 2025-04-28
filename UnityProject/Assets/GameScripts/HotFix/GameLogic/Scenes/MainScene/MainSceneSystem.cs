@@ -2,31 +2,50 @@
 using GameLogic;
 using TEngine;
 
-[Update]
-public class MainSceneSystem : BehaviourSingleton<MainSceneSystem>
+public class MainSceneSystem : Singleton<MainSceneSystem>
 {
-    public async UniTaskVoid LoadScene()
+    protected override void OnInit()
     {
-        await UniTask.Yield();
+        base.OnInit();
+        
+        Log.Info("MainSceneSystem Init");
+    }
 
+    public override void Active()
+    {
+        base.Active();
+        
         GameModule.Audio.Play(AudioType.Music, "music_background", true);
         
-        GameModule.UI.ShowUIAsync<UIMainWindow>();
-        
-        // GameEvent.AddEventListener(GameEventType.ExitGame, OnExitGame);
+        Log.Info("MainSceneSystem Active");
     }
 
-    public void DestroyScene()
+    public override void Release()
     {
+        base.Release();
+        
         GameModule.Audio.Stop(AudioType.Music, true);
         
-        GameModule.UI.CloseUI<UIMainWindow>();
-        
-        // GameEvent.RemoveEventListener(GameEventType.ExitGame, OnExitGame);
+        Log.Info("MainSceneSystem Release");
     }
 
-    public override void Update()
-    {
-        
-    }
+    // public async UniTaskVoid LoadScene()
+    // {
+    //     await UniTask.Yield();
+    //
+    //     GameModule.Audio.Play(AudioType.Music, "music_background", true);
+    //     
+    //     GameModule.UI.ShowUIAsync<UIMainWindow>();
+    //     
+    //     // GameEvent.AddEventListener(GameEventType.ExitGame, OnExitGame);
+    // }
+
+    // public void DestroyScene()
+    // {
+    //     GameModule.Audio.Stop(AudioType.Music, true);
+    //     
+    //     GameModule.UI.CloseUI<UIMainWindow>();
+    //     
+    //     // GameEvent.RemoveEventListener(GameEventType.ExitGame, OnExitGame);
+    // }
 }

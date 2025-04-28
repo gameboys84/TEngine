@@ -32,11 +32,13 @@ namespace YooAsset.Editor
                     new TaskPrepare_RFBP(),
                     new TaskGetBuildMap_RFBP(),
                     new TaskBuilding_RFBP(),
+                    new TaskEncryption_RFBP(),
                     new TaskUpdateBundleInfo_RFBP(),
                     new TaskCreateManifest_RFBP(),
                     new TaskCreateReport_RFBP(),
                     new TaskCreatePackage_RFBP(),
                     new TaskCopyBuildinFiles_RFBP(),
+                    new TaskCreateCatalog_RFBP()
                 };
             return pipeline;
         }
