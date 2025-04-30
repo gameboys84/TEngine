@@ -1,6 +1,5 @@
 
-UnityProject/UserSettings/Layouts/default-2021.dwlt
-UnityProject/UserSettings/Search.settings
+UnityProject/UserSettings/*
 
 #Luban
 Tools/Luban/
@@ -14,4 +13,3 @@ Tools/FileServer/AssetRoot
 UnityProject/ProjectSettings/CommonBurstAotSettings.json
 UnityProject/ProjectSettings/BurstAotSettings_StandaloneWindows.json
 /CDN/
-/UnityProject/UserSettings/Search.index

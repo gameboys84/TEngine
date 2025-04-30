@@ -12,7 +12,7 @@ namespace TEngine.SceneLauncher
         private const string PreviousSceneKey = "TEngine_PreviousScenePath"; // 用于存储之前场景路径的键
         private const string IsLauncherBtn = "TEngine_IsLauncher"; // 用于存储之前是否按下launcher
 
-        private static readonly string SceneMain = "main";
+        private static readonly string SceneBoot = "Boot"; // 默认的启动场景，任何时候，点Launcher就会以这个场景启动
 
         private static readonly string ButtonStyleName = "Tab middle";
         private static GUIStyle _buttonGuiStyle;
@@ -37,7 +37,11 @@ namespace TEngine.SceneLauncher
             if (GUILayout.Button(
                     new GUIContent("Launcher", EditorGUIUtility.FindTexture("PlayButton"), "Start Scene Launcher"),
                     _buttonGuiStyle))
-                SceneHelper.StartScene(SceneMain);
+            {
+                // var curScene = SceneManager.GetActiveScene();
+                // Debug.Log($"StartScene : {curScene.name}");
+                SceneHelper.StartScene(SceneBoot);
+            }
         }
 
         private static void OnPlayModeStateChanged(PlayModeStateChange state)
@@ -75,7 +79,7 @@ namespace TEngine.SceneLauncher
 
                 // 记录当前场景路径到 EditorPrefs
                 var activeScene = SceneManager.GetActiveScene();
-                if (activeScene.isLoaded && activeScene.name != SceneMain)
+                if (activeScene.isLoaded && activeScene.name != SceneBoot)
                 {
                     EditorPrefs.SetString(PreviousSceneKey, activeScene.path);
                     EditorPrefs.SetBool(IsLauncherBtn, true);

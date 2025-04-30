@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using GameLogic;
 using TEngine;
+
 #pragma warning disable CS0436
 
 
@@ -28,13 +29,12 @@ public partial class GameApp
     
     private static void StartGameLogic()
     {
-        GameEvent.Get<ILoginUI>().ShowLoginUI();
-        GameModule.UI.ShowUIAsync<BattleMainUI>();
+        GameModule.Scene.LoadSceneAsync("Main");
     }
     
     private static void Release()
     {
-        SingletonSystem.Release();
+        // SingletonSystem.Release();
         Log.Warning("======= Release GameApp =======");
     }
 }

@@ -11,7 +11,7 @@ using ProcedureOwner = TEngine.IFsm<TEngine.IProcedureModule>;
 namespace Procedure
 {
     /// <summary>
-    /// 5. 预加载流程 => LoadResources, => LoadAssembly
+    /// 5. 预加载流程, => LoadAssembly
     /// </summary>
     public class ProcedurePreload : ProcedureBase
     {

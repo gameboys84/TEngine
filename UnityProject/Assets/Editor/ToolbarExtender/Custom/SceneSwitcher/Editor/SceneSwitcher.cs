@@ -48,9 +48,13 @@ namespace UnityToolbarExtender.Examples
             GUILayout.Space(20);
             // 将控件推到左边和右边
             //GUILayout.FlexibleSpace(); // 先占用左边的所有空间
+
+            GUI.enabled = !EditorApplication.isPlaying;
             EditorGUILayout.LabelField("当前场景:", GUILayout.Width(55));
             int sceneSelectedNew = EditorGUILayout.Popup(sceneSelected, m_SceneName, GUILayout.Width(size.x + 5f),
                 GUILayout.MinWidth(55));
+            GUI.enabled = true;
+            
             GUILayout.FlexibleSpace();
             // 结束水平布局
             //EditorGUILayout.EndHorizontal();

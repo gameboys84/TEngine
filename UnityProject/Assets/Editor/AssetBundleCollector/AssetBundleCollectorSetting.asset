@@ -146,16 +146,16 @@ MonoBehaviour:
       AssetTags: 
       ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: Assets/AssetRaw/UIRaw/Atlas
-        CollectorGUID: 
+      - CollectPath: Assets/AssetRaw/Texture/RawImage
+        CollectorGUID: 28c363afb9698874a94871f9eca0f87c
         CollectorType: 0
         AddressRuleName: AddressByFileName
         PackRuleName: PackDirectory
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
-      - CollectPath: Assets/AssetRaw/UIRaw/Raw
-        CollectorGUID: 
+      - CollectPath: Assets/AssetRaw/Texture/SpriteImage
+        CollectorGUID: d478c5580d37fcd4891d1eac9b7c769f
         CollectorType: 0
         AddressRuleName: AddressByFileName
         PackRuleName: PackDirectory

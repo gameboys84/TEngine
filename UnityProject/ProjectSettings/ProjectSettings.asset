@@ -788,22 +788,24 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: ENABLE_LOG;TextMeshPro
-    EmbeddedLinux: UNITY_POST_PROCESSING_STACK_V2;TextMeshPro
-    GameCoreXboxOne: UNITY_POST_PROCESSING_STACK_V2;TextMeshPro
+    Android: ENABLE_LOG;TextMeshPro;DOTWEEN
+    EmbeddedLinux: UNITY_POST_PROCESSING_STACK_V2;TextMeshPro;DOTWEEN
+    GameCoreScarlett: DOTWEEN
+    GameCoreXboxOne: UNITY_POST_PROCESSING_STACK_V2;TextMeshPro;DOTWEEN
+    LinuxHeadlessSimulation: DOTWEEN
     Lumin: UNITY_POST_PROCESSING_STACK_V2;TextMeshPro
-    Nintendo Switch: UNITY_POST_PROCESSING_STACK_V2;TextMeshPro
-    PS4: UNITY_POST_PROCESSING_STACK_V2;TextMeshPro
-    PS5: UNITY_POST_PROCESSING_STACK_V2;TextMeshPro
-    QNX: TextMeshPro
-    Stadia: UNITY_POST_PROCESSING_STACK_V2;TextMeshPro
-    Standalone: ENABLE_LOG;TextMeshPro
-    VisionOS: TextMeshPro
-    WebGL: UNITY_POST_PROCESSING_STACK_V2;TextMeshPro;ENABLE_LOG
-    Windows Store Apps: UNITY_POST_PROCESSING_STACK_V2;TextMeshPro;ENABLE_LOG
-    XboxOne: UNITY_POST_PROCESSING_STACK_V2;TextMeshPro
-    iPhone: ENABLE_LOG;TextMeshPro
-    tvOS: UNITY_POST_PROCESSING_STACK_V2;TextMeshPro
+    Nintendo Switch: UNITY_POST_PROCESSING_STACK_V2;TextMeshPro;DOTWEEN
+    PS4: UNITY_POST_PROCESSING_STACK_V2;TextMeshPro;DOTWEEN
+    PS5: UNITY_POST_PROCESSING_STACK_V2;TextMeshPro;DOTWEEN
+    QNX: TextMeshPro;DOTWEEN
+    Stadia: UNITY_POST_PROCESSING_STACK_V2;TextMeshPro;DOTWEEN
+    Standalone: ENABLE_LOG;TextMeshPro;DOTWEEN
+    VisionOS: TextMeshPro;DOTWEEN
+    WebGL: UNITY_POST_PROCESSING_STACK_V2;TextMeshPro;ENABLE_LOG;DOTWEEN
+    Windows Store Apps: UNITY_POST_PROCESSING_STACK_V2;TextMeshPro;ENABLE_LOG;DOTWEEN
+    XboxOne: UNITY_POST_PROCESSING_STACK_V2;TextMeshPro;DOTWEEN
+    iPhone: ENABLE_LOG;TextMeshPro;DOTWEEN
+    tvOS: UNITY_POST_PROCESSING_STACK_V2;TextMeshPro;DOTWEEN
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿// using UnityEngine.Rendering;
 using ProcedureOwner = TEngine.IFsm<TEngine.IProcedureModule>;
 
 namespace Procedure
@@ -10,11 +10,21 @@ namespace Procedure
     {
         public override bool UseNativeDialog => true;
 
+        protected override void OnEnter(ProcedureOwner procedureOwner)
+        {
+            base.OnEnter(procedureOwner);
+
+            // SplashScreen.Begin();
+            // SplashScreen.Draw();
+        }
+
         protected override void OnUpdate(ProcedureOwner procedureOwner, float elapseSeconds, float realElapseSeconds)
         {
             base.OnUpdate(procedureOwner, elapseSeconds, realElapseSeconds);
-            // 播放 Splash 动画
-            //Splash.Active(splashTime:3f);
+
+            // if (!SplashScreen.isFinished)
+            //     return;
+
             //初始化资源包
             ChangeState<ProcedureInitPackage>(procedureOwner);
         }

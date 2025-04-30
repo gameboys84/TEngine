@@ -12,10 +12,10 @@
         public string outputAtlasDir = "Assets/AssetArt/Atlas";
 
         [Tooltip("需要生成图集的UI根目录")]
-        public string sourceAtlasRoot = "Assets/AssetRaw/UIRaw/Atlas";
+        public string sourceAtlasRoot = "Assets/AssetRaw/Texture/SpriteImage/Atlas";
 
         [Tooltip("不需要生成图集的UI目录")]
-        public string excludeFolder = "Assets/AssetRaw/UIRaw/Raw";
+        public string excludeFolder = "Assets/AssetRaw/Texture/SpriteImage/Raw";
 
         [Header("平台格式设置")]
         public TextureImporterFormat androidFormat = TextureImporterFormat.ASTC_6x6;
