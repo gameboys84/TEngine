@@ -11,12 +11,15 @@ export CODE_OUTPATH="${WORKSPACE}/UnityProject/Assets/GameScripts/HotFix/GamePro
 
 cp -R "${CONF_ROOT}/CustomTemplate/ConfigSystem.cs" \
    "${WORKSPACE}/UnityProject/Assets/GameScripts/HotFix/GameProto/ConfigSystem.cs"
+cp -R "${CONF_ROOT}/CustomTemplate/ExternalTypeUtil.cs" \
+    "${WORKSPACE}/UnityProject/Assets/GameScripts/HotFix/GameProto/ExternalTypeUtil.cs"
 
 dotnet "${LUBAN_DLL}" \
     -t client \
     -c cs-bin \
     -d bin \
     --conf "${CONF_ROOT}/luban.conf" \
+    -x code.lineEnding=crlf \
     -x outputCodeDir="${CODE_OUTPATH}" \
     -x outputDataDir="${DATA_OUTPATH}"
 

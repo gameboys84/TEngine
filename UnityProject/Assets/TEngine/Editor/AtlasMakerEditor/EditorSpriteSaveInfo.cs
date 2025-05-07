@@ -88,9 +88,8 @@
 
         public static void MarkParentAtlasesDirty(string assetPath)
         {
-            var currentPath = Path.GetDirectoryName(assetPath);
+            var currentPath = Path.GetDirectoryName(assetPath).Replace("\\", "/");
             var rootPath = Config.sourceAtlasRoot.Replace("\\", "/").TrimEnd('/');
-
             while (currentPath != null && currentPath.StartsWith(rootPath))
             {
                 var parentAtlasName = GetAtlasNameForDirectory(currentPath);
