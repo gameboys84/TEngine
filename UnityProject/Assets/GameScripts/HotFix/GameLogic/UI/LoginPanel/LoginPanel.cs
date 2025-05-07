@@ -1,8 +1,8 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TEngine;
 using TMPro;
-using LocalizationManager = TEngine.Localization.LocalizationManager;
 
 namespace GameLogic
 {
@@ -30,14 +30,21 @@ namespace GameLogic
         #region 事件
         private void OnClickLoginBtn()
         {
+            GameModule.UI.ShowUIAsync<LoadingPanel>();
+            Close();
         }
+
+        private int idx = 0;
+        private List<string> allLanguages;
         private void OnClickRegionBtn()
         {
-            Log.Debug($"BEFORE LANG: {LocalizationManager.CurrentLanguage}, {LocalizationManager.GetTranslation(ScriptLocalization.Language)}");
-            
-            GameModule.Localization.SetLanguage(Language.Arabic, true);
+            Log.Debug($"BEFORE LANG: {GameModule.Localization.Language}");
 
-            Log.Debug($"AFTER LANG: {LocalizationManager.CurrentLanguage}, {LocalizationManager.GetTranslation(ScriptLocalization.Language)}");
+            GameModule.Localization.SetLanguage(allLanguages[idx], true);
+            idx = (idx + 1) % allLanguages.Count;
+            // GameModule.Localization.SetLanguage(Language.Arabic, true);
+
+            Log.Debug($"AFTER LANG: {GameModule.Localization.Language}");
         }
         #endregion
 
@@ -45,7 +52,7 @@ namespace GameLogic
         {
             base.OnCreate();
             
-            LocalizationManager.CurrentLanguage = "Chinese";
+            allLanguages = TEngine.Localization.LocalizationManager.GetAllLanguages();
         }
         
         

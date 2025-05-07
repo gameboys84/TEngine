@@ -14,8 +14,7 @@ namespace GameLogic
         {
             GameModule.Audio.Play(AudioType.Music, "music_background", true);
             
-            GameModule.UI.ShowUIAsync<LoadingPanel>();
-            // GameModule.UI.ShowUIAsync<LoginPanel>();
+            GameModule.UI.ShowUIAsync<LoginPanel>();
         }
         
         private void OnDestroy()

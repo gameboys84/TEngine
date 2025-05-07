@@ -67,7 +67,7 @@ namespace Launcher
         /// <param name="progress">当前进度。</param>
         internal virtual void OnUpdateUIProgress(float progress)
         {
-            _obj_progress.gameObject.SetActive(true);
+            _obj_progress.gameObject.SetActive(progress > 0f);
 
             _obj_progress.size = progress;
         }

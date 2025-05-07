@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outputAtlasDir: Assets/AssetArt/Atlas
-  sourceAtlasRoot: Assets/AssetRaw/UIRaw/Atlas
-  excludeFolder: Assets/AssetRaw/UIRaw/Raw
+  sourceAtlasRoot: Assets/AssetRaw/Texture/SpriteImage/Atlas
+  excludeFolder: Assets/AssetRaw/Texture/SpriteImage/Raw
   androidFormat: 50
   iosFormat: 49
   webglFormat: 50
@@ -22,7 +22,7 @@ MonoBehaviour:
   enableRotation: 1
   blockOffset: 1
   tightPacking: 1
-  compressionQuality: 50
+  compressionQuality: 100
   autoGenerate: 1
   enableLogging: 1
   enableV2: 1

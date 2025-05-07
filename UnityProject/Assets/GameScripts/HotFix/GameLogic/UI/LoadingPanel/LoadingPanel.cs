@@ -87,27 +87,28 @@ namespace GameLogic
 
         private void OnLoadingDone()
         {
-            GameModule.UI.ShowUIAsync<LoginPanel>();
+            GameModule.UI.ShowUIAsync<GameMainPanel>();
             Close();
         }
 
         private async UniTaskVoid StartLoading()
         {
-            await UniTask.Delay(Random.Range(500, 2000));
+            await UniTask.Delay(Random.Range(200, 1000));
             GameEvent.Send(Event_LoadingDone, "CheckStep1");
             
-            await UniTask.Delay(Random.Range(500, 2000));
+            await UniTask.Delay(Random.Range(200, 1000));
             GameEvent.Send(Event_LoadingDone, "CheckStep2");
             
-            await UniTask.Delay(Random.Range(500, 2000));
+            await UniTask.Delay(Random.Range(200, 1000));
             GameEvent.Send(Event_LoadingDone, "CheckStep3");
             
-            await UniTask.Delay(Random.Range(500, 2000));
+            await UniTask.Delay(Random.Range(200, 1000));
             GameEvent.Send(Event_LoadingDone, "CheckStep4");
             
-            await UniTask.Delay(Random.Range(500, 2000));
+            await UniTask.Delay(Random.Range(1000, 2000));
             GameEvent.Send(Event_LoadingDone, "CheckStep5");
-            
+
+            await UniTask.Delay(Random.Range(500, 1000));
             GameEvent.Send(Event_LoadingDone, "OnLoadingDone");
         }
     }

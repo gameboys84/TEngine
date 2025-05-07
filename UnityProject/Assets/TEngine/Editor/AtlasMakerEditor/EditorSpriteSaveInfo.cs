@@ -225,6 +225,12 @@
                 settings.overridden = true;
                 settings.format = format;
                 settings.compressionQuality = Config.compressionQuality;
+                // if (Config.compressionQuality != 100)
+                // {
+                //     settings.textureCompression = TextureImporterCompression.Compressed;
+                // }
+                // else
+                //     settings.textureCompression = TextureImporterCompression.Uncompressed;
                 atlasImporter.SetPlatformSettings(settings);
             }
             
