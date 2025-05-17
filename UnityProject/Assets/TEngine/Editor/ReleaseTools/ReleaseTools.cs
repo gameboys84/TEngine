@@ -130,6 +130,8 @@ namespace TEngine
                 buildParameters = scriptableBuildParameters;
                 
                 scriptableBuildParameters.CompressOption = ECompressOption.LZ4;
+                
+                scriptableBuildParameters.BuiltinShadersBundleName = GetBuiltinShaderBundleName("DefaultPackage");
             }
             
             buildParameters.BuildOutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot();
@@ -149,7 +151,6 @@ namespace TEngine
             buildParameters.ClearBuildCacheFiles = false; //不清理构建缓存，启用增量构建，可以提高打包速度！
             buildParameters.UseAssetDependencyDB = true; //使用资源依赖关系数据库，可以提高打包速度！
             
-            
             var buildResult = pipeline.Run(buildParameters, true);
             if (buildResult.Success)
             {
@@ -159,6 +160,17 @@ namespace TEngine
             {
                 Debug.LogError($"构建失败 : {buildResult.ErrorInfo}");
             }
+        }
+        
+        /// <summary>
+        /// 内置着色器资源包名称
+        /// 注意：和自动收集的着色器资源包名保持一致！
+        /// </summary>
+        private static string GetBuiltinShaderBundleName(string packageName)
+        {
+            var uniqueBundleName = AssetBundleCollectorSettingData.Setting.UniqueBundleName;
+            var packRuleResult = DefaultPackRule.CreateShadersPackRuleResult();
+            return packRuleResult.GetBundleName(packageName, uniqueBundleName);
         }
         
         /// <summary>

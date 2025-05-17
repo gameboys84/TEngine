@@ -756,26 +756,6 @@ namespace TEngine
             };
         }
 
-        public TObject[] LoadSubAssetsSync<TObject>(string location, string packageName = "") where TObject : UnityEngine.Object
-        {
-            if (string.IsNullOrEmpty(location))
-            {
-                throw new GameFrameworkException("Asset name is invalid.");
-            }
-
-            throw new NotImplementedException();
-        }
-
-        public UniTask<TObject[]> LoadSubAssetsAsync<TObject>(string location, string packageName = "") where TObject : UnityEngine.Object
-        {
-            if (string.IsNullOrEmpty(location))
-            {
-                throw new GameFrameworkException("Asset name is invalid.");
-            }
-
-            throw new NotImplementedException();
-        }
-
         public async UniTask<T> LoadAssetAsync<T>(string location, CancellationToken cancellationToken = default, string packageName = "") where T : UnityEngine.Object
         {
             if (string.IsNullOrEmpty(location))
