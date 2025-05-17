@@ -76,7 +76,7 @@ namespace Procedure
             string currentSizeMb = (downloadUpdateData.CurrentDownloadBytes / 1048576f).ToString("f1");
             string totalSizeMb = (downloadUpdateData.TotalDownloadBytes / 1048576f).ToString("f1");
             float progressPercentage = _resourceModule.Downloader.Progress * 100;
-            string speed = Utility.File.GetLengthString((int)CurrentSpeed);
+            string speed = Utility.FileUtils.GetLengthString((int)CurrentSpeed);
 
             string line1 = Utility.Text.Format("正在更新，已更新 {0}/{1} ({2:F2}%)", downloadUpdateData.CurrentDownloadCount,
                 downloadUpdateData.TotalDownloadCount, progressPercentage);

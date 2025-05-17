@@ -80,7 +80,7 @@ namespace Procedure
                         var assetLocation = hotUpdateDllName;
                         if (!_enableAddressable)
                         {
-                            assetLocation = Utility.Path.GetRegularPath(
+                            assetLocation = Utility.PathUtils.GetRegularPath(
                                 Path.Combine(
                                     "Assets",
                                     _setting.AssemblyTextAssetPath,
@@ -238,7 +238,7 @@ namespace Procedure
                 var assetLocation = aotDllName;
                 if (!_enableAddressable)
                 {
-                    assetLocation = Utility.Path.GetRegularPath(
+                    assetLocation = Utility.PathUtils.GetRegularPath(
                         Path.Combine(
                             "Assets",
                             _setting.AssemblyTextAssetPath,

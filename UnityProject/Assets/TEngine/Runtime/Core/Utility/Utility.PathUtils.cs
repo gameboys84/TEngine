@@ -7,7 +7,7 @@ namespace TEngine
         /// <summary>
         /// 路径相关的实用函数。
         /// </summary>
-        public static class Path
+        public static class PathUtils
         {
             /// <summary>
             /// 获取规范的路径。

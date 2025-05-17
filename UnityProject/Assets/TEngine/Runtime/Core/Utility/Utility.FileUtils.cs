@@ -24,7 +24,7 @@ namespace TEngine
         /// <summary>
         /// 文件相关的实用函数。
         /// </summary>
-        public static class File
+        public static class FileUtils
         {
             /// <summary>
             /// 创建文件实例。
@@ -111,11 +111,25 @@ namespace TEngine
             {
                 filePath =
 #if UNITY_ANDROID && !UNITY_EDITOR
-                    Application.dataPath + "!assets" + "/" + filePath;
+                    Application.dataPath + "!assets" + Path.PathSeparator + filePath;
 #else
-                    Application.streamingAssetsPath + "/" + filePath;
+                    Application.streamingAssetsPath + Path.PathSeparator + filePath;
 #endif
                 return filePath;
+            }
+
+            /// <summary>
+            /// 获取可读写的路径
+            /// </summary>
+            /// <param name="filePath"></param>
+            /// <returns></returns>
+            public static string GetDocDataPath(string filePath)
+            {
+#if UNITY_EDITOR
+                return $"./{filePath}";
+#else
+            return Path.Combine( Application.persistentDataPath + Path.PathSeparator + filePath);
+#endif
             }
 
             public static string GetPath(string path)

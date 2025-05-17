@@ -1,6 +1,7 @@
 ﻿using GameLogic;
 using TEngine;
 using Object = UnityEngine.Object;
+// ReSharper disable All
 
 public class GameModule
 {
@@ -84,6 +85,21 @@ public class GameModule
     public static ILocalizationModule Localization => _localization ??= Get<ILocalizationModule>();
     
     private static ILocalizationModule _localization;
+    
+    #endregion
+    
+    #region 扩展模块
+    
+    /// <summary>
+    /// 本地存取模块。
+    /// </summary>
+    /// <returns></returns>
+    public static ILocalSaveModule LocalSave => _localSave ??= Get<ILocalSaveModule>();
+
+    private static ILocalSaveModule _localSave;
+    
+    
+    
     #endregion
     
     /// <summary>
@@ -114,5 +130,7 @@ public class GameModule
         _scene = null;
         _timer = null;
         _localization = null;
+        
+        _localSave = null;
     }
 }

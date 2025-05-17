@@ -94,6 +94,27 @@ namespace GameLogic
             Log.Debug("OnCustomEvent, 第三触发, ret:{0}, data:{1}", ret, data);
         }
 
+        public class LocalPlayerInfo : LocalSaveDataBase
+        {
+            public string uuid;
+            public string overrideUuid;
+            public long playerId;
+            public string LinkedEmailAddress; // 仅用于显示
+            public string LoginEmailAddress;
+            public string LastTryEmailAddress;
+            public string RefreshToken;
+        }
+        private LocalPlayerInfo localPlayerInfo = new LocalPlayerInfo()
+        {
+            uuid = "123456",
+            overrideUuid = "123123",
+            playerId = 567890,
+            LinkedEmailAddress = "game@email.com",
+            LoginEmailAddress = "gameboys@email.com",
+            LastTryEmailAddress = "",
+            RefreshToken = "U2FsdGVkX18qJY4EdGj+HkGP24CePEPhw8Sx6VIERHU="
+        };
+
         protected override void OnUpdate()
         {
             base.OnUpdate();
@@ -101,6 +122,25 @@ namespace GameLogic
             if (Input.GetKeyDown(KeyCode.A))
             {
                 GameEvent.Send(Event_UIEvent);
+            }
+            else if (Input.GetKeyUp(KeyCode.Alpha1))
+            {
+                // 测试 LocalSave
+                GameModule.LocalSave.Save("TestKey.sav", localPlayerInfo, true);
+                Log.Info("Save Success");
+            }
+            else if (Input.GetKeyUp(KeyCode.Alpha2))
+            {
+                // 测试 Load
+                var _localPlayerInfo = GameModule.LocalSave.Load<LocalPlayerInfo>("TestKey.sav", true);
+                Log.Info(_localPlayerInfo == null ? "Load Fail" : "Load Success");
+                
+                if (_localPlayerInfo != null)
+                {
+                    Log.Debug($"Load: playerId={_localPlayerInfo.playerId}, uuid={_localPlayerInfo.uuid}, overrideUuid={_localPlayerInfo.overrideUuid}, " +
+                              $"LinkedEmailAddress={_localPlayerInfo.LinkedEmailAddress}, LoginEmailAddress={_localPlayerInfo.LoginEmailAddress}, " +
+                              $"LastTryEmailAddress={_localPlayerInfo.LastTryEmailAddress}, RefreshToken={_localPlayerInfo.RefreshToken} ");
+                }
             }
         }
     }

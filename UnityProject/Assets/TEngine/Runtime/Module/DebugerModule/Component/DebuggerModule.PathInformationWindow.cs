@@ -12,13 +12,13 @@ namespace TEngine
                 GUILayout.Label("<b>Path Information</b>");
                 GUILayout.BeginVertical("box");
                 {
-                    DrawItem("Current Directory", Utility.Path.GetRegularPath(Environment.CurrentDirectory));
-                    DrawItem("Data Path", Utility.Path.GetRegularPath(Application.dataPath));
-                    DrawItem("Persistent Data Path", Utility.Path.GetRegularPath(Application.persistentDataPath));
-                    DrawItem("Streaming Assets Path", Utility.Path.GetRegularPath(Application.streamingAssetsPath));
-                    DrawItem("Temporary Cache Path", Utility.Path.GetRegularPath(Application.temporaryCachePath));
+                    DrawItem("Current Directory", Utility.PathUtils.GetRegularPath(Environment.CurrentDirectory));
+                    DrawItem("Data Path", Utility.PathUtils.GetRegularPath(Application.dataPath));
+                    DrawItem("Persistent Data Path", Utility.PathUtils.GetRegularPath(Application.persistentDataPath));
+                    DrawItem("Streaming Assets Path", Utility.PathUtils.GetRegularPath(Application.streamingAssetsPath));
+                    DrawItem("Temporary Cache Path", Utility.PathUtils.GetRegularPath(Application.temporaryCachePath));
 #if UNITY_2018_3_OR_NEWER
-                    DrawItem("Console Log Path", Utility.Path.GetRegularPath(Application.consoleLogPath));
+                    DrawItem("Console Log Path", Utility.PathUtils.GetRegularPath(Application.consoleLogPath));
 #endif
                 }
                 GUILayout.EndVertical();
