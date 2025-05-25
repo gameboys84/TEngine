@@ -99,6 +99,14 @@ public class GameModule
     private static ILocalSaveModule _localSave;
     
     
+    /// <summary>
+    /// 配置系统模块。
+    /// </summary>
+    public static ConfigSystem ConfigSystem => _configSystem ??= ConfigSystem.Instance;
+
+    private static ConfigSystem _configSystem;
+
+    
     
     #endregion
     
@@ -132,5 +140,6 @@ public class GameModule
         _localization = null;
         
         _localSave = null;
+        _configSystem = null;
     }
 }

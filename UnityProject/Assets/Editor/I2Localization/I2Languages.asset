@@ -65,6 +65,18 @@ MonoBehaviour:
       - "\uC5B8\uC5B4"
       Flags: 000000000000
       Languages_Touch: []
+    - Term: PlayerName
+      TermType: 0
+      Description: 
+      Languages:
+      - PlayerName
+      - "\u73A9\u5BB6\u540D\u79F0"
+      - "\u0627\u0633\u0645 \u0627\u0644\u0644\u0627\u0639\u0628"
+      - "\u0418\u041C\u042F \u0418\u0413\u0420\u041E\u041A\u0410"
+      - "\u30D7\u30EC\u30A4\u30E4\u30FC\u540D"
+      - "\uD50C\uB808\uC774\uC5B4 \uC774\uB984"
+      Flags: 000000000000
+      Languages_Touch: []
     - Term: Tips
       TermType: 0
       Description: 

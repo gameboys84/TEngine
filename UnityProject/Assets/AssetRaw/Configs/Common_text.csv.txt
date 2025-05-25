@@ -3,4 +3,5 @@ Country,Text,,Country,国家,بلد,Страна,国,나라
 CurrentLanguage,Text,,English,中文 ,اللغة,русск,日本語,한국어
 Flag,Sprite,,ui_nation_flag_united_kingdom,ui_nation_flag_china,ui_nation_flag_saudi_arabia,ui_nation_flag_russia,ui_nation_flag_japan,ui_nation_flag_south_korea
 Language,Text,,Language,语言,لغة,Язык,言語,언어
+PlayerName,Text,,PlayerName,玩家名称,اسم اللاعب,ИМЯ ИГРОКА,プレイヤー名,플레이어 이름
 Tips,Text,,Tips,小提示,النصايح,Советы,ヒント,힌트
