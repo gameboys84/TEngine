@@ -55,6 +55,7 @@ namespace YooAsset.Editor
             BindListViewHeader("Collect Settings");
             BindListViewItem("Unique Bundle Name", $"{buildReport.Summary.UniqueBundleName}");
             BindListViewItem("Enable Addressable", $"{buildReport.Summary.EnableAddressable}");
+            BindListViewItem("Support Extensionless", $"{buildReport.Summary.SupportExtensionless}");
             BindListViewItem("Location To Lower", $"{buildReport.Summary.LocationToLower}");
             BindListViewItem("Include Asset GUID", $"{buildReport.Summary.IncludeAssetGUID}");
             BindListViewItem("Auto Collect Shaders", $"{buildReport.Summary.AutoCollectShaders}");
@@ -67,11 +68,13 @@ namespace YooAsset.Editor
             BindListViewItem("Enable Share Pack Rule", $"{buildReport.Summary.EnableSharePackRule}");
             BindListViewItem("Single Referenced Pack Alone", $"{buildReport.Summary.SingleReferencedPackAlone}");
             BindListViewItem("Encryption Services", buildReport.Summary.EncryptionServicesClassName);
-            BindListViewItem("Manifest Services", buildReport.Summary.ManifestServicesClassName);
+            BindListViewItem("Manifest Process Services", buildReport.Summary.ManifestProcessServicesClassName);
+            BindListViewItem("Manifest Restore Services", buildReport.Summary.ManifestRestoreServicesClassName);
             BindListViewItem("FileNameStyle", $"{buildReport.Summary.FileNameStyle}");
             BindListViewItem("CompressOption", $"{buildReport.Summary.CompressOption}");
             BindListViewItem("DisableWriteTypeTree", $"{buildReport.Summary.DisableWriteTypeTree}");
             BindListViewItem("IgnoreTypeTreeChanges", $"{buildReport.Summary.IgnoreTypeTreeChanges}");
+            BindListViewItem("ReplaceAssetPathWithAddress", $"{buildReport.Summary.ReplaceAssetPathWithAddress}");
             BindListViewItem(string.Empty, string.Empty);
 
             BindListViewHeader("Build Results");

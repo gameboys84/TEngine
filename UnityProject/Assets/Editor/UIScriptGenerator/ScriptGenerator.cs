@@ -68,7 +68,7 @@ namespace TEngine.Editor.UI
                     }
                     else
                     {
-                        strFile.Append("\t[Window(UILayer.UI)]\n");
+                        strFile.Append($"\t[Window(UILayer.UI,location:\"{root.name}\")]\n");
                         strFile.Append("\tclass " + root.name + " : UIWindow\n");
                     }
                     

@@ -55,7 +55,8 @@ namespace TEngine
         /// 初始化操作。
         /// </summary>
         /// <param name="customPackageName">资源包名称。</param>
-        UniTask<InitializationOperation> InitPackage(string customPackageName);
+        /// <param name="needInitMainFest">是否需要直接初始化资源清单。（单机OtherPackage使用）</param>
+        UniTask<InitializationOperation> InitPackage(string customPackageName, bool needInitMainFest = false);
 
         /// <summary>
         /// 默认资源包名称。

@@ -6,15 +6,15 @@ internal class WXFSLoadBundleOperation : FSLoadBundleOperation
     private enum ESteps
     {
         None,
-        DownloadAssetBundle,
+        LoadAssetBundle,
         Done,
     }
 
     private readonly WechatFileSystem _fileSystem;
     private readonly PackageBundle _bundle;
-    private DownloadAssetBundleOperation _downloadAssetBundleOp;
+    private LoadWebAssetBundleOperation _loadWebAssetBundleOp;
     private ESteps _steps = ESteps.None;
-    
+
     internal WXFSLoadBundleOperation(WechatFileSystem fileSystem, PackageBundle bundle)
     {
         _fileSystem = fileSystem;
@@ -22,63 +22,55 @@ internal class WXFSLoadBundleOperation : FSLoadBundleOperation
     }
     internal override void InternalStart()
     {
-        _steps = ESteps.DownloadAssetBundle;
+        _steps = ESteps.LoadAssetBundle;
     }
     internal override void InternalUpdate()
     {
         if (_steps == ESteps.None || _steps == ESteps.Done)
             return;
 
-        if (_steps == ESteps.DownloadAssetBundle)
+        if (_steps == ESteps.LoadAssetBundle)
         {
-            if (_downloadAssetBundleOp == null)
+            if (_loadWebAssetBundleOp == null)
             {
-                DownloadFileOptions options = new DownloadFileOptions(int.MaxValue, 60);
-                options.MainURL = _fileSystem.RemoteServices.GetRemoteMainURL(_bundle.FileName); ;
-                options.FallbackURL = _fileSystem.RemoteServices.GetRemoteFallbackURL(_bundle.FileName);
+                string mainURL = _fileSystem.RemoteServices.GetRemoteMainURL(_bundle.FileName);
+                string fallbackURL = _fileSystem.RemoteServices.GetRemoteFallbackURL(_bundle.FileName);
+                DownloadFileOptions options = new DownloadFileOptions(int.MaxValue);
+                options.SetURL(mainURL, fallbackURL);
 
                 if (_bundle.Encrypted)
                 {
-                    _downloadAssetBundleOp = new DownloadWebEncryptAssetBundleOperation(false, _fileSystem.DecryptionServices, _bundle, options);
-                    _downloadAssetBundleOp.StartOperation();
-                    AddChildOperation(_downloadAssetBundleOp);
+                    _loadWebAssetBundleOp = new LoadWebEncryptAssetBundleOperation(_bundle, options, _fileSystem.DecryptionServices);
+                    _loadWebAssetBundleOp.StartOperation();
+                    AddChildOperation(_loadWebAssetBundleOp);
                 }
                 else
                 {
-                    _downloadAssetBundleOp = new DownloadWechatAssetBundleOperation(_bundle, options);
-                    _downloadAssetBundleOp.StartOperation();
-                    AddChildOperation(_downloadAssetBundleOp);
+                    _loadWebAssetBundleOp = new LoadWechatAssetBundleOperation(_bundle, options);
+                    _loadWebAssetBundleOp.StartOperation();
+                    AddChildOperation(_loadWebAssetBundleOp);
                 }
             }
 
-            _downloadAssetBundleOp.UpdateOperation();
-            DownloadProgress = _downloadAssetBundleOp.DownloadProgress;
-            DownloadedBytes = (long)_downloadAssetBundleOp.DownloadedBytes;
-            Progress = DownloadProgress;
-            if (_downloadAssetBundleOp.IsDone == false)
+            _loadWebAssetBundleOp.UpdateOperation();
+            Progress = _loadWebAssetBundleOp.Progress;
+            DownloadProgress = _loadWebAssetBundleOp.DownloadProgress;
+            DownloadedBytes = _loadWebAssetBundleOp.DownloadedBytes;
+            if (_loadWebAssetBundleOp.IsDone == false)
                 return;
 
-            if (_downloadAssetBundleOp.Status == EOperationStatus.Succeed)
+            if (_loadWebAssetBundleOp.Status == EOperationStatus.Succeed)
             {
-                var assetBundle = _downloadAssetBundleOp.Result;
-                if (assetBundle == null)
-                {
-                    _steps = ESteps.Done;
-                    Status = EOperationStatus.Failed;
-                    Error = $"{nameof(DownloadAssetBundleOperation)} loaded asset bundle is null !";
-                }
-                else
-                {
-                    _steps = ESteps.Done;
-                    Result = new WXAssetBundleResult(_fileSystem, _bundle, assetBundle);
-                    Status = EOperationStatus.Succeed;
-                }
+                var assetBundle = _loadWebAssetBundleOp.Result;
+                _steps = ESteps.Done;
+                Result = new WXAssetBundleResult(_fileSystem, _bundle, assetBundle);
+                Status = EOperationStatus.Succeed;
             }
             else
             {
                 _steps = ESteps.Done;
                 Status = EOperationStatus.Failed;
-                Error = _downloadAssetBundleOp.Error;
+                Error = _loadWebAssetBundleOp.Error;
             }
         }
     }

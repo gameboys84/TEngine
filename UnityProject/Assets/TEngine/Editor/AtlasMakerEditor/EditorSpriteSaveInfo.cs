@@ -203,11 +203,20 @@
         {
             if (_atlasMap.TryGetValue(atlasName, out List<string> spriteList))
             {
-                return spriteList
-                    .Where(File.Exists)
-                    .Select(AssetDatabase.LoadAssetAtPath<Sprite>)
-                    .Where(s => s)
-                    .ToList();
+                var allSprites = new List<Sprite>();
+
+                foreach (var assetPath in spriteList.Where(File.Exists))
+                {
+                    // 加载所有子图
+                    var sprites = AssetDatabase.LoadAllAssetsAtPath(assetPath)
+                        .OfType<Sprite>()
+                        .Where(s => s != null)
+                        .ToArray();
+
+                    allSprites.AddRange(sprites);
+                }
+
+                return allSprites;
             }
             return new List<Sprite>();
         }

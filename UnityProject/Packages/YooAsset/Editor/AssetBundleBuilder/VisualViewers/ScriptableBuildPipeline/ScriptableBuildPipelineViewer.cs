@@ -17,7 +17,8 @@ namespace YooAsset.Editor
         protected TextField _buildOutputField;
         protected TextField _buildVersionField;
         protected PopupField<Type> _encryptionServicesField;
-        protected PopupField<Type> _manifestServicesField;
+        protected PopupField<Type> _manifestProcessServicesField;
+        protected PopupField<Type> _manifestRestoreServicesField;
         protected EnumField _compressionField;
         protected EnumField _outputNameStyleField;
         protected EnumField _copyBuildinFileOptionField;
@@ -47,7 +48,8 @@ namespace YooAsset.Editor
             // 加密方法
             var popupContainer = Root.Q("PopupContainer");
             _encryptionServicesField = CreateEncryptionServicesField(popupContainer);
-            _manifestServicesField = CreateManifestServicesField(popupContainer);
+            _manifestProcessServicesField = CreateManifestProcessServicesField(popupContainer);
+            _manifestRestoreServicesField = CreateManifestRestoreServicesField(popupContainer);
 
             // 压缩方式选项
             _compressionField = Root.Q<EnumField>("Compression");
@@ -102,7 +104,6 @@ namespace YooAsset.Editor
             var compressOption = AssetBundleBuilderSetting.GetPackageCompressOption(PackageName, PipelineName);
             var clearBuildCache = AssetBundleBuilderSetting.GetPackageClearBuildCache(PackageName, PipelineName);
             var useAssetDependencyDB = AssetBundleBuilderSetting.GetPackageUseAssetDependencyDB(PackageName, PipelineName);
-            var builtinShaderBundleName = GetBuiltinShaderBundleName();
 
             ScriptableBuildParameters buildParameters = new ScriptableBuildParameters();
             buildParameters.BuildOutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot();
@@ -120,9 +121,10 @@ namespace YooAsset.Editor
             buildParameters.CompressOption = compressOption;
             buildParameters.ClearBuildCacheFiles = clearBuildCache;
             buildParameters.UseAssetDependencyDB = useAssetDependencyDB;
-            buildParameters.BuiltinShadersBundleName = builtinShaderBundleName;
             buildParameters.EncryptionServices = CreateEncryptionServicesInstance();
-            buildParameters.ManifestServices = CreateManifestServicesInstance();
+            buildParameters.ManifestProcessServices = CreateManifestProcessServicesInstance();
+            buildParameters.ManifestRestoreServices = CreateManifestRestoreServicesInstance();
+            buildParameters.BuiltinShadersBundleName = GetBuiltinShaderBundleName();
 
             ScriptableBuildPipeline pipeline = new ScriptableBuildPipeline();
             var buildResult = pipeline.Run(buildParameters, true);
@@ -138,6 +140,16 @@ namespace YooAsset.Editor
         {
             var uniqueBundleName = AssetBundleCollectorSettingData.Setting.UniqueBundleName;
             var packRuleResult = DefaultPackRule.CreateShadersPackRuleResult();
+            return packRuleResult.GetBundleName(PackageName, uniqueBundleName);
+        }
+
+        /// <summary>
+        /// Mono脚本的资源包名称
+        /// </summary>
+        protected string GetMonoScriptsBundleName()
+        {
+            var uniqueBundleName = AssetBundleCollectorSettingData.Setting.UniqueBundleName;
+            var packRuleResult = DefaultPackRule.CreateMonosPackRuleResult();
             return packRuleResult.GetBundleName(PackageName, uniqueBundleName);
         }
     }
