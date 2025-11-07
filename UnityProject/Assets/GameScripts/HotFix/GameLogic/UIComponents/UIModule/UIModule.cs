@@ -471,9 +471,9 @@ namespace GameLogic
 
         private void OnWindowPrepare(UIWindow window)
         {
-            OnSortWindowDepth(window.WindowLayer);
             window.InternalCreate();
             window.InternalRefresh();
+            OnSortWindowDepth(window.WindowLayer);
             OnSetWindowVisible();
         }
 

@@ -3,14 +3,23 @@ UnityProject/UserSettings/*
 
 #Luban
 Tools/protoc/
+Tools/Luban/
+Tools/Luban.ClientServer/
+Configs/.cache.meta
+GenerateDatas/
 
 #FileServer
 Tools/FileServer/AssetRoot
 
 UnityProject/ProjectSettings/CommonBurstAotSettings.json
 UnityProject/ProjectSettings/BurstAotSettings_StandaloneWindows.json
+UnityProject/ProjectSettings/CommonBurstAotSettings.json
+UnityProject/ProjectSettings/BurstAotSettings_StandaloneWindows.json
 /CDN/
 UnityProject/LocalSave/
 UnityProject/Assets/AssetRaw/AutoGen/GameConfig
+UnityProject/Assets/AssetRaw/DLL/
 UnityProject/Assets/GameScripts/HotFix/GameProto/GameConfig
 UnityProject/Packages/com.code-philosophy.hybridclr/
+UnityProject/Bin*
+UnityProject/Export*
