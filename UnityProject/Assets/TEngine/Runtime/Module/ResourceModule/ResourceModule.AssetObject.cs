@@ -10,7 +10,7 @@ namespace TEngine
         /// </summary>
         private sealed class AssetObject : ObjectBase
         {
-            private AssetHandle _assetHandle = null;
+            private HandleBase _assetHandle = null;
             private ResourceModule _resourceModule;
 
             public static AssetObject Create(string name, object target, object assetHandle, ResourceModule resourceModule)
@@ -27,7 +27,11 @@ namespace TEngine
 
                 AssetObject assetObject = MemoryPool.Acquire<AssetObject>();
                 assetObject.Initialize(name, target);
-                assetObject._assetHandle = (AssetHandle)assetHandle;
+                if (assetHandle is not HandleBase handleBase)
+                {
+                    throw new GameFrameworkException($"Unsupported handle type: {assetHandle.GetType()}.");
+                }
+                assetObject._assetHandle = handleBase;
                 assetObject._resourceModule = resourceModule;
                 return assetObject;
             }
@@ -47,7 +51,7 @@ namespace TEngine
             {
                 if (!isShutdown)
                 {
-                    AssetHandle handle = _assetHandle;
+                    HandleBase handle = _assetHandle;
                     if (handle is { IsValid: true })
                     {
                         handle.Dispose();
