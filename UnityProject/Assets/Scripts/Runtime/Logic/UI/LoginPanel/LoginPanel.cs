@@ -67,7 +67,7 @@ namespace GameLogic
 
             var items = GameModule.ConfigSystem.Tables.TbItem;
             var item = items.Get(10000);
-            Log.Debug(item.ToString());
+            Log.Debug((string)item.ToString());
 
             allLanguages = TEngine.Localization.LocalizationManager.GetAllLanguages();
         }

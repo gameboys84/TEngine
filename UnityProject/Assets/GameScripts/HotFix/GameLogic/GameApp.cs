@@ -5,7 +5,6 @@ using GameLogic;
 using Obfuz;
 #endif
 using TEngine;
-
 #pragma warning disable CS0436
 
 
@@ -41,7 +40,7 @@ public partial class GameApp
     
     private static void Release()
     {
-        // SingletonSystem.Release();
+        SingletonSystem.Release();
         Log.Warning("======= Release GameApp =======");
     }
 }
