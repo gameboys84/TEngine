@@ -25,26 +25,13 @@ MonoBehaviour:
     AutoCollectShaders: 1
     IgnoreRuleName: NormalIgnoreRule
     Groups:
-    - GroupName: Actor
-      GroupDesc: 
-      AssetTags: 
-      ActiveRuleName: EnableGroup
-      Collectors:
-      - CollectPath: Assets/AssetRaw/Actor
-        CollectorGUID: 9c67ce0c9edfd4e4aa1006ee39846d66
-        CollectorType: 0
-        AddressRuleName: AddressByFileName
-        PackRuleName: PackDirectory
-        FilterRuleName: CollectAll
-        AssetTags: 
-        UserData: 
     - GroupName: Audios
       GroupDesc: 
       AssetTags: 
       ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: Assets/AssetRaw/Audios
-        CollectorGUID: 8ef7a411b66e70f4cb65c2233c9a0868
+      - CollectPath: Assets/AssetBundle/Audios
+        CollectorGUID: 7b89f875f4e9aea49bf529c614b2068c
         CollectorType: 0
         AddressRuleName: AddressByFileName
         PackRuleName: PackDirectory
@@ -56,8 +43,8 @@ MonoBehaviour:
       AssetTags: 
       ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: Assets/AssetRaw/Configs
-        CollectorGUID: dd2928019aef34248af368b99bc53bea
+      - CollectPath: Assets/AssetBundle/Configs
+        CollectorGUID: d4db5678c7089024d8d588199dc5a795
         CollectorType: 0
         AddressRuleName: AddressByFileName
         PackRuleName: PackDirectory
@@ -69,21 +56,8 @@ MonoBehaviour:
       AssetTags: 
       ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: Assets/AssetRaw/DLL
-        CollectorGUID: 3aad79ec1ea08c24c891bd3c669d4125
-        CollectorType: 0
-        AddressRuleName: AddressByFileName
-        PackRuleName: PackDirectory
-        FilterRuleName: CollectAll
-        AssetTags: 
-        UserData: 
-    - GroupName: Effects
-      GroupDesc: 
-      AssetTags: 
-      ActiveRuleName: EnableGroup
-      Collectors:
-      - CollectPath: Assets/AssetRaw/Effects
-        CollectorGUID: 0fe175e1e1bd49a4ca71e66b6a9b7237
+      - CollectPath: Assets/AssetBundle/DLL
+        CollectorGUID: 892bab194bfc1d64aaca0610e736af40
         CollectorType: 0
         AddressRuleName: AddressByFileName
         PackRuleName: PackDirectory
@@ -95,21 +69,8 @@ MonoBehaviour:
       AssetTags: 
       ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: Assets/AssetRaw/Fonts
-        CollectorGUID: 2473375c9ee163a4b861278b38091455
-        CollectorType: 0
-        AddressRuleName: AddressByFileName
-        PackRuleName: PackDirectory
-        FilterRuleName: CollectAll
-        AssetTags: 
-        UserData: 
-    - GroupName: Materials
-      GroupDesc: 
-      AssetTags: 
-      ActiveRuleName: EnableGroup
-      Collectors:
-      - CollectPath: Assets/AssetRaw/Materials
-        CollectorGUID: 228b1547e7065d546ad0bf215fd6a276
+      - CollectPath: Assets/AssetBundle/Fonts
+        CollectorGUID: a0a4395f38ad30d4395bb9d3d433fbc8
         CollectorType: 0
         AddressRuleName: AddressByFileName
         PackRuleName: PackDirectory
@@ -121,8 +82,8 @@ MonoBehaviour:
       AssetTags: 
       ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: Assets/AssetRaw/Scenes
-        CollectorGUID: cace6ee6539f661419b5e5f8ae1c0146
+      - CollectPath: Assets/AssetBundle/Scenes
+        CollectorGUID: a68252a05dc99cd4ea2c466726cbc454
         CollectorType: 0
         AddressRuleName: AddressByFileName
         PackRuleName: PackDirectory
@@ -134,8 +95,8 @@ MonoBehaviour:
       AssetTags: 
       ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: Assets/AssetRaw/UI
-        CollectorGUID: 27e87d83814156648b58f380b834e046
+      - CollectPath: Assets/AssetBundle/UI
+        CollectorGUID: ec0f2c22ccd2e8e47968ca69c6d4e01e
         CollectorType: 0
         AddressRuleName: AddressByFileName
         PackRuleName: PackSeparately
@@ -147,7 +108,7 @@ MonoBehaviour:
       AssetTags: 
       ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: Assets/AssetRaw/Texture/RawImage
+      - CollectPath: Assets/AssetBundle/Texture/RawImage
         CollectorGUID: 28c363afb9698874a94871f9eca0f87c
         CollectorType: 0
         AddressRuleName: AddressByFileName
@@ -155,7 +116,7 @@ MonoBehaviour:
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
-      - CollectPath: Assets/AssetRaw/Texture/SpriteImage
+      - CollectPath: Assets/AssetBundle/Texture/SpriteImage
         CollectorGUID: d478c5580d37fcd4891d1eac9b7c769f
         CollectorType: 0
         AddressRuleName: AddressByFileName
@@ -168,7 +129,7 @@ MonoBehaviour:
       AssetTags: 
       ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: Assets/AssetRaw/AutoGen
+      - CollectPath: Assets/AssetBundle/AutoGen
         CollectorGUID: 6145fa123fec1c44da5b49f6666ad937
         CollectorType: 0
         AddressRuleName: AddressByFileName
@@ -176,55 +137,3 @@ MonoBehaviour:
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
-  - PackageName: OtherPackage
-    PackageDesc: 
-    EnableAddressable: 1
-    SupportExtensionless: 1
-    LocationToLower: 0
-    IncludeAssetGUID: 0
-    AutoCollectShaders: 1
-    IgnoreRuleName: NormalIgnoreRule
-    Groups:
-    - GroupName: ModelGroup
-      GroupDesc: 
-      AssetTags: models
-      ActiveRuleName: EnableGroup
-      Collectors: []
-    - GroupName: SceneGroup
-      GroupDesc: 
-      AssetTags: scenes
-      ActiveRuleName: EnableGroup
-      Collectors: []
-  - PackageName: Dlc1Package
-    PackageDesc: 
-    EnableAddressable: 1
-    SupportExtensionless: 1
-    LocationToLower: 0
-    IncludeAssetGUID: 0
-    AutoCollectShaders: 1
-    IgnoreRuleName: NormalIgnoreRule
-    Groups:
-    - GroupName: ModelGroup
-      GroupDesc: 
-      AssetTags: models
-      ActiveRuleName: EnableGroup
-      Collectors: []
-    - GroupName: SceneGroup
-      GroupDesc: 
-      AssetTags: scenes
-      ActiveRuleName: EnableGroup
-      Collectors: []
-  - PackageName: Dlc2Package
-    PackageDesc: 
-    EnableAddressable: 1
-    SupportExtensionless: 1
-    LocationToLower: 0
-    IncludeAssetGUID: 0
-    AutoCollectShaders: 1
-    IgnoreRuleName: NormalIgnoreRule
-    Groups:
-    - GroupName: ModelGroup
-      GroupDesc: 
-      AssetTags: models
-      ActiveRuleName: EnableGroup
-      Collectors: []

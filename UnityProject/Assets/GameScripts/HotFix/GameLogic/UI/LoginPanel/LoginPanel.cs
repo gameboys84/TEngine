@@ -35,13 +35,16 @@ namespace GameLogic
             {
                 Tag = "Test from LoginPanel"
             });
-            // GameModule.UI.ShowUIAsync<LoadingPanel>();
-            // Close();
             
-            if (result is { ErrorCode: 0 })
+            if (result is not { ErrorCode: 0 })
             {
-                Debug.Log($"G2C_TestResponse return Success: {result.Tag}");
+                Debug.LogError($"G2C_TestResponse return Error: {result.Tag}, {result.ErrorCode}");
+                return;
             }
+            
+            Debug.Log($"G2C_TestResponse return Success: {result.Tag}");
+            GameModule.UI.ShowUIAsync<LoadingPanel>();
+            Close();
         }
 
         private int idx = 0;

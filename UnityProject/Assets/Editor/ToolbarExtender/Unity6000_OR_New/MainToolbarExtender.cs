@@ -158,7 +158,7 @@ public class MainToolbarDropdownSceneSelector
     private static List<(string sceneName, string scenePath)> m_otherScenes;
 
     private static string initScenePath = "Assets/Scenes";
-    private static string defaultScenePath = "Assets/AssetRaw/Scenes";
+    private static string defaultScenePath = "Assets/AssetBundle/Scenes";
 
     static string[] scenePaths;
 
