@@ -1,0 +1,16 @@
+{
+    "Export": {
+        "NetworkProtocolDirectory": {
+            "Value": "../../Configs/NetworkProtocol/",
+            "Comment": "ProtoBuf文件所在的文件夹位置"
+        },
+        "NetworkProtocolServerDirectory": {
+            "Value": "../../FantasyServer/Entity/Generate/NetworkProtocol/",
+            "Comment": "ProtoBuf生成到服务端的文件夹位置"
+        },
+        "NetworkProtocolClientDirectory": {
+            "Value": "../../UnityProject/Assets/GameScripts/HotFix/GameProto/NetworkProtocol/",
+            "Comment": "ProtoBuf生成到客户端的文件夹位置"
+        }
+    }
+}

@@ -107,6 +107,13 @@ public class GameModule
     private static ConfigSystem _configSystem;
 
     
+    /// <summary>
+    /// 网络模块。
+    /// </summary>
+    public static INetworkFantasyModule Network => _network ??= Get<INetworkFantasyModule>();
+
+    private static INetworkFantasyModule _network;
+    
     
     #endregion
     
@@ -141,5 +148,6 @@ public class GameModule
         
         _localSave = null;
         _configSystem = null;
+        _network = null;
     }
 }

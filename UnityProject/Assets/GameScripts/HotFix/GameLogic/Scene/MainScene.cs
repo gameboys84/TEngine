@@ -14,6 +14,7 @@ namespace GameLogic
         {
             GameModule.Audio.Play(AudioType.Music, "music_background", true);
             
+            GameModule.Network.Connect("127.0.0.1", 20000, 3000);
             GameModule.UI.ShowUIAsync<LoginPanel>();
         }
         

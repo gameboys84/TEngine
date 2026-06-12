@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TEngine;
 using TMPro;
+using Log = TEngine.Log;
 
 namespace GameLogic
 {
@@ -28,10 +29,19 @@ namespace GameLogic
         #endregion
 
         #region 事件
-        private void OnClickLoginBtn()
+        private async void OnClickLoginBtn()
         {
-            GameModule.UI.ShowUIAsync<LoadingPanel>();
-            Close();
+            var result = await GameModule.Network.Call<Fantasy.C2G_TestRequest, Fantasy.G2C_TestResponse>(new Fantasy.C2G_TestRequest()
+            {
+                Tag = "Test from LoginPanel"
+            });
+            // GameModule.UI.ShowUIAsync<LoadingPanel>();
+            // Close();
+            
+            if (result is { ErrorCode: 0 })
+            {
+                Debug.Log($"G2C_TestResponse return Success: {result.Tag}");
+            }
         }
 
         private int idx = 0;
@@ -144,6 +154,20 @@ namespace GameLogic
                     Log.Debug($"Load: playerId={_localPlayerInfo.playerId}, uuid={_localPlayerInfo.uuid}, overrideUuid={_localPlayerInfo.overrideUuid}, " +
                               $"LinkedEmailAddress={_localPlayerInfo.LinkedEmailAddress}, LoginEmailAddress={_localPlayerInfo.LoginEmailAddress}, " +
                               $"LastTryEmailAddress={_localPlayerInfo.LastTryEmailAddress}, RefreshToken={_localPlayerInfo.RefreshToken} ");
+                }
+            }
+            else if (Input.GetKeyUp(KeyCode.S))
+            {
+                GameModule.Network.Send(new Fantasy.C2G_TestMessage()
+                {
+                    Tag = "OnClickSendButtonBtn"
+                });
+            }
+            else if (Input.GetKeyUp(KeyCode.R))
+            {
+                if (!GameModule.Network.IsConnected())
+                {
+                    GameModule.Network.Connect("127.0.0.1", 20000, 3000);
                 }
             }
         }
