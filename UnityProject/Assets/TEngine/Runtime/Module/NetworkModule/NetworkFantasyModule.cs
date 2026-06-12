@@ -22,7 +22,7 @@ namespace TEngine
         
         public override void OnInit()
         {
-            Initialize().Coroutine();
+            Initialize();
         }
 
         public override void Shutdown()
@@ -38,7 +38,7 @@ namespace TEngine
 #endif            
         }
 
-        private async FTask Initialize()
+        private void Initialize()
         {
 #if !USING_FANTASY_RUNTIME            
             // 初始化框架

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace TEngine.Editor.UI
 {
-   public enum UIFieldCodeStyle
+    public enum UIFieldCodeStyle
     {
         /// <summary>
         /// Field names start with underscore (e.g., _variable)
@@ -35,6 +35,19 @@ namespace TEngine.Editor.UI
             this.componentName = componentName;
             this.isUIWidget = isUIWidget;
         }
+    }
+
+    [Serializable]
+    public class UIGenType
+    {
+        public UIGenType(string uiTypeName, bool isGeneric)
+        {
+            this.uiTypeName = uiTypeName;
+            this.isGeneric = isGeneric;
+        }
+
+        public string uiTypeName;
+        public bool isGeneric;
     }
 
     [CustomPropertyDrawer(typeof(ScriptGenerateRuler))]
@@ -81,5 +94,7 @@ namespace TEngine.Editor.UI
         TextMeshProUGUI,
         Canvas,
         Dropdown,
+        TMP_InputField,
+        TMP_Dropdown,
     }
 }

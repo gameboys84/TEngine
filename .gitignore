@@ -1,4 +1,6 @@
-.idea/
+
+UnityProject/UserSettings/Layouts/default-2021.dwlt
+UnityProject/UserSettings/Search.settings
 
 #Luban
 Tools/protoc/
@@ -12,6 +14,15 @@ Tools/FileServer/AssetRoot
 
 UnityProject/ProjectSettings/CommonBurstAotSettings.json
 UnityProject/ProjectSettings/BurstAotSettings_StandaloneWindows.json
+
+#GameEventSourceGenerator
+Tools/GameEventSourceGenerator/*/.idea
+Tools/GameEventSourceGenerator/*/bin
+Tools/GameEventSourceGenerator/*/obj
+
+#openspec
+openspec/
+
 /CDN/
 UnityProject/LocalSave/
 UnityProject/Assets/AssetRaw/AutoGen/GameConfig
@@ -22,6 +33,8 @@ UnityProject/Bin*
 UnityProject/Export*
 UnityProject/UserSettings/*
 .vs/
+.idea/
 obj/
 Debug/
 Release/
+

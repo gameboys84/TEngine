@@ -21,7 +21,7 @@ namespace Procedure
         private async UniTaskVoid StartGame()
         {
             await UniTask.Yield();
-            LauncherMgr.HideAll();
+            LauncherMgr.HideAllUI();
         }
     }
 }
