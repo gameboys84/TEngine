@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ScriptGeneratorSetting
   m_EditorClassIdentifier: 
   useBindComponent: 1
-  genCodePath: Assets/GameScripts/HotFix/GameLogic/UI/Gen
-  impCodePath: Assets/GameScripts/HotFix/GameLogic/UI
+  genCodePath: Assets/Scripts/Runtime/Logic/UI/AutoGen
+  impCodePath: Assets/Scripts/Runtime/Logic/UI/
   _namespace: GameLogic
   _widgetName: item
   CodeStyle: 1

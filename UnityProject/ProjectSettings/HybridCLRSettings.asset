@@ -19,7 +19,8 @@ MonoBehaviour:
   hotUpdateAssemblyDefinitions: []
   hotUpdateAssemblies:
   - GameProto
-  - GameLogic
+  - GameCore
+  - GameRuntime
   preserveHotUpdateAssemblies: []
   hotUpdateDllCompileOutputRootDir: HybridCLRData/HotUpdateDlls
   externalHotUpdateAssembliyDirs: []

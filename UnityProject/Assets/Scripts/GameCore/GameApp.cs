@@ -24,7 +24,9 @@ public partial class GameApp
     /// <param name="objects"></param>
     public static void Entrance(object[] objects)
     {
-        GameEventHelper.Init();
+        // 为UI接口声明 [EventInterface(EEventGroup.GroupUI)] 时会自动生成 static class GameEventHelper
+        // GameEventHelper.Init();
+        
         _hotfixAssembly = (List<Assembly>)objects[0];
         Log.Warning("======= 看到此条日志代表你成功运行了热更新代码 =======");
         Log.Warning("======= Entrance GameApp =======");

@@ -15,7 +15,8 @@ MonoBehaviour:
   projectName: Demo
   HotUpdateAssemblies:
   - GameProto.dll
-  - GameLogic.dll
+  - GameCore.dll
+  - GameRuntime.dll
   AOTMetaAssemblies:
   - mscorlib.dll
   - System.dll
@@ -24,9 +25,9 @@ MonoBehaviour:
   - UniTask.dll
   - YooAsset.dll
   - UnityEngine.CoreModule.dll
-  LogicMainDllName: GameLogic.dll
+  LogicMainDllName: GameCore.dll
   AssemblyTextAssetExtension: .bytes
-  AssemblyTextAssetPath: AssetRaw/DLL
+  AssemblyTextAssetPath: AssetBundle/DLL
   UpdateStyle: 1
   UpdateNotice: 1
   ResDownLoadPath: http://127.0.0.1:8081
@@ -34,3 +35,4 @@ MonoBehaviour:
   LoadResWayWebGL: 0
   isAutoAssetCopeToBuildAddress: 0
   BuildAddress: ../../Builds/Unity_Data/StreamingAssets
+  ReplaceAssetPathWithAddress: 0

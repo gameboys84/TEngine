@@ -77,6 +77,16 @@ namespace GameLogic
         {
             base.RegisterEvent();
             
+            // 可以参考 事件模块.md 中的示例
+            // 添加监听事件 : bool GameEvent.AddEventListener(int eventType, Action handler);
+            // 取消监听事件 : bool GameEvent.RemoveEventListener(int eventType, Action handler);
+            // 如果是UI内，推荐使用自动取消监听的UI事件 : AddUIEvent(Event_UIEvent, OnUIEvent);
+            
+            // 触发事件 :
+            // GameEvent.Get<T>().DoSomething();
+            // bool GameEvent.Send(int eventType, params object[] args);
+            
+            
             AddUIEvent(Event_UIEvent, OnUIEvent);
             GameEvent.AddEventListener(ILoginUI_Event.ShowLoginUI, OnShowLoginUI);
             GameEvent.AddEventListener<bool, string>("CustomEvent", OnCustomEvent);
