@@ -25,7 +25,6 @@ MonoBehaviour:
   - UniTask.dll
   - YooAsset.dll
   - UnityEngine.CoreModule.dll
-  - Fantasy.Unity.dll
   LogicMainDllName: GameCore.dll
   AssemblyTextAssetExtension: .bytes
   AssemblyTextAssetPath: AssetBundle/DLL
