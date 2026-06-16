@@ -1,8 +1,8 @@
 ﻿using System;
 using System.IO;
-using System.Text;
+using TEngine;
 
-namespace TEngine
+namespace GameLogic
 {
     public class LocalSaveModule : Module, ILocalSaveModule
     {
@@ -55,6 +55,12 @@ namespace TEngine
         {
             string filePath = Utility.FileUtils.GetDocDataPath("LocalSave");
             filePath = Path.Combine(filePath, fileName);
+            
+            if (!File.Exists(filePath))
+            {
+                Log.Warning($"LocalSaveModule Load: {filePath} not exist");
+                return default(T);
+            }
             
             try
             {

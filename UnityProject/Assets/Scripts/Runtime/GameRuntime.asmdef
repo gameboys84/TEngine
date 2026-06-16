@@ -1,13 +1,13 @@
 {
     "name": "GameRuntime",
-    "rootNamespace": "",
+    "rootNamespace": "GameLogic",
     "references": [
         "GUID:24c092aee38482f4e80715eaa8148782",
         "GUID:0b7224b83ba514121aa026f3857f820a",
-        "GUID:6055be8ebefd69e48b49212b09b47b2f",
         "GUID:f51ebe6a0ceec4240a699833d6309b23",
-        "GUID:9566f31a0c8dbee47b50bdb6842b3b2f",
-        "GUID:dc405912cd47d5645af51adc67df2de9"
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:dc405912cd47d5645af51adc67df2de9",
+        "GUID:9566f31a0c8dbee47b50bdb6842b3b2f"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -1,4 +1,4 @@
-﻿namespace TEngine
+﻿namespace GameLogic
 {
     public interface ILocalSaveData
     {

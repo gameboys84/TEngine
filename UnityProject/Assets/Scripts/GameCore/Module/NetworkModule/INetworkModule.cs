@@ -1,7 +1,7 @@
 ﻿using Cysharp.Threading.Tasks;
 using Fantasy.Network.Interface;
 
-namespace TEngine
+namespace GameLogic
 {
     public class BaseMessage : IMessage
     {

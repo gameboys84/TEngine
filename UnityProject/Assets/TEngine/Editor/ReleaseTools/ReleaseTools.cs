@@ -78,7 +78,7 @@ namespace TEngine
         {
             var config = BuildConfig.CreateDefault();
             config.BuildTarget = BuildTarget.StandaloneWindows64;
-            config.OutputRoot = Application.dataPath + "/../Builds/Windows";
+            config.OutputRoot = Application.dataPath + "/../Bundles/Windows";
             config.BuildPlayer = true;
             config.PlayerPlatform = BuildTarget.StandaloneWindows64;
             config.PlayerOutputPath = $"{Application.dataPath}/../Build/Windows/Release_Windows.exe";

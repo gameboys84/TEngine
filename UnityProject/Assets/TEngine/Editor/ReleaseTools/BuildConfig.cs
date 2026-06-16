@@ -13,7 +13,7 @@ namespace TEngine
         public ECompressOption CompressOption = ECompressOption.LZ4;
         public EncryptionType EncryptionType = EncryptionType.None;
         public string PackageVersion = "";
-        public string OutputRoot = "./Builds/";
+        public string OutputRoot = "./Bundles/";
 
         // 最小包设置
         public bool MinimalPackage;
@@ -42,7 +42,7 @@ namespace TEngine
                 BuildTarget = EditorUserBuildSettings.activeBuildTarget,
                 PlayerPlatform = EditorUserBuildSettings.activeBuildTarget,
                 PackageVersion = GetDefaultPackageVersion(),
-                OutputRoot = "./Builds/",
+                OutputRoot = "./Bundles/",
                 PlayerOutputPath = GetDefaultPlayerOutputPath(EditorUserBuildSettings.activeBuildTarget),
             };
         }

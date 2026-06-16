@@ -13,9 +13,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoCopyAssembly: 0
-  hotUpdatePath: 
-  hotUpdateAssemblyDefinitions: []
-  linkAssemblyDefinitions: []
+  hotUpdatePath: E:/Git/TEngineNiAndroid/UnityProject/Assets/AssetBundle/DLL/
+  hotUpdateAssemblyDefinitions:
+  - {fileID: 5897886265953266890, guid: dc405912cd47d5645af51adc67df2de9, type: 3}
+  linkAssemblyDefinitions:
+  - {fileID: 5897886265953266890, guid: dc405912cd47d5645af51adc67df2de9, type: 3}
+  - {fileID: 5897886265953266890, guid: 9566f31a0c8dbee47b50bdb6842b3b2f, type: 3}
+  - {fileID: 5897886265953266890, guid: 8cafd537c40a91e409eddc0842bfeed6, type: 3}
   includeAssembly:
   - Assembly-CSharp
   - Fantasy.Unity

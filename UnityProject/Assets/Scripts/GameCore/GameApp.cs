@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Reflection;
+using Fantasy.Helper;
 using GameLogic;
 #if ENABLE_OBFUZ
 using Obfuz;
@@ -28,6 +29,11 @@ public partial class GameApp
         // GameEventHelper.Init();
         
         _hotfixAssembly = (List<Assembly>)objects[0];
+        foreach (var assembly in _hotfixAssembly)
+        {
+            assembly.EnsureLoaded();
+        }
+        
         Log.Warning("======= 看到此条日志代表你成功运行了热更新代码 =======");
         Log.Warning("======= Entrance GameApp =======");
         Utility.Unity.AddDestroyListener(Release);

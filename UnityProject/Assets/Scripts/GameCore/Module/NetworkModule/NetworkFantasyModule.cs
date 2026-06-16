@@ -2,11 +2,12 @@
 
 using Cysharp.Threading.Tasks;
 using Fantasy;
-using Fantasy.Async;
 using Fantasy.Network;
 using Fantasy.Network.Interface;
+using TEngine;
+using Log = TEngine.Log;
 
-namespace TEngine
+namespace GameLogic
 {
     
     public class NetworkFantasyModule : Module, INetworkFantasyModule
@@ -89,7 +90,7 @@ namespace TEngine
                 // await UniTask.Delay(1000);
             }
             
-            Log.Debug($"Connect, ip:{ip}:{port}, timeout:{timeout}, scene:{_scene}");
+            Log.Debug($"Connect, ip:{ip}:{port}, timeout:{timeout}");
             
 #if USING_FANTASY_RUNTIME            
             Runtime.Connect(ip, port, FantasyRuntime.NetworkProtocolType.KCP, false, timeout, true, 2000, 30000, 5000, 4,
@@ -158,12 +159,16 @@ namespace TEngine
             // 心跳检测, 上面的 Runtime 在Connect时已经注册了 心跳，就不用重复注册了
             _session.AddComponent<SessionHeartbeatComponent>().Start(2000);
 #endif
+            
+            GameEvent.Send((int)GameEventCoreId.NETWORK_CONNECTED);
         }
 
         private void OnDisconnected()
         {
             isConnected = false;
             isReconnecting = false;
+            
+            GameEvent.Send((int)GameEventCoreId.NETWORK_DISCONNECTED);
         }
 
         private void OnConnectFail()

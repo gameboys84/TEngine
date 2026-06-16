@@ -90,7 +90,7 @@ public class EventInterfaceGenerator : ISourceGenerator
         sb.AppendLine();
         sb.AppendLine($"namespace {Definition.NameSpace}");
         sb.AppendLine($"{{");
-        sb.AppendLine($"    public static class GameEventHelper");
+        sb.AppendLine($"    public static partial class GameEventHelper");
         sb.AppendLine("    {");
         sb.AppendLine($"        public static void Init()");
         sb.AppendLine("        {");

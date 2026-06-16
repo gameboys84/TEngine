@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using Object = UnityEngine.Object;
 using System.Collections.Generic;
-using System.Text.RegularExpressions;
 using Cysharp.Threading.Tasks;
 using TEngine.Localization;
 
@@ -206,8 +205,8 @@ namespace TEngine
             List<string> allLanguages = Localization.LocalizationManager.GetAllLanguages();
             foreach (var language in allLanguages)
             {
-                var newLanguage = Regex.Replace(language, @"[\r\n]", "");
-                this.allLanguage.Add(newLanguage);
+                // var newLanguage = Regex.Replace(language, @"[\r\n]", "");
+                this.allLanguage.Add(language);
             }
         }
 
@@ -240,6 +239,9 @@ namespace TEngine
         /// <returns></returns>
         public bool SetLanguage(string language, bool load = false)
         {
+            // 去除字符中的特殊字符
+            // language = language.Replace("\r\n", "");
+            
             if (!CheckLanguage(language))
             {
                 if (load)

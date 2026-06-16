@@ -1,6 +1,6 @@
 {
     "name": "GameProto",
-    "rootNamespace": "",
+    "rootNamespace": "GameLogic",
     "references": [
         "GUID:24c092aee38482f4e80715eaa8148782",
         "GUID:0b7224b83ba514121aa026f3857f820a"

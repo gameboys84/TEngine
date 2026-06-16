@@ -586,7 +586,7 @@ namespace TEngine
             _config.EncryptionType = (EncryptionType)EditorPrefs.GetInt("TEngine_BP_EncryptionType", 0);
 
             _config.PackageVersion = EditorPrefs.GetString("TEngine_BP_PackageVersion", "");
-            _config.OutputRoot = EditorPrefs.GetString("TEngine_BP_OutputRoot", "./Builds/");
+            _config.OutputRoot = EditorPrefs.GetString("TEngine_BP_OutputRoot", "./Bundles/");
 
             _config.MinimalPackage = EditorPrefs.GetBool("TEngine_BP_MinimalPackage", false);
             _config.RetainTags = EditorPrefs.GetString("TEngine_BP_RetainTags", "");

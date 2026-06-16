@@ -1,11 +1,11 @@
 {
     "name": "GameCore",
-    "rootNamespace": "",
+    "rootNamespace": "GameLogic",
     "references": [
         "GUID:24c092aee38482f4e80715eaa8148782",
+        "GUID:0b7224b83ba514121aa026f3857f820a",
         "GUID:f51ebe6a0ceec4240a699833d6309b23",
         "GUID:e34a5702dd353724aa315fb8011f08c3",
-        "GUID:0b7224b83ba514121aa026f3857f820a",
         "GUID:dc405912cd47d5645af51adc67df2de9"
     ],
     "includePlatforms": [],

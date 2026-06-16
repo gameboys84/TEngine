@@ -69,7 +69,7 @@ namespace TEngine
         }
 
         [Header("Auto sync with [HybridCLRGlobalSettings]")]
-        public List<string> HotUpdateAssemblies = new List<string>() {"GameProto.dll", "GameLogic.dll" };
+        public List<string> HotUpdateAssemblies = new List<string>() {"GameProto.dll", "GameCore.dll", "GameRuntime.dll" };
 
         [Header("Need manual setting!")]
         public List<string> AOTMetaAssemblies = new List<string>() { "mscorlib.dll", "System.dll", "System.Core.dll", "TEngine.Runtime.dll" ,"UniTask.dll", "YooAsset.dll"};
@@ -77,7 +77,7 @@ namespace TEngine
         /// <summary>
         /// Dll of main business logic assembly
         /// </summary>
-        public string LogicMainDllName = "GameLogic.dll";
+        public string LogicMainDllName = "GameCore.dll";
 
         /// <summary>
         /// 程序集文本资产打包Asset后缀名
@@ -122,7 +122,7 @@ namespace TEngine
         /// 打包程序资源地址
         /// </summary>
         [SerializeField]
-        private string BuildAddress = "../../Builds/Unity_Data/StreamingAssets";
+        private string BuildAddress = "../../Bundles/Unity_Data/StreamingAssets";
         /// <summary>
         /// 是否使用可寻址资源代替资源路径
         /// 说明：开启此项可以节省运行时清单占用的内存！
