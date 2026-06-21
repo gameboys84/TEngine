@@ -43,7 +43,7 @@ namespace TEngine
                 var cts = new CancellationTokenSource();
                 cts.CancelAfterSlim(TimeSpan.FromSeconds(timeout));
 
-#if UNITY_6000_0_OR_NEWER
+#if UNITY_2022_3_OR_NEWER
                 using UnityWebRequest unityWebRequest = UnityWebRequest.PostWwwForm(url, postData);
 #else
                 using UnityWebRequest unityWebRequest = UnityWebRequest.Post(url, postData);

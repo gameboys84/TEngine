@@ -102,6 +102,10 @@ namespace TEngine.Localization
 
 		public static List<string[]> ReadCSV( string Text, char Separator=',' )
 		{
+			// The text content imported from the text will support \r\n break text, and no need to replace \r\n to empty string any more.
+			Text = Text.Replace("\r\n", "\n");
+			Text = Text.Replace("\r", "\n");
+
 			int iStart = 0;
 			List<string[]> CSV = new List<string[]>();
 
