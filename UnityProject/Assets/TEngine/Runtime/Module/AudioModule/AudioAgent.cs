@@ -9,7 +9,11 @@ namespace TEngine
     /// </summary>
     public class AudioAgent
     {
+#if UNITY_6000_0_OR_NEWER
+        private EntityId _instanceId;
+#else
         private int _instanceId;
+#endif
         private AudioSource _source;
         private AudioData _audioData;
         private IAudioModule _audioModule;
@@ -55,7 +59,11 @@ namespace TEngine
         /// <summary>
         /// AudioSource实例化Id
         /// </summary>
-        public int InstanceId => _instanceId;
+#if UNITY_6000_0_OR_NEWER
+        private EntityId InstanceID => _instanceId;
+#else
+        private int InstanceID => _instanceId;
+#endif
 
         /// <summary>
         /// 资源操作句柄。
@@ -216,7 +224,11 @@ namespace TEngine
             _source.rolloffMode = audioCategory.AudioGroupConfig.audioRolloffMode;
             _source.minDistance = audioCategory.AudioGroupConfig.minDistance;
             _source.maxDistance = audioCategory.AudioGroupConfig.maxDistance;
+#if UNITY_6000_0_OR_NEWER
+            _instanceId = _source.GetEntityId();
+#else
             _instanceId = _source.GetInstanceID();
+#endif
         }
 
         /// <summary>
