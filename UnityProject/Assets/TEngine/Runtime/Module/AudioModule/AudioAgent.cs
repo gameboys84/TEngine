@@ -7,6 +7,7 @@ namespace TEngine
     /// <summary>
     /// 音频代理辅助器。
     /// </summary>
+    [System.Serializable]
     public class AudioAgent
     {
 #if UNITY_6000_0_OR_NEWER
