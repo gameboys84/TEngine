@@ -182,7 +182,7 @@ namespace TEngine.Editor
     internal static class LogRedirection
     {
         [OnOpenAsset(0)]
-#if UNITY_6000_0_OR_NEWER
+#if UNITY_6000_1_OR_NEWER
         private static bool OnOpenAsset(EntityId entityId, int line)
         {
             return OnOpenAsset(AssetDatabase.GetAssetPath(entityId), line);
