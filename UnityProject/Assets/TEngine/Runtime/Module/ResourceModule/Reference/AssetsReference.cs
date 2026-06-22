@@ -8,7 +8,7 @@ namespace TEngine
     [Serializable]
     public struct AssetsRefInfo
     {
-#if UNITY_6000_0_OR_NEWER
+#if UNITY_6000_1_OR_NEWER
         public readonly EntityId instanceID;
 #else
         public readonly int instanceID;
@@ -19,7 +19,7 @@ namespace TEngine
         public AssetsRefInfo(Object refAsset)
         {
             this.refAsset = refAsset;
-#if UNITY_6000_0_OR_NEWER
+#if UNITY_6000_1_OR_NEWER
             instanceID = refAsset.GetEntityId();
 #else
             instanceID = refAsset.GetInstanceID();
