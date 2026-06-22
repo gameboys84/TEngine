@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace TEngine
 {
@@ -18,7 +19,7 @@ namespace TEngine
             public bool isNeedRemove = false;
             public bool isRunning = false;
             public bool isUnscaled = false; //是否使用非缩放的时间
-            public object[] Args = null; //回调参数
+            [NonSerialized] public object[] Args = null; //回调参数
         }
 
         private int _curTimerId = 0;
