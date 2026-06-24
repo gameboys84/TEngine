@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
+using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
 using UnityEditor.Callbacks;
@@ -181,14 +182,23 @@ namespace TEngine.Editor
     internal static class LogRedirection
     {
         [OnOpenAsset(0)]
-        private static bool OnOpenAsset(int instanceID, int line)
+#if UNITY_6000_1_OR_NEWER
+        private static bool OnOpenAsset(EntityId entityId, int line)
+        {
+            return OnOpenAsset(AssetDatabase.GetAssetPath(entityId), line);
+        }
+#else
+       private static bool OnOpenAsset(int instanceID, int line)
+        {
+            return OnOpenAsset(AssetDatabase.GetAssetPath(instanceID), line);
+        }
+#endif
+        private static bool OnOpenAsset(string assetPath, int line)
         {
             if (line <= 0)
             {
                 return false;
             }
-            // 获取资源路径
-            string assetPath = AssetDatabase.GetAssetPath(instanceID);
             
             // 判断资源类型
             if (!assetPath.EndsWith(".cs"))

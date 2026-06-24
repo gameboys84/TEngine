@@ -102,9 +102,10 @@ namespace TEngine.Localization
 
 		public static List<string[]> ReadCSV( string Text, char Separator=',' )
 		{
+			// The text content imported from the text will support \r\n break text, and no need to replace \r\n to empty string any more.
 			Text = Text.Replace("\r\n", "\n");
 			Text = Text.Replace("\r", "\n");
-			
+
 			int iStart = 0;
 			List<string[]> CSV = new List<string[]>();
 
@@ -239,15 +240,6 @@ namespace TEngine.Localization
 				return string.Empty;
 			
 			return str.Replace("<\\n>", "\r\n");
-		}
-		
-		// remove \r or \n in string
-		public static string TrimLines(string str)
-		{
-			if (string.IsNullOrEmpty(str))
-				return string.Empty;
-			
-			return str.Replace("\r", string.Empty).Replace("\n", string.Empty);
 		}
 
 		#endregion
