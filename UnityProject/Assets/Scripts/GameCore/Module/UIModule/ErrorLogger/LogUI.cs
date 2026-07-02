@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using UnityEngine.UI;
 
-namespace GameLogic
+namespace GameCore
 {
     [Window(UILayer.System, fromResources: true)]
     class LogUI : UIWindow

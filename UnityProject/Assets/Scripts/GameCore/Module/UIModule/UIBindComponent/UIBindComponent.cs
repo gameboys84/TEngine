@@ -12,7 +12,7 @@ using System.Collections.Generic;
 using TEngine;
 using UnityEngine;
 
-namespace GameLogic
+namespace GameCore
 {
     [DisallowMultipleComponent]
     public partial class UIBindComponent : MonoBehaviour

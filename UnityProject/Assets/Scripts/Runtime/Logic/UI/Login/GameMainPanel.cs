@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TEngine;
+using GameCore;
 
 namespace GameLogic
 {

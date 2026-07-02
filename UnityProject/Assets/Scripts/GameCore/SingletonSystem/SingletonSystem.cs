@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Object = UnityEngine.Object;
 
-namespace GameLogic
+namespace GameCore
 {
     public interface ISingleton
     {

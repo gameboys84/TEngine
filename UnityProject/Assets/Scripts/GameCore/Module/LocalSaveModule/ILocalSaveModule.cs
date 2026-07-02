@@ -1,4 +1,4 @@
-﻿namespace GameLogic
+﻿namespace GameCore
 {
     public interface ILocalSaveModule
     {

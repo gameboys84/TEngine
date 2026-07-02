@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace GameLogic
+namespace GameCore
 {
     public class LocalSaveDataBase : ILocalSaveData
     {

@@ -7,7 +7,7 @@ using Fantasy.Network.Interface;
 using TEngine;
 using Log = TEngine.Log;
 
-namespace GameLogic
+namespace GameCore
 {
     
     public class NetworkFantasyModule : Module, INetworkFantasyModule

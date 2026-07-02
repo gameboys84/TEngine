@@ -7,7 +7,7 @@ using UnityEngine;
 using Obfuz;
 #endif
 
-namespace GameLogic
+namespace GameCore
 {
     /// <summary>
     /// UI基类。

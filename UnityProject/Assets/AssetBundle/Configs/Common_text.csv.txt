@@ -1,7 +1,13 @@
-﻿Key,Type,Desc,English,Chinese,Arabic,Russian,Japanese,Korean
-Country,Text,,Country,国家,بلد,Страна,国,나라
-CurrentLanguage,Text,,English,中文 ,اللغة,русск,日本語,한국어
-Flag,Sprite,,ui_nation_flag_united_kingdom,ui_nation_flag_china,ui_nation_flag_saudi_arabia,ui_nation_flag_russia,ui_nation_flag_japan,ui_nation_flag_south_korea
-Language,Text,,Language,语言,لغة,Язык,言語,언어
-PlayerName,Text,,PlayerName,玩家名称,اسم اللاعب,ИМЯ ИГРОКА,プレイヤー名,플레이어 이름
-Tips,Text,,Tips,小提示,النصايح,Советы,ヒント,힌트
+Key,Type,Desc,English,ChineseSimplified [zh-CN],ChineseTraditional [zh-TW],Korean,Japanese,French,German,Russian,Spanish,PortuguesePortugal,Italian,Dutch,Turkish,Indonesian,Polish,Thai,Romanian,Arabic,Vietnamese,Ukrainian
+AppName,Text,,EngineDemo,EngineDemo,EngineDemo,EngineDemo,EngineDemo,EngineDemo,EngineDemo,EngineDemo,EngineDemo,EngineDemo,EngineDemo,EngineDemo,EngineDemo,EngineDemo,EngineDemo,EngineDemo,EngineDemo,EngineDemo,EngineDemo,EngineDemo
+Country,Text,,Country,国家,國家,나라,国,Pays,Land,Страна,País,País,Paese,Negara,Ülke,Negara,ประเทศ,Țară,Țară,بلد,Країна,Країна
+CurrentLanguage,Text,,English,中文,繁體中文,한국어,日本語,Français,Deutsch,русск,Español,Português,Italiano,Nederlands,Türkçe,Bahasa Indonesia,Polski,ไทย,Română,اللغة,Українська,Українська
+Flag,Sprite,,ui_nation_flag_united_kingdom,ui_nation_flag_china,ui_nation_flag_china,ui_nation_flag_south_korea,ui_nation_flag_japan,ui_nation_flag_france,ui_nation_flag_germany,ui_nation_flag_russia,ui_nation_flag_spain,ui_nation_flag_portugal,ui_nation_flag_italy,ui_nation_flag_netherlands,ui_nation_flag_turkey,ui_nation_flag_indonesia,ui_nation_flag_poland,ui_nation_flag_thailand,ui_nation_flag_romania,ui_nation_flag_saudi_arabia,ui_nation_flag_vietnam,ui_nation_flag_ukraine
+Language,Text,,Language,语言,語言,언어,言語,Langue,Sprache,Язык,Idioma,Lingua,Lingua,Taal,Dil,Bahasa,Język,ภาษา,Limba,لغة,Ngôn ngữ,Мова
+PlayerName,Text,,PlayerName,玩家名称,玩家名稱,플레이어名,プレイヤー名,Nom du joueur,Spielername,Имя игрока,Nombre del Jugador,Nome do Jogador,Nome del Giocatore,Spelersnaam,Oyuncu Adı,Nama Pemain,Graczชื่อผู้เล่น,Nume jucător,Nume jucător,اسم اللاعب,Tên người chơi,Ім'я гравця
+Tips,Text,,Tips,小提示,小提示,힌트,ヒント,Conseils,Tipps,Советы,Consejos,Dicas,Suggerimenti,Tips,İpuçları,Saran,Wskazówki,เคล็ดลับ,Sfaturi,نصائح,Mẹo,Поради
+LC_LAUNCHER_Input_Account,Text,,Enter Account,输入账号,輸入賬號,계정 입력,アカウントを入力,Saisir le compte,Konto eingeben,Введите аккаунт,Ingrese la cuenta,Inserir conta,Inserisci account,Account invoeren,Hesap girin,Masukkan akun,Wpisz konto,ใส่บัญชี,Introduceți contul,أدخل الحساب,Nhập tài khoản,Введіть обліковий запис
+LC_LAUNCHER_Input_Password,Text,,Enter Password,输入密码,輸入密碼,비밀번호 입력,パスワードを入力,Saisir le mot de passe,Kennwort eingeben,Введите пароль,Ingrese la contraseña,Inserir senha,Inserisci password,Wachtwoord invoeren,Şifre girin,Masukkan kata sandi,Wpisz hasło,ใส่รหัสผ่าน,Introduceți parola,أدخل كلمة المرور,Nhập mật khẩu,Введіть пароль
+LC_LAUNCHER_Login,Text,,Login,登录,登錄,로그인,ログイン,Connexion,Anmelden,Войти,Iniciar sesión,Entrar,Accedi,Login,Giriş,Masuk,Logowanie,เข้าสู่ระบบ,Conectare,تسجيل الدخول,Đăng nhập,Увійти
+LC_LAUNCHER_Connect,Text,,Connect,连接,連接,연결,接続,Connecter,Verbinden,Подключиться,Conectar,Conectar,Collegare,Verbinden,Bağlan,Hubungkan,Połącz,เชื่อมต่อ,Conectare,اتصل,Kết nối,Підключити
+LC_LAUNCHER_SayHi,Text,,Hello!,你好,你好,안녕하세요,こんにちは,Bonjour!,Hallo!,Привет!,¡Hola!,Olá!,Ciao!,Hallo!,Merhaba!,Halo!,Cześć!,สวัสดี,Salut!,مرحبا,Xin chào,Привіт!

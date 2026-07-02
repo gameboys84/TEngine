@@ -4,7 +4,7 @@ using UnityEngine.UIElements;
 using UnityEditor;
 using System.Collections.Generic;
 using System.Linq;
-using GameLogic;
+using GameCore;
 using TEngine.Editor.UI;
 using UnityEngine.Events;
 

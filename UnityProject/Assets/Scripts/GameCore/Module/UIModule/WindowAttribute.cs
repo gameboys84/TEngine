@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GameLogic
+namespace GameCore
 {
     /// <summary>
     /// UI层级枚举。

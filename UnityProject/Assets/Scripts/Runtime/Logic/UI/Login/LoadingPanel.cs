@@ -1,10 +1,8 @@
 ﻿using Cysharp.Threading.Tasks;
 using DG.Tweening;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 using TEngine;
-using Ease = TEngine.Ease;
+using GameCore;
 
 namespace GameLogic
 {

@@ -1,7 +1,7 @@
 ﻿using TEngine;
 using UnityEngine;
 
-namespace GameLogic
+namespace GameCore
 {
     /// <summary>
     /// 全局MonoBehavior必须继承于此

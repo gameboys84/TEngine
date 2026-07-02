@@ -1,7 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using TEngine;
 using UnityEngine;
 using AudioType = TEngine.AudioType;
 
@@ -12,6 +8,7 @@ namespace GameLogic
         private void Awake()
         {
             // GameEventHelper.InitRuntimeEvents();
+            StringManager.Instance.Active();
         }
 
         // Start is called before the first frame update

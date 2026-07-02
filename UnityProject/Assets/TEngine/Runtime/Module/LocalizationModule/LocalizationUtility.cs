@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace TEngine
@@ -162,12 +163,16 @@ namespace TEngine
                 return Language.Unspecified;
             }
 
-            if (_languageStrMap.TryGetValue(str, out var language))
+            // if (_languageStrMap.TryGetValue(str, out var language))
+            // {
+            //     return language;
+            // }
+            
+            if (!Enum.TryParse<Language>(str, out var language))
             {
-                return language;
+                language = Language.English;
             }
-
-            language = Language.English;
+            
             return language;
         }
 
@@ -177,6 +182,34 @@ namespace TEngine
         /// <param name="language">语言枚举。</param>
         /// <returns>语言字符串。</returns>
         public static string GetLanguageStr(Language language)
+        {
+            return language.ToString();
+            // if (_languageMap.TryGetValue(language, out var ret))
+            // {
+            //     return ret;
+            // }
+            //
+            // ret = "English";
+            // return ret;
+        }
+        
+        public static Language GetLanguageLocStr(string str)
+        {
+            if (string.IsNullOrEmpty(str))
+            {
+                return Language.Unspecified;
+            }
+
+            if (_languageStrMap.TryGetValue(str, out var language))
+            {
+                return language;
+            }
+
+            language = Language.English;
+            return language;
+        }
+        
+        public static string GetLanguageLocStr(Language language)
         {
             if (_languageMap.TryGetValue(language, out var ret))
             {

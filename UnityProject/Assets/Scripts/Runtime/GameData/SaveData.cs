@@ -1,3 +1,5 @@
+using GameCore;
+
 namespace GameLogic
 {
     public class LocalPlayerInfo : LocalSaveDataBase

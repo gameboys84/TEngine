@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Text;
-using GameLogic;
+using GameCore;
 using TMPro;
 using UnityEditor;
 using UnityEditor.SceneManagement;

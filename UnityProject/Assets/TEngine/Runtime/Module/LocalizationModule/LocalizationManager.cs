@@ -114,7 +114,6 @@ namespace TEngine
             _sourceData.Awake();
             await LoadLanguage(_defaultLanguage, true, true);
 #endif
-            StringManager.Init();
             return true;
         }
 
@@ -183,8 +182,6 @@ namespace TEngine
                 return;
             }
 
-            Log.Info($"加载语言成功 {language}");
-
             UseLocalizationCSV(assetTextAsset.text, !setCurrent);
             if (setCurrent)
             {
@@ -206,7 +203,6 @@ namespace TEngine
             List<string> allLanguages = Localization.LocalizationManager.GetAllLanguages();
             foreach (var language in allLanguages)
             {
-                // var newLanguage = Regex.Replace(language, @"[\r\n]", "");
                 this.allLanguage.Add(language);
             }
         }
@@ -218,6 +214,7 @@ namespace TEngine
         /// <returns>是否已加载。</returns>
         public bool CheckLanguage(string language)
         {
+            // 只要包含名称就行，不用完全匹配key
             return allLanguage.Contains(language);
         }
 
@@ -260,7 +257,8 @@ namespace TEngine
             Log.Info($"设置当前语言 = {language}");
             Localization.LocalizationManager.CurrentLanguage = language;
             _currentLanguage = language;
-            StringManager.SetLanguage(LocalizationUtility.GetLanguage(_currentLanguage));
+            
+            GameEvent.Send(EngineEvent.Event_OnLocalizationChanged);
             return true;
         }
 
@@ -308,6 +306,22 @@ namespace TEngine
 
             Log.Error($"Localization could not load {path}  assetsType :{typeof(T).Name}.");
             return null;
+        }
+        
+        /// <summary>
+        /// 可以使用预定义的 文本KEY, 或者从多语言导出的 Common_test.csv 中获取
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        public string GetText(string key)
+        {
+            if (string.IsNullOrEmpty(key))
+            {
+                Debug.Log("Key is null or empty");
+                return string.Empty;
+            }
+
+            return key;
         }
     }
 }

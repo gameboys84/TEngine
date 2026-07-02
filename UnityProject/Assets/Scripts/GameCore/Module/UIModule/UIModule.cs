@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
-using GameLogic;
 using TEngine;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace GameLogic
+namespace GameCore
 {
     /// <summary>
     /// UI管理模块。

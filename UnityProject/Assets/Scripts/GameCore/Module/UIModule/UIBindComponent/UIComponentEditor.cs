@@ -2,7 +2,7 @@
 
 using UnityEngine;
 
-namespace GameLogic
+namespace GameCore
 {
     public partial class UIBindComponent
     {

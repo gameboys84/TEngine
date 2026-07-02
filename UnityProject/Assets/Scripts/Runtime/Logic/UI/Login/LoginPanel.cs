@@ -2,6 +2,7 @@
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using TEngine;
+using GameCore;
 using LocalizationManager = TEngine.Localization.LocalizationManager;
 
 namespace GameLogic
@@ -53,13 +54,13 @@ namespace GameLogic
 		private List<string> allLanguages;
 		private partial void OnClickRegionBtn()
 		{
-			Log.Debug($"BEFORE LANG: {GameModule.Localization.Language}");
+			// Log.Debug($"BEFORE LANG: {GameModule.Localization.Language}");
 
 			GameModule.Localization.SetLanguage(allLanguages[idx], true);
 			idx = (idx + 1) % allLanguages.Count;
 			// GameModule.Localization.SetLanguage(Language.Arabic, true);
 
-			Log.Debug($"AFTER LANG: {GameModule.Localization.Language}");
+			// Log.Debug($"AFTER LANG: {GameModule.Localization.Language}");
 		}
 		
 		private partial void OnClickSayHiBtn()
@@ -144,10 +145,11 @@ namespace GameLogic
 			// 触发事件 :
 			// GameEvent.Get<T>().DoSomething();
 			// bool GameEvent.Send(int eventType, params object[] args);
-            
+
             
 			AddUIEvent(GameEventLogic.Event_UIEvent, OnUIEvent);
-			GameEvent.AddEventListener(ILoginUI_Event.ShowLoginUI, OnShowLoginUI);
+			// GameEvent.AddEventListener(ILoginUI_Event.ShowLoginUI, OnShowLoginUI);
+			GameEvent.AddEventListener(IUIRefresh_Event.RefreshUI, OnUIRefresh);
 			GameEvent.AddEventListener<bool, string>("CustomEvent", OnCustomEvent);
 
 			GameEvent.AddEventListener((int)GameEventCoreId.NETWORK_CONNECTED, OnNetworkConnected);
@@ -158,7 +160,8 @@ namespace GameLogic
 		{
 			base.OnDestroy();
             
-			GameEvent.RemoveEventListener(ILoginUI_Event.ShowLoginUI, OnShowLoginUI);
+			// GameEvent.RemoveEventListener(ILoginUI_Event.ShowLoginUI, OnShowLoginUI);
+			GameEvent.RemoveEventListener(IUIRefresh_Event.RefreshUI, OnUIRefresh);
 			GameEvent.RemoveEventListener<bool, string>("CustomEvent", OnCustomEvent);
             
 			GameEvent.RemoveEventListener((int)GameEventCoreId.NETWORK_CONNECTED, OnNetworkConnected);
@@ -169,11 +172,19 @@ namespace GameLogic
 
         #region 自定义事件
 
+        private void OnUIRefresh()
+        {
+	        Log.Debug($"OnUIRefresh call by event, cur language is: {GameModule.Localization.Language}");
+	        
+	        // 基于多语言 KEY 刷新 UI
+        }
+        
         private void OnUIEvent()
         {
 	        Log.Debug("OnUIEvent call by event, 首先触发");
             
-	        GameEvent.Get<ILoginUI>()?.ShowLoginUI();
+	        // GameEvent.Get<ILoginUI>()?.ShowLoginUI();
+	        OnShowLoginUI();
         }
 
         private void OnShowLoginUI()

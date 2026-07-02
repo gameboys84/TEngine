@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace GameLogic
+namespace GameCore
 {
     public class ErrorLogger : IDisposable
     {

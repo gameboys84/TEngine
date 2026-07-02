@@ -49,34 +49,24 @@ namespace Procedure
                 // 编辑器资源模式直接使用 Inspector 上设置的语言
                 return;
             }
-            
-            ILocalizationModule localizationModule = ModuleSystem.GetModule<ILocalizationModule>();
-            Language language = localizationModule.Language;
+
+            var language = GameModule.Localization.Language;
             if (Utility.PlayerPrefs.HasSetting(Constant.Setting.Language))
             {
-                try
-                {
-                    string languageString = Utility.PlayerPrefs.GetString(Constant.Setting.Language);
-                    language = (Language)System.Enum.Parse(typeof(Language), languageString);
-                }
-                catch(System.Exception exception)
-                {
-                    Log.Error("Init language error, reason {0}",exception.ToString());
-                }
+                string languageString = Utility.PlayerPrefs.GetString(Constant.Setting.Language);
+                language = LocalizationUtility.GetLanguage(languageString);
             }
-            
-            if (language != Language.English
-                && language != Language.ChineseSimplified
-                && language != Language.ChineseTraditional)
+
+            var languageName = LocalizationUtility.GetLanguageStr(language);
+            if (!GameModule.Localization.CheckLanguage(languageName))
             {
-                // 若是暂不支持的语言，则使用英语
+                // 没找到对应语言配置就自动转为英文
                 language = Language.English;
-            
-                Utility.PlayerPrefs.SetString(Constant.Setting.Language, language.ToString());
+                Utility.PlayerPrefs.SetString(Constant.Setting.Language, languageName);
                 Utility.PlayerPrefs.Save();
             }
-            
-            localizationModule.Language = language;
+            GameModule.Localization.Language = language;
+
             Log.Info("Init language settings complete, current language is '{0}'.", language.ToString());
         }
 

@@ -7,7 +7,7 @@ using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
 
-namespace GameLogic
+namespace GameCore
 {
     [CustomEditor(typeof(UIBindComponent))]
     public class UIComponentInspectorEditor : UnityEditor.Editor

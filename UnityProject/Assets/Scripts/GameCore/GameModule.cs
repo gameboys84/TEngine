@@ -1,6 +1,5 @@
-﻿using GameLogic;
-using TEngine;
-using Object = UnityEngine.Object;
+﻿using TEngine;
+using GameCore;
 // ReSharper disable All
 
 public class GameModule
@@ -12,7 +11,7 @@ public class GameModule
     /// </summary>
     public static RootModule Base
     {
-        get => _base ??= Object.FindObjectOfType<RootModule>();
+        get => _base ??= UnityEngine.Object.FindObjectOfType<RootModule>();
         private set => _base = value;
     }
 

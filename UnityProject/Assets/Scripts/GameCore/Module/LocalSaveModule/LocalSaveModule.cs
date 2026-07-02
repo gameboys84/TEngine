@@ -2,7 +2,7 @@
 using System.IO;
 using TEngine;
 
-namespace GameLogic
+namespace GameCore
 {
     public class LocalSaveModule : Module, ILocalSaveModule
     {
