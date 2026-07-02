@@ -71,17 +71,72 @@ namespace TEngine
             }
         }
 
+        public static Language LocLanguage2Language(LocLanguage locLanguage)
+        {
+            switch (locLanguage)
+            {
+                case LocLanguage.en: return Language.English;
+                case LocLanguage.cn: return Language.ChineseSimplified;
+                case LocLanguage.zh: return Language.ChineseTraditional;
+                case LocLanguage.kr: return Language.Korean;
+                case LocLanguage.jp: return Language.Japanese;
+                case LocLanguage.fr: return Language.French;
+                case LocLanguage.de: return Language.German;
+                case LocLanguage.ru: return Language.Russian;
+                case LocLanguage.sp: return Language.Spanish;
+                case LocLanguage.po: return Language.PortuguesePortugal;
+                case LocLanguage.it: return Language.Italian;
+                case LocLanguage.nl: return Language.Dutch;
+                case LocLanguage.tr: return Language.Turkish;
+                case LocLanguage.id: return Language.Indonesian;
+                case LocLanguage.pls: return Language.Polish;
+                case LocLanguage.thai: return Language.Thai;
+                case LocLanguage.ro: return Language.Romanian;
+                case LocLanguage.ar: return Language.Arabic;
+                case LocLanguage.vi: return Language.Vietnamese;
+                case LocLanguage.uk: return Language.Ukrainian;
+                default: return Language.Unspecified;
+            }
+        }
+        public static LocLanguage Language2LocLanguage(Language language)
+        {
+            switch (language)
+            {
+                case Language.English: return LocLanguage.en;
+                case Language.ChineseSimplified: return LocLanguage.cn;
+                case Language.ChineseTraditional: return LocLanguage.zh;
+                case Language.Korean: return LocLanguage.kr;
+                case Language.Japanese: return LocLanguage.jp;
+                case Language.French: return LocLanguage.fr;
+                case Language.German: return LocLanguage.de;
+                case Language.Russian: return LocLanguage.ru;
+                case Language.Spanish: return LocLanguage.sp;
+                case Language.PortuguesePortugal: return LocLanguage.po;
+                case Language.Italian: return LocLanguage.it;
+                case Language.Dutch: return LocLanguage.nl;
+                case Language.Turkish: return LocLanguage.tr;
+                case Language.Indonesian: return LocLanguage.id;
+                case Language.Polish: return LocLanguage.pls;
+                case Language.Thai: return LocLanguage.thai;
+                case Language.Romanian: return LocLanguage.ro;
+                case Language.Arabic: return LocLanguage.ar;
+                case Language.Vietnamese: return LocLanguage.vi;
+                case Language.Ukrainian: return LocLanguage.uk;
+                default: return LocLanguage.en;
+            }
+        }
+
         private static readonly Dictionary<Language, string> _languageMap = new Dictionary<Language, string>();
         private static readonly Dictionary<string, Language> _languageStrMap = new Dictionary<string, Language>();
 
         static LocalizationUtility()
         {
-            RegisterLanguageMap(Language.English);
-            RegisterLanguageMap(Language.ChineseSimplified, "Chinese");
-            // RegisterLanguageMap(Language.ChineseTraditional);
-            RegisterLanguageMap(Language.Japanese);
-            RegisterLanguageMap(Language.Korean);
-            RegisterLanguageMap(Language.Arabic);
+            for (var i = 0; i < (int)LocLanguage.Count; i++)
+            {
+                var locLanguage = (LocLanguage)i;
+                var language = LocLanguage2Language(locLanguage);
+                RegisterLanguageMap(language, locLanguage.ToString());
+            }
         }
 
         private static void RegisterLanguageMap(Language language, string str = "")

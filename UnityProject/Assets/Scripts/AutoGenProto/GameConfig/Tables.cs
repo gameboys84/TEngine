@@ -13,17 +13,17 @@ namespace GameConfig
 {
 public partial class Tables
 {
-    public item.TbItem TbItem {get; }
+    public TbLocConfig TbLocConfig {get; }
 
     public Tables(System.Func<string, ByteBuf> loader)
     {
-        TbItem = new item.TbItem(loader("item_tbitem"));
+        TbLocConfig = new TbLocConfig(loader("tblocconfig"));
         ResolveRef();
     }
     
     private void ResolveRef()
     {
-        TbItem.ResolveRef(this);
+        TbLocConfig.ResolveRef(this);
     }
 }
 

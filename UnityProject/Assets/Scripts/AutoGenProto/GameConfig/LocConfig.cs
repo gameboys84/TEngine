@@ -10,31 +10,31 @@
 using Luban;
 
 
-namespace GameConfig.item
+namespace GameConfig
 {
-public sealed partial class ItemExchange : Luban.BeanBase
+public sealed partial class LocConfig : Luban.BeanBase
 {
-    public ItemExchange(ByteBuf _buf) 
+    public LocConfig(ByteBuf _buf) 
     {
-        Id = _buf.ReadInt();
-        Num = _buf.ReadInt();
+        ID = _buf.ReadString();
+        {int __n0 = _buf.ReadSize(); Content = new string[__n0];for(var __index0 = 0 ; __index0 < __n0 ; __index0++) { string __e0;__e0 = _buf.ReadString(); Content[__index0] = __e0;}}
     }
 
-    public static ItemExchange DeserializeItemExchange(ByteBuf _buf)
+    public static LocConfig DeserializeLocConfig(ByteBuf _buf)
     {
-        return new item.ItemExchange(_buf);
+        return new LocConfig(_buf);
     }
 
     /// <summary>
-    /// 道具id
+    /// 唯一ID
     /// </summary>
-    public readonly int Id;
+    public readonly string ID;
     /// <summary>
-    /// 道具数量
+    /// en
     /// </summary>
-    public readonly int Num;
+    public readonly string[] Content;
    
-    public const int __ID__ = 1814660465;
+    public const int __ID__ = -56573310;
     public override int GetTypeId() => __ID__;
 
     public  void ResolveRef(Tables tables)
@@ -44,11 +44,10 @@ public sealed partial class ItemExchange : Luban.BeanBase
     public override string ToString()
     {
         return "{ "
-        + "id:" + Id + ","
-        + "num:" + Num + ","
+        + "ID:" + ID + ","
+        + "Content:" + Luban.StringUtil.CollectionToString(Content) + ","
         + "}";
     }
 }
-
 }
 

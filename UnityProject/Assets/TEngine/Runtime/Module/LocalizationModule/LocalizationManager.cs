@@ -114,6 +114,7 @@ namespace TEngine
             _sourceData.Awake();
             await LoadLanguage(_defaultLanguage, true, true);
 #endif
+            StringManager.Init();
             return true;
         }
 
@@ -239,9 +240,6 @@ namespace TEngine
         /// <returns></returns>
         public bool SetLanguage(string language, bool load = false)
         {
-            // 去除字符中的特殊字符
-            // language = language.Replace("\r\n", "");
-            
             if (!CheckLanguage(language))
             {
                 if (load)
@@ -262,6 +260,7 @@ namespace TEngine
             Log.Info($"设置当前语言 = {language}");
             Localization.LocalizationManager.CurrentLanguage = language;
             _currentLanguage = language;
+            StringManager.SetLanguage(LocalizationUtility.GetLanguage(_currentLanguage));
             return true;
         }
 

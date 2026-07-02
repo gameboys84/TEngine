@@ -11,7 +11,7 @@ namespace GameLogic
     {
         private void Awake()
         {
-            GameEventHelper.InitRuntimeEvents();
+            // GameEventHelper.InitRuntimeEvents();
         }
 
         // Start is called before the first frame update

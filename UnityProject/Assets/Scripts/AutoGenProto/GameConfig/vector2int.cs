@@ -16,8 +16,8 @@ public partial struct vector2int
 {
     public vector2int(ByteBuf _buf) 
     {
-        X = _buf.ReadInt();
-        Y = _buf.ReadInt();
+        x = _buf.ReadInt();
+        y = _buf.ReadInt();
     }
 
     public static vector2int Deserializevector2int(ByteBuf _buf)
@@ -25,8 +25,8 @@ public partial struct vector2int
         return new vector2int(_buf);
     }
 
-    public readonly int X;
-    public readonly int Y;
+    public readonly int x;
+    public readonly int y;
    
 
     public  void ResolveRef(Tables tables)
@@ -36,11 +36,10 @@ public partial struct vector2int
     public override string ToString()
     {
         return "{ "
-        + "x:" + X + ","
-        + "y:" + Y + ","
+        + "x:" + x + ","
+        + "y:" + y + ","
         + "}";
     }
 }
-
 }
 

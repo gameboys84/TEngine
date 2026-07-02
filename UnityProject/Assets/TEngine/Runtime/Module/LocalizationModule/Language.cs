@@ -260,4 +260,34 @@
         /// </summary>
         Vietnamese
     }
+    
+    /// <summary>
+    /// LocConfig配置中的语言, 顺序与LocConfig中的语言顺序一致， 不需要的语言注释掉
+    /// </summary>
+    public enum LocLanguage : byte
+    {
+        en = 0, //英语
+        cn, //简体中文
+        zh, //繁体中文
+        kr, //韩国
+        jp, //日语
+        fr, //法语
+        de, //德语
+        ru, //俄语
+        sp, //西班牙
+        po, //葡萄牙语
+        it, //意大利
+        nl, //荷兰语
+        tr, //土耳其语
+        id, //印度尼西亚
+        pls, //波兰语
+        thai, //泰国语
+        ro, //罗马尼亚
+        ar, //阿拉伯语
+        vi, //越南语
+        uk, //乌克兰语
+        Count,
+        // fa, //波斯语
+        lang_none = 255
+    }
 }

@@ -2,13 +2,13 @@ Cd /d %~dp0
 echo %CD%
 
 set WORKSPACE=../..
-set LUBAN_DLL=%WORKSPACE%\Tools\Luban\bin\Luban.dll
+set LUBAN_DLL=%WORKSPACE%\Tools\Luban\Luban.dll
 set CONF_ROOT=.
 set DATA_OUTPATH=%WORKSPACE%/UnityProject/Assets/AssetBundle/AutoGen/GameConfig/
-set CODE_OUTPATH=%WORKSPACE%/UnityProject/Assets/Scripts/Runtime/Proto/GameConfig/
+set CODE_OUTPATH=%WORKSPACE%/UnityProject/Assets/Scripts/AutoGenProto/GameConfig/
 
-copy /y "%CONF_ROOT%\CustomTemplate\ConfigSystem.cs" "%WORKSPACE%/UnityProject/Assets/Scripts/Runtime/Proto/ConfigSystem.cs"
-copy /y "%CONF_ROOT%\CustomTemplate\ExternalTypeUtil.cs" "%WORKSPACE%/UnityProject/Assets/Scripts/Runtime/Proto/ExternalTypeUtil.cs"
+copy /y "%CONF_ROOT%\CustomTemplate\ConfigSystem.cs" "%WORKSPACE%/UnityProject/Assets/Scripts/AutoGenProto/ConfigSystem.cs"
+copy /y "%CONF_ROOT%\CustomTemplate\ExternalTypeUtil.cs" "%WORKSPACE%/UnityProject/Assets/Scripts/AutoGenProto/ExternalTypeUtil.cs"
 
 dotnet %LUBAN_DLL% ^
     -t client ^
@@ -17,6 +17,7 @@ dotnet %LUBAN_DLL% ^
     --conf %CONF_ROOT%\luban.conf ^
     -x code.lineEnding=crlf ^
     -x outputCodeDir=%CODE_OUTPATH% ^
+    -x codeStyle=none ^
     -x outputDataDir=%DATA_OUTPATH% 
 if not defined AI_MODE pause
 

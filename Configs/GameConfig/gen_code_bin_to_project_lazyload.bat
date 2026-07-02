@@ -2,7 +2,7 @@ Cd /d %~dp0
 echo %CD%
 
 set WORKSPACE=../..
-set LUBAN_DLL=%WORKSPACE%\Tools\Luban\bin\Luban.dll
+set LUBAN_DLL=%WORKSPACE%\Tools\Luban\Luban.dll
 set CONF_ROOT=.
 set DATA_OUTPATH=%WORKSPACE%/UnityProject/Assets/AssetBundle/AutoGen/GameConfig/
 set CODE_OUTPATH=%WORKSPACE%/UnityProject/Assets/Scripts/AutoGenProto/GameConfig/
@@ -18,6 +18,7 @@ dotnet %LUBAN_DLL% ^
     --customTemplateDir %CONF_ROOT%\CustomTemplate\CustomTemplate_Client_LazyLoad ^
     -x code.lineEnding=crlf ^
     -x outputCodeDir=%CODE_OUTPATH% ^
+    -x codeStyle=none ^
     -x outputDataDir=%DATA_OUTPATH% 
 if not defined AI_MODE pause
 

@@ -21,4 +21,5 @@ dotnet "${LUBAN_DLL}" \
     --conf "${CONF_ROOT}/luban.conf" \
     -x code.lineEnding=crlf \
     -x outputCodeDir="${CODE_OUTPATH}" \
+    -x codeStyle=none \
     -x outputDataDir="${DATA_OUTPATH}"

@@ -101,10 +101,9 @@ namespace GameLogic
 		{
 			base.OnCreate();
 
-			var items = GameModule.ConfigSystem.Tables.TbItem;
-			var item = items.Get(10000);
-            
-			Log.Debug((string)item.ToString());
+			// var items = GameModule.ConfigSystem.Tables.TbItem;
+			// var item = items.Get(10000);
+
 			Log.Debug($"OnCreate, {WindowName}");
 
 			allLanguages = LocalizationManager.GetAllLanguages();

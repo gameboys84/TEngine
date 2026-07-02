@@ -22,4 +22,5 @@ dotnet "${LUBAN_DLL}" \
     --customTemplateDir "${CONF_ROOT}/CustomTemplate/CustomTemplate_Client_LazyLoad" \
     -x code.lineEnding=crlf \
     -x outputCodeDir="${CODE_OUTPATH}" \
+    -x codeStyle=none \
     -x outputDataDir="${DATA_OUTPATH}"

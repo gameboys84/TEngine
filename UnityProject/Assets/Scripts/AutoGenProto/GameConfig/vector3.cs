@@ -16,9 +16,9 @@ public partial struct vector3
 {
     public vector3(ByteBuf _buf) 
     {
-        X = _buf.ReadFloat();
-        Y = _buf.ReadFloat();
-        Z = _buf.ReadFloat();
+        x = _buf.ReadFloat();
+        y = _buf.ReadFloat();
+        z = _buf.ReadFloat();
     }
 
     public static vector3 Deserializevector3(ByteBuf _buf)
@@ -26,9 +26,9 @@ public partial struct vector3
         return new vector3(_buf);
     }
 
-    public readonly float X;
-    public readonly float Y;
-    public readonly float Z;
+    public readonly float x;
+    public readonly float y;
+    public readonly float z;
    
 
     public  void ResolveRef(Tables tables)
@@ -38,12 +38,11 @@ public partial struct vector3
     public override string ToString()
     {
         return "{ "
-        + "x:" + X + ","
-        + "y:" + Y + ","
-        + "z:" + Z + ","
+        + "x:" + x + ","
+        + "y:" + y + ","
+        + "z:" + z + ","
         + "}";
     }
 }
-
 }
 
