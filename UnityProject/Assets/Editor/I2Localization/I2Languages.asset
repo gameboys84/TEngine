@@ -17,6 +17,32 @@ MonoBehaviour:
     UserAgreesToHaveItInsideThePluginsFolder: 0
     GoogleLiveSyncIsUptoDate: 1
     mTerms:
+    - Term: LOC_CODE_ID
+      TermType: 0
+      Description: 
+      Languages:
+      - en
+      - zh
+      - zh-Hant
+      - ko
+      - ja
+      - fr
+      - de
+      - ru
+      - es
+      - pt
+      - it
+      - nl
+      - tr
+      - id
+      - pl
+      - th
+      - ro
+      - ar
+      - vi
+      - uk
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
     - Term: AppName
       TermType: 0
       Description: 
@@ -43,44 +69,18 @@ MonoBehaviour:
       - EngineDemo
       Flags: 0000000000000000000000000000000000000000
       Languages_Touch: []
-    - Term: Country
-      TermType: 0
-      Description: 
-      Languages:
-      - Country
-      - "\u56FD\u5BB6"
-      - "\u570B\u5BB6"
-      - "\uB098\uB77C"
-      - "\u56FD"
-      - Pays
-      - Land
-      - "\u0421\u0442\u0440\u0430\u043D\u0430"
-      - "Pa\xEDs"
-      - "Pa\xEDs"
-      - Paese
-      - Negara
-      - "\xDClke"
-      - Negara
-      - "\u0E1B\u0E23\u0E30\u0E40\u0E17\u0E28"
-      - "\u021Aar\u0103"
-      - "\u021Aar\u0103"
-      - "\u0628\u0644\u062F"
-      - "\u041A\u0440\u0430\u0457\u043D\u0430"
-      - "\u041A\u0440\u0430\u0457\u043D\u0430"
-      Flags: 0000000000000000000000000000000000000000
-      Languages_Touch: []
     - Term: CurrentLanguage
       TermType: 0
       Description: 
       Languages:
       - English
-      - "\u4E2D\u6587"
+      - "\u7B80\u4F53\u4E2D\u6587"
       - "\u7E41\u9AD4\u4E2D\u6587"
       - "\uD55C\uAD6D\uC5B4"
       - "\u65E5\u672C\u8A9E"
       - "Fran\xE7ais"
       - Deutsch
-      - "\u0440\u0443\u0441\u0441\u043A"
+      - "\u0420\u0443\u0441\u0441\u043A\u0438\u0439"
       - "Espa\xF1ol"
       - "Portugu\xEAs"
       - Italiano
@@ -88,11 +88,11 @@ MonoBehaviour:
       - "T\xFCrk\xE7e"
       - Bahasa Indonesia
       - Polski
-      - "\u0E44\u0E17\u0E22"
+      - "\u0E41\u0E1A\u0E1A\u0E44\u0E17\u0E22"
       - "Rom\xE2n\u0103"
-      - "\u0627\u0644\u0644\u063A\u0629"
-      - "\u0423\u043A\u0440\u0430\u0457\u043D\u0441\u044C\u043A\u0430"
-      - "\u0423\u043A\u0440\u0430\u0457\u043D\u0441\u044C\u043A\u0430"
+      - "\u0639\u0631\u0628\u064A"
+      - "Ti\u1EBFng Vi\u1EC7t"
+      - "\u0443\u043A\u0440\u0430\u0457\u043D\u0441\u044C\u043A\u0430"
       Flags: 0000000000000000000000000000000000000000
       Languages_Touch: []
     - Term: Flag
@@ -121,6 +121,58 @@ MonoBehaviour:
       - ui_nation_flag_ukraine
       Flags: 0000000000000000000000000000000000000000
       Languages_Touch: []
+    - Term: Language
+      TermType: 0
+      Description: 
+      Languages:
+      - Language
+      - "\u8BED\u8A00"
+      - "\u8A9E\u8A00"
+      - "\uC5B8\uC5B4"
+      - "\u8A00\u8A9E"
+      - langue
+      - Sprache
+      - "\u044F\u0437\u044B\u043A"
+      - idioma
+      - linguagem
+      - lingua
+      - taal
+      - dil
+      - bahasa
+      - "j\u0119zyk"
+      - "\u0E20\u0E32\u0E29\u0E32"
+      - "limb\u0103"
+      - "\u0644\u063A\u0629"
+      - "ng\xF4n ng\u1EEF"
+      - "\u043C\u043E\u0432\u0430"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Country
+      TermType: 0
+      Description: 
+      Languages:
+      - Country
+      - "\u56FD\u5BB6"
+      - "\u570B\u5BB6"
+      - "\uAD6D\uAC00"
+      - "\u56FD\u5BB6"
+      - nation
+      - Nation
+      - "\u043D\u0430\u0446\u0438\u044F"
+      - "naci\xF3n"
+      - "na\xE7\xE3o"
+      - nazione
+      - natie
+      - ulus
+      - bangsa
+      - "nar\xF3d"
+      - "\u0E1B\u0E23\u0E30\u0E40\u0E17\u0E28"
+      - "na\u0163iune"
+      - "\u0623\u0645\u0629"
+      - "Qu\u1ED1c gia"
+      - "\u043D\u0430\u0446\u0456\u044F"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
     - Term: LC_LAUNCHER_Connect
       TermType: 0
       Description: 
@@ -128,23 +180,23 @@ MonoBehaviour:
       - Connect
       - "\u8FDE\u63A5"
       - "\u9023\u63A5"
-      - "\uC5F0\uACB0"
-      - "\u63A5\u7D9A"
-      - Connecter
-      - Verbinden
-      - "\u041F\u043E\u0434\u043A\u043B\u044E\u0447\u0438\u0442\u044C\u0441\u044F"
-      - Conectar
-      - Conectar
-      - Collegare
-      - Verbinden
-      - "Ba\u011Flan"
-      - Hubungkan
-      - "Po\u0142\u0105cz"
+      - "\uC5F0\uACB0\uD558\uB2E4"
+      - "\u63A5\u7D9A\u3059\u308B"
+      - connecter
+      - verbinden
+      - "\u0441\u043E\u0435\u0434\u0438\u043D\u044F\u0442\u044C"
+      - conectar
+      - conectar
+      - collegare
+      - verbinden
+      - "ba\u011Flamak"
+      - menghubungkan
+      - "\u0142\u0105czy\u0107"
       - "\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D"
-      - Conectare
-      - "\u0627\u062A\u0635\u0644"
-      - "K\u1EBFt n\u1ED1i"
-      - "\u041F\u0456\u0434\u043A\u043B\u044E\u0447\u0438\u0442\u0438"
+      - "conecta\u021Bi"
+      - "\u064A\u062A\u0635\u0644"
+      - "k\u1EBFt n\u1ED1i"
+      - "\u0437'\u0454\u0434\u043D\u0430\u0442\u0438"
       Flags: 0000000000000000000000000000000000000000
       Languages_Touch: []
     - Term: LC_LAUNCHER_Input_Account
@@ -153,23 +205,24 @@ MonoBehaviour:
       Languages:
       - Enter Account
       - "\u8F93\u5165\u8D26\u53F7"
-      - "\u8F38\u5165\u8CEC\u865F"
-      - "\uACC4\uC815 \uC785\uB825"
-      - "\u30A2\u30AB\u30A6\u30F3\u30C8\u3092\u5165\u529B"
+      - "\u8F38\u5165\u5E33\u865F"
+      - "\uACC4\uC815\uC744 \uC785\uB825\uD558\uC138\uC694"
+      - "\u30A2\u30AB\u30A6\u30F3\u30C8\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044"
       - Saisir le compte
       - Konto eingeben
-      - "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0430\u043A\u043A\u0430\u0443\u043D\u0442"
-      - Ingrese la cuenta
-      - Inserir conta
-      - Inserisci account
-      - Account invoeren
+      - "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043D\u043E\u043C\u0435\u0440
+        \u0441\u0447\u0435\u0442\u0430"
+      - Ingrese su cuenta
+      - Insira a conta
+      - Accedi all'account
+      - Voer account in
       - Hesap girin
       - Masukkan akun
-      - Wpisz konto
-      - "\u0E43\u0E2A\u0E48\u0E1A\u0E31\u0E0D\u0E0A\u0E35"
+      - "Wprowad\u017A konto"
+      - "\u0E1B\u0E49\u0E2D\u0E19\u0E1A\u0E31\u0E0D\u0E0A\u0E35"
       - "Introduce\u021Bi contul"
       - "\u0623\u062F\u062E\u0644 \u0627\u0644\u062D\u0633\u0627\u0628"
-      - "Nh\u1EADp t\xE0i kho\u1EA3n"
+      - "\u0110\u0103ng nh\u1EADp t\xE0i kho\u1EA3n"
       - "\u0412\u0432\u0435\u0434\u0456\u0442\u044C \u043E\u0431\u043B\u0456\u043A\u043E\u0432\u0438\u0439
         \u0437\u0430\u043F\u0438\u0441"
       Flags: 0000000000000000000000000000000000000000
@@ -181,19 +234,19 @@ MonoBehaviour:
       - Enter Password
       - "\u8F93\u5165\u5BC6\u7801"
       - "\u8F38\u5165\u5BC6\u78BC"
-      - "\uBE44\uBC00\uBC88\uD638 \uC785\uB825"
-      - "\u30D1\u30B9\u30EF\u30FC\u30C9\u3092\u5165\u529B"
-      - Saisir le mot de passe
-      - Kennwort eingeben
+      - "\uBE44\uBC00\uBC88\uD638\uB97C \uC785\uB825\uD558\uC138\uC694"
+      - "\u30D1\u30B9\u30EF\u30FC\u30C9\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044"
+      - Saisissez le mot de passe
+      - Passwort eingeben
       - "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043F\u0430\u0440\u043E\u043B\u044C"
-      - "Ingrese la contrase\xF1a"
-      - Inserir senha
-      - Inserisci password
-      - Wachtwoord invoeren
-      - "\u015Eifre girin"
+      - "Introduzca la contrase\xF1a"
+      - Digite a senha
+      - Inserisci la password
+      - Voer wachtwoord in
+      - "\u015Eifrenizi girin"
       - Masukkan kata sandi
-      - "Wpisz has\u0142o"
-      - "\u0E43\u0E2A\u0E48\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19"
+      - "Wprowad\u017A has\u0142o"
+      - "\u0E1B\u0E49\u0E2D\u0E19\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19"
       - "Introduce\u021Bi parola"
       - "\u0623\u062F\u062E\u0644 \u0643\u0644\u0645\u0629 \u0627\u0644\u0645\u0631\u0648\u0631"
       - "Nh\u1EADp m\u1EADt kh\u1EA9u"
@@ -206,21 +259,21 @@ MonoBehaviour:
       Languages:
       - Login
       - "\u767B\u5F55"
-      - "\u767B\u9304"
+      - "\u767B\u5165"
       - "\uB85C\uADF8\uC778"
       - "\u30ED\u30B0\u30A4\u30F3"
-      - Connexion
-      - Anmelden
-      - "\u0412\u043E\u0439\u0442\u0438"
-      - "Iniciar sesi\xF3n"
-      - Entrar
-      - Accedi
+      - Se connecter
+      - Einloggen
+      - "\u0410\u0432\u0442\u043E\u0440\u0438\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F"
+      - Acceso
+      - Conecte-se
       - Login
-      - "Giri\u015F"
+      - Inloggen
+      - "Giri\u015F yapmak"
       - Masuk
-      - Logowanie
+      - "Zaloguj si\u0119"
       - "\u0E40\u0E02\u0E49\u0E32\u0E2A\u0E39\u0E48\u0E23\u0E30\u0E1A\u0E1A"
-      - Conectare
+      - Log in
       - "\u062A\u0633\u062C\u064A\u0644 \u0627\u0644\u062F\u062E\u0648\u0644"
       - "\u0110\u0103ng nh\u1EADp"
       - "\u0423\u0432\u0456\u0439\u0442\u0438"
@@ -235,47 +288,21 @@ MonoBehaviour:
       - "\u4F60\u597D"
       - "\uC548\uB155\uD558\uC138\uC694"
       - "\u3053\u3093\u306B\u3061\u306F"
-      - Bonjour!
-      - Hallo!
-      - "\u041F\u0440\u0438\u0432\u0435\u0442!"
-      - "\xA1Hola!"
-      - "Ol\xE1!"
-      - Ciao!
-      - Hallo!
-      - Merhaba!
-      - Halo!
-      - "Cze\u015B\u0107!"
+      - Bonjour
+      - Hallo
+      - "\u041F\u0440\u0438\u0432\u0435\u0442"
+      - Hola
+      - "Ol\xE1"
+      - Ciao
+      - Hallo
+      - Merhaba
+      - Halo
+      - "Cze\u015B\u0107"
       - "\u0E2A\u0E27\u0E31\u0E2A\u0E14\u0E35"
-      - Salut!
-      - "\u0645\u0631\u062D\u0628\u0627"
+      - Buna ziua
+      - "\u0645\u0631\u062D\u0628\u064B\u0627"
       - "Xin ch\xE0o"
-      - "\u041F\u0440\u0438\u0432\u0456\u0442!"
-      Flags: 0000000000000000000000000000000000000000
-      Languages_Touch: []
-    - Term: Language
-      TermType: 0
-      Description: 
-      Languages:
-      - Language
-      - "\u8BED\u8A00"
-      - "\u8A9E\u8A00"
-      - "\uC5B8\uC5B4"
-      - "\u8A00\u8A9E"
-      - Langue
-      - Sprache
-      - "\u042F\u0437\u044B\u043A"
-      - Idioma
-      - Lingua
-      - Lingua
-      - Taal
-      - Dil
-      - Bahasa
-      - "J\u0119zyk"
-      - "\u0E20\u0E32\u0E29\u0E32"
-      - Limba
-      - "\u0644\u063A\u0629"
-      - "Ng\xF4n ng\u1EEF"
-      - "\u041C\u043E\u0432\u0430"
+      - "\u041F\u0440\u0438\u0432\u0456\u0442"
       Flags: 0000000000000000000000000000000000000000
       Languages_Touch: []
     - Term: PlayerName
@@ -285,20 +312,20 @@ MonoBehaviour:
       - PlayerName
       - "\u73A9\u5BB6\u540D\u79F0"
       - "\u73A9\u5BB6\u540D\u7A31"
-      - "\uD50C\uB808\uC774\uC5B4\u540D"
+      - "\uC120\uC218 \uC774\uB984"
       - "\u30D7\u30EC\u30A4\u30E4\u30FC\u540D"
       - Nom du joueur
       - Spielername
       - "\u0418\u043C\u044F \u0438\u0433\u0440\u043E\u043A\u0430"
-      - Nombre del Jugador
-      - Nome do Jogador
-      - Nome del Giocatore
+      - Nombre del jugador
+      - Nome do jogador
+      - Nome del giocatore
       - Spelersnaam
       - "Oyuncu Ad\u0131"
       - Nama Pemain
-      - "Gracz\u0E0A\u0E37\u0E48\u0E2D\u0E1C\u0E39\u0E49\u0E40\u0E25\u0E48\u0E19"
-      - "Nume juc\u0103tor"
-      - "Nume juc\u0103tor"
+      - Nazwa gracza
+      - "\u0E0A\u0E37\u0E48\u0E2D\u0E1C\u0E39\u0E49\u0E40\u0E25\u0E48\u0E19"
+      - "Numele juc\u0103torului"
       - "\u0627\u0633\u0645 \u0627\u0644\u0644\u0627\u0639\u0628"
       - "T\xEAn ng\u01B0\u1EDDi ch\u01A1i"
       - "\u0406\u043C'\u044F \u0433\u0440\u0430\u0432\u0446\u044F"
@@ -311,26 +338,26 @@ MonoBehaviour:
       - Tips
       - "\u5C0F\u63D0\u793A"
       - "\u5C0F\u63D0\u793A"
-      - "\uD78C\uD2B8"
+      - "\uD301"
       - "\u30D2\u30F3\u30C8"
-      - Conseils
-      - Tipps
-      - "\u0421\u043E\u0432\u0435\u0442\u044B"
-      - Consejos
-      - Dicas
-      - Suggerimenti
-      - Tips
-      - "\u0130pu\xE7lar\u0131"
-      - Saran
-      - "Wskaz\xF3wki"
+      - Conseil
+      - Tipp
+      - "\u041A\u043E\u043D\u0447\u0438\u043A"
+      - Consejo
+      - Dica
+      - Mancia
+      - Tip
+      - "U\xE7"
+      - Tip
+      - "Wskaz\xF3wka"
       - "\u0E40\u0E04\u0E25\u0E47\u0E14\u0E25\u0E31\u0E1A"
-      - Sfaturi
-      - "\u0646\u0635\u0627\u0626\u062D"
+      - Sfat
+      - "\u0646\u0635\u064A\u062D\u0629"
       - "M\u1EB9o"
-      - "\u041F\u043E\u0440\u0430\u0434\u0438"
+      - "\u0427\u0430\u0439\u043E\u0432\u0456"
       Flags: 0000000000000000000000000000000000000000
       Languages_Touch: []
-    CaseInsensitiveTerms: 0
+    CaseInsensitiveTerms: 1
     OnMissingTranslation: 2
     mTerm_AppName: AppName
     mLanguages:
@@ -361,8 +388,8 @@ MonoBehaviour:
     - Name: Spanish
       Code: es
       Flags: 0
-    - Name: PortuguesePortugal
-      Code: 
+    - Name: Portuguese
+      Code: pt
       Flags: 0
     - Name: Italian
       Code: it
@@ -399,7 +426,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbxXFB5JSGbPiUGKJjyFg4e_axDgApruE3oR_YRH5jzCfugZ6q_EyORH7qQz4aQBGmeo/exec
     Google_SpreadsheetKey: 1nEGaYG2UL7V_sgd2Tw8WZULD8JapKdBotJ6WH0XyV7g
     Google_SpreadsheetName: I2Loc UnityFrameDemo Localization
-    Google_LastUpdatedVersion: 
+    Google_LastUpdatedVersion: 1783063360642
     Google_Password: 1234
     GoogleUpdateFrequency: 3
     GoogleInEditorCheckFrequency: 2
@@ -412,8 +439,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: ca49134522e59fc4bb1afe170ed77ecf, type: 3}
     - {fileID: 21300000, guid: 85dd03aaa47a044408d08c892bfdf624, type: 3}
     - {fileID: 21300000, guid: 4a9962c5ee1a4ba41a4a19341313e80d, type: 3}
-    Spreadsheet_LocalFileName: AssetBundle/Configs/Common_text.csv.txt
+    Spreadsheet_LocalFileName: AssetBundle/Configs/Common_text2.csv.txt
     Spreadsheet_LocalCSVSeparator: ','
     Spreadsheet_LocalCSVEncoding: utf-8
     Spreadsheet_SpecializationAsRows: 1
-    Spreadsheet_SortRows: 1
+    Spreadsheet_SortRows: 0

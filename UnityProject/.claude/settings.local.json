@@ -6,7 +6,11 @@
       "Bash(openspec status:*)",
       "Bash(openspec instructions:*)",
       "Bash(msbuild:*)",
-      "Bash(openspec:*)"
+      "Bash(openspec:*)",
+      "Bash(awk {print NF}:*)",
+      "Bash(python:*)",
+      "Bash(where:*)",
+      "Bash(python3:*)"
     ]
   }
 }

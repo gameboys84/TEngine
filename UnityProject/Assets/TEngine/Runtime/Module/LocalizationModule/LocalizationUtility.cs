@@ -54,7 +54,7 @@ namespace TEngine
                     case UnityEngine.SystemLanguage.Lithuanian: return Language.Lithuanian;
                     case UnityEngine.SystemLanguage.Norwegian: return Language.Norwegian;
                     case UnityEngine.SystemLanguage.Polish: return Language.Polish;
-                    case UnityEngine.SystemLanguage.Portuguese: return Language.PortuguesePortugal;
+                    case UnityEngine.SystemLanguage.Portuguese: return Language.Portuguese;
                     case UnityEngine.SystemLanguage.Romanian: return Language.Romanian;
                     case UnityEngine.SystemLanguage.Russian: return Language.Russian;
                     case UnityEngine.SystemLanguage.SerboCroatian: return Language.SerboCroatian;
@@ -85,7 +85,7 @@ namespace TEngine
                 case LocLanguage.de: return Language.German;
                 case LocLanguage.ru: return Language.Russian;
                 case LocLanguage.sp: return Language.Spanish;
-                case LocLanguage.po: return Language.PortuguesePortugal;
+                case LocLanguage.po: return Language.Portuguese;
                 case LocLanguage.it: return Language.Italian;
                 case LocLanguage.nl: return Language.Dutch;
                 case LocLanguage.tr: return Language.Turkish;
@@ -112,7 +112,7 @@ namespace TEngine
                 case Language.German: return LocLanguage.de;
                 case Language.Russian: return LocLanguage.ru;
                 case Language.Spanish: return LocLanguage.sp;
-                case Language.PortuguesePortugal: return LocLanguage.po;
+                case Language.Portuguese: return LocLanguage.po;
                 case Language.Italian: return LocLanguage.it;
                 case Language.Dutch: return LocLanguage.nl;
                 case Language.Turkish: return LocLanguage.tr;

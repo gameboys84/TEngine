@@ -193,7 +193,7 @@
         /// <summary>
         /// 葡萄牙语。
         /// </summary>
-        PortuguesePortugal,
+        Portuguese,
 
         /// <summary>
         /// 罗马尼亚语。
