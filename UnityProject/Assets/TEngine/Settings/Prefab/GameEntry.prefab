@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 706e6317a59f61044b2805be79f6b284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  innerLocalizationCsv: {fileID: 4900000, guid: 372169ad681ec8d40846da4caee7b89c, type: 3}
+  innerLocalizationCsv: {fileID: 4900000, guid: 56d969ce12ca6d646b73ecfdc50c2294, type: 3}
   allLanguage: []
   useRuntimeModule: 1
 --- !u!1 &7696541953913300370
@@ -207,10 +207,11 @@ MonoBehaviour:
   maxUnloadUnusedAssetsInterval: 300
   useSystemUnloadUnusedAssets: 1
   packageName: DefaultPackage
-  playMode: 0
+  playMode: 2
   encryptionType: 0
   updatableWhilePlaying: 0
   milliseconds: 30
+  autoUnloadBundleWhenUnused: 0
   downloadingMaxNum: 10
   failedTryAgain: 3
   assetAutoReleaseInterval: 60
@@ -231,6 +232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   checkCanReleaseInterval: 30
   autoReleaseInterval: 60
+  maxProcessPerFrame: 50
 --- !u!1 &7696541955266276702
 GameObject:
   m_ObjectHideFlags: 0

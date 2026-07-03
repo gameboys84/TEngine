@@ -105,9 +105,13 @@ namespace GameLogic
 			// var items = GameModule.ConfigSystem.Tables.TbItem;
 			// var item = items.Get(10000);
 
-			Log.Debug($"OnCreate, {WindowName}");
-
 			allLanguages = LocalizationManager.GetAllLanguages();
+
+			var curLanguageName = LocalizationUtility.GetLanguageStr(GameModule.Localization.Language);
+			idx = allLanguages.FindIndex(lang => lang == curLanguageName);
+			idx = (idx + 1) % allLanguages.Count;
+
+			Log.Debug($"OnCreate, {WindowName}, cur language is: {curLanguageName}, all:{string.Join(", ", allLanguages)}");
             
 			GameModule.LocalSave.Load<LocalPlayerInfo>("PlayerInfo.dat");
             

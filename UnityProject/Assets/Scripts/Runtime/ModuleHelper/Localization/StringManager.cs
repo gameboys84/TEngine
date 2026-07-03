@@ -92,6 +92,10 @@ namespace GameLogic
                 
                 GameEvent.Get<IUIRefresh>()?.RefreshUI();
             }
+            else
+            {
+                Log.Debug($"StringManager: OnLocalizationChanged: {language}");
+            }
         }
     }
 }

@@ -1,3 +1,4 @@
+using TEngine;
 using UnityEngine;
 using AudioType = TEngine.AudioType;
 
@@ -7,7 +8,7 @@ namespace GameLogic
     {
         private void Awake()
         {
-            // GameEventHelper.InitRuntimeEvents();
+            GameModule.Localization.LoadLanguageTotalAsset("Common_text.csv");
             StringManager.Instance.Active();
         }
 

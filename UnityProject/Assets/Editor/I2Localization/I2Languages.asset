@@ -173,138 +173,6 @@ MonoBehaviour:
       - "\u043D\u0430\u0446\u0456\u044F"
       Flags: 0000000000000000000000000000000000000000
       Languages_Touch: []
-    - Term: LC_LAUNCHER_Connect
-      TermType: 0
-      Description: 
-      Languages:
-      - Connect
-      - "\u8FDE\u63A5"
-      - "\u9023\u63A5"
-      - "\uC5F0\uACB0\uD558\uB2E4"
-      - "\u63A5\u7D9A\u3059\u308B"
-      - connecter
-      - verbinden
-      - "\u0441\u043E\u0435\u0434\u0438\u043D\u044F\u0442\u044C"
-      - conectar
-      - conectar
-      - collegare
-      - verbinden
-      - "ba\u011Flamak"
-      - menghubungkan
-      - "\u0142\u0105czy\u0107"
-      - "\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D"
-      - "conecta\u021Bi"
-      - "\u064A\u062A\u0635\u0644"
-      - "k\u1EBFt n\u1ED1i"
-      - "\u0437'\u0454\u0434\u043D\u0430\u0442\u0438"
-      Flags: 0000000000000000000000000000000000000000
-      Languages_Touch: []
-    - Term: LC_LAUNCHER_Input_Account
-      TermType: 0
-      Description: 
-      Languages:
-      - Enter Account
-      - "\u8F93\u5165\u8D26\u53F7"
-      - "\u8F38\u5165\u5E33\u865F"
-      - "\uACC4\uC815\uC744 \uC785\uB825\uD558\uC138\uC694"
-      - "\u30A2\u30AB\u30A6\u30F3\u30C8\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044"
-      - Saisir le compte
-      - Konto eingeben
-      - "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043D\u043E\u043C\u0435\u0440
-        \u0441\u0447\u0435\u0442\u0430"
-      - Ingrese su cuenta
-      - Insira a conta
-      - Accedi all'account
-      - Voer account in
-      - Hesap girin
-      - Masukkan akun
-      - "Wprowad\u017A konto"
-      - "\u0E1B\u0E49\u0E2D\u0E19\u0E1A\u0E31\u0E0D\u0E0A\u0E35"
-      - "Introduce\u021Bi contul"
-      - "\u0623\u062F\u062E\u0644 \u0627\u0644\u062D\u0633\u0627\u0628"
-      - "\u0110\u0103ng nh\u1EADp t\xE0i kho\u1EA3n"
-      - "\u0412\u0432\u0435\u0434\u0456\u0442\u044C \u043E\u0431\u043B\u0456\u043A\u043E\u0432\u0438\u0439
-        \u0437\u0430\u043F\u0438\u0441"
-      Flags: 0000000000000000000000000000000000000000
-      Languages_Touch: []
-    - Term: LC_LAUNCHER_Input_Password
-      TermType: 0
-      Description: 
-      Languages:
-      - Enter Password
-      - "\u8F93\u5165\u5BC6\u7801"
-      - "\u8F38\u5165\u5BC6\u78BC"
-      - "\uBE44\uBC00\uBC88\uD638\uB97C \uC785\uB825\uD558\uC138\uC694"
-      - "\u30D1\u30B9\u30EF\u30FC\u30C9\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044"
-      - Saisissez le mot de passe
-      - Passwort eingeben
-      - "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043F\u0430\u0440\u043E\u043B\u044C"
-      - "Introduzca la contrase\xF1a"
-      - Digite a senha
-      - Inserisci la password
-      - Voer wachtwoord in
-      - "\u015Eifrenizi girin"
-      - Masukkan kata sandi
-      - "Wprowad\u017A has\u0142o"
-      - "\u0E1B\u0E49\u0E2D\u0E19\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19"
-      - "Introduce\u021Bi parola"
-      - "\u0623\u062F\u062E\u0644 \u0643\u0644\u0645\u0629 \u0627\u0644\u0645\u0631\u0648\u0631"
-      - "Nh\u1EADp m\u1EADt kh\u1EA9u"
-      - "\u0412\u0432\u0435\u0434\u0456\u0442\u044C \u043F\u0430\u0440\u043E\u043B\u044C"
-      Flags: 0000000000000000000000000000000000000000
-      Languages_Touch: []
-    - Term: LC_LAUNCHER_Login
-      TermType: 0
-      Description: 
-      Languages:
-      - Login
-      - "\u767B\u5F55"
-      - "\u767B\u5165"
-      - "\uB85C\uADF8\uC778"
-      - "\u30ED\u30B0\u30A4\u30F3"
-      - Se connecter
-      - Einloggen
-      - "\u0410\u0432\u0442\u043E\u0440\u0438\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F"
-      - Acceso
-      - Conecte-se
-      - Login
-      - Inloggen
-      - "Giri\u015F yapmak"
-      - Masuk
-      - "Zaloguj si\u0119"
-      - "\u0E40\u0E02\u0E49\u0E32\u0E2A\u0E39\u0E48\u0E23\u0E30\u0E1A\u0E1A"
-      - Log in
-      - "\u062A\u0633\u062C\u064A\u0644 \u0627\u0644\u062F\u062E\u0648\u0644"
-      - "\u0110\u0103ng nh\u1EADp"
-      - "\u0423\u0432\u0456\u0439\u0442\u0438"
-      Flags: 0000000000000000000000000000000000000000
-      Languages_Touch: []
-    - Term: LC_LAUNCHER_SayHi
-      TermType: 0
-      Description: 
-      Languages:
-      - Hello!
-      - "\u4F60\u597D"
-      - "\u4F60\u597D"
-      - "\uC548\uB155\uD558\uC138\uC694"
-      - "\u3053\u3093\u306B\u3061\u306F"
-      - Bonjour
-      - Hallo
-      - "\u041F\u0440\u0438\u0432\u0435\u0442"
-      - Hola
-      - "Ol\xE1"
-      - Ciao
-      - Hallo
-      - Merhaba
-      - Halo
-      - "Cze\u015B\u0107"
-      - "\u0E2A\u0E27\u0E31\u0E2A\u0E14\u0E35"
-      - Buna ziua
-      - "\u0645\u0631\u062D\u0628\u064B\u0627"
-      - "Xin ch\xE0o"
-      - "\u041F\u0440\u0438\u0432\u0456\u0442"
-      Flags: 0000000000000000000000000000000000000000
-      Languages_Touch: []
     - Term: PlayerName
       TermType: 0
       Description: 
@@ -355,6 +223,2383 @@ MonoBehaviour:
       - "\u0646\u0635\u064A\u062D\u0629"
       - "M\u1EB9o"
       - "\u0427\u0430\u0439\u043E\u0432\u0456"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Load_Progress
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Downloading resource file, please wait patiently. Current download speed:
+        {0}/s Resource file size: {1}'
+      - "\u6B63\u5728\u4E0B\u8F7D\u8D44\u6E90\u6587\u4EF6\uFF0C\u8BF7\u8010\u5FC3\u7B49\u5F85\\n\u5F53\u524D\u4E0B\u8F7D\u901F\u5EA6\uFF1A{0}/s
+        \u8D44\u6E90\u6587\u4EF6\u5927\u5C0F\uFF1A{1}"
+      - "\u6B63\u5728\u4E0B\u8F09\u8CC7\u6E90\u6587\u4EF6\uFF0C\u8ACB\u8010\u5FC3\u7B49\u5F85\\n\u76EE\u524D\u4E0B\u8F09\u901F\u5EA6\uFF1A{0}/s
+        \u8CC7\u6E90\u6A94\u6848\u5927\u5C0F\uFF1A{1}"
+      - "\uB9AC\uC18C\uC2A4 \uD30C\uC77C\uC744 \uB2E4\uC6B4\uB85C\uB4DC \uC911\uC785\uB2C8\uB2E4.
+        \uC7A0\uC2DC \uAE30\uB2E4\uB824 \uC8FC\uC138\uC694. \uD604\uC7AC \uB2E4\uC6B4\uB85C\uB4DC
+        \uC18D\uB3C4: {0}/s \uB9AC\uC18C\uC2A4 \uD30C\uC77C \uD06C\uAE30: {1}"
+      - "\u30EA\u30BD\u30FC\u30B9\u30D5\u30A1\u30A4\u30EB\u3092\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9\u3057\u3066\u3044\u307E\u3059\u3002\u3057\u3070\u3089\u304F\u304A\u5F85\u3061\u304F\u3060\u3055\u3044\u3002\u73FE\u5728\u306E\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9\u901F\u5EA6\uFF1A{0}/\u79D2\u3000\u30EA\u30BD\u30FC\u30B9\u30D5\u30A1\u30A4\u30EB\u30B5\u30A4\u30BA\uFF1A{1}"
+      - "T\xE9l\xE9chargement du fichier de ressources en cours, veuillez patienter.
+        Vitesse de t\xE9l\xE9chargement actuelle\_: {0}/s Taille du fichier de ressources\_:
+        {1}"
+      - "Ressourcendatei wird heruntergeladen. Bitte warten Sie. Aktuelle Downloadgeschwindigkeit:
+        {0}/s. Dateigr\xF6\xDFe: {1}"
+      - "\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0430 \u0444\u0430\u0439\u043B\u0430
+        \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432, \u043F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430,
+        \u043F\u043E\u0434\u043E\u0436\u0434\u0438\u0442\u0435. \u0422\u0435\u043A\u0443\u0449\u0430\u044F
+        \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0438:
+        {0}/\u0441 \u0420\u0430\u0437\u043C\u0435\u0440 \u0444\u0430\u0439\u043B\u0430
+        \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432: {1}"
+      - "Descargando archivo de recursos, por favor espere pacientemente. Velocidad
+        de descarga actual: {0}/s Tama\xF1o del archivo de recursos: {1}"
+      - 'Baixando o arquivo de recurso, aguarde pacientemente. Velocidade de download
+        atual: {0}/s Tamanho do arquivo de recurso: {1}'
+      - "Download del file di risorse in corso, attendere pazientemente. Velocit\xE0
+        di download attuale: {0}/s Dimensione del file di risorse: {1}"
+      - 'Resourcebestand wordt gedownload, even geduld alstublieft. Huidige downloadsnelheid:
+        {0}/s Bestandsgrootte: {1}'
+      - "Kaynak dosya indiriliyor, l\xFCtfen sab\u0131rla bekleyin. Mevcut indirme
+        h\u0131z\u0131: {0}/s Kaynak dosya boyutu: {1}"
+      - 'Sedang mengunduh berkas sumber daya, mohon tunggu dengan sabar. Kecepatan
+        unduhan saat ini: {0}/s Ukuran berkas sumber daya: {1}'
+      - "Pobieranie pliku zasobu. Prosz\u0119 cierpliwie czeka\u0107. Aktualna pr\u0119dko\u015B\u0107
+        pobierania: {0}/s. Rozmiar pliku zasobu: {1}"
+      - "\u0E01\u0E33\u0E25\u0E31\u0E07\u0E14\u0E32\u0E27\u0E19\u0E4C\u0E42\u0E2B\u0E25\u0E14\u0E44\u0E1F\u0E25\u0E4C\u0E17\u0E23\u0E31\u0E1E\u0E22\u0E32\u0E01\u0E23
+        \u0E42\u0E1B\u0E23\u0E14\u0E23\u0E2D\u0E2A\u0E31\u0E01\u0E04\u0E23\u0E39\u0E48
+        \u0E04\u0E27\u0E32\u0E21\u0E40\u0E23\u0E47\u0E27\u0E43\u0E19\u0E01\u0E32\u0E23\u0E14\u0E32\u0E27\u0E19\u0E4C\u0E42\u0E2B\u0E25\u0E14\u0E1B\u0E31\u0E08\u0E08\u0E38\u0E1A\u0E31\u0E19:
+        {0}/\u0E27\u0E34\u0E19\u0E32\u0E17\u0E35 \u0E02\u0E19\u0E32\u0E14\u0E44\u0E1F\u0E25\u0E4C\u0E17\u0E23\u0E31\u0E1E\u0E22\u0E32\u0E01\u0E23:
+        {1}"
+      - "Se descarc\u0103 fi\u0219ierul resurs\u0103, v\u0103 rug\u0103m s\u0103
+        a\u0219tepta\u021Bi cu r\u0103bdare. Vitez\u0103 curent\u0103 de desc\u0103rcare:
+        {0}/s Dimensiunea fi\u0219ierului resurs\u0103: {1}"
+      - "\u062C\u0627\u0631\u064D \u062A\u0646\u0632\u064A\u0644 \u0645\u0644\u0641
+        \u0627\u0644\u0645\u0648\u0627\u0631\u062F\u060C \u064A\u064F\u0631\u062C\u0649
+        \u0627\u0644\u0627\u0646\u062A\u0638\u0627\u0631 \u0628\u0635\u0628\u0631.
+        \u0633\u0631\u0639\u0629 \u0627\u0644\u062A\u0646\u0632\u064A\u0644 \u0627\u0644\u062D\u0627\u0644\u064A\u0629:
+        {0}/\u062B\u0627\u0646\u064A\u0629. \u062D\u062C\u0645 \u0645\u0644\u0641
+        \u0627\u0644\u0645\u0648\u0627\u0631\u062F: {1}"
+      - "\u0110ang t\u1EA3i xu\u1ED1ng t\u1EADp tin t\xE0i nguy\xEAn, vui l\xF2ng
+        ch\u1EDD \u0111\u1EE3i. T\u1ED1c \u0111\u1ED9 t\u1EA3i xu\u1ED1ng hi\u1EC7n
+        t\u1EA1i: {0}/s K\xEDch th\u01B0\u1EDBc t\u1EADp tin t\xE0i nguy\xEAn: {1}"
+      - "\u0417\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0435\u043D\u043D\u044F
+        \u0444\u0430\u0439\u043B\u0443 \u0440\u0435\u0441\u0443\u0440\u0441\u0443,
+        \u0431\u0443\u0434\u044C \u043B\u0430\u0441\u043A\u0430, \u0437\u0430\u0447\u0435\u043A\u0430\u0439\u0442\u0435.
+        \u041F\u043E\u0442\u043E\u0447\u043D\u0430 \u0448\u0432\u0438\u0434\u043A\u0456\u0441\u0442\u044C
+        \u0437\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0435\u043D\u043D\u044F:
+        {0}/\u0441 \u0420\u043E\u0437\u043C\u0456\u0440 \u0444\u0430\u0439\u043B\u0443
+        \u0440\u0435\u0441\u0443\u0440\u0441\u0443: {1}"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Load_FirstUnpack
+      TermType: 0
+      Description: 
+      Languages:
+      - Upon first launch of the game, initializing game resources... (This process
+        does not consume network traffic)
+      - "\u9996\u6B21\u8FDB\u5165\u6E38\u620F\uFF0C\u6B63\u5728\u521D\u59CB\u5316\u6E38\u620F\u8D44\u6E90...\uFF08\u6B64\u8FC7\u7A0B\u4E0D\u6D88\u8017\u7F51\u7EDC\u6D41\u91CF\uFF09"
+      - "\u7B2C\u4E00\u6B21\u9032\u5165\u904A\u6232\uFF0C\u6B63\u5728\u521D\u59CB\u5316\u904A\u6232\u8CC7\u6E90...\uFF08\u6B64\u904E\u7A0B\u4E0D\u6D88\u8017\u7DB2\u8DEF\u6D41\u91CF\uFF09"
+      - "\uAC8C\uC784\uC744 \uCC98\uC74C \uC2E4\uD589\uD560 \uB54C \uAC8C\uC784 \uB9AC\uC18C\uC2A4\uB97C
+        \uCD08\uAE30\uD654\uD569\uB2C8\uB2E4... (\uC774 \uACFC\uC815\uC740 \uB124\uD2B8\uC6CC\uD06C
+        \uD2B8\uB798\uD53D\uC744 \uC18C\uBAA8\uD558\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4)"
+      - "\u30B2\u30FC\u30E0\u306E\u521D\u56DE\u8D77\u52D5\u6642\u306B\u3001\u30B2\u30FC\u30E0\u30EA\u30BD\u30FC\u30B9\u3092\u521D\u671F\u5316\u3057\u3066\u3044\u307E\u3059\u2026\uFF08\u3053\u306E\u30D7\u30ED\u30BB\u30B9\u306F\u30CD\u30C3\u30C8\u30EF\u30FC\u30AF\u30C8\u30E9\u30D5\u30A3\u30C3\u30AF\u3092\u6D88\u8CBB\u3057\u307E\u305B\u3093\uFF09"
+      - "Au premier lancement du jeu, initialisation des ressources du jeu... (Ce
+        processus ne consomme pas de bande passante r\xE9seau)"
+      - Beim ersten Start des Spiels werden die Spielressourcen initialisiert...
+        (Dieser Vorgang beansprucht keinen Netzwerkverkehr)
+      - "\u041F\u0440\u0438 \u043F\u0435\u0440\u0432\u043E\u043C \u0437\u0430\u043F\u0443\u0441\u043A\u0435
+        \u0438\u0433\u0440\u044B \u043F\u0440\u043E\u0438\u0441\u0445\u043E\u0434\u0438\u0442
+        \u0438\u043D\u0438\u0446\u0438\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u044F
+        \u0438\u0433\u0440\u043E\u0432\u044B\u0445 \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432...
+        (\u042D\u0442\u043E\u0442 \u043F\u0440\u043E\u0446\u0435\u0441\u0441 \u043D\u0435
+        \u043F\u043E\u0442\u0440\u0435\u0431\u043B\u044F\u0435\u0442 \u0441\u0435\u0442\u0435\u0432\u043E\u0439
+        \u0442\u0440\u0430\u0444\u0438\u043A)"
+      - "Al iniciar el juego por primera vez, se inicializan los recursos del juego...
+        (Este proceso no consume tr\xE1fico de red)."
+      - "Ao iniciar o jogo pela primeira vez, inicializando os recursos do jogo...
+        (Este processo n\xE3o consome tr\xE1fego de rede)"
+      - Al primo avvio del gioco, inizializzazione delle risorse di gioco... (Questo
+        processo non consuma traffico di rete)
+      - "Bij de eerste keer opstarten van het spel worden de spelbronnen ge\xEFnitialiseerd...
+        (Dit proces verbruikt geen netwerkverkeer)"
+      - "Oyun ilk kez ba\u015Flat\u0131ld\u0131\u011F\u0131nda, oyun kaynaklar\u0131
+        ba\u015Flat\u0131l\u0131yor... (Bu i\u015Flem a\u011F trafi\u011Fi t\xFCketmez)"
+      - Saat pertama kali game diluncurkan, proses inisialisasi sumber daya game...
+        (Proses ini tidak menggunakan lalu lintas jaringan)
+      - "Podczas pierwszego uruchomienia gry inicjalizacja zasob\xF3w gry... (Ten
+        proces nie zu\u017Cywa ruchu sieciowego)"
+      - "\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E40\u0E23\u0E34\u0E48\u0E21\u0E40\u0E01\u0E21\u0E04\u0E23\u0E31\u0E49\u0E07\u0E41\u0E23\u0E01
+        \u0E23\u0E30\u0E1A\u0E1A\u0E08\u0E30\u0E17\u0E33\u0E01\u0E32\u0E23\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19\u0E17\u0E23\u0E31\u0E1E\u0E22\u0E32\u0E01\u0E23\u0E02\u0E2D\u0E07\u0E40\u0E01\u0E21...
+        (\u0E01\u0E23\u0E30\u0E1A\u0E27\u0E19\u0E01\u0E32\u0E23\u0E19\u0E35\u0E49\u0E44\u0E21\u0E48\u0E43\u0E0A\u0E49\u0E1B\u0E23\u0E34\u0E21\u0E32\u0E13\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22)"
+      - "La prima lansare a jocului, ini\u021Bializarea resurselor jocului... (Acest
+        proces nu consum\u0103 trafic de re\u021Bea)"
+      - "\u0639\u0646\u062F \u062A\u0634\u063A\u064A\u0644 \u0627\u0644\u0644\u0639\u0628\u0629
+        \u0644\u0623\u0648\u0644 \u0645\u0631\u0629\u060C \u064A\u062A\u0645 \u062A\u0647\u064A\u0626\u0629
+        \u0645\u0648\u0627\u0631\u062F \u0627\u0644\u0644\u0639\u0628\u0629... (\u0644\u0627
+        \u062A\u0633\u062A\u0647\u0644\u0643 \u0647\u0630\u0647 \u0627\u0644\u0639\u0645\u0644\u064A\u0629
+        \u0628\u064A\u0627\u0646\u0627\u062A \u0627\u0644\u0634\u0628\u0643\u0629)"
+      - "Khi kh\u1EDFi ch\u1EA1y tr\xF2 ch\u01A1i l\u1EA7n \u0111\u1EA7u, qu\xE1
+        tr\xECnh n\xE0y \u0111ang kh\u1EDFi t\u1EA1o t\xE0i nguy\xEAn tr\xF2 ch\u01A1i...
+        (Qu\xE1 tr\xECnh n\xE0y kh\xF4ng ti\xEAu t\u1ED1n l\u01B0u l\u01B0\u1EE3ng
+        m\u1EA1ng)"
+      - "\u041F\u0456\u0434 \u0447\u0430\u0441 \u043F\u0435\u0440\u0448\u043E\u0433\u043E
+        \u0437\u0430\u043F\u0443\u0441\u043A\u0443 \u0433\u0440\u0438, \u0456\u043D\u0456\u0446\u0456\u0430\u043B\u0456\u0437\u0430\u0446\u0456\u044F
+        \u0456\u0433\u0440\u043E\u0432\u0438\u0445 \u0440\u0435\u0441\u0443\u0440\u0441\u0456\u0432...
+        (\u0426\u0435\u0439 \u043F\u0440\u043E\u0446\u0435\u0441 \u043D\u0435 \u0441\u043F\u043E\u0436\u0438\u0432\u0430\u0454
+        \u043C\u0435\u0440\u0435\u0436\u0435\u0432\u0438\u0439 \u0442\u0440\u0430\u0444\u0456\u043A)"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Load_Unpacking
+      TermType: 0
+      Description: 
+      Languages:
+      - Updating local resources, please wait patiently... (This process does not
+        consume network traffic)
+      - "\u6B63\u5728\u66F4\u65B0\u672C\u5730\u8D44\u6E90\u7248\u672C\uFF0C\u8BF7\u8010\u5FC3\u7B49\u5F85...\uFF08\u6B64\u8FC7\u7A0B\u4E0D\u6D88\u8017\u7F51\u7EDC\u6D41\u91CF\uFF09"
+      - "\u6B63\u5728\u66F4\u65B0\u672C\u5730\u8CC7\u6E90\u7248\u672C\uFF0C\u8ACB\u8010\u5FC3\u7B49\u5F85...\uFF08\u6B64\u904E\u7A0B\u4E0D\u6D88\u8017\u7DB2\u8DEF\u6D41\u91CF\uFF09"
+      - "\uB85C\uCEEC \uB9AC\uC18C\uC2A4\uB97C \uC5C5\uB370\uC774\uD2B8\uD558\uB294
+        \uC911\uC785\uB2C8\uB2E4. \uC7A0\uC2DC \uAE30\uB2E4\uB824 \uC8FC\uC2ED\uC2DC\uC624...
+        (\uC774 \uACFC\uC815\uC740 \uB124\uD2B8\uC6CC\uD06C \uD2B8\uB798\uD53D\uC744
+        \uC18C\uBAA8\uD558\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4.)"
+      - "\u30ED\u30FC\u30AB\u30EB\u30EA\u30BD\u30FC\u30B9\u3092\u66F4\u65B0\u3057\u3066\u3044\u307E\u3059\u3002\u3057\u3070\u3089\u304F\u304A\u5F85\u3061\u304F\u3060\u3055\u3044\u3002\uFF08\u3053\u306E\u51E6\u7406\u306F\u30CD\u30C3\u30C8\u30EF\u30FC\u30AF\u30C8\u30E9\u30D5\u30A3\u30C3\u30AF\u3092\u6D88\u8CBB\u3057\u307E\u305B\u3093\uFF09"
+      - "Mise \xE0 jour des ressources locales, veuillez patienter... (Ce processus
+        ne consomme pas de bande passante r\xE9seau)"
+      - Lokale Ressourcen werden aktualisiert, bitte haben Sie Geduld... (Dieser
+        Vorgang beansprucht keinen Netzwerkverkehr)
+      - "\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435 \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u044B\u0445
+        \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432, \u043F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430,
+        \u043F\u043E\u0434\u043E\u0436\u0434\u0438\u0442\u0435... (\u042D\u0442\u043E\u0442
+        \u043F\u0440\u043E\u0446\u0435\u0441\u0441 \u043D\u0435 \u0440\u0430\u0441\u0445\u043E\u0434\u0443\u0435\u0442
+        \u0441\u0435\u0442\u0435\u0432\u043E\u0439 \u0442\u0440\u0430\u0444\u0438\u043A)"
+      - "Actualizando recursos locales, espere pacientemente... (Este proceso no
+        consume tr\xE1fico de red)"
+      - "Atualizando recursos locais, aguarde pacientemente... (Este processo n\xE3o
+        consome tr\xE1fego de rede)"
+      - Aggiornamento delle risorse locali in corso, attendere pazientemente... (Questo
+        processo non consuma traffico di rete)
+      - Lokale bronnen worden bijgewerkt, even geduld alstublieft... (Dit proces
+        verbruikt geen netwerkverkeer)
+      - "Yerel kaynaklar g\xFCncelleniyor, l\xFCtfen sab\u0131rla bekleyin... (Bu
+        i\u015Flem a\u011F trafi\u011Fi t\xFCketmez)"
+      - Memperbarui sumber daya lokal, mohon tunggu dengan sabar... (Proses ini tidak
+        menggunakan lalu lintas jaringan)
+      - "Trwa aktualizacja zasob\xF3w lokalnych. Prosz\u0119 cierpliwie czeka\u0107...
+        (Ten proces nie obci\u0105\u017Ca sieci)"
+      - "\u0E01\u0E33\u0E25\u0E31\u0E07\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15\u0E17\u0E23\u0E31\u0E1E\u0E22\u0E32\u0E01\u0E23\u0E43\u0E19\u0E1E\u0E37\u0E49\u0E19\u0E17\u0E35\u0E48
+        \u0E42\u0E1B\u0E23\u0E14\u0E23\u0E2D\u0E2A\u0E31\u0E01\u0E04\u0E23\u0E39\u0E48...
+        (\u0E01\u0E23\u0E30\u0E1A\u0E27\u0E19\u0E01\u0E32\u0E23\u0E19\u0E35\u0E49\u0E44\u0E21\u0E48\u0E43\u0E0A\u0E49\u0E1B\u0E23\u0E34\u0E21\u0E32\u0E13\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22)"
+      - "Se actualizeaz\u0103 resursele locale, v\u0103 rug\u0103m s\u0103 a\u0219tepta\u021Bi
+        cu r\u0103bdare... (Acest proces nu consum\u0103 trafic de re\u021Bea)"
+      - "\u062C\u0627\u0631\u064D \u062A\u062D\u062F\u064A\u062B \u0627\u0644\u0645\u0648\u0627\u0631\u062F
+        \u0627\u0644\u0645\u062D\u0644\u064A\u0629\u060C \u064A\u0631\u062C\u0649
+        \u0627\u0644\u0627\u0646\u062A\u0638\u0627\u0631 \u0628\u0635\u0628\u0631...
+        (\u0647\u0630\u0647 \u0627\u0644\u0639\u0645\u0644\u064A\u0629 \u0644\u0627
+        \u062A\u0633\u062A\u0647\u0644\u0643 \u0628\u064A\u0627\u0646\u0627\u062A
+        \u0627\u0644\u0634\u0628\u0643\u0629)"
+      - "\u0110ang c\u1EADp nh\u1EADt t\xE0i nguy\xEAn c\u1EE5c b\u1ED9, vui l\xF2ng
+        ch\u1EDD \u0111\u1EE3i... (Qu\xE1 tr\xECnh n\xE0y kh\xF4ng ti\xEAu t\u1ED1n
+        l\u01B0u l\u01B0\u1EE3ng m\u1EA1ng)"
+      - "\u041E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u0438\u0445
+        \u0440\u0435\u0441\u0443\u0440\u0441\u0456\u0432, \u0431\u0443\u0434\u044C
+        \u043B\u0430\u0441\u043A\u0430, \u0437\u0430\u0447\u0435\u043A\u0430\u0439\u0442\u0435
+        \u0442\u0435\u0440\u043F\u043B\u044F\u0447\u0435... (\u0426\u0435\u0439 \u043F\u0440\u043E\u0446\u0435\u0441
+        \u043D\u0435 \u0441\u043F\u043E\u0436\u0438\u0432\u0430\u0454 \u043C\u0435\u0440\u0435\u0436\u0435\u0432\u0438\u0439
+        \u0442\u0440\u0430\u0444\u0456\u043A)"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Load_Checking
+      TermType: 0
+      Description: 
+      Languages:
+      - Detecting version file {0}...
+      - "\u68C0\u6D4B\u7248\u672C\u6587\u4EF6{0}..."
+      - "\u6AA2\u6E2C\u7248\u672C\u6A94\u6848{0}..."
+      - "\uBC84\uC804 \uD30C\uC77C {0}\uC744 \uAC10\uC9C0\uD558\uB294 \uC911..."
+      - "\u30D0\u30FC\u30B8\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB{0}\u3092\u691C\u51FA\u3057\u3066\u3044\u307E\u3059..."
+      - "D\xE9tection du fichier de version {0}..."
+      - Versionsdatei {0} wird erkannt...
+      - "\u041E\u0431\u043D\u0430\u0440\u0443\u0436\u0435\u043D\u0438\u0435 \u0444\u0430\u0439\u043B\u0430
+        \u0432\u0435\u0440\u0441\u0438\u0438 {0}..."
+      - "Detectando el archivo de versi\xF3n {0}..."
+      - "Detectando arquivo de vers\xE3o {0}..."
+      - Rilevamento del file di versione {0}...
+      - Versiebestand {0} detecteren...
+      - "S\xFCr\xFCm dosyas\u0131n\u0131 {0} tespit ediliyor..."
+      - Mendeteksi file versi {0}...
+      - Wykrywanie wersji pliku {0}...
+      - "\u0E01\u0E33\u0E25\u0E31\u0E07\u0E15\u0E23\u0E27\u0E08\u0E2A\u0E2D\u0E1A\u0E44\u0E1F\u0E25\u0E4C\u0E40\u0E27\u0E2D\u0E23\u0E4C\u0E0A\u0E31\u0E19
+        {0}..."
+      - "Se detecteaz\u0103 fi\u0219ierul cu versiunea {0}..."
+      - "\u062C\u0627\u0631\u064D \u0627\u0644\u0643\u0634\u0641 \u0639\u0646 \u0645\u0644\u0641
+        \u0627\u0644\u0625\u0635\u062F\u0627\u0631 {0}..."
+      - "\u0110ang ph\xE1t hi\u1EC7n t\u1EC7p phi\xEAn b\u1EA3n {0}..."
+      - "\u0412\u0438\u044F\u0432\u043B\u0435\u043D\u043D\u044F \u0444\u0430\u0439\u043B\u0443
+        \u0432\u0435\u0440\u0441\u0456\u0457 {0}..."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Load_Checked
+      TermType: 0
+      Description: 
+      Languages:
+      - Latest version detection complete
+      - "\u6700\u65B0\u7248\u672C\u68C0\u6D4B\u5B8C\u6210"
+      - "\u6700\u65B0\u7248\u672C\u6AA2\u6E2C\u5B8C\u6210"
+      - "\uCD5C\uC2E0 \uBC84\uC804 \uAC10\uC9C0 \uC644\uB8CC"
+      - "\u6700\u65B0\u30D0\u30FC\u30B8\u30E7\u30F3\u306E\u691C\u51FA\u304C\u5B8C\u4E86\u3057\u307E\u3057\u305F"
+      - "D\xE9tection de la derni\xE8re version termin\xE9e"
+      - Die Erkennung der neuesten Version ist abgeschlossen.
+      - "\u041E\u0431\u043D\u0430\u0440\u0443\u0436\u0435\u043D\u0438\u0435 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0439
+        \u0432\u0435\u0440\u0441\u0438\u0438 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u043E."
+      - "Detecci\xF3n de la \xFAltima versi\xF3n completada"
+      - "Detec\xE7\xE3o da vers\xE3o mais recente conclu\xEDda"
+      - "Rilevamento della versione pi\xF9 recente completato"
+      - Detectie van de nieuwste versie voltooid
+      - "En son s\xFCr\xFCm tespiti tamamland\u0131."
+      - Deteksi versi terbaru selesai
+      - "Zako\u0144czono wykrywanie najnowszej wersji"
+      - "\u0E01\u0E32\u0E23\u0E15\u0E23\u0E27\u0E08\u0E08\u0E31\u0E1A\u0E40\u0E27\u0E2D\u0E23\u0E4C\u0E0A\u0E31\u0E19\u0E25\u0E48\u0E32\u0E2A\u0E38\u0E14\u0E40\u0E2A\u0E23\u0E47\u0E08\u0E2A\u0E21\u0E1A\u0E39\u0E23\u0E13\u0E4C"
+      - "Detectarea celei mai recente versiuni a fost finalizat\u0103"
+      - "\u062A\u0645 \u0627\u0644\u0643\u0634\u0641 \u0639\u0646 \u0623\u062D\u062F\u062B
+        \u0625\u0635\u062F\u0627\u0631 \u0628\u0646\u062C\u0627\u062D"
+      - "Qu\xE1 tr\xECnh ph\xE1t hi\u1EC7n phi\xEAn b\u1EA3n m\u1EDBi nh\u1EA5t \u0111\xE3
+        ho\xE0n t\u1EA5t."
+      - "\u0412\u0438\u044F\u0432\u043B\u0435\u043D\u043D\u044F \u043E\u0441\u0442\u0430\u043D\u043D\u044C\u043E\u0457
+        \u0432\u0435\u0440\u0441\u0456\u0457 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u043E"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Load_Package
+      TermType: 0
+      Description: 
+      Languages:
+      - The current version is too old. Please download and install the latest version.
+      - "\u5F53\u524D\u4F7F\u7528\u7684\u7248\u672C\u8FC7\u4F4E\uFF0C\u8BF7\u4E0B\u8F7D\u5B89\u88C5\u6700\u65B0\u7248\u672C"
+      - "\u76EE\u524D\u4F7F\u7528\u7684\u7248\u672C\u904E\u4F4E\uFF0C\u8ACB\u4E0B\u8F09\u5B89\u88DD\u6700\u65B0\u7248\u672C"
+      - "\uD604\uC7AC \uBC84\uC804\uC774 \uB108\uBB34 \uC624\uB798\uB418\uC5C8\uC2B5\uB2C8\uB2E4.
+        \uCD5C\uC2E0 \uBC84\uC804\uC744 \uB2E4\uC6B4\uB85C\uB4DC\uD558\uC5EC \uC124\uCE58\uD574
+        \uC8FC\uC138\uC694."
+      - "\u73FE\u5728\u304A\u4F7F\u3044\u306E\u30D0\u30FC\u30B8\u30E7\u30F3\u306F\u53E4\u3059\u304E\u307E\u3059\u3002\u6700\u65B0\u30D0\u30FC\u30B8\u30E7\u30F3\u3092\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9\u3057\u3066\u30A4\u30F3\u30B9\u30C8\u30FC\u30EB\u3057\u3066\u304F\u3060\u3055\u3044\u3002"
+      - "La version actuelle est trop ancienne. Veuillez t\xE9l\xE9charger et installer
+        la derni\xE8re version."
+      - Die aktuelle Version ist zu alt. Bitte laden Sie die neueste Version herunter
+        und installieren Sie sie.
+      - "\u0422\u0435\u043A\u0443\u0449\u0430\u044F \u0432\u0435\u0440\u0441\u0438\u044F
+        \u0441\u043B\u0438\u0448\u043A\u043E\u043C \u0443\u0441\u0442\u0430\u0440\u0435\u043B\u0430.
+        \u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u0441\u043A\u0430\u0447\u0430\u0439\u0442\u0435
+        \u0438 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0435 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u044E\u044E
+        \u0432\u0435\u0440\u0441\u0438\u044E."
+      - "La versi\xF3n actual es demasiado antigua. Descargue e instale la \xFAltima
+        versi\xF3n."
+      - "A vers\xE3o atual \xE9 muito antiga. Fa\xE7a o download e instale a vers\xE3o
+        mais recente."
+      - "La versione attuale \xE8 troppo vecchia. Scarica e installa la versione
+        pi\xF9 recente."
+      - De huidige versie is te oud. Download en installeer de nieuwste versie.
+      - "Mevcut s\xFCr\xFCm \xE7ok eski. L\xFCtfen en son s\xFCr\xFCm\xFC indirip
+        kurun."
+      - Versi saat ini terlalu lama. Silakan unduh dan instal versi terbaru.
+      - "Obecna wersja jest za stara. Pobierz i zainstaluj najnowsz\u0105 wersj\u0119."
+      - "\u0E40\u0E27\u0E2D\u0E23\u0E4C\u0E0A\u0E31\u0E19\u0E1B\u0E31\u0E08\u0E08\u0E38\u0E1A\u0E31\u0E19\u0E40\u0E01\u0E48\u0E32\u0E40\u0E01\u0E34\u0E19\u0E44\u0E1B
+        \u0E42\u0E1B\u0E23\u0E14\u0E14\u0E32\u0E27\u0E19\u0E4C\u0E42\u0E2B\u0E25\u0E14\u0E41\u0E25\u0E30\u0E15\u0E34\u0E14\u0E15\u0E31\u0E49\u0E07\u0E40\u0E27\u0E2D\u0E23\u0E4C\u0E0A\u0E31\u0E19\u0E25\u0E48\u0E32\u0E2A\u0E38\u0E14"
+      - "Versiunea curent\u0103 este prea veche. V\u0103 rug\u0103m s\u0103 desc\u0103rca\u021Bi
+        \u0219i s\u0103 instala\u021Bi cea mai recent\u0103 versiune."
+      - "\u0627\u0644\u0625\u0635\u062F\u0627\u0631 \u0627\u0644\u062D\u0627\u0644\u064A
+        \u0642\u062F\u064A\u0645 \u062C\u062F\u0627\u064B. \u064A\u0631\u062C\u0649
+        \u062A\u0646\u0632\u064A\u0644 \u0648\u062A\u062B\u0628\u064A\u062A \u0623\u062D\u062F\u062B
+        \u0625\u0635\u062F\u0627\u0631."
+      - "Phi\xEAn b\u1EA3n hi\u1EC7n t\u1EA1i \u0111\xE3 qu\xE1 c\u0169. Vui l\xF2ng
+        t\u1EA3i xu\u1ED1ng v\xE0 c\xE0i \u0111\u1EB7t phi\xEAn b\u1EA3n m\u1EDBi
+        nh\u1EA5t."
+      - "\u041F\u043E\u0442\u043E\u0447\u043D\u0430 \u0432\u0435\u0440\u0441\u0456\u044F
+        \u0437\u0430\u043D\u0430\u0434\u0442\u043E \u0441\u0442\u0430\u0440\u0430.
+        \u0411\u0443\u0434\u044C \u043B\u0430\u0441\u043A\u0430, \u0437\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0442\u0435
+        \u0442\u0430 \u0432\u0441\u0442\u0430\u043D\u043E\u0432\u0456\u0442\u044C
+        \u043E\u0441\u0442\u0430\u043D\u043D\u044E \u0432\u0435\u0440\u0441\u0456\u044E."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Load_Plantform
+      TermType: 0
+      Description: 
+      Languages:
+      - The current version is too old. Please go to the app store to install the
+        latest version.
+      - "\u5F53\u524D\u4F7F\u7528\u7684\u7248\u672C\u8FC7\u4F4E\uFF0C\u8BF7\u524D\u5F80\u5E94\u7528\u5546\u5E97\u5B89\u88C5\u6700\u65B0\u7248\u672C"
+      - "\u76EE\u524D\u4F7F\u7528\u7684\u7248\u672C\u904E\u4F4E\uFF0C\u8ACB\u524D\u5F80\u61C9\u7528\u7A0B\u5F0F\u5546\u5E97\u5B89\u88DD\u6700\u65B0\u7248\u672C"
+      - "\uD604\uC7AC \uBC84\uC804\uC774 \uB108\uBB34 \uC624\uB798\uB418\uC5C8\uC2B5\uB2C8\uB2E4.
+        \uC571 \uC2A4\uD1A0\uC5B4\uC5D0\uC11C \uCD5C\uC2E0 \uBC84\uC804\uC744 \uC124\uCE58\uD574
+        \uC8FC\uC138\uC694."
+      - "\u73FE\u5728\u304A\u4F7F\u3044\u306E\u30D0\u30FC\u30B8\u30E7\u30F3\u306F\u53E4\u3059\u304E\u307E\u3059\u3002\u30A2\u30D7\u30EA\u30B9\u30C8\u30A2\u304B\u3089\u6700\u65B0\u30D0\u30FC\u30B8\u30E7\u30F3\u3092\u30A4\u30F3\u30B9\u30C8\u30FC\u30EB\u3057\u3066\u304F\u3060\u3055\u3044\u3002"
+      - "La version actuelle est trop ancienne. Veuillez vous rendre sur l'App Store
+        pour installer la derni\xE8re version."
+      - Die aktuelle Version ist zu alt. Bitte installieren Sie die neueste Version
+        aus dem App Store.
+      - "\u0422\u0435\u043A\u0443\u0449\u0430\u044F \u0432\u0435\u0440\u0441\u0438\u044F
+        \u0441\u043B\u0438\u0448\u043A\u043E\u043C \u0443\u0441\u0442\u0430\u0440\u0435\u043B\u0430.
+        \u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u043F\u0435\u0440\u0435\u0439\u0434\u0438\u0442\u0435
+        \u0432 \u043C\u0430\u0433\u0430\u0437\u0438\u043D \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0439,
+        \u0447\u0442\u043E\u0431\u044B \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C
+        \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u044E\u044E \u0432\u0435\u0440\u0441\u0438\u044E."
+      - "La versi\xF3n actual es demasiado antigua. Por favor, dir\xEDjase a la tienda
+        de aplicaciones para instalar la \xFAltima versi\xF3n."
+      - "A vers\xE3o atual \xE9 muito antiga. Acesse a loja de aplicativos para instalar
+        a vers\xE3o mais recente."
+      - "La versione attuale \xE8 troppo vecchia. Visita l'app store per installare
+        la versione pi\xF9 recente."
+      - De huidige versie is te oud. Ga naar de app store om de nieuwste versie te
+        installeren.
+      - "Mevcut s\xFCr\xFCm \xE7ok eski. L\xFCtfen en son s\xFCr\xFCm\xFC y\xFCklemek
+        i\xE7in uygulama ma\u011Fazas\u0131na gidin."
+      - Versi saat ini terlalu lama. Silakan kunjungi toko aplikasi untuk menginstal
+        versi terbaru.
+      - "Obecna wersja jest za stara. Przejd\u017A do sklepu z aplikacjami, aby zainstalowa\u0107
+        najnowsz\u0105 wersj\u0119."
+      - "\u0E40\u0E27\u0E2D\u0E23\u0E4C\u0E0A\u0E31\u0E19\u0E1B\u0E31\u0E08\u0E08\u0E38\u0E1A\u0E31\u0E19\u0E40\u0E01\u0E48\u0E32\u0E40\u0E01\u0E34\u0E19\u0E44\u0E1B
+        \u0E42\u0E1B\u0E23\u0E14\u0E44\u0E1B\u0E17\u0E35\u0E48 App Store \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E15\u0E34\u0E14\u0E15\u0E31\u0E49\u0E07\u0E40\u0E27\u0E2D\u0E23\u0E4C\u0E0A\u0E31\u0E19\u0E25\u0E48\u0E32\u0E2A\u0E38\u0E14"
+      - "Versiunea curent\u0103 este prea veche. Accesa\u021Bi magazinul de aplica\u021Bii
+        pentru a instala cea mai recent\u0103 versiune."
+      - "\u0627\u0644\u0625\u0635\u062F\u0627\u0631 \u0627\u0644\u062D\u0627\u0644\u064A
+        \u0642\u062F\u064A\u0645 \u062C\u062F\u064B\u0627. \u064A\u0631\u062C\u0649
+        \u0627\u0644\u062A\u0648\u062C\u0647 \u0625\u0644\u0649 \u0645\u062A\u062C\u0631
+        \u0627\u0644\u062A\u0637\u0628\u064A\u0642\u0627\u062A \u0644\u062A\u062B\u0628\u064A\u062A
+        \u0623\u062D\u062F\u062B \u0625\u0635\u062F\u0627\u0631."
+      - "Phi\xEAn b\u1EA3n hi\u1EC7n t\u1EA1i qu\xE1 c\u0169. Vui l\xF2ng v\xE0o
+        App Store \u0111\u1EC3 c\xE0i \u0111\u1EB7t phi\xEAn b\u1EA3n m\u1EDBi nh\u1EA5t."
+      - "\u041F\u043E\u0442\u043E\u0447\u043D\u0430 \u0432\u0435\u0440\u0441\u0456\u044F
+        \u0437\u0430\u043D\u0430\u0434\u0442\u043E \u0441\u0442\u0430\u0440\u0430.
+        \u0411\u0443\u0434\u044C \u043B\u0430\u0441\u043A\u0430, \u043F\u0435\u0440\u0435\u0439\u0434\u0456\u0442\u044C
+        \u0434\u043E \u043C\u0430\u0433\u0430\u0437\u0438\u043D\u0443 \u043F\u0440\u043E\u0433\u0440\u0430\u043C,
+        \u0449\u043E\u0431 \u0432\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0438
+        \u043E\u0441\u0442\u0430\u043D\u043D\u044E \u0432\u0435\u0440\u0441\u0456\u044E."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Load_Notice
+      TermType: 0
+      Description: 
+      Languages:
+      - Optional resource updates detected; we recommend completing the update to
+        improve your gaming experience.
+      - "\u68C0\u6D4B\u5230\u53EF\u9009\u8D44\u6E90\u66F4\u65B0\uFF0C\u63A8\u8350\u5B8C\u6210\u66F4\u65B0\u63D0\u5347\u6E38\u620F\u4F53\u9A8C"
+      - "\u5075\u6E2C\u5230\u9078\u7528\u8CC7\u6E90\u66F4\u65B0\uFF0C\u5EFA\u8B70\u5B8C\u6210\u66F4\u65B0\u63D0\u5347\u904A\u6232\u9AD4\u9A57"
+      - "\uC120\uD0DD\uC801 \uB9AC\uC18C\uC2A4 \uC5C5\uB370\uC774\uD2B8\uAC00 \uAC10\uC9C0\uB418\uC5C8\uC2B5\uB2C8\uB2E4.
+        \uAC8C\uC784 \uD658\uACBD \uAC1C\uC120\uC744 \uC704\uD574 \uC5C5\uB370\uC774\uD2B8\uB97C
+        \uC644\uB8CC\uD558\uB294 \uAC83\uC744 \uAD8C\uC7A5\uD569\uB2C8\uB2E4."
+      - "\u30AA\u30D7\u30B7\u30E7\u30F3\u306E\u30EA\u30BD\u30FC\u30B9\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u304C\u691C\u51FA\u3055\u308C\u307E\u3057\u305F\u3002\u30B2\u30FC\u30E0\u4F53\u9A13\u3092\u5411\u4E0A\u3055\u305B\u308B\u305F\u3081\u3001\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u306E\u5B8C\u4E86\u3092\u304A\u52E7\u3081\u3057\u307E\u3059\u3002"
+      - "Mises \xE0 jour de ressources facultatives d\xE9tect\xE9es\_; nous vous
+        recommandons d\u2019effectuer la mise \xE0 jour pour am\xE9liorer votre exp\xE9rience
+        de jeu."
+      - "Optionale Ressourcenaktualisierungen wurden erkannt; wir empfehlen, die
+        Aktualisierung durchzuf\xFChren, um Ihr Spielerlebnis zu verbessern."
+      - "\u041E\u0431\u043D\u0430\u0440\u0443\u0436\u0435\u043D\u044B \u043D\u0435\u043E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u0435
+        \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432;
+        \u043C\u044B \u0440\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0443\u0435\u043C
+        \u0437\u0430\u0432\u0435\u0440\u0448\u0438\u0442\u044C \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435
+        \u0434\u043B\u044F \u0443\u043B\u0443\u0447\u0448\u0435\u043D\u0438\u044F
+        \u0438\u0433\u0440\u043E\u0432\u043E\u0433\u043E \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u0430."
+      - "Se han detectado actualizaciones de recursos opcionales; recomendamos completar
+        la actualizaci\xF3n para mejorar tu experiencia de juego."
+      - "Atualiza\xE7\xF5es de recursos opcionais detectadas; recomendamos concluir
+        a atualiza\xE7\xE3o para melhorar sua experi\xEAncia de jogo."
+      - Sono stati rilevati aggiornamenti facoltativi delle risorse; si consiglia
+        di completare l'aggiornamento per migliorare l'esperienza di gioco.
+      - Optionele resource-updates gedetecteerd; we raden aan de update te voltooien
+        om je game-ervaring te verbeteren.
+      - "\u0130ste\u011Fe ba\u011Fl\u0131 kaynak g\xFCncellemeleri tespit edildi;
+        oyun deneyiminizi iyile\u015Ftirmek i\xE7in g\xFCncellemeyi tamamlaman\u0131z\u0131
+        \xF6neririz."
+      - Pembaruan sumber daya opsional terdeteksi; kami sarankan untuk menyelesaikan
+        pembaruan guna meningkatkan pengalaman bermain game Anda.
+      - "Wykryto opcjonalne aktualizacje zasob\xF3w. Zalecamy przeprowadzenie aktualizacji
+        w celu zwi\u0119kszenia komfortu gry."
+      - "\u0E15\u0E23\u0E27\u0E08\u0E1E\u0E1A\u0E01\u0E32\u0E23\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15\u0E17\u0E23\u0E31\u0E1E\u0E22\u0E32\u0E01\u0E23\u0E40\u0E2A\u0E23\u0E34\u0E21
+        \u0E40\u0E23\u0E32\u0E02\u0E2D\u0E41\u0E19\u0E30\u0E19\u0E33\u0E43\u0E2B\u0E49\u0E17\u0E33\u0E01\u0E32\u0E23\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E1B\u0E23\u0E31\u0E1A\u0E1B\u0E23\u0E38\u0E07\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E01\u0E32\u0E23\u0E40\u0E25\u0E48\u0E19\u0E40\u0E01\u0E21\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13"
+      - "Au fost detectate actualiz\u0103ri op\u021Bionale ale resurselor; v\u0103
+        recomand\u0103m s\u0103 finaliza\u021Bi actualizarea pentru a v\u0103 \xEEmbun\u0103t\u0103\u021Bi
+        experien\u021Ba de joc."
+      - "\u062A\u0645 \u0627\u0643\u062A\u0634\u0627\u0641 \u062A\u062D\u062F\u064A\u062B\u0627\u062A
+        \u0627\u062E\u062A\u064A\u0627\u0631\u064A\u0629 \u0644\u0644\u0645\u0648\u0627\u0631\u062F\u061B
+        \u0646\u0648\u0635\u064A \u0628\u0625\u0643\u0645\u0627\u0644 \u0627\u0644\u062A\u062D\u062F\u064A\u062B
+        \u0644\u062A\u062D\u0633\u064A\u0646 \u062A\u062C\u0631\u0628\u0629 \u0627\u0644\u0644\u0639\u0628
+        \u0627\u0644\u062E\u0627\u0635\u0629 \u0628\u0643."
+      - "\u0110\xE3 ph\xE1t hi\u1EC7n c\xE1c b\u1EA3n c\u1EADp nh\u1EADt t\xE0i nguy\xEAn
+        t\xF9y ch\u1ECDn; ch\xFAng t\xF4i khuy\xEAn b\u1EA1n n\xEAn ho\xE0n t\u1EA5t
+        qu\xE1 tr\xECnh c\u1EADp nh\u1EADt \u0111\u1EC3 c\u1EA3i thi\u1EC7n tr\u1EA3i
+        nghi\u1EC7m ch\u01A1i game c\u1EE7a m\xECnh."
+      - "\u0412\u0438\u044F\u0432\u043B\u0435\u043D\u043E \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F
+        \u0434\u043E\u0434\u0430\u0442\u043A\u043E\u0432\u0438\u0445 \u0440\u0435\u0441\u0443\u0440\u0441\u0456\u0432;
+        \u0440\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0443\u0454\u043C\u043E
+        \u0437\u0430\u0432\u0435\u0440\u0448\u0438\u0442\u0438 \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F,
+        \u0449\u043E\u0431 \u043F\u043E\u043A\u0440\u0430\u0449\u0438\u0442\u0438
+        \u0456\u0433\u0440\u043E\u0432\u0438\u0439 \u0434\u043E\u0441\u0432\u0456\u0434."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Load_Force
+      TermType: 0
+      Description: 
+      Languages:
+      - A version update has been detected. Canceling the update will prevent you
+        from entering the game.
+      - "\u68C0\u6D4B\u5230\u7248\u672C\u66F4\u65B0\uFF0C\u53D6\u6D88\u66F4\u65B0\u5C06\u5BFC\u81F4\u65E0\u6CD5\u8FDB\u5165\u6E38\u620F"
+      - "\u5075\u6E2C\u5230\u7248\u672C\u66F4\u65B0\uFF0C\u53D6\u6D88\u66F4\u65B0\u5C07\u5C0E\u81F4\u7121\u6CD5\u9032\u5165\u904A\u6232"
+      - "\uBC84\uC804 \uC5C5\uB370\uC774\uD2B8\uAC00 \uAC10\uC9C0\uB418\uC5C8\uC2B5\uB2C8\uB2E4.
+        \uC5C5\uB370\uC774\uD2B8\uB97C \uCDE8\uC18C\uD558\uBA74 \uAC8C\uC784\uC5D0
+        \uC811\uC18D\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4."
+      - "\u30D0\u30FC\u30B8\u30E7\u30F3\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u304C\u691C\u51FA\u3055\u308C\u307E\u3057\u305F\u3002\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u3092\u30AD\u30E3\u30F3\u30BB\u30EB\u3059\u308B\u3068\u3001\u30B2\u30FC\u30E0\u306B\u30ED\u30B0\u30A4\u30F3\u3067\u304D\u306A\u304F\u306A\u308A\u307E\u3059\u3002"
+      - "Une mise \xE0 jour a \xE9t\xE9 d\xE9tect\xE9e. L'annulation de cette mise
+        \xE0 jour vous emp\xEAchera d'acc\xE9der au jeu."
+      - "Es wurde ein Versionsupdate erkannt. Wenn Sie das Update abbrechen, k\xF6nnen
+        Sie das Spiel nicht mehr starten."
+      - "\u041E\u0431\u043D\u0430\u0440\u0443\u0436\u0435\u043D\u043E \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435
+        \u0432\u0435\u0440\u0441\u0438\u0438. \u041E\u0442\u043C\u0435\u043D\u0430
+        \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F \u043D\u0435
+        \u043F\u043E\u0437\u0432\u043E\u043B\u0438\u0442 \u0432\u0430\u043C \u0432\u043E\u0439\u0442\u0438
+        \u0432 \u0438\u0433\u0440\u0443."
+      - "Se ha detectado una actualizaci\xF3n de versi\xF3n. Cancelar la actualizaci\xF3n
+        impedir\xE1 que accedas al juego."
+      - "Foi detectada uma atualiza\xE7\xE3o de vers\xE3o. Cancelar a atualiza\xE7\xE3o
+        impedir\xE1 que voc\xEA entre no jogo."
+      - "\xC8 stato rilevato un aggiornamento di versione. Annullando l'aggiornamento
+        non sar\xE0 possibile accedere al gioco."
+      - Er is een versie-update gedetecteerd. Als u de update annuleert, kunt u het
+        spel niet meer starten.
+      - "Bir s\xFCr\xFCm g\xFCncellemesi tespit edildi. G\xFCncellemeyi iptal etmeniz
+        oyuna girmenizi engelleyecektir."
+      - Pembaruan versi telah terdeteksi. Membatalkan pembaruan akan mencegah Anda
+        memasuki permainan.
+      - "Wykryto aktualizacj\u0119 wersji. Anulowanie aktualizacji uniemo\u017Cliwi
+        Ci wej\u015Bcie do gry."
+      - "\u0E15\u0E23\u0E27\u0E08\u0E1E\u0E1A\u0E01\u0E32\u0E23\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15\u0E40\u0E27\u0E2D\u0E23\u0E4C\u0E0A\u0E31\u0E19
+        \u0E01\u0E32\u0E23\u0E22\u0E01\u0E40\u0E25\u0E34\u0E01\u0E01\u0E32\u0E23\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15\u0E08\u0E30\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E04\u0E38\u0E13\u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E40\u0E02\u0E49\u0E32\u0E40\u0E01\u0E21\u0E44\u0E14\u0E49"
+      - "A fost detectat\u0103 o actualizare de versiune. Anularea actualiz\u0103rii
+        nu v\u0103 va permite s\u0103 accesa\u021Bi jocul."
+      - "\u062A\u0645 \u0627\u0643\u062A\u0634\u0627\u0641 \u062A\u062D\u062F\u064A\u062B
+        \u0644\u0644\u0625\u0635\u062F\u0627\u0631. \u0633\u064A\u0624\u062F\u064A
+        \u0625\u0644\u063A\u0627\u0621 \u0627\u0644\u062A\u062D\u062F\u064A\u062B
+        \u0625\u0644\u0649 \u0645\u0646\u0639\u0643 \u0645\u0646 \u062F\u062E\u0648\u0644
+        \u0627\u0644\u0644\u0639\u0628\u0629."
+      - "\u0110\xE3 ph\xE1t hi\u1EC7n b\u1EA3n c\u1EADp nh\u1EADt phi\xEAn b\u1EA3n.
+        H\u1EE7y c\u1EADp nh\u1EADt s\u1EBD khi\u1EBFn b\u1EA1n kh\xF4ng th\u1EC3
+        v\xE0o game."
+      - "\u0412\u0438\u044F\u0432\u043B\u0435\u043D\u043E \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F
+        \u0432\u0435\u0440\u0441\u0456\u0457. \u0421\u043A\u0430\u0441\u0443\u0432\u0430\u043D\u043D\u044F
+        \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F \u0437\u0430\u0432\u0430\u0434\u0438\u0442\u044C
+        \u0432\u0430\u043C \u0443\u0432\u0456\u0439\u0442\u0438 \u0432 \u0433\u0440\u0443."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Load_Force_WIFI
+      TermType: 0
+      Description: 
+      Languages:
+      - New game content has been detected that requires an update. The update package
+        size is <color=#BA3026>{0}</color>. Canceling the update will prevent you
+        from entering the game. You are currently connected to a <color=#BA3026>Wi-Fi
+        network</color>. Please begin the update.
+      - "\u68C0\u6D4B\u5230\u6709\u65B0\u7684\u6E38\u620F\u5185\u5BB9\u9700\u8981\u66F4\u65B0\uFF0C\u66F4\u65B0\u5305\u5927\u5C0F<color=#BA3026>{0}</color>,
+        \u53D6\u6D88\u66F4\u65B0\u5C06\u5BFC\u81F4\u65E0\u6CD5\u8FDB\u5165\u6E38\u620F\uFF0C\u60A8\u5F53\u524D\u5DF2\u4E3A<color=#BA3026>wifi\u7F51\u7EDC</color>\uFF0C\u8BF7\u5F00\u59CB\u66F4\u65B0"
+      - "\u5075\u6E2C\u5230\u6709\u65B0\u7684\u904A\u6232\u5167\u5BB9\u9700\u8981\u66F4\u65B0\uFF0C\u66F4\u65B0\u5957\u4EF6\u5927\u5C0F<color=#BA3026>{0}</color>,
+        \u53D6\u6D88\u66F4\u65B0\u5C07\u5C0E\u81F4\u7121\u6CD5\u9032\u5165\u904A\u6232\uFF0C\u60A8\u76EE\u524D\u5DF2\u70BA<color=#BA3026>wifi\u7DB2\u8DEF</color>\uFF0C\u8ACB\u958B\u59CB\u66F4\u65B0"
+      - "\uC0C8\uB85C\uC6B4 \uAC8C\uC784 \uCF58\uD150\uCE20\uAC00 \uAC10\uC9C0\uB418\uC5B4
+        \uC5C5\uB370\uC774\uD2B8\uAC00 \uD544\uC694\uD569\uB2C8\uB2E4. \uC5C5\uB370\uC774\uD2B8
+        \uD328\uD0A4\uC9C0 \uD06C\uAE30\uB294 <color=#BA3026>{0}</color>\uC785\uB2C8\uB2E4.
+        \uC5C5\uB370\uC774\uD2B8\uB97C \uCDE8\uC18C\uD558\uBA74 \uAC8C\uC784\uC5D0
+        \uC811\uC18D\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4. \uD604\uC7AC <color=#BA3026>Wi-Fi
+        \uB124\uD2B8\uC6CC\uD06C</color>\uC5D0 \uC5F0\uACB0\uB418\uC5B4 \uC788\uC2B5\uB2C8\uB2E4.
+        \uC5C5\uB370\uC774\uD2B8\uB97C \uC2DC\uC791\uD558\uC138\uC694."
+      - "\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u304C\u5FC5\u8981\u306A\u65B0\u3057\u3044\u30B2\u30FC\u30E0\u30B3\u30F3\u30C6\u30F3\u30C4\u304C\u691C\u51FA\u3055\u308C\u307E\u3057\u305F\u3002\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u30D1\u30C3\u30B1\u30FC\u30B8\u306E\u30B5\u30A4\u30BA\u306F<color=#BA3026>{0}</color>\u3067\u3059\u3002\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u3092\u30AD\u30E3\u30F3\u30BB\u30EB\u3059\u308B\u3068\u3001\u30B2\u30FC\u30E0\u306B\u30ED\u30B0\u30A4\u30F3\u3067\u304D\u306A\u304F\u306A\u308A\u307E\u3059\u3002\u73FE\u5728\u3001<color=#BA3026>Wi-Fi\u30CD\u30C3\u30C8\u30EF\u30FC\u30AF</color>\u306B\u63A5\u7D9A\u3055\u308C\u3066\u3044\u307E\u3059\u3002\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u3092\u958B\u59CB\u3057\u3066\u304F\u3060\u3055\u3044\u3002"
+      - "Du nouveau contenu n\xE9cessitant une mise \xE0 jour a \xE9t\xE9 d\xE9tect\xE9.
+        La taille du package de mise \xE0 jour est de <color=#BA3026>{0}</color>.
+        Annuler la mise \xE0 jour vous emp\xEAchera d'acc\xE9der au jeu. Vous \xEAtes
+        actuellement connect\xE9 \xE0 un r\xE9seau <color=#BA3026>Wi-Fi</color>.
+        Veuillez lancer la mise \xE0 jour."
+      - "Es wurden neue Spielinhalte gefunden, die ein Update erfordern. Die Update-Paketgr\xF6\xDFe
+        betr\xE4gt <color=#BA3026>{0}</color>. Wenn Sie das Update abbrechen, k\xF6nnen
+        Sie das Spiel nicht mehr starten. Sie sind derzeit mit einem <color=#BA3026>WLAN-Netzwerk</color>
+        verbunden. Bitte starten Sie das Update."
+      - "\u041E\u0431\u043D\u0430\u0440\u0443\u0436\u0435\u043D \u043D\u043E\u0432\u044B\u0439
+        \u0438\u0433\u0440\u043E\u0432\u043E\u0439 \u043A\u043E\u043D\u0442\u0435\u043D\u0442,
+        \u0442\u0440\u0435\u0431\u0443\u044E\u0449\u0438\u0439 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F.
+        \u0420\u0430\u0437\u043C\u0435\u0440 \u043F\u0430\u043A\u0435\u0442\u0430
+        \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442
+        <color=#BA3026>{0}</color>. \u041E\u0442\u043C\u0435\u043D\u0430 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F
+        \u043D\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u0438\u0442 \u0432\u0430\u043C
+        \u0432\u043E\u0439\u0442\u0438 \u0432 \u0438\u0433\u0440\u0443. \u0412 \u0434\u0430\u043D\u043D\u044B\u0439
+        \u043C\u043E\u043C\u0435\u043D\u0442 \u0432\u044B \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u044B
+        \u043A \u0441\u0435\u0442\u0438 <color=#BA3026>Wi-Fi</color>. \u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430,
+        \u043D\u0430\u0447\u043D\u0438\u0442\u0435 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435."
+      - "Se ha detectado nuevo contenido del juego que requiere una actualizaci\xF3n.
+        El tama\xF1o del paquete de actualizaci\xF3n es <color=#BA3026>{0}</color>.
+        Cancelar la actualizaci\xF3n impedir\xE1 que accedas al juego. Actualmente
+        est\xE1s conectado a una red <color=#BA3026>Wi-Fi</color>. Inicia la actualizaci\xF3n."
+      - "Foi detectado novo conte\xFAdo no jogo que requer uma atualiza\xE7\xE3o.
+        O tamanho do pacote de atualiza\xE7\xE3o \xE9 <color=#BA3026>{0}</color>.
+        Cancelar a atualiza\xE7\xE3o impedir\xE1 que voc\xEA entre no jogo. Voc\xEA
+        est\xE1 conectado a uma rede <color=#BA3026>Wi-Fi</color>. Inicie a atualiza\xE7\xE3o."
+      - "\xC8 stato rilevato un nuovo contenuto di gioco che richiede un aggiornamento.
+        La dimensione del pacchetto di aggiornamento \xE8 <color=#BA3026>{0}</color>.
+        Annullando l'aggiornamento non potrai accedere al gioco. Attualmente sei
+        connesso a una rete <color=#BA3026>Wi-Fi</color>. Avvia l'aggiornamento."
+      - Er is nieuwe gamecontent gedetecteerd waarvoor een update nodig is. De grootte
+        van het updatepakket is <color=#BA3026>{0}</color>. Als u de update annuleert,
+        kunt u het spel niet meer starten. U bent momenteel verbonden met een <color=#BA3026>Wi-Fi-netwerk</color>.
+        Start de update.
+      - "Yeni oyun i\xE7eri\u011Fi tespit edildi ve g\xFCncelleme gerekiyor. G\xFCncelleme
+        paketi boyutu <color=#BA3026>{0}</color>. G\xFCncellemeyi iptal etmek oyuna
+        girmenizi engelleyecektir. \u015Eu anda <color=#BA3026>Wi-Fi a\u011F\u0131na</color>
+        ba\u011Fl\u0131s\u0131n\u0131z. L\xFCtfen g\xFCncellemeyi ba\u015Flat\u0131n."
+      - Konten game baru telah terdeteksi yang memerlukan pembaruan. Ukuran paket
+        pembaruan adalah <color=#BA3026>{0}</color>. Membatalkan pembaruan akan mencegah
+        Anda memasuki game. Anda saat ini terhubung ke jaringan <color=#BA3026>Wi-Fi</color>.
+        Silakan mulai pembaruan.
+      - "Wykryto now\u0105 zawarto\u015B\u0107 gry, kt\xF3ra wymaga aktualizacji.
+        Rozmiar pakietu aktualizacji to <color=#BA3026>{0}</color>. Anulowanie aktualizacji
+        uniemo\u017Cliwi Ci wej\u015Bcie do gry. Aktualnie jeste\u015B po\u0142\u0105czony
+        z <color=#BA3026>sieci\u0105 Wi-Fi</color>. Rozpocznij aktualizacj\u0119."
+      - "\u0E15\u0E23\u0E27\u0E08\u0E1E\u0E1A\u0E40\u0E19\u0E37\u0E49\u0E2D\u0E2B\u0E32\u0E40\u0E01\u0E21\u0E43\u0E2B\u0E21\u0E48\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33\u0E01\u0E32\u0E23\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15
+        \u0E02\u0E19\u0E32\u0E14\u0E41\u0E1E\u0E47\u0E01\u0E40\u0E01\u0E08\u0E01\u0E32\u0E23\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15\u0E04\u0E37\u0E2D
+        <color=#BA3026>{0}</color> \u0E01\u0E32\u0E23\u0E22\u0E01\u0E40\u0E25\u0E34\u0E01\u0E01\u0E32\u0E23\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15\u0E08\u0E30\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E04\u0E38\u0E13\u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E40\u0E02\u0E49\u0E32\u0E40\u0E01\u0E21\u0E44\u0E14\u0E49
+        \u0E02\u0E13\u0E30\u0E19\u0E35\u0E49\u0E04\u0E38\u0E13\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D\u0E01\u0E31\u0E1A\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22
+        <color=#BA3026>Wi-Fi</color> \u0E2D\u0E22\u0E39\u0E48 \u0E42\u0E1B\u0E23\u0E14\u0E40\u0E23\u0E34\u0E48\u0E21\u0E01\u0E32\u0E23\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15"
+      - "A fost detectat con\u021Binut nou \xEEn joc care necesit\u0103 o actualizare.
+        Dimensiunea pachetului de actualizare este <color=#BA3026>{0}</color>. Anularea
+        actualiz\u0103rii nu v\u0103 va permite s\u0103 accesa\u021Bi jocul. \xCEn
+        prezent, sunte\u021Bi conectat la o <color=#BA3026>re\u021Bea Wi-Fi</color>.
+        V\u0103 rug\u0103m s\u0103 \xEEncepe\u021Bi actualizarea."
+      - "\u062A\u0645 \u0627\u0643\u062A\u0634\u0627\u0641 \u0645\u062D\u062A\u0648\u0649
+        \u062C\u062F\u064A\u062F \u0644\u0644\u0639\u0628\u0629 \u064A\u062A\u0637\u0644\u0628
+        \u062A\u062D\u062F\u064A\u062B\u064B\u0627. \u062D\u062C\u0645 \u062D\u0632\u0645\u0629
+        \u0627\u0644\u062A\u062D\u062F\u064A\u062B \u0647\u0648 0. \u0633\u064A\u0624\u062F\u064A
+        \u0625\u0644\u063A\u0627\u0621 \u0627\u0644\u062A\u062D\u062F\u064A\u062B
+        \u0625\u0644\u0649 \u0645\u0646\u0639\u0643 \u0645\u0646 \u062F\u062E\u0648\u0644
+        \u0627\u0644\u0644\u0639\u0628\u0629. \u0623\u0646\u062A \u0645\u062A\u0635\u0644
+        \u062D\u0627\u0644\u064A\u064B\u0627 \u0628\u0634\u0628\u0643\u0629 Wi-Fi.
+        \u064A\u064F\u0631\u062C\u0649 \u0628\u062F\u0621 \u0627\u0644\u062A\u062D\u062F\u064A\u062B."
+      - "\u0110\xE3 ph\xE1t hi\u1EC7n n\u1ED9i dung tr\xF2 ch\u01A1i m\u1EDBi y\xEAu
+        c\u1EA7u c\u1EADp nh\u1EADt. K\xEDch th\u01B0\u1EDBc g\xF3i c\u1EADp nh\u1EADt
+        l\xE0 <color=#BA3026>{0}</color>. H\u1EE7y c\u1EADp nh\u1EADt s\u1EBD ng\u0103n
+        b\u1EA1n v\xE0o tr\xF2 ch\u01A1i. B\u1EA1n hi\u1EC7n \u0111ang k\u1EBFt n\u1ED1i
+        v\u1EDBi m\u1EA1ng <color=#BA3026>Wi-Fi</color>. Vui l\xF2ng b\u1EAFt \u0111\u1EA7u
+        c\u1EADp nh\u1EADt."
+      - "\u0412\u0438\u044F\u0432\u043B\u0435\u043D\u043E \u043D\u043E\u0432\u0438\u0439
+        \u0456\u0433\u0440\u043E\u0432\u0438\u0439 \u043A\u043E\u043D\u0442\u0435\u043D\u0442,
+        \u044F\u043A\u0438\u0439 \u043F\u043E\u0442\u0440\u0435\u0431\u0443\u0454
+        \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F. \u0420\u043E\u0437\u043C\u0456\u0440
+        \u043F\u0430\u043A\u0435\u0442\u0430 \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F
+        \u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C <color=#BA3026>{0}<color>.
+        \u0421\u043A\u0430\u0441\u0443\u0432\u0430\u043D\u043D\u044F \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F
+        \u043D\u0435 \u0434\u043E\u0437\u0432\u043E\u043B\u0438\u0442\u044C \u0432\u0430\u043C
+        \u0443\u0432\u0456\u0439\u0442\u0438 \u0432 \u0433\u0440\u0443. \u0412\u0438
+        \u0437\u0430\u0440\u0430\u0437 \u043F\u0456\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0456
+        \u0434\u043E <color=#BA3026>\u043C\u0435\u0440\u0435\u0436\u0456 Wi-Fi</color>.
+        \u0411\u0443\u0434\u044C \u043B\u0430\u0441\u043A\u0430, \u0440\u043E\u0437\u043F\u043E\u0447\u043D\u0456\u0442\u044C
+        \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Load_Force_NO_WIFI
+      TermType: 0
+      Description: 
+      Languages:
+      - New game content has been detected and requires an update. The update package
+        size is <color=#BA3026>{0}</color>. Canceling the update will prevent you
+        from entering the game. Please begin the update.
+      - "\u68C0\u6D4B\u5230\u6709\u65B0\u7684\u6E38\u620F\u5185\u5BB9\u9700\u8981\u66F4\u65B0\uFF0C\u66F4\u65B0\u5305\u5927\u5C0F<color=#BA3026>{0}</color>,
+        \u53D6\u6D88\u66F4\u65B0\u5C06\u5BFC\u81F4\u65E0\u6CD5\u8FDB\u5165\u6E38\u620F\uFF0C\u8BF7\u5F00\u59CB\u66F4\u65B0"
+      - "\u5075\u6E2C\u5230\u6709\u65B0\u7684\u904A\u6232\u5167\u5BB9\u9700\u8981\u66F4\u65B0\uFF0C\u66F4\u65B0\u5957\u4EF6\u5927\u5C0F<color=#BA3026>{0}</color>,
+        \u53D6\u6D88\u66F4\u65B0\u5C07\u5C0E\u81F4\u7121\u6CD5\u9032\u5165\u904A\u6232\uFF0C\u8ACB\u958B\u59CB\u66F4\u65B0"
+      - "\uC0C8\uB85C\uC6B4 \uAC8C\uC784 \uCF58\uD150\uCE20\uAC00 \uAC10\uC9C0\uB418\uC5B4
+        \uC5C5\uB370\uC774\uD2B8\uAC00 \uD544\uC694\uD569\uB2C8\uB2E4. \uC5C5\uB370\uC774\uD2B8
+        \uD328\uD0A4\uC9C0 \uD06C\uAE30\uB294 <color=#BA3026>{0}</color>\uC785\uB2C8\uB2E4.
+        \uC5C5\uB370\uC774\uD2B8\uB97C \uCDE8\uC18C\uD558\uBA74 \uAC8C\uC784\uC5D0
+        \uC811\uC18D\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4. \uC5C5\uB370\uC774\uD2B8\uB97C
+        \uC2DC\uC791\uD574 \uC8FC\uC138\uC694."
+      - "\u65B0\u3057\u3044\u30B2\u30FC\u30E0\u30B3\u30F3\u30C6\u30F3\u30C4\u304C\u691C\u51FA\u3055\u308C\u307E\u3057\u305F\u3002\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u304C\u5FC5\u8981\u3067\u3059\u3002\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u30D1\u30C3\u30B1\u30FC\u30B8\u306E\u30B5\u30A4\u30BA\u306F<color=#BA3026>{0}</color>\u3067\u3059\u3002\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u3092\u30AD\u30E3\u30F3\u30BB\u30EB\u3059\u308B\u3068\u30B2\u30FC\u30E0\u306B\u30ED\u30B0\u30A4\u30F3\u3067\u304D\u306A\u304F\u306A\u308A\u307E\u3059\u3002\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u3092\u958B\u59CB\u3057\u3066\u304F\u3060\u3055\u3044\u3002"
+      - "Du nouveau contenu a \xE9t\xE9 d\xE9tect\xE9 et n\xE9cessite une mise \xE0
+        jour. La taille du package est de <color=#BA3026>{0}</color>. Annuler la
+        mise \xE0 jour vous emp\xEAchera d'acc\xE9der au jeu. Veuillez lancer la
+        mise \xE0 jour."
+      - "Neue Spielinhalte wurden erkannt und erfordern ein Update. Die Update-Paketgr\xF6\xDFe
+        betr\xE4gt <color=#BA3026>{0}</color>. Wenn Sie das Update abbrechen, k\xF6nnen
+        Sie das Spiel nicht mehr betreten. Bitte starten Sie das Update."
+      - "\u041E\u0431\u043D\u0430\u0440\u0443\u0436\u0435\u043D \u043D\u043E\u0432\u044B\u0439
+        \u0438\u0433\u0440\u043E\u0432\u043E\u0439 \u043A\u043E\u043D\u0442\u0435\u043D\u0442,
+        \u0442\u0440\u0435\u0431\u0443\u044E\u0449\u0438\u0439 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F.
+        \u0420\u0430\u0437\u043C\u0435\u0440 \u043F\u0430\u043A\u0435\u0442\u0430
+        \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442
+        <color=#BA3026>{0}</color>. \u041E\u0442\u043C\u0435\u043D\u0430 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F
+        \u043D\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u0438\u0442 \u0432\u0430\u043C
+        \u0432\u043E\u0439\u0442\u0438 \u0432 \u0438\u0433\u0440\u0443. \u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430,
+        \u043D\u0430\u0447\u043D\u0438\u0442\u0435 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435."
+      - "Se ha detectado nuevo contenido en el juego y requiere una actualizaci\xF3n.
+        El tama\xF1o del paquete de actualizaci\xF3n es <color=#BA3026>{0}</color>.
+        Cancelar la actualizaci\xF3n impedir\xE1 que accedas al juego. Inicia la
+        actualizaci\xF3n."
+      - "Novo conte\xFAdo foi detectado no jogo e requer uma atualiza\xE7\xE3o. O
+        tamanho do pacote de atualiza\xE7\xE3o \xE9 <color=#BA3026>{0}</color>. Cancelar
+        a atualiza\xE7\xE3o impedir\xE1 que voc\xEA entre no jogo. Por favor, inicie
+        a atualiza\xE7\xE3o."
+      - "\xC8 stato rilevato nuovo contenuto di gioco che richiede un aggiornamento.
+        La dimensione del pacchetto di aggiornamento \xE8 <color=#BA3026>{0}</color>.
+        Annullando l'aggiornamento non potrai accedere al gioco. Avvia l'aggiornamento."
+      - Er is nieuwe gamecontent gedetecteerd die een update vereist. De grootte
+        van het updatepakket is <color=#BA3026>{0}</color>. Als u de update annuleert,
+        kunt u het spel niet meer starten. Start de update.
+      - "Yeni oyun i\xE7eri\u011Fi tespit edildi ve g\xFCncelleme gerekiyor. G\xFCncelleme
+        paketi boyutu <color=#BA3026>{0}</color>. G\xFCncellemeyi iptal etmek oyuna
+        girmenizi engelleyecektir. L\xFCtfen g\xFCncellemeyi ba\u015Flat\u0131n."
+      - Konten game baru telah terdeteksi dan memerlukan pembaruan. Ukuran paket
+        pembaruan adalah <color=#BA3026>{0}</color>. Membatalkan pembaruan akan mencegah
+        Anda memasuki game. Silakan mulai pembaruan.
+      - "Wykryto now\u0105 zawarto\u015B\u0107 gry, kt\xF3ra wymaga aktualizacji.
+        Rozmiar pakietu aktualizacji to <color=#BA3026>{0}</color>. Anulowanie aktualizacji
+        uniemo\u017Cliwi Ci wej\u015Bcie do gry. Rozpocznij aktualizacj\u0119."
+      - "\u0E15\u0E23\u0E27\u0E08\u0E1E\u0E1A\u0E40\u0E19\u0E37\u0E49\u0E2D\u0E2B\u0E32\u0E40\u0E01\u0E21\u0E43\u0E2B\u0E21\u0E48\u0E41\u0E25\u0E30\u0E08\u0E33\u0E40\u0E1B\u0E47\u0E19\u0E15\u0E49\u0E2D\u0E07\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15
+        \u0E02\u0E19\u0E32\u0E14\u0E41\u0E1E\u0E47\u0E01\u0E40\u0E01\u0E08\u0E01\u0E32\u0E23\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15\u0E04\u0E37\u0E2D
+        <color=#BA3026>{0}</color> \u0E01\u0E32\u0E23\u0E22\u0E01\u0E40\u0E25\u0E34\u0E01\u0E01\u0E32\u0E23\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15\u0E08\u0E30\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E04\u0E38\u0E13\u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E40\u0E02\u0E49\u0E32\u0E40\u0E01\u0E21\u0E44\u0E14\u0E49
+        \u0E42\u0E1B\u0E23\u0E14\u0E40\u0E23\u0E34\u0E48\u0E21\u0E01\u0E32\u0E23\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15"
+      - "A fost detectat con\u021Binut nou \xEEn joc \u0219i necesit\u0103 o actualizare.
+        Dimensiunea pachetului de actualizare este <color=#BA3026>{0}</color>. Anularea
+        actualiz\u0103rii nu v\u0103 va permite s\u0103 accesa\u021Bi jocul. V\u0103
+        rug\u0103m s\u0103 \xEEncepe\u021Bi actualizarea."
+      - "\u062A\u0645 \u0627\u0643\u062A\u0634\u0627\u0641 \u0645\u062D\u062A\u0648\u0649
+        \u062C\u062F\u064A\u062F \u0644\u0644\u0639\u0628\u0629 \u0648\u064A\u062A\u0637\u0644\u0628
+        \u062A\u062D\u062F\u064A\u062B\u064B\u0627. \u062D\u062C\u0645 \u062D\u0632\u0645\u0629
+        \u0627\u0644\u062A\u062D\u062F\u064A\u062B \u0647\u0648 0. \u0633\u064A\u0624\u062F\u064A
+        \u0625\u0644\u063A\u0627\u0621 \u0627\u0644\u062A\u062D\u062F\u064A\u062B
+        \u0625\u0644\u0649 \u0645\u0646\u0639\u0643 \u0645\u0646 \u062F\u062E\u0648\u0644
+        \u0627\u0644\u0644\u0639\u0628\u0629. \u064A\u064F\u0631\u062C\u0649 \u0628\u062F\u0621
+        \u0627\u0644\u062A\u062D\u062F\u064A\u062B."
+      - "\u0110\xE3 ph\xE1t hi\u1EC7n n\u1ED9i dung tr\xF2 ch\u01A1i m\u1EDBi v\xE0
+        y\xEAu c\u1EA7u c\u1EADp nh\u1EADt. K\xEDch th\u01B0\u1EDBc g\xF3i c\u1EADp
+        nh\u1EADt l\xE0 <color=#BA3026>{0}</color>. H\u1EE7y c\u1EADp nh\u1EADt s\u1EBD
+        khi\u1EBFn b\u1EA1n kh\xF4ng th\u1EC3 v\xE0o tr\xF2 ch\u01A1i. Vui l\xF2ng
+        b\u1EAFt \u0111\u1EA7u c\u1EADp nh\u1EADt."
+      - "\u0412\u0438\u044F\u0432\u043B\u0435\u043D\u043E \u043D\u043E\u0432\u0438\u0439
+        \u0456\u0433\u0440\u043E\u0432\u0438\u0439 \u043A\u043E\u043D\u0442\u0435\u043D\u0442,
+        \u044F\u043A\u0438\u0439 \u043F\u043E\u0442\u0440\u0435\u0431\u0443\u0454
+        \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F. \u0420\u043E\u0437\u043C\u0456\u0440
+        \u043F\u0430\u043A\u0435\u0442\u0430 \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F
+        \u2014 <color=#BA3026>{0}<color>. \u0421\u043A\u0430\u0441\u0443\u0432\u0430\u043D\u043D\u044F
+        \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F \u043D\u0435 \u0434\u043E\u0437\u0432\u043E\u043B\u0438\u0442\u044C
+        \u0432\u0430\u043C \u0443\u0432\u0456\u0439\u0442\u0438 \u0432 \u0433\u0440\u0443.
+        \u0411\u0443\u0434\u044C \u043B\u0430\u0441\u043A\u0430, \u0440\u043E\u0437\u043F\u043E\u0447\u043D\u0456\u0442\u044C
+        \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Load_Error
+      TermType: 0
+      Description: 
+      Languages:
+      - Update parameter error {0}, please click OK to restart the game.
+      - "\u66F4\u65B0\u53C2\u6570\u9519\u8BEF{0}\uFF0C\u8BF7\u70B9\u51FB\u786E\u5B9A\u91CD\u65B0\u542F\u52A8\u6E38\u620F"
+      - "\u66F4\u65B0\u53C3\u6578\u932F\u8AA4{0}\uFF0C\u8ACB\u9EDE\u9078\u78BA\u5B9A\u91CD\u65B0\u555F\u52D5\u904A\u6232"
+      - "\uB9E4\uAC1C\uBCC0\uC218 \uC5C5\uB370\uC774\uD2B8 \uC624\uB958 {0}\uC785\uB2C8\uB2E4.
+        \uAC8C\uC784\uC744 \uB2E4\uC2DC \uC2DC\uC791\uD558\uB824\uBA74 \uD655\uC778\uC744
+        \uD074\uB9AD\uD558\uC2ED\uC2DC\uC624."
+      - "\u30D1\u30E9\u30E1\u30FC\u30BF\u66F4\u65B0\u30A8\u30E9\u30FC {0} \u304C\u767A\u751F\u3057\u307E\u3057\u305F\u3002OK
+        \u3092\u30AF\u30EA\u30C3\u30AF\u3057\u3066\u30B2\u30FC\u30E0\u3092\u518D\u8D77\u52D5\u3057\u3066\u304F\u3060\u3055\u3044\u3002"
+      - "Erreur de mise \xE0 jour du param\xE8tre {0}, veuillez cliquer sur OK pour
+        red\xE9marrer le jeu."
+      - Fehler beim Aktualisieren der Parameter {0}. Bitte klicken Sie auf OK, um
+        das Spiel neu zu starten.
+      - "\u041E\u0448\u0438\u0431\u043A\u0430 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F
+        \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u0430 {0}, \u043F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430,
+        \u043D\u0430\u0436\u043C\u0438\u0442\u0435 \u041E\u041A \u0434\u043B\u044F
+        \u043F\u0435\u0440\u0435\u0437\u0430\u043F\u0443\u0441\u043A\u0430 \u0438\u0433\u0440\u044B."
+      - "Error al actualizar el par\xE1metro {0}, haga clic en Aceptar para reiniciar
+        el juego."
+      - "Erro ao atualizar o par\xE2metro {0}, clique em OK para reiniciar o jogo."
+      - Errore di aggiornamento del parametro {0}, fare clic su OK per riavviare
+        il gioco.
+      - Updateparameterfout {0}, klik op OK om het spel opnieuw te starten.
+      - "Parametre g\xFCncelleme hatas\u0131 {0}, l\xFCtfen oyunu yeniden ba\u015Flatmak
+        i\xE7in Tamam'a t\u0131klay\u0131n."
+      - Terjadi kesalahan pembaruan parameter {0}, silakan klik OK untuk memulai
+        ulang permainan.
+      - "B\u0142\u0105d parametru aktualizacji {0}, kliknij OK, aby ponownie uruchomi\u0107
+        gr\u0119."
+      - "\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15\u0E1E\u0E32\u0E23\u0E32\u0E21\u0E34\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E40\u0E01\u0E34\u0E14\u0E02\u0E49\u0E2D\u0E1C\u0E34\u0E14\u0E1E\u0E25\u0E32\u0E14
+        {0} \u0E42\u0E1B\u0E23\u0E14\u0E04\u0E25\u0E34\u0E01\u0E15\u0E01\u0E25\u0E07\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E40\u0E23\u0E34\u0E48\u0E21\u0E40\u0E01\u0E21\u0E43\u0E2B\u0E21\u0E48"
+      - "Eroare de actualizare a parametrului {0}, v\u0103 rug\u0103m s\u0103 face\u021Bi
+        clic pe OK pentru a reporni jocul."
+      - "\u062D\u062F\u062B \u062E\u0637\u0623 \u0641\u064A \u062A\u062D\u062F\u064A\u062B
+        \u0627\u0644\u0645\u0639\u0644\u0645\u0629 {0}\u060C \u064A\u0631\u062C\u0649
+        \u0627\u0644\u0646\u0642\u0631 \u0641\u0648\u0642 \"\u0645\u0648\u0627\u0641\u0642\"
+        \u0644\u0625\u0639\u0627\u062F\u0629 \u062A\u0634\u063A\u064A\u0644 \u0627\u0644\u0644\u0639\u0628\u0629."
+      - "L\u1ED7i c\u1EADp nh\u1EADt tham s\u1ED1 {0}, vui l\xF2ng nh\u1EA5n OK \u0111\u1EC3
+        kh\u1EDFi \u0111\u1ED9ng l\u1EA1i tr\xF2 ch\u01A1i."
+      - "\u041F\u043E\u043C\u0438\u043B\u043A\u0430 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u0430
+        \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F {0}, \u043D\u0430\u0442\u0438\u0441\u043D\u0456\u0442\u044C
+        \u043A\u043D\u043E\u043F\u043A\u0443 \xAB\u041E\u041A\xBB, \u0449\u043E\u0431
+        \u043F\u0435\u0440\u0435\u0437\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u0438
+        \u0433\u0440\u0443."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Load_FirstEntrerGame_Error
+      TermType: 0
+      Description: 
+      Languages:
+      - Game resource error upon first entry
+      - "\u9996\u6B21\u8FDB\u5165\u6E38\u620F\u8D44\u6E90\u5F02\u5E38"
+      - "\u9996\u6B21\u9032\u5165\u904A\u6232\u8CC7\u6E90\u7570\u5E38"
+      - "\uCCAB \uC811\uC18D \uC2DC \uAC8C\uC784 \uB9AC\uC18C\uC2A4 \uC624\uB958
+        \uBC1C\uC0DD"
+      - "\u521D\u56DE\u30A2\u30AF\u30BB\u30B9\u6642\u306B\u30B2\u30FC\u30E0\u30EA\u30BD\u30FC\u30B9\u30A8\u30E9\u30FC\u304C\u767A\u751F\u3057\u307E\u3057\u305F"
+      - "Erreur de ressource du jeu lors de la premi\xE8re entr\xE9e"
+      - Spielressourcenfehler beim ersten Start
+      - "\u041E\u0448\u0438\u0431\u043A\u0430 \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432
+        \u0438\u0433\u0440\u044B \u043F\u0440\u0438 \u043F\u0435\u0440\u0432\u043E\u043C
+        \u0432\u0445\u043E\u0434\u0435."
+      - Error de recursos del juego en la primera entrada
+      - Erro de recurso do jogo na primeira entrada
+      - Errore di risorse di gioco al primo accesso
+      - Foutmelding bij het eerste invoeren van de gamebronnen
+      - "Oyuna ilk giri\u015Fte kaynak hatas\u0131 olu\u015Ftu."
+      - Terjadi kesalahan sumber daya game saat pertama kali masuk.
+      - "B\u0142\u0105d zasob\xF3w gry przy pierwszym wej\u015Bciu"
+      - "\u0E40\u0E01\u0E34\u0E14\u0E02\u0E49\u0E2D\u0E1C\u0E34\u0E14\u0E1E\u0E25\u0E32\u0E14\u0E40\u0E01\u0E35\u0E48\u0E22\u0E27\u0E01\u0E31\u0E1A\u0E17\u0E23\u0E31\u0E1E\u0E22\u0E32\u0E01\u0E23\u0E40\u0E01\u0E21\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E40\u0E02\u0E49\u0E32\u0E04\u0E23\u0E31\u0E49\u0E07\u0E41\u0E23\u0E01"
+      - Eroare de resurse de joc la prima intrare
+      - "\u062D\u062F\u062B \u062E\u0637\u0623 \u0641\u064A \u0645\u0648\u0627\u0631\u062F
+        \u0627\u0644\u0644\u0639\u0628\u0629 \u0639\u0646\u062F \u0627\u0644\u062F\u062E\u0648\u0644
+        \u0627\u0644\u0623\u0648\u0644"
+      - "L\u1ED7i t\xE0i nguy\xEAn tr\xF2 ch\u01A1i khi v\xE0o l\u1EA7n \u0111\u1EA7u."
+      - "\u041F\u043E\u043C\u0438\u043B\u043A\u0430 \u0456\u0433\u0440\u043E\u0432\u0438\u0445
+        \u0440\u0435\u0441\u0443\u0440\u0441\u0456\u0432 \u043F\u0456\u0434 \u0447\u0430\u0441
+        \u043F\u0435\u0440\u0448\u043E\u0433\u043E \u0432\u0445\u043E\u0434\u0443"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Load_UnpackComplete
+      TermType: 0
+      Description: 
+      Languages:
+      - Loading the latest resource files... (This process does not consume network
+        bandwidth)
+      - "\u6B63\u5728\u52A0\u8F7D\u6700\u65B0\u8D44\u6E90\u6587\u4EF6...\uFF08\u6B64\u8FC7\u7A0B\u4E0D\u6D88\u8017\u7F51\u7EDC\u6D41\u91CF\uFF09"
+      - "\u6B63\u5728\u8F09\u5165\u6700\u65B0\u8CC7\u6E90\u6A94\u6848...\uFF08\u6B64\u904E\u7A0B\u4E0D\u6D88\u8017\u7DB2\u8DEF\u6D41\u91CF\uFF09"
+      - "\uCD5C\uC2E0 \uB9AC\uC18C\uC2A4 \uD30C\uC77C\uC744 \uBD88\uB7EC\uC624\uB294
+        \uC911... (\uC774 \uACFC\uC815\uC740 \uB124\uD2B8\uC6CC\uD06C \uB300\uC5ED\uD3ED\uC744
+        \uC18C\uBAA8\uD558\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4)"
+      - "\u6700\u65B0\u306E\u30EA\u30BD\u30FC\u30B9\u30D5\u30A1\u30A4\u30EB\u3092\u8AAD\u307F\u8FBC\u3093\u3067\u3044\u307E\u3059...\uFF08\u3053\u306E\u51E6\u7406\u306F\u30CD\u30C3\u30C8\u30EF\u30FC\u30AF\u5E2F\u57DF\u5E45\u3092\u6D88\u8CBB\u3057\u307E\u305B\u3093\uFF09"
+      - "Chargement des fichiers de ressources les plus r\xE9cents... (Ce processus
+        ne consomme pas de bande passante r\xE9seau)"
+      - Die neuesten Ressourcendateien werden geladen... (Dieser Vorgang beansprucht
+        keine Netzwerkbandbreite)
+      - "\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0430 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0445
+        \u0444\u0430\u0439\u043B\u043E\u0432 \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432...
+        (\u042D\u0442\u043E\u0442 \u043F\u0440\u043E\u0446\u0435\u0441\u0441 \u043D\u0435
+        \u043F\u043E\u0442\u0440\u0435\u0431\u043B\u044F\u0435\u0442 \u043F\u0440\u043E\u043F\u0443\u0441\u043A\u043D\u0443\u044E
+        \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u043E\u0441\u0442\u044C \u0441\u0435\u0442\u0438)"
+      - "Cargando los archivos de recursos m\xE1s recientes... (Este proceso no consume
+        ancho de banda de la red)"
+      - "Carregando os arquivos de recursos mais recentes... (Este processo n\xE3o
+        consome largura de banda da rede)"
+      - "Caricamento dei file di risorse pi\xF9 recenti... (Questo processo non consuma
+        larghezza di banda di rete)"
+      - De nieuwste resourcebestanden worden geladen... (Dit proces verbruikt geen
+        netwerkbandbreedte)
+      - "En yeni kaynak dosyalar\u0131 y\xFCkleniyor... (Bu i\u015Flem a\u011F bant
+        geni\u015Fli\u011Fini t\xFCketmez)"
+      - Memuat berkas sumber daya terbaru... (Proses ini tidak menggunakan bandwidth
+        jaringan)
+      - "\u0141adowanie najnowszych plik\xF3w zasob\xF3w... (Ten proces nie zu\u017Cywa
+        przepustowo\u015Bci sieci)"
+      - "\u0E01\u0E33\u0E25\u0E31\u0E07\u0E42\u0E2B\u0E25\u0E14\u0E44\u0E1F\u0E25\u0E4C\u0E17\u0E23\u0E31\u0E1E\u0E22\u0E32\u0E01\u0E23\u0E25\u0E48\u0E32\u0E2A\u0E38\u0E14...
+        (\u0E01\u0E23\u0E30\u0E1A\u0E27\u0E19\u0E01\u0E32\u0E23\u0E19\u0E35\u0E49\u0E44\u0E21\u0E48\u0E43\u0E0A\u0E49\u0E41\u0E1A\u0E19\u0E14\u0E4C\u0E27\u0E34\u0E14\u0E17\u0E4C\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22)"
+      - "Se \xEEncarc\u0103 cele mai recente fi\u0219iere de resurse... (Acest proces
+        nu consum\u0103 l\u0103\u021Bime de band\u0103 a re\u021Belei)"
+      - "\u062C\u0627\u0631\u064D \u062A\u062D\u0645\u064A\u0644 \u0623\u062D\u062F\u062B
+        \u0645\u0644\u0641\u0627\u062A \u0627\u0644\u0645\u0648\u0627\u0631\u062F...
+        (\u0644\u0627 \u062A\u0633\u062A\u0647\u0644\u0643 \u0647\u0630\u0647 \u0627\u0644\u0639\u0645\u0644\u064A\u0629
+        \u0639\u0631\u0636 \u0627\u0644\u0646\u0637\u0627\u0642 \u0627\u0644\u062A\u0631\u062F\u062F\u064A
+        \u0644\u0644\u0634\u0628\u0643\u0629)"
+      - "\u0110ang t\u1EA3i c\xE1c t\u1EADp tin t\xE0i nguy\xEAn m\u1EDBi nh\u1EA5t...
+        (Qu\xE1 tr\xECnh n\xE0y kh\xF4ng ti\xEAu t\u1ED1n b\u0103ng th\xF4ng m\u1EA1ng)"
+      - "\u0417\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0435\u043D\u043D\u044F
+        \u043D\u0430\u0439\u043D\u043E\u0432\u0456\u0448\u0438\u0445 \u0444\u0430\u0439\u043B\u0456\u0432
+        \u0440\u0435\u0441\u0443\u0440\u0441\u0456\u0432... (\u0426\u0435\u0439 \u043F\u0440\u043E\u0446\u0435\u0441
+        \u043D\u0435 \u0432\u0438\u043A\u043E\u0440\u0438\u0441\u0442\u043E\u0432\u0443\u0454
+        \u043F\u0440\u043E\u043F\u0443\u0441\u043A\u043D\u0443 \u0437\u0434\u0430\u0442\u043D\u0456\u0441\u0442\u044C
+        \u043C\u0435\u0440\u0435\u0436\u0456)"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Load_UnPackError
+      TermType: 0
+      Description: 
+      Languages:
+      - Resource decompression failed. Please click OK to restart the game.
+      - "\u8D44\u6E90\u89E3\u538B\u5931\u8D25\uFF0C\u8BF7\u70B9\u51FB\u786E\u5B9A\u91CD\u65B0\u542F\u52A8\u6E38\u620F"
+      - "\u8CC7\u6E90\u89E3\u58D3\u7E2E\u5931\u6557\uFF0C\u8ACB\u9EDE\u9078\u78BA\u5B9A\u91CD\u65B0\u555F\u52D5\u904A\u6232"
+      - "\uB9AC\uC18C\uC2A4 \uC555\uCD95 \uD574\uC81C\uC5D0 \uC2E4\uD328\uD588\uC2B5\uB2C8\uB2E4.
+        \uAC8C\uC784\uC744 \uB2E4\uC2DC \uC2DC\uC791\uD558\uB824\uBA74 \uD655\uC778\uC744
+        \uD074\uB9AD\uD558\uC2ED\uC2DC\uC624."
+      - "\u30EA\u30BD\u30FC\u30B9\u306E\u89E3\u51CD\u306B\u5931\u6557\u3057\u307E\u3057\u305F\u3002OK\u3092\u30AF\u30EA\u30C3\u30AF\u3057\u3066\u30B2\u30FC\u30E0\u3092\u518D\u8D77\u52D5\u3057\u3066\u304F\u3060\u3055\u3044\u3002"
+      - "La d\xE9compression des ressources a \xE9chou\xE9. Veuillez cliquer sur
+        OK pour red\xE9marrer le jeu."
+      - Die Dekomprimierung der Ressourcen ist fehlgeschlagen. Bitte klicken Sie
+        auf OK, um das Spiel neu zu starten.
+      - "\u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C
+        \u0440\u0430\u0441\u043F\u0430\u043A\u043E\u0432\u043A\u0443 \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432.
+        \u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u043D\u0430\u0436\u043C\u0438\u0442\u0435
+        \u041E\u041A, \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u0437\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C
+        \u0438\u0433\u0440\u0443."
+      - Se ha producido un error al descomprimir los recursos. Haz clic en Aceptar
+        para reiniciar el juego.
+      - "A descompress\xE3o de recursos falhou. Clique em OK para reiniciar o jogo."
+      - "La decompressione delle risorse non \xE8 riuscita. Fai clic su OK per riavviare
+        il gioco."
+      - Het decomprimeren van de resources is mislukt. Klik op OK om het spel opnieuw
+        te starten.
+      - "Kaynak s\u0131k\u0131\u015Ft\u0131rmas\u0131 a\xE7ma i\u015Flemi ba\u015Far\u0131s\u0131z
+        oldu. L\xFCtfen oyunu yeniden ba\u015Flatmak i\xE7in Tamam'a t\u0131klay\u0131n."
+      - Dekompresi sumber daya gagal. Silakan klik OK untuk memulai ulang permainan.
+      - "Dekompresja zasob\xF3w nie powiod\u0142a si\u0119. Kliknij OK, aby ponownie
+        uruchomi\u0107 gr\u0119."
+      - "\u0E01\u0E32\u0E23\u0E04\u0E25\u0E32\u0E22\u0E44\u0E1F\u0E25\u0E4C\u0E17\u0E23\u0E31\u0E1E\u0E22\u0E32\u0E01\u0E23\u0E25\u0E49\u0E21\u0E40\u0E2B\u0E25\u0E27
+        \u0E42\u0E1B\u0E23\u0E14\u0E04\u0E25\u0E34\u0E01 \u0E15\u0E01\u0E25\u0E07
+        \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E40\u0E23\u0E34\u0E48\u0E21\u0E40\u0E01\u0E21\u0E43\u0E2B\u0E21\u0E48"
+      - "Decompresia resurselor a e\u0219uat. V\u0103 rug\u0103m s\u0103 face\u021Bi
+        clic pe OK pentru a reporni jocul."
+      - "\u0641\u0634\u0644 \u0641\u0643 \u0636\u063A\u0637 \u0627\u0644\u0645\u0648\u0627\u0631\u062F.
+        \u064A\u0631\u062C\u0649 \u0627\u0644\u0646\u0642\u0631 \u0639\u0644\u0649
+        \"\u0645\u0648\u0627\u0641\u0642\" \u0644\u0625\u0639\u0627\u062F\u0629 \u062A\u0634\u063A\u064A\u0644
+        \u0627\u0644\u0644\u0639\u0628\u0629."
+      - "Gi\u1EA3i n\xE9n t\xE0i nguy\xEAn th\u1EA5t b\u1EA1i. Vui l\xF2ng nh\u1EA5n
+        OK \u0111\u1EC3 kh\u1EDFi \u0111\u1ED9ng l\u1EA1i tr\xF2 ch\u01A1i."
+      - "\u041D\u0435 \u0432\u0434\u0430\u043B\u043E\u0441\u044F \u0440\u043E\u0437\u043F\u0430\u043A\u0443\u0432\u0430\u0442\u0438
+        \u0440\u0435\u0441\u0443\u0440\u0441. \u041D\u0430\u0442\u0438\u0441\u043D\u0456\u0442\u044C
+        \u043A\u043D\u043E\u043F\u043A\u0443 \xAB\u041E\u041A\xBB, \u0449\u043E\u0431
+        \u043F\u0435\u0440\u0435\u0437\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u0438
+        \u0433\u0440\u0443."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Load_Load_Progress
+      TermType: 0
+      Description: 
+      Languages:
+      - Loading...{0}%
+      - "\u6B63\u5728\u8F7D\u5165...{0}%"
+      - "\u6B63\u5728\u8F09\u5165...{0}%"
+      - "\uB85C\uB529 \uC911...{0}%"
+      - "\u8AAD\u307F\u8FBC\u307F\u4E2D...{0}%"
+      - Chargement...{0}%
+      - Wird geladen...{0}%
+      - "\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0430...{0}%"
+      - Cargando...{0}%
+      - Carregando...{0}%
+      - Caricamento in corso...{0}%
+      - Laden...{0}%
+      - "Y\xFCkleniyor...{0}%"
+      - Sedang memuat...{0}%
+      - "\u0141adowanie...{0}%"
+      - "\u0E01\u0E33\u0E25\u0E31\u0E07\u0E42\u0E2B\u0E25\u0E14...{0}%"
+      - "Se \xEEncarc\u0103...{0}%"
+      - "\u062C\u0627\u0631\u064D \u0627\u0644\u062A\u062D\u0645\u064A\u0644...{0}%"
+      - "\u0110ang t\u1EA3i...{0}%"
+      - "\u0417\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0435\u043D\u043D\u044F...{0}%"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Load_Download_Progress
+      TermType: 0
+      Description: 
+      Languages:
+      - Downloading...{0}%
+      - "\u6B63\u5728\u4E0B\u8F7D...{0}%"
+      - "\u6B63\u5728\u4E0B\u8F09...{0}%"
+      - "\uB2E4\uC6B4\uB85C\uB4DC \uC911...{0}%"
+      - "\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9\u4E2D...{0}%"
+      - "T\xE9l\xE9chargement en cours...{0}%"
+      - "Download l\xE4uft...{0}%"
+      - "\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0430...{0}%"
+      - Descargando...{0}%
+      - Baixando...{0}%
+      - Download in corso...{0}%
+      - Bezig met downloaden...{0}%
+      - "\u0130ndiriliyor...{0}%"
+      - Sedang mengunduh...{0}%
+      - Pobieranie...{0}%
+      - "\u0E01\u0E33\u0E25\u0E31\u0E07\u0E14\u0E32\u0E27\u0E19\u0E4C\u0E42\u0E2B\u0E25\u0E14...{0}%"
+      - "Se descarc\u0103...{0}%"
+      - "\u062C\u0627\u0631\u064D \u0627\u0644\u062A\u0646\u0632\u064A\u0644...{0}%"
+      - "\u0110ang t\u1EA3i xu\u1ED1ng...{0}%"
+      - "\u0417\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0435\u043D\u043D\u044F...{0}%"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Load_Load_Complete
+      TermType: 0
+      Description: 
+      Languages:
+      - Loading complete
+      - "\u8F7D\u5165\u5B8C\u6210"
+      - "\u8F09\u5165\u5B8C\u6210"
+      - "\uB85C\uB529 \uC644\uB8CC"
+      - "\u5B8C\u5168\u306A\u308B"
+      - "Chargement termin\xE9"
+      - Laden abgeschlossen
+      - "\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0430 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u0430."
+      - Carga completa
+      - "Carregamento conclu\xEDdo"
+      - Caricamento completato
+      - Laden voltooid
+      - "Y\xFCkleme tamamland\u0131"
+      - Pemuatan selesai
+      - "\u0141adowanie zako\u0144czone"
+      - "\u0E01\u0E32\u0E23\u0E42\u0E2B\u0E25\u0E14\u0E40\u0E2A\u0E23\u0E47\u0E08\u0E2A\u0E21\u0E1A\u0E39\u0E23\u0E13\u0E4C"
+      - "\xCEnc\u0103rcare finalizat\u0103"
+      - "\u0627\u0643\u062A\u0645\u0644 \u0627\u0644\u062A\u062D\u0645\u064A\u0644"
+      - "Qu\xE1 tr\xECnh t\u1EA3i ho\xE0n t\u1EA5t"
+      - "\u0417\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0435\u043D\u043D\u044F
+        \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u043E"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Load_Init
+      TermType: 0
+      Description: 
+      Languages:
+      - initialization...
+      - "\u521D\u59CB\u5316..."
+      - "\u521D\u59CB\u5316..."
+      - "\uCD08\uAE30\uD654..."
+      - "\u521D\u671F\u5316\u4E2D..."
+      - initialisation...
+      - Initialisierung...
+      - "\u0438\u043D\u0438\u0446\u0438\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u044F..."
+      - "inicializaci\xF3n..."
+      - "inicializa\xE7\xE3o..."
+      - inizializzazione...
+      - initialisatie...
+      - "Ba\u015Flatma..."
+      - inisialisasi...
+      - inicjalizacja...
+      - "\u0E01\u0E33\u0E25\u0E31\u0E07\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19..."
+      - "ini\u021Bializare..."
+      - "\u0627\u0644\u062A\u0647\u064A\u0626\u0629..."
+      - "kh\u1EDFi t\u1EA1o..."
+      - "\u0456\u043D\u0456\u0446\u0456\u0430\u043B\u0456\u0437\u0430\u0446\u0456\u044F..."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Net_UnReachable
+      TermType: 0
+      Description: 
+      Languages:
+      - The current network is unavailable. Please check your local network settings
+        and click OK to try again.
+      - "\u5F53\u524D\u7F51\u7EDC\u4E0D\u53EF\u7528\uFF0C\u8BF7\u68C0\u67E5\u672C\u5730\u7F51\u7EDC\u8BBE\u7F6E\u540E\u70B9\u51FB\u786E\u8BA4\u8FDB\u884C\u91CD\u8BD5"
+      - "\u76EE\u524D\u7DB2\u8DEF\u7121\u6CD5\u4F7F\u7528\uFF0C\u8ACB\u6AA2\u67E5\u672C\u5730\u7DB2\u8DEF\u8A2D\u5B9A\u5F8C\u9EDE\u9078\u78BA\u8A8D\u9032\u884C\u91CD\u8A66"
+      - "\uD604\uC7AC \uB124\uD2B8\uC6CC\uD06C\uC5D0 \uC5F0\uACB0\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4.
+        \uB85C\uCEEC \uB124\uD2B8\uC6CC\uD06C \uC124\uC815\uC744 \uD655\uC778\uD558\uACE0
+        \uD655\uC778\uC744 \uD074\uB9AD\uD558\uC5EC \uB2E4\uC2DC \uC2DC\uB3C4\uD558\uC2ED\uC2DC\uC624."
+      - "\u73FE\u5728\u63A5\u7D9A\u4E2D\u306E\u30CD\u30C3\u30C8\u30EF\u30FC\u30AF\u306F\u5229\u7528\u3067\u304D\u307E\u305B\u3093\u3002\u30ED\u30FC\u30AB\u30EB\u30CD\u30C3\u30C8\u30EF\u30FC\u30AF\u306E\u8A2D\u5B9A\u3092\u78BA\u8A8D\u3057\u3001\u300COK\u300D\u3092\u30AF\u30EA\u30C3\u30AF\u3057\u3066\u518D\u5EA6\u304A\u8A66\u3057\u304F\u3060\u3055\u3044\u3002"
+      - "Le r\xE9seau actuel est indisponible. Veuillez v\xE9rifier les param\xE8tres
+        de votre r\xE9seau local et cliquer sur OK pour r\xE9essayer."
+      - "Das aktuelle Netzwerk ist nicht verf\xFCgbar. Bitte \xFCberpr\xFCfen Sie
+        Ihre lokalen Netzwerkeinstellungen und klicken Sie auf OK, um es erneut zu
+        versuchen."
+      - "\u0422\u0435\u043A\u0443\u0449\u0430\u044F \u0441\u0435\u0442\u044C \u043D\u0435\u0434\u043E\u0441\u0442\u0443\u043F\u043D\u0430.
+        \u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u043F\u0440\u043E\u0432\u0435\u0440\u044C\u0442\u0435
+        \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u043E\u0439
+        \u0441\u0435\u0442\u0438 \u0438 \u043D\u0430\u0436\u043C\u0438\u0442\u0435
+        \u041E\u041A, \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u0432\u0442\u043E\u0440\u0438\u0442\u044C
+        \u043F\u043E\u043F\u044B\u0442\u043A\u0443."
+      - "La red actual no est\xE1 disponible. Compruebe la configuraci\xF3n de su
+        red local y haga clic en Aceptar para intentarlo de nuevo."
+      - "A rede atual est\xE1 indispon\xEDvel. Verifique as configura\xE7\xF5es da
+        sua rede local e clique em OK para tentar novamente."
+      - "La rete al momento non \xE8 disponibile. Verifica le impostazioni della
+        tua rete locale e fai clic su OK per riprovare."
+      - Het huidige netwerk is niet beschikbaar. Controleer uw lokale netwerkinstellingen
+        en klik op OK om het opnieuw te proberen.
+      - "Mevcut a\u011F kullan\u0131lam\u0131yor. L\xFCtfen yerel a\u011F ayarlar\u0131n\u0131z\u0131
+        kontrol edin ve tekrar denemek i\xE7in Tamam'a t\u0131klay\u0131n."
+      - Jaringan saat ini tidak tersedia. Silakan periksa pengaturan jaringan lokal
+        Anda dan klik OK untuk mencoba lagi.
+      - "Obecna sie\u0107 jest niedost\u0119pna. Sprawd\u017A ustawienia sieci lokalnej
+        i kliknij OK, aby spr\xF3bowa\u0107 ponownie."
+      - "\u0E02\u0E13\u0E30\u0E19\u0E35\u0E49\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22\u0E44\u0E21\u0E48\u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19
+        \u0E42\u0E1B\u0E23\u0E14\u0E15\u0E23\u0E27\u0E08\u0E2A\u0E2D\u0E1A\u0E01\u0E32\u0E23\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22\u0E43\u0E19\u0E1E\u0E37\u0E49\u0E19\u0E17\u0E35\u0E48\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13
+        \u0E41\u0E25\u0E49\u0E27\u0E04\u0E25\u0E34\u0E01 \u0E15\u0E01\u0E25\u0E07
+        \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E25\u0E2D\u0E07\u0E2D\u0E35\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07"
+      - "Re\u021Beaua curent\u0103 nu este disponibil\u0103. Verifica\u021Bi set\u0103rile
+        re\u021Belei locale \u0219i face\u021Bi clic pe OK pentru a \xEEncerca din
+        nou."
+      - "\u0627\u0644\u0634\u0628\u0643\u0629 \u0627\u0644\u062D\u0627\u0644\u064A\u0629
+        \u063A\u064A\u0631 \u0645\u062A\u0627\u062D\u0629. \u064A\u0631\u062C\u0649
+        \u0627\u0644\u062A\u062D\u0642\u0642 \u0645\u0646 \u0625\u0639\u062F\u0627\u062F\u0627\u062A
+        \u0627\u0644\u0634\u0628\u0643\u0629 \u0627\u0644\u0645\u062D\u0644\u064A\u0629
+        \u0648\u0627\u0644\u0646\u0642\u0631 \u0639\u0644\u0649 \"\u0645\u0648\u0627\u0641\u0642\"
+        \u0644\u0644\u0645\u062D\u0627\u0648\u0644\u0629 \u0645\u0631\u0629 \u0623\u062E\u0631\u0649."
+      - "M\u1EA1ng hi\u1EC7n t\u1EA1i kh\xF4ng kh\u1EA3 d\u1EE5ng. Vui l\xF2ng ki\u1EC3m
+        tra c\xE0i \u0111\u1EB7t m\u1EA1ng c\u1EE5c b\u1ED9 c\u1EE7a b\u1EA1n v\xE0
+        nh\u1EA5p v\xE0o OK \u0111\u1EC3 th\u1EED l\u1EA1i."
+      - "\u041F\u043E\u0442\u043E\u0447\u043D\u0430 \u043C\u0435\u0440\u0435\u0436\u0430
+        \u043D\u0435\u0434\u043E\u0441\u0442\u0443\u043F\u043D\u0430. \u041F\u0435\u0440\u0435\u0432\u0456\u0440\u0442\u0435
+        \u043D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F
+        \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u043E\u0457 \u043C\u0435\u0440\u0435\u0436\u0456
+        \u0442\u0430 \u043D\u0430\u0442\u0438\u0441\u043D\u0456\u0442\u044C \u043A\u043D\u043E\u043F\u043A\u0443
+        \xAB\u041E\u041A\xBB, \u0449\u043E\u0431 \u043F\u043E\u0432\u0442\u043E\u0440\u0438\u0442\u0438
+        \u0441\u043F\u0440\u043E\u0431\u0443."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Net_ReachableViaCarrierDataNetwork
+      TermType: 0
+      Description: 
+      Languages:
+      - Currently using mobile data, do you want to continue downloading?
+      - "\u5F53\u524D\u662F\u79FB\u52A8\u7F51\u7EDC\uFF0C\u662F\u5426\u7EE7\u7EED\u4E0B\u8F7D"
+      - "\u76EE\u524D\u662F\u884C\u52D5\u7DB2\u7D61\uFF0C\u662F\u5426\u7E7C\u7E8C\u4E0B\u8F09"
+      - "\uD604\uC7AC \uBAA8\uBC14\uC77C \uB370\uC774\uD130\uB97C \uC0AC\uC6A9 \uC911\uC785\uB2C8\uB2E4.
+        \uACC4\uC18D \uB2E4\uC6B4\uB85C\uB4DC\uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?"
+      - "\u73FE\u5728\u30E2\u30D0\u30A4\u30EB\u30C7\u30FC\u30BF\u901A\u4FE1\u3092\u4F7F\u7528\u3057\u3066\u3044\u307E\u3059\u304C\u3001\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9\u3092\u7D9A\u884C\u3057\u307E\u3059\u304B\uFF1F"
+      - "Vous utilisez actuellement des donn\xE9es mobiles, souhaitez-vous continuer
+        le t\xE9l\xE9chargement\_?"
+      - "Sie nutzen gerade mobile Daten? M\xF6chten Sie den Download fortsetzen?"
+      - "\u0412 \u0434\u0430\u043D\u043D\u044B\u0439 \u043C\u043E\u043C\u0435\u043D\u0442
+        \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F
+        \u043C\u043E\u0431\u0438\u043B\u044C\u043D\u044B\u0439 \u0438\u043D\u0442\u0435\u0440\u043D\u0435\u0442.
+        \u0425\u043E\u0442\u0438\u0442\u0435 \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C
+        \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0443?"
+      - "Actualmente est\xE1s usando datos m\xF3viles, \xBFquieres continuar con
+        la descarga?"
+      - "Voc\xEA est\xE1 usando dados m\xF3veis? Deseja continuar o download?"
+      - Attualmente stai utilizzando la connessione dati mobile, vuoi continuare
+        il download?
+      - Je gebruikt momenteel mobiele data. Wil je doorgaan met downloaden?
+      - "\u015Eu anda mobil veri kullan\u0131yorsunuz, indirmeye devam etmek istiyor
+        musunuz?"
+      - Saat ini menggunakan data seluler, apakah Anda ingin melanjutkan pengunduhan?
+      - "Aktualnie korzystasz z danych mobilnych. Czy chcesz kontynuowa\u0107 pobieranie?"
+      - "\u0E02\u0E13\u0E30\u0E19\u0E35\u0E49\u0E01\u0E33\u0E25\u0E31\u0E07\u0E43\u0E0A\u0E49\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E21\u0E37\u0E2D\u0E16\u0E37\u0E2D\u0E2D\u0E22\u0E39\u0E48
+        \u0E04\u0E38\u0E13\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E14\u0E32\u0E27\u0E19\u0E4C\u0E42\u0E2B\u0E25\u0E14\u0E15\u0E48\u0E2D\u0E2B\u0E23\u0E37\u0E2D\u0E44\u0E21\u0E48?"
+      - "Folose\u0219ti date mobile. Vrei s\u0103 continui desc\u0103rcarea?"
+      - "\u0647\u0644 \u062A\u0633\u062A\u062E\u062F\u0645 \u0628\u064A\u0627\u0646\u0627\u062A
+        \u0627\u0644\u0647\u0627\u062A\u0641 \u0627\u0644\u0645\u062D\u0645\u0648\u0644
+        \u062D\u0627\u0644\u064A\u064B\u0627\u060C \u0647\u0644 \u062A\u0631\u064A\u062F
+        \u0645\u062A\u0627\u0628\u0639\u0629 \u0627\u0644\u062A\u0646\u0632\u064A\u0644\u061F"
+      - "Hi\u1EC7n \u0111ang s\u1EED d\u1EE5ng d\u1EEF li\u1EC7u di \u0111\u1ED9ng,
+        b\u1EA1n c\xF3 mu\u1ED1n ti\u1EBFp t\u1EE5c t\u1EA3i xu\u1ED1ng kh\xF4ng?"
+      - "\u041D\u0430\u0440\u0430\u0437\u0456 \u0432\u0438\u043A\u043E\u0440\u0438\u0441\u0442\u043E\u0432\u0443\u044E\u0442\u044C\u0441\u044F
+        \u043C\u043E\u0431\u0456\u043B\u044C\u043D\u0456 \u0434\u0430\u043D\u0456.
+        \u041F\u0440\u043E\u0434\u043E\u0432\u0436\u0438\u0442\u0438 \u0437\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0435\u043D\u043D\u044F?"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Net_Error
+      TermType: 0
+      Description: 
+      Languages:
+      - Network error, please try again.
+      - "\u7F51\u7EDC\u5F02\u5E38\uFF0C\u8BF7\u91CD\u8BD5"
+      - "\u7DB2\u8DEF\u7570\u5E38\uFF0C\u8ACB\u91CD\u8A66"
+      - "\uB124\uD2B8\uC6CC\uD06C \uC624\uB958\uAC00 \uBC1C\uC0DD\uD588\uC2B5\uB2C8\uB2E4.
+        \uB2E4\uC2DC \uC2DC\uB3C4\uD574 \uC8FC\uC138\uC694."
+      - "\u30CD\u30C3\u30C8\u30EF\u30FC\u30AF\u30A8\u30E9\u30FC\u304C\u767A\u751F\u3057\u307E\u3057\u305F\u3002\u3082\u3046\u4E00\u5EA6\u304A\u8A66\u3057\u304F\u3060\u3055\u3044\u3002"
+      - "Erreur r\xE9seau, veuillez r\xE9essayer."
+      - Netzwerkfehler, bitte versuchen Sie es erneut.
+      - "\u041E\u0448\u0438\u0431\u043A\u0430 \u0441\u0435\u0442\u0438, \u043F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430,
+        \u043F\u043E\u043F\u0440\u043E\u0431\u0443\u0439\u0442\u0435 \u0435\u0449\u0435
+        \u0440\u0430\u0437."
+      - "Error de red, por favor int\xE9ntelo de nuevo."
+      - Erro de rede, tente novamente.
+      - Errore di rete, riprova.
+      - Netwerkfout, probeer het opnieuw.
+      - "A\u011F hatas\u0131 olu\u015Ftu, l\xFCtfen tekrar deneyin."
+      - Terjadi kesalahan jaringan, silakan coba lagi.
+      - "B\u0142\u0105d sieci, spr\xF3buj ponownie."
+      - "\u0E40\u0E01\u0E34\u0E14\u0E02\u0E49\u0E2D\u0E1C\u0E34\u0E14\u0E1E\u0E25\u0E32\u0E14\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22
+        \u0E42\u0E1B\u0E23\u0E14\u0E25\u0E2D\u0E07\u0E43\u0E2B\u0E21\u0E48\u0E2D\u0E35\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07"
+      - "Eroare de re\u021Bea, v\u0103 rug\u0103m s\u0103 \xEEncerca\u021Bi din nou."
+      - "\u062D\u062F\u062B \u062E\u0637\u0623 \u0641\u064A \u0627\u0644\u0634\u0628\u0643\u0629\u060C
+        \u064A\u0631\u062C\u0649 \u0627\u0644\u0645\u062D\u0627\u0648\u0644\u0629
+        \u0645\u0631\u0629 \u0623\u062E\u0631\u0649."
+      - "L\u1ED7i m\u1EA1ng, vui l\xF2ng th\u1EED l\u1EA1i."
+      - "\u041F\u043E\u043C\u0438\u043B\u043A\u0430 \u043C\u0435\u0440\u0435\u0436\u0456,
+        \u0441\u043F\u0440\u043E\u0431\u0443\u0439\u0442\u0435 \u0449\u0435 \u0440\u0430\u0437."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Net_Changed
+      TermType: 0
+      Description: 
+      Languages:
+      - Network switching, attempting to reconnect, {0} times.
+      - "\u7F51\u7EDC\u5207\u6362,\u6B63\u5728\u5C1D\u8BD5\u91CD\u8FDE,{0}\u6B21"
+      - "\u7DB2\u8DEF\u5207\u63DB,\u6B63\u5728\u5617\u8A66\u91CD\u9023,{0}\u6B21"
+      - "\uB124\uD2B8\uC6CC\uD06C \uC804\uD658 \uC911, \uC7AC\uC5F0\uACB0 \uC2DC\uB3C4
+        \uD69F\uC218: {0}\uD68C."
+      - "\u30CD\u30C3\u30C8\u30EF\u30FC\u30AF\u3092\u5207\u308A\u66FF\u3048\u3001\u518D\u63A5\u7D9A\u3092\u8A66\u884C\u3057\u3066\u3044\u307E\u3059\u3002\u8A66\u884C\u56DE\u6570\uFF1A{0}\u56DE\u3002"
+      - "Changement de r\xE9seau, tentative de reconnexion, {0} fois."
+      - Netzwerkumschaltung, Versuch der Wiederverbindung, {0} Mal.
+      - "\u041F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435
+        \u0441\u0435\u0442\u0438, \u043F\u043E\u043F\u044B\u0442\u043A\u0430 \u043F\u0435\u0440\u0435\u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F,
+        {0} \u0440\u0430\u0437."
+      - Cambio de red, intentando reconectar, {0} veces.
+      - "Comuta\xE7\xE3o de rede, tentando reconectar, {0} vezes."
+      - Cambio di rete, tentativo di riconnessione, {0} volte.
+      - Netwerkwisseling, poging tot herverbinding, {0} keer.
+      - "A\u011F de\u011Fi\u015Ftirme i\u015Flemi, yeniden ba\u011Flanma giri\u015Fimleri,
+        {0} kez."
+      - Pengalihan jaringan, mencoba menyambungkan kembali, {0} kali.
+      - "Prze\u0142\u0105czanie sieci, pr\xF3ba ponownego po\u0142\u0105czenia, {0}
+        razy."
+      - "\u0E01\u0E32\u0E23\u0E2A\u0E25\u0E31\u0E1A\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22
+        \u0E1E\u0E22\u0E32\u0E22\u0E32\u0E21\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D\u0E43\u0E2B\u0E21\u0E48
+        {0} \u0E04\u0E23\u0E31\u0E49\u0E07"
+      - "Comutare re\u021Bea, \xEEncercare de reconectare, de {0} ori."
+      - "\u062A\u0628\u062F\u064A\u0644 \u0627\u0644\u0634\u0628\u0643\u0629\u060C
+        \u0645\u062D\u0627\u0648\u0644\u0629 \u0625\u0639\u0627\u062F\u0629 \u0627\u0644\u0627\u062A\u0635\u0627\u0644\u060C
+        {0} \u0645\u0631\u0629."
+      - "\u0110ang chuy\u1EC3n m\u1EA1ch m\u1EA1ng, \u0111ang c\u1ED1 g\u1EAFng k\u1EBFt
+        n\u1ED1i l\u1EA1i, {0} l\u1EA7n."
+      - "\u041F\u0435\u0440\u0435\u043C\u0438\u043A\u0430\u043D\u043D\u044F \u043C\u0435\u0440\u0435\u0436\u0456,
+        \u0441\u043F\u0440\u043E\u0431\u0430 \u043F\u043E\u0432\u0442\u043E\u0440\u043D\u043E\u0433\u043E
+        \u043F\u0456\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u043D\u044F, {0} \u0440\u0430\u0437\u0456\u0432."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Data_Empty
+      TermType: 0
+      Description: 
+      Languages:
+      - Data anomaly
+      - "\u6570\u636E\u5F02\u5E38"
+      - "\u6578\u64DA\u7570\u5E38"
+      - "\uB370\uC774\uD130 \uC774\uC0C1"
+      - "\u30C7\u30FC\u30BF\u7570\u5E38"
+      - "Anomalie des donn\xE9es"
+      - Datenanomalie
+      - "\u0410\u043D\u043E\u043C\u0430\u043B\u0438\u044F \u0434\u0430\u043D\u043D\u044B\u0445"
+      - "Anomal\xEDa de datos"
+      - Anomalia de dados
+      - Anomalia dei dati
+      - Gegevensanomalie
+      - "Veri anormalli\u011Fi"
+      - Anomali data
+      - Anomalia danych
+      - "\u0E04\u0E27\u0E32\u0E21\u0E1C\u0E34\u0E14\u0E1B\u0E01\u0E15\u0E34\u0E02\u0E2D\u0E07\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25"
+      - Anomalie de date
+      - "\u0634\u0630\u0648\u0630 \u0627\u0644\u0628\u064A\u0627\u0646\u0627\u062A"
+      - "S\u1EF1 b\u1EA5t th\u01B0\u1EDDng c\u1EE7a d\u1EEF li\u1EC7u"
+      - "\u0410\u043D\u043E\u043C\u0430\u043B\u0456\u044F \u0434\u0430\u043D\u0438\u0445"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Memory_Low
+      TermType: 0
+      Description: 
+      Languages:
+      - Initialization resource loading failed. Please check if your local memory
+        is sufficient.
+      - "\u521D\u59CB\u5316\u8D44\u6E90\u52A0\u8F7D\u5931\u8D25\uFF0C\u8BF7\u68C0\u67E5\u672C\u5730\u5185\u5B58\u662F\u5426\u5145\u8DB3"
+      - "\u521D\u59CB\u5316\u8CC7\u6E90\u8F09\u5165\u5931\u6557\uFF0C\u8ACB\u6AA2\u67E5\u672C\u6A5F\u8A18\u61B6\u9AD4\u662F\u5426\u5145\u8DB3"
+      - "\uB9AC\uC18C\uC2A4 \uCD08\uAE30\uD654\uC5D0 \uC2E4\uD328\uD588\uC2B5\uB2C8\uB2E4.
+        \uB85C\uCEEC \uBA54\uBAA8\uB9AC\uAC00 \uCDA9\uBD84\uD55C\uC9C0 \uD655\uC778\uD558\uC2ED\uC2DC\uC624."
+      - "\u521D\u671F\u5316\u30EA\u30BD\u30FC\u30B9\u306E\u8AAD\u307F\u8FBC\u307F\u306B\u5931\u6557\u3057\u307E\u3057\u305F\u3002\u30ED\u30FC\u30AB\u30EB\u30E1\u30E2\u30EA\u304C\u5341\u5206\u304B\u3069\u3046\u304B\u78BA\u8A8D\u3057\u3066\u304F\u3060\u3055\u3044\u3002"
+      - "Le chargement des ressources d'initialisation a \xE9chou\xE9. Veuillez v\xE9rifier
+        si votre m\xE9moire locale est suffisante."
+      - "Das Laden der Initialisierungsressourcen ist fehlgeschlagen. Bitte pr\xFCfen
+        Sie, ob Ihr lokaler Speicher ausreicht."
+      - "\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0430 \u0438\u043D\u0438\u0446\u0438\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0445
+        \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432 \u043D\u0435 \u0443\u0434\u0430\u043B\u0430\u0441\u044C.
+        \u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u043F\u0440\u043E\u0432\u0435\u0440\u044C\u0442\u0435,
+        \u0434\u043E\u0441\u0442\u0430\u0442\u043E\u0447\u043D\u043E \u043B\u0438
+        \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u043E\u0439 \u043F\u0430\u043C\u044F\u0442\u0438."
+      - "Error al cargar los recursos de inicializaci\xF3n. Compruebe si dispone
+        de suficiente memoria RAM."
+      - "Falha ao carregar os recursos de inicializa\xE7\xE3o. Verifique se sua mem\xF3ria
+        local \xE9 suficiente."
+      - Caricamento delle risorse di inizializzazione non riuscito. Verificare che
+        la memoria locale sia sufficiente.
+      - Het laden van de initialisatiebron is mislukt. Controleer of er voldoende
+        lokaal geheugen beschikbaar is.
+      - "Ba\u015Flatma kayna\u011F\u0131 y\xFCkleme i\u015Flemi ba\u015Far\u0131s\u0131z
+        oldu. L\xFCtfen yerel belle\u011Finizin yeterli olup olmad\u0131\u011F\u0131n\u0131
+        kontrol edin."
+      - Inisialisasi pemuatan sumber daya gagal. Harap periksa apakah memori lokal
+        Anda mencukupi.
+      - "Nie uda\u0142o si\u0119 za\u0142adowa\u0107 zasobu inicjalizacyjnego. Sprawd\u017A,
+        czy pami\u0119\u0107 lokalna jest wystarczaj\u0105ca."
+      - "\u0E01\u0E32\u0E23\u0E42\u0E2B\u0E25\u0E14\u0E17\u0E23\u0E31\u0E1E\u0E22\u0E32\u0E01\u0E23\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19\u0E25\u0E49\u0E21\u0E40\u0E2B\u0E25\u0E27
+        \u0E42\u0E1B\u0E23\u0E14\u0E15\u0E23\u0E27\u0E08\u0E2A\u0E2D\u0E1A\u0E27\u0E48\u0E32\u0E2B\u0E19\u0E48\u0E27\u0E22\u0E04\u0E27\u0E32\u0E21\u0E08\u0E33\u0E43\u0E19\u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E40\u0E1E\u0E35\u0E22\u0E07\u0E1E\u0E2D\u0E2B\u0E23\u0E37\u0E2D\u0E44\u0E21\u0E48"
+      - "\xCEnc\u0103rcarea resurselor de ini\u021Bializare a e\u0219uat. Verifica\u021Bi
+        dac\u0103 memoria local\u0103 este suficient\u0103."
+      - "\u0641\u0634\u0644 \u062A\u062D\u0645\u064A\u0644 \u0645\u0648\u0627\u0631\u062F
+        \u0627\u0644\u062A\u0647\u064A\u0626\u0629. \u064A\u0631\u062C\u0649 \u0627\u0644\u062A\u062D\u0642\u0642
+        \u0645\u0646 \u0643\u0641\u0627\u064A\u0629 \u0627\u0644\u0630\u0627\u0643\u0631\u0629
+        \u0627\u0644\u0645\u062D\u0644\u064A\u0629 \u0644\u062F\u064A\u0643."
+      - "Qu\xE1 tr\xECnh t\u1EA3i t\xE0i nguy\xEAn kh\u1EDFi t\u1EA1o th\u1EA5t b\u1EA1i.
+        Vui l\xF2ng ki\u1EC3m tra xem b\u1ED9 nh\u1EDB c\u1EE5c b\u1ED9 c\u1EE7a
+        b\u1EA1n c\xF3 \u0111\u1EE7 hay kh\xF4ng."
+      - "\u041D\u0435 \u0432\u0434\u0430\u043B\u043E\u0441\u044F \u0437\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0438\u0442\u0438
+        \u0440\u0435\u0441\u0443\u0440\u0441 \u0456\u043D\u0456\u0446\u0456\u0430\u043B\u0456\u0437\u0430\u0446\u0456\u0457.
+        \u041F\u0435\u0440\u0435\u0432\u0456\u0440\u0442\u0435, \u0447\u0438 \u0434\u043E\u0441\u0442\u0430\u0442\u043D\u044C\u043E
+        \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u043E\u0457 \u043F\u0430\u043C'\u044F\u0442\u0456."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Memory_Low_Load
+      TermType: 0
+      Description: 
+      Languages:
+      - Is there enough memory? Cannot update?
+      - "\u5185\u5B58\u662F\u5426\u5145\u8DB3,\u65E0\u6CD5\u66F4\u65B0"
+      - "\u8A18\u61B6\u9AD4\u662F\u5426\u8DB3\u5920,\u7121\u6CD5\u66F4\u65B0"
+      - "\uBA54\uBAA8\uB9AC\uAC00 \uCDA9\uBD84\uD55C\uAC00\uC694? \uC5C5\uB370\uC774\uD2B8\uAC00
+        \uC548 \uB418\uB098\uC694?"
+      - "\u30E1\u30E2\u30EA\u306F\u5341\u5206\u3067\u3059\u304B\uFF1F\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u3067\u304D\u307E\u305B\u3093\u304B\uFF1F"
+      - "Y a-t-il suffisamment de m\xE9moire\_? Impossible de mettre \xE0 jour\_?"
+      - "Ist gen\xFCgend Speicherplatz vorhanden? Kann nicht aktualisiert werden?"
+      - "\u0425\u0432\u0430\u0442\u0430\u0435\u0442 \u043B\u0438 \u043F\u0430\u043C\u044F\u0442\u0438?
+        \u041D\u0435 \u0443\u0434\u0430\u0451\u0442\u0441\u044F \u043E\u0431\u043D\u043E\u0432\u0438\u0442\u044C?"
+      - "\xBFHay suficiente memoria? \xBFNo se puede actualizar?"
+      - "H\xE1 mem\xF3ria suficiente? N\xE3o \xE9 poss\xEDvel atualizar?"
+      - "C'\xE8 abbastanza memoria? Impossibile aggiornare?"
+      - Is er voldoende geheugen? Kan niet worden bijgewerkt?
+      - "Yeterli bellek var m\u0131? G\xFCncelleme yap\u0131lam\u0131yor mu?"
+      - Apakah memori mencukupi? Tidak dapat memperbarui?
+      - "Czy jest wystarczaj\u0105co du\u017Co pami\u0119ci? Nie mo\u017Cna wykona\u0107
+        aktualizacji?"
+      - "\u0E2B\u0E19\u0E48\u0E27\u0E22\u0E04\u0E27\u0E32\u0E21\u0E08\u0E33\u0E40\u0E1E\u0E35\u0E22\u0E07\u0E1E\u0E2D\u0E2B\u0E23\u0E37\u0E2D\u0E44\u0E21\u0E48?
+        \u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15\u0E44\u0E14\u0E49\u0E43\u0E0A\u0E48\u0E44\u0E2B\u0E21?"
+      - "Este suficient\u0103 memorie? Nu se poate actualiza?"
+      - "\u0647\u0644 \u0627\u0644\u0630\u0627\u0643\u0631\u0629 \u0643\u0627\u0641\u064A\u0629\u061F
+        \u0647\u0644 \u064A\u062A\u0639\u0630\u0631 \u0627\u0644\u062A\u062D\u062F\u064A\u062B\u061F"
+      - "B\u1ED9 nh\u1EDB c\xF3 \u0111\u1EE7 kh\xF4ng? Kh\xF4ng th\u1EC3 c\u1EADp
+        nh\u1EADt?"
+      - "\u0427\u0438 \u0434\u043E\u0441\u0442\u0430\u0442\u043D\u044C\u043E \u043F\u0430\u043C'\u044F\u0442\u0456?
+        \u041D\u0435 \u0432\u0434\u0430\u0454\u0442\u044C\u0441\u044F \u043E\u043D\u043E\u0432\u0438\u0442\u0438?"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Memory_UnZip_Low
+      TermType: 0
+      Description: 
+      Languages:
+      - Insufficient memory, unable to decompress
+      - "\u5185\u5B58\u4E0D\u8DB3\uFF0C\u65E0\u6CD5\u89E3\u538B"
+      - "\u8A18\u61B6\u9AD4\u4E0D\u8DB3\uFF0C\u7121\u6CD5\u89E3\u58D3\u7E2E"
+      - "\uBA54\uBAA8\uB9AC\uAC00 \uBD80\uC871\uD558\uC5EC \uC555\uCD95\uC744 \uD480
+        \uC218 \uC5C6\uC2B5\uB2C8\uB2E4."
+      - "\u30E1\u30E2\u30EA\u4E0D\u8DB3\u306E\u305F\u3081\u3001\u89E3\u51CD\u3067\u304D\u307E\u305B\u3093\u3002"
+      - "M\xE9moire insuffisante, impossible de d\xE9compresser"
+      - "Unzureichender Speicher, Dekomprimierung nicht m\xF6glich"
+      - "\u041D\u0435\u0434\u043E\u0441\u0442\u0430\u0442\u043E\u043A \u043F\u0430\u043C\u044F\u0442\u0438,
+        \u043D\u0435\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C
+        \u0434\u0435\u043A\u043E\u043C\u043F\u0440\u0435\u0441\u0441\u0438\u044E."
+      - Memoria insuficiente, no se puede descomprimir
+      - "Mem\xF3ria insuficiente, imposs\xEDvel descomprimir"
+      - Memoria insufficiente, impossibile decomprimere
+      - Onvoldoende geheugen, decompressie niet mogelijk.
+      - "Yetersiz bellek, s\u0131k\u0131\u015Ft\u0131rmay\u0131 a\xE7am\u0131yor."
+      - Memori tidak mencukupi, tidak dapat melakukan dekompresi.
+      - "Za ma\u0142o pami\u0119ci, nie mo\u017Cna dekompresowa\u0107"
+      - "\u0E2B\u0E19\u0E48\u0E27\u0E22\u0E04\u0E27\u0E32\u0E21\u0E08\u0E33\u0E44\u0E21\u0E48\u0E40\u0E1E\u0E35\u0E22\u0E07\u0E1E\u0E2D
+        \u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E04\u0E25\u0E32\u0E22\u0E01\u0E32\u0E23\u0E1A\u0E35\u0E1A\u0E2D\u0E31\u0E14\u0E44\u0E14\u0E49"
+      - "Memorie insuficient\u0103, imposibil de decomprimat"
+      - "\u0630\u0627\u0643\u0631\u0629 \u063A\u064A\u0631 \u0643\u0627\u0641\u064A\u0629\u060C
+        \u062A\u0639\u0630\u0631 \u0641\u0643 \u0627\u0644\u0636\u063A\u0637"
+      - "B\u1ED9 nh\u1EDB kh\xF4ng \u0111\u1EE7, kh\xF4ng th\u1EC3 gi\u1EA3i n\xE9n"
+      - "\u041D\u0435\u0434\u043E\u0441\u0442\u0430\u0442\u043D\u044C\u043E \u043F\u0430\u043C'\u044F\u0442\u0456,
+        \u043D\u0435\u043C\u043E\u0436\u043B\u0438\u0432\u043E \u0440\u043E\u0437\u043F\u0430\u043A\u0443\u0432\u0430\u0442\u0438"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_App_id
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Game version number: {0}'
+      - "\u6E38\u620F\u7248\u672C\u53F7:{0}"
+      - "\u904A\u6232\u7248\u672C\u865F:{0}"
+      - "\uAC8C\uC784 \uBC84\uC804 \uBC88\uD638: {0}"
+      - "\u30B2\u30FC\u30E0\u30D0\u30FC\u30B8\u30E7\u30F3\u756A\u53F7: {0}"
+      - "Num\xE9ro de version du jeu : {0}"
+      - 'Spielversionsnummer: {0}'
+      - "\u041D\u043E\u043C\u0435\u0440 \u0432\u0435\u0440\u0441\u0438\u0438 \u0438\u0433\u0440\u044B:
+        {0}"
+      - "N\xFAmero de versi\xF3n del juego: {0}"
+      - "N\xFAmero da vers\xE3o do jogo: {0}"
+      - 'Numero di versione del gioco: {0}'
+      - 'Spelversienummer: {0}'
+      - "Oyun s\xFCr\xFCm numaras\u0131: {0}"
+      - 'Nomor versi game: {0}'
+      - 'Numer wersji gry: {0}'
+      - "\u0E2B\u0E21\u0E32\u0E22\u0E40\u0E25\u0E02\u0E40\u0E27\u0E2D\u0E23\u0E4C\u0E0A\u0E31\u0E19\u0E40\u0E01\u0E21:
+        {0}"
+      - "Num\u0103rul versiunii jocului: {0}"
+      - "\u0631\u0642\u0645 \u0625\u0635\u062F\u0627\u0631 \u0627\u0644\u0644\u0639\u0628\u0629:
+        {0}"
+      - "S\u1ED1 phi\xEAn b\u1EA3n tr\xF2 ch\u01A1i: {0}"
+      - "\u041D\u043E\u043C\u0435\u0440 \u0432\u0435\u0440\u0441\u0456\u0457 \u0433\u0440\u0438:
+        {0}"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Res_id
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Resource version number: {0}'
+      - "\u8D44\u6E90\u7248\u672C\u53F7:{0}"
+      - "\u8CC7\u6E90\u7248\u672C\u865F:{0}"
+      - "\uB9AC\uC18C\uC2A4 \uBC84\uC804 \uBC88\uD638: {0}"
+      - "\u30EA\u30BD\u30FC\u30B9\u306E\u30D0\u30FC\u30B8\u30E7\u30F3\u756A\u53F7:
+        {0}"
+      - "Num\xE9ro de version de la ressource\_: {0}"
+      - 'Ressourcenversionsnummer: {0}'
+      - "\u041D\u043E\u043C\u0435\u0440 \u0432\u0435\u0440\u0441\u0438\u0438 \u0440\u0435\u0441\u0443\u0440\u0441\u0430:
+        {0}"
+      - "N\xFAmero de versi\xF3n del recurso: {0}"
+      - "N\xFAmero da vers\xE3o do recurso: {0}"
+      - 'Numero di versione della risorsa: {0}'
+      - 'Bronversienummer: {0}'
+      - "Kaynak s\xFCr\xFCm numaras\u0131: {0}"
+      - 'Nomor versi sumber daya: {0}'
+      - 'Numer wersji zasobu: {0}'
+      - "\u0E2B\u0E21\u0E32\u0E22\u0E40\u0E25\u0E02\u0E40\u0E27\u0E2D\u0E23\u0E4C\u0E0A\u0E31\u0E19\u0E02\u0E2D\u0E07\u0E17\u0E23\u0E31\u0E1E\u0E22\u0E32\u0E01\u0E23:
+        {0}"
+      - "Num\u0103rul versiunii resursei: {0}"
+      - "\u0631\u0642\u0645 \u0625\u0635\u062F\u0627\u0631 \u0627\u0644\u0645\u0648\u0631\u062F:
+        {0}"
+      - "S\u1ED1 phi\xEAn b\u1EA3n t\xE0i nguy\xEAn: {0}"
+      - "\u041D\u043E\u043C\u0435\u0440 \u0432\u0435\u0440\u0441\u0456\u0457 \u0440\u0435\u0441\u0443\u0440\u0441\u0443:
+        {0}"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Clear_Comfirm
+      TermType: 0
+      Description: 
+      Languages:
+      - Do you want to clear local resources? (The game will close and re-download
+        the latest resources after clearing.)
+      - "\u662F\u5426\u6E05\u7406\u672C\u5730\u8D44\u6E90?(\u6E05\u7406\u5B8C\u6210\u540E\u4F1A\u5173\u95ED\u6E38\u620F\u4E14\u91CD\u65B0\u4E0B\u8F7D\u6700\u65B0\u8D44\u6E90)"
+      - "\u662F\u5426\u6E05\u7406\u672C\u5730\u8CC7\u6E90?(\u6E05\u7406\u5B8C\u6210\u5F8C\u6703\u95DC\u9589\u904A\u6232\u4E14\u91CD\u65B0\u4E0B\u8F09\u6700\u65B0\u8CC7\u6E90)"
+      - "\uB85C\uCEEC \uB9AC\uC18C\uC2A4\uB97C \uC0AD\uC81C\uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?
+        (\uB9AC\uC18C\uC2A4\uB97C \uC0AD\uC81C\uD558\uBA74 \uAC8C\uC784\uC774 \uC885\uB8CC\uB418\uACE0
+        \uCD5C\uC2E0 \uB9AC\uC18C\uC2A4\uB97C \uB2E4\uC2DC \uB2E4\uC6B4\uB85C\uB4DC\uD569\uB2C8\uB2E4.)"
+      - "\u30ED\u30FC\u30AB\u30EB\u30EA\u30BD\u30FC\u30B9\u3092\u30AF\u30EA\u30A2\u3057\u307E\u3059\u304B\uFF1F\uFF08\u30AF\u30EA\u30A2\u5F8C\u3001\u30B2\u30FC\u30E0\u306F\u7D42\u4E86\u3057\u3001\u6700\u65B0\u306E\u30EA\u30BD\u30FC\u30B9\u304C\u518D\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9\u3055\u308C\u307E\u3059\u3002\uFF09"
+      - "Voulez-vous lib\xE9rer les ressources locales\_? (Le jeu se fermera et t\xE9l\xE9chargera
+        \xE0 nouveau les ressources les plus r\xE9centes apr\xE8s la lib\xE9ration
+        des ressources.)"
+      - "M\xF6chten Sie die lokalen Ressourcen l\xF6schen? (Das Spiel wird nach dem
+        L\xF6schen geschlossen und die neuesten Ressourcen erneut heruntergeladen.)"
+      - "\u0412\u044B \u0445\u043E\u0442\u0438\u0442\u0435 \u043E\u0447\u0438\u0441\u0442\u0438\u0442\u044C
+        \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u044B\u0435 \u0440\u0435\u0441\u0443\u0440\u0441\u044B?
+        (\u041F\u043E\u0441\u043B\u0435 \u043E\u0447\u0438\u0441\u0442\u043A\u0438
+        \u0438\u0433\u0440\u0430 \u0437\u0430\u043A\u0440\u043E\u0435\u0442\u0441\u044F
+        \u0438 \u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442 \u043D\u043E\u0432\u044B\u0435
+        \u0440\u0435\u0441\u0443\u0440\u0441\u044B \u0437\u0430\u043D\u043E\u0432\u043E.)"
+      - "\xBFDeseas borrar los recursos locales? (El juego se cerrar\xE1 y volver\xE1
+        a descargar los recursos m\xE1s recientes despu\xE9s de borrarlos)."
+      - "Deseja limpar os recursos locais? (O jogo ser\xE1 fechado e baixar\xE1 novamente
+        os recursos mais recentes ap\xF3s a limpeza.)"
+      - "Vuoi cancellare le risorse locali? (Il gioco si chiuder\xE0 e scaricher\xE0
+        nuovamente le risorse pi\xF9 recenti dopo la cancellazione.)"
+      - Wil je de lokale resources wissen? (Het spel wordt afgesloten en de meest
+        recente resources worden opnieuw gedownload na het wissen.)
+      - "Yerel kaynaklar\u0131 temizlemek ister misiniz? (Temizleme i\u015Fleminden
+        sonra oyun kapanacak ve en son kaynaklar yeniden indirilecektir.)"
+      - Apakah Anda ingin menghapus sumber daya lokal? (Game akan ditutup dan mengunduh
+        ulang sumber daya terbaru setelah penghapusan.)
+      - "Czy chcesz wyczy\u015Bci\u0107 lokalne zasoby? (Po wyczyszczeniu gra si\u0119
+        zamknie i ponownie pobierze najnowsze zasoby.)"
+      - "\u0E04\u0E38\u0E13\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E25\u0E49\u0E32\u0E07\u0E17\u0E23\u0E31\u0E1E\u0E22\u0E32\u0E01\u0E23\u0E43\u0E19\u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E2B\u0E23\u0E37\u0E2D\u0E44\u0E21\u0E48?
+        (\u0E40\u0E01\u0E21\u0E08\u0E30\u0E1B\u0E34\u0E14\u0E41\u0E25\u0E30\u0E14\u0E32\u0E27\u0E19\u0E4C\u0E42\u0E2B\u0E25\u0E14\u0E17\u0E23\u0E31\u0E1E\u0E22\u0E32\u0E01\u0E23\u0E25\u0E48\u0E32\u0E2A\u0E38\u0E14\u0E2D\u0E35\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07\u0E2B\u0E25\u0E31\u0E07\u0E08\u0E32\u0E01\u0E25\u0E49\u0E32\u0E07\u0E40\u0E2A\u0E23\u0E47\u0E08)"
+      - "Vrei s\u0103 eliberezi resursele locale? (Jocul se va \xEEnchide \u0219i
+        va desc\u0103rca din nou cele mai recente resurse dup\u0103 eliberare.)"
+      - "\u0647\u0644 \u062A\u0631\u064A\u062F \u0645\u0633\u062D \u0627\u0644\u0645\u0648\u0627\u0631\u062F
+        \u0627\u0644\u0645\u062D\u0644\u064A\u0629\u061F (\u0633\u062A\u064F\u063A\u0644\u0642
+        \u0627\u0644\u0644\u0639\u0628\u0629 \u0648\u062A\u064F\u0639\u064A\u062F
+        \u062A\u0646\u0632\u064A\u0644 \u0623\u062D\u062F\u062B \u0627\u0644\u0645\u0648\u0627\u0631\u062F
+        \u0628\u0639\u062F \u0627\u0644\u0645\u0633\u062D.)"
+      - "B\u1EA1n c\xF3 mu\u1ED1n x\xF3a t\xE0i nguy\xEAn c\u1EE5c b\u1ED9 kh\xF4ng?
+        (Tr\xF2 ch\u01A1i s\u1EBD \u0111\xF3ng v\xE0 t\u1EA3i l\u1EA1i c\xE1c t\xE0i
+        nguy\xEAn m\u1EDBi nh\u1EA5t sau khi x\xF3a.)"
+      - "\u0412\u0438 \u0445\u043E\u0447\u0435\u0442\u0435 \u043E\u0447\u0438\u0441\u0442\u0438\u0442\u0438
+        \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u0456 \u0440\u0435\u0441\u0443\u0440\u0441\u0438?
+        (\u041F\u0456\u0441\u043B\u044F \u043E\u0447\u0438\u0449\u0435\u043D\u043D\u044F
+        \u0433\u0440\u0430 \u0437\u0430\u043A\u0440\u0438\u0454\u0442\u044C\u0441\u044F
+        \u0442\u0430 \u043F\u043E\u0432\u0442\u043E\u0440\u043D\u043E \u0437\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0438\u0442\u044C
+        \u043D\u0430\u0439\u043D\u043E\u0432\u0456\u0448\u0456 \u0440\u0435\u0441\u0443\u0440\u0441\u0438.)"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_RestartApp
+      TermType: 0
+      Description: 
+      Languages:
+      - This update requires you to restart the application. Please click OK to restart
+        the game.
+      - "\u672C\u6B21\u66F4\u65B0\u9700\u8981\u91CD\u542F\u5E94\u7528\uFF0C\u8BF7\u70B9\u51FB\u786E\u5B9A\u91CD\u65B0\u542F\u52A8\u6E38\u620F"
+      - "\u672C\u6B21\u66F4\u65B0\u9700\u8981\u91CD\u555F\u61C9\u7528\uFF0C\u8ACB\u9EDE\u9078\u78BA\u5B9A\u91CD\u65B0\u555F\u52D5\u904A\u6232"
+      - "\uC774\uBC88 \uC5C5\uB370\uC774\uD2B8\uB97C \uC644\uB8CC\uD558\uB824\uBA74
+        \uC560\uD50C\uB9AC\uCF00\uC774\uC158\uC744 \uB2E4\uC2DC \uC2DC\uC791\uD574\uC57C
+        \uD569\uB2C8\uB2E4. \uAC8C\uC784\uC744 \uB2E4\uC2DC \uC2DC\uC791\uD558\uB824\uBA74
+        \uD655\uC778\uC744 \uD074\uB9AD\uD558\uC2ED\uC2DC\uC624."
+      - "\u3053\u306E\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u306B\u306F\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u306E\u518D\u8D77\u52D5\u304C\u5FC5\u8981\u3067\u3059\u3002\u30B2\u30FC\u30E0\u3092\u518D\u8D77\u52D5\u3059\u308B\u306B\u306F\u300COK\u300D\u3092\u30AF\u30EA\u30C3\u30AF\u3057\u3066\u304F\u3060\u3055\u3044\u3002"
+      - "Cette mise \xE0 jour n\xE9cessite le red\xE9marrage de l'application. Veuillez
+        cliquer sur OK pour red\xE9marrer le jeu."
+      - "F\xFCr dieses Update ist ein Neustart der Anwendung erforderlich. Bitte
+        klicken Sie auf OK, um das Spiel neu zu starten."
+      - "\u0414\u043B\u044F \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F
+        \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u043F\u0435\u0440\u0435\u0437\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C
+        \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435. \u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430,
+        \u043D\u0430\u0436\u043C\u0438\u0442\u0435 \xAB\u041E\u041A\xBB, \u0447\u0442\u043E\u0431\u044B
+        \u043F\u0435\u0440\u0435\u0437\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C
+        \u0438\u0433\u0440\u0443."
+      - "Esta actualizaci\xF3n requiere que reinicies la aplicaci\xF3n. Haz clic
+        en Aceptar para reiniciar el juego."
+      - "Esta atualiza\xE7\xE3o requer que voc\xEA reinicie o aplicativo. Clique
+        em OK para reiniciar o jogo."
+      - Questo aggiornamento richiede il riavvio dell'applicazione. Fai clic su OK
+        per riavviare il gioco.
+      - Deze update vereist dat u de applicatie opnieuw opstart. Klik op OK om het
+        spel opnieuw te starten.
+      - "Bu g\xFCncelleme, uygulamay\u0131 yeniden ba\u015Flatman\u0131z\u0131 gerektiriyor.
+        Oyunu yeniden ba\u015Flatmak i\xE7in l\xFCtfen Tamam'a t\u0131klay\u0131n."
+      - Pembaruan ini mengharuskan Anda untuk memulai ulang aplikasi. Silakan klik
+        OK untuk memulai ulang permainan.
+      - "Ta aktualizacja wymaga ponownego uruchomienia aplikacji. Kliknij OK, aby
+        ponownie uruchomi\u0107 gr\u0119."
+      - "\u0E01\u0E32\u0E23\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15\u0E19\u0E35\u0E49\u0E08\u0E33\u0E40\u0E1B\u0E47\u0E19\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E35\u0E2A\u0E15\u0E32\u0E23\u0E4C\u0E17\u0E41\u0E2D\u0E1B\u0E1E\u0E25\u0E34\u0E40\u0E04\u0E0A\u0E31\u0E19
+        \u0E42\u0E1B\u0E23\u0E14\u0E04\u0E25\u0E34\u0E01 \u0E15\u0E01\u0E25\u0E07
+        \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E40\u0E23\u0E34\u0E48\u0E21\u0E40\u0E01\u0E21\u0E43\u0E2B\u0E21\u0E48"
+      - "Aceast\u0103 actualizare necesit\u0103 repornirea aplica\u021Biei. V\u0103
+        rug\u0103m s\u0103 face\u021Bi clic pe OK pentru a reporni jocul."
+      - "\u064A\u062A\u0637\u0644\u0628 \u0647\u0630\u0627 \u0627\u0644\u062A\u062D\u062F\u064A\u062B
+        \u0625\u0639\u0627\u062F\u0629 \u062A\u0634\u063A\u064A\u0644 \u0627\u0644\u062A\u0637\u0628\u064A\u0642.
+        \u064A\u0631\u062C\u0649 \u0627\u0644\u0646\u0642\u0631 \u0639\u0644\u0649
+        \"\u0645\u0648\u0627\u0641\u0642\" \u0644\u0625\u0639\u0627\u062F\u0629 \u062A\u0634\u063A\u064A\u0644
+        \u0627\u0644\u0644\u0639\u0628\u0629."
+      - "B\u1EA3n c\u1EADp nh\u1EADt n\xE0y y\xEAu c\u1EA7u b\u1EA1n kh\u1EDFi \u0111\u1ED9ng
+        l\u1EA1i \u1EE9ng d\u1EE5ng. Vui l\xF2ng nh\u1EA5n OK \u0111\u1EC3 kh\u1EDFi
+        \u0111\u1ED9ng l\u1EA1i tr\xF2 ch\u01A1i."
+      - "\u0426\u0435 \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F \u0432\u0438\u043C\u0430\u0433\u0430\u0454
+        \u043F\u0435\u0440\u0435\u0437\u0430\u043F\u0443\u0441\u043A\u0443 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u0438.
+        \u0411\u0443\u0434\u044C \u043B\u0430\u0441\u043A\u0430, \u043D\u0430\u0442\u0438\u0441\u043D\u0456\u0442\u044C
+        \u043A\u043D\u043E\u043F\u043A\u0443 \"\u041E\u041A\", \u0449\u043E\u0431
+        \u043F\u0435\u0440\u0435\u0437\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u0438
+        \u0433\u0440\u0443."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_DownLoadFailed
+      TermType: 0
+      Description: 
+      Languages:
+      - The network is too slow, do you want to continue downloading?
+      - "\u7F51\u7EDC\u592A\u6162\uFF0C\u662F\u5426\u7EE7\u7EED\u4E0B\u8F7D"
+      - "\u7DB2\u8DEF\u592A\u6162\uFF0C\u662F\u5426\u7E7C\u7E8C\u4E0B\u8F09"
+      - "\uB124\uD2B8\uC6CC\uD06C \uC18D\uB3C4\uAC00 \uB108\uBB34 \uB290\uB9BD\uB2C8\uB2E4.
+        \uACC4\uC18D \uB2E4\uC6B4\uB85C\uB4DC\uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?"
+      - "\u30CD\u30C3\u30C8\u30EF\u30FC\u30AF\u63A5\u7D9A\u304C\u9045\u3044\u306E\u3067\u3059\u304C\u3001\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9\u3092\u7D9A\u884C\u3057\u307E\u3059\u304B\uFF1F"
+      - "Le r\xE9seau est trop lent, voulez-vous continuer le t\xE9l\xE9chargement\_?"
+      - "Die Netzwerkverbindung ist zu langsam. M\xF6chten Sie den Download fortsetzen?"
+      - "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0441\u0435\u0442\u0438
+        \u0441\u043B\u0438\u0448\u043A\u043E\u043C \u043D\u0438\u0437\u043A\u0430\u044F,
+        \u0445\u043E\u0442\u0438\u0442\u0435 \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C
+        \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0443?"
+      - "La red es demasiado lenta, \xBFquieres continuar descargando?"
+      - "A rede est\xE1 muito lenta. Deseja continuar o download?"
+      - "La connessione di rete \xE8 troppo lenta, vuoi continuare il download?"
+      - Het netwerk is te traag, wilt u doorgaan met downloaden?
+      - "A\u011F ba\u011Flant\u0131s\u0131 \xE7ok yava\u015F, indirmeye devam etmek
+        istiyor musunuz?"
+      - Jaringan terlalu lambat, apakah Anda ingin melanjutkan pengunduhan?
+      - "Sie\u0107 jest zbyt wolna. Czy chcesz kontynuowa\u0107 pobieranie?"
+      - "\u0E2D\u0E34\u0E19\u0E40\u0E17\u0E2D\u0E23\u0E4C\u0E40\u0E19\u0E47\u0E15\u0E0A\u0E49\u0E32\u0E40\u0E01\u0E34\u0E19\u0E44\u0E1B
+        \u0E04\u0E38\u0E13\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E14\u0E32\u0E27\u0E19\u0E4C\u0E42\u0E2B\u0E25\u0E14\u0E15\u0E48\u0E2D\u0E2B\u0E23\u0E37\u0E2D\u0E44\u0E21\u0E48?"
+      - "Re\u021Beaua este prea lent\u0103, dori\u021Bi s\u0103 continua\u021Bi desc\u0103rcarea?"
+      - "\u0627\u0644\u0634\u0628\u0643\u0629 \u0628\u0637\u064A\u0626\u0629 \u0644\u0644\u063A\u0627\u064A\u0629\u060C
+        \u0647\u0644 \u062A\u0631\u064A\u062F \u0645\u062A\u0627\u0628\u0639\u0629
+        \u0627\u0644\u062A\u0646\u0632\u064A\u0644\u061F"
+      - "M\u1EA1ng qu\xE1 ch\u1EADm, b\u1EA1n c\xF3 mu\u1ED1n ti\u1EBFp t\u1EE5c
+        t\u1EA3i xu\u1ED1ng kh\xF4ng?"
+      - "\u041C\u0435\u0440\u0435\u0436\u0430 \u0437\u0430\u043D\u0430\u0434\u0442\u043E
+        \u043F\u043E\u0432\u0456\u043B\u044C\u043D\u0430, \u043F\u0440\u043E\u0434\u043E\u0432\u0436\u0438\u0442\u0438
+        \u0437\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0435\u043D\u043D\u044F?"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_ClearConfig
+      TermType: 0
+      Description: 
+      Languages:
+      - Clearing environment configuration requires restarting the application.
+      - "\u6E05\u9664\u73AF\u5883\u914D\u7F6E\uFF0C\u9700\u8981\u91CD\u542F\u5E94\u7528"
+      - "\u6E05\u9664\u74B0\u5883\u914D\u7F6E\uFF0C\u9700\u91CD\u65B0\u555F\u52D5\u61C9\u7528"
+      - "\uD658\uACBD \uC124\uC815\uC744 \uCD08\uAE30\uD654\uD558\uB824\uBA74 \uC560\uD50C\uB9AC\uCF00\uC774\uC158\uC744
+        \uB2E4\uC2DC \uC2DC\uC791\uD574\uC57C \uD569\uB2C8\uB2E4."
+      - "\u74B0\u5883\u8A2D\u5B9A\u3092\u30AF\u30EA\u30A2\u3059\u308B\u306B\u306F\u3001\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u3092\u518D\u8D77\u52D5\u3059\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002"
+      - "La suppression de la configuration de l'environnement n\xE9cessite le red\xE9marrage
+        de l'application."
+      - "Zum L\xF6schen der Umgebungskonfiguration ist ein Neustart der Anwendung
+        erforderlich."
+      - "\u0414\u043B\u044F \u043E\u0447\u0438\u0441\u0442\u043A\u0438 \u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043A
+        \u0441\u0440\u0435\u0434\u044B \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F
+        \u043F\u0435\u0440\u0435\u0437\u0430\u043F\u0443\u0441\u043A \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F."
+      - "Para borrar la configuraci\xF3n del entorno, es necesario reiniciar la aplicaci\xF3n."
+      - "A limpeza das configura\xE7\xF5es de ambiente requer a reinicializa\xE7\xE3o
+        do aplicativo."
+      - La cancellazione della configurazione dell'ambiente richiede il riavvio dell'applicazione.
+      - Het wissen van de omgevingsconfiguratie vereist het herstarten van de applicatie.
+      - "Ortam yap\u0131land\u0131rmas\u0131n\u0131 temizlemek i\xE7in uygulaman\u0131n
+        yeniden ba\u015Flat\u0131lmas\u0131 gerekir."
+      - Menghapus konfigurasi lingkungan memerlukan restart aplikasi.
+      - "Wyczyszczenie konfiguracji \u015Brodowiska wymaga ponownego uruchomienia
+        aplikacji."
+      - "\u0E01\u0E32\u0E23\u0E25\u0E49\u0E32\u0E07\u0E01\u0E32\u0E23\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32\u0E2A\u0E20\u0E32\u0E1E\u0E41\u0E27\u0E14\u0E25\u0E49\u0E2D\u0E21\u0E08\u0E33\u0E40\u0E1B\u0E47\u0E19\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E35\u0E2A\u0E15\u0E32\u0E23\u0E4C\u0E17\u0E41\u0E2D\u0E1B\u0E1E\u0E25\u0E34\u0E40\u0E04\u0E0A\u0E31\u0E19"
+      - "\u0218tergerea configura\u021Biei mediului necesit\u0103 repornirea aplica\u021Biei."
+      - "\u064A\u062A\u0637\u0644\u0628 \u0645\u0633\u062D \u0625\u0639\u062F\u0627\u062F\u0627\u062A
+        \u0627\u0644\u0628\u064A\u0626\u0629 \u0625\u0639\u0627\u062F\u0629 \u062A\u0634\u063A\u064A\u0644
+        \u0627\u0644\u062A\u0637\u0628\u064A\u0642."
+      - "X\xF3a c\u1EA5u h\xECnh m\xF4i tr\u01B0\u1EDDng y\xEAu c\u1EA7u kh\u1EDFi
+        \u0111\u1ED9ng l\u1EA1i \u1EE9ng d\u1EE5ng."
+      - "\u041E\u0447\u0438\u0449\u0435\u043D\u043D\u044F \u043A\u043E\u043D\u0444\u0456\u0433\u0443\u0440\u0430\u0446\u0456\u0457
+        \u0441\u0435\u0440\u0435\u0434\u043E\u0432\u0438\u0449\u0430 \u0432\u0438\u043C\u0430\u0433\u0430\u0454
+        \u043F\u0435\u0440\u0435\u0437\u0430\u043F\u0443\u0441\u043A\u0443 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u0438."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_RegionInfoIllegal
+      TermType: 0
+      Description: 
+      Languages:
+      - Server information is empty
+      - "\u533A\u670D\u4FE1\u606F\u4E3A\u7A7A"
+      - "\u5340\u670D\u8CC7\u8A0A\u70BA\u7A7A"
+      - "\uC11C\uBC84 \uC815\uBCF4\uAC00 \uBE44\uC5B4 \uC788\uC2B5\uB2C8\uB2E4."
+      - "\u30B5\u30FC\u30D0\u30FC\u60C5\u5831\u306F\u7A7A\u3067\u3059"
+      - Les informations du serveur sont vides.
+      - Die Serverinformationen sind leer.
+      - "\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F \u043E \u0441\u0435\u0440\u0432\u0435\u0440\u0435
+        \u043E\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442."
+      - "La informaci\xF3n del servidor est\xE1 vac\xEDa."
+      - "As informa\xE7\xF5es do servidor est\xE3o vazias."
+      - Le informazioni del server sono vuote
+      - Serverinformatie is leeg.
+      - "Sunucu bilgileri bo\u015F."
+      - Informasi server kosong
+      - "Informacje o serwerze s\u0105 puste"
+      - "\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E40\u0E0B\u0E34\u0E23\u0E4C\u0E1F\u0E40\u0E27\u0E2D\u0E23\u0E4C\u0E27\u0E48\u0E32\u0E07\u0E40\u0E1B\u0E25\u0E48\u0E32"
+      - "Informa\u021Biile despre server sunt goale"
+      - "\u0645\u0639\u0644\u0648\u0645\u0627\u062A \u0627\u0644\u062E\u0627\u062F\u0645
+        \u0641\u0627\u0631\u063A\u0629"
+      - "Th\xF4ng tin m\xE1y ch\u1EE7 tr\u1ED1ng"
+      - "\u0406\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0456\u044F \u043F\u0440\u043E
+        \u0441\u0435\u0440\u0432\u0435\u0440 \u043F\u043E\u0440\u043E\u0436\u043D\u044F"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_RemoteUrlisNull
+      TermType: 0
+      Description: 
+      Languages:
+      - The hot update address is empty.
+      - "\u70ED\u66F4\u5730\u5740\u4E3A\u7A7A"
+      - "\u71B1\u66F4\u5730\u5740\u70BA\u7A7A"
+      - "\uD56B \uC5C5\uB370\uC774\uD2B8 \uC8FC\uC18C\uAC00 \uBE44\uC5B4 \uC788\uC2B5\uB2C8\uB2E4."
+      - "\u30DB\u30C3\u30C8\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u306E\u30A2\u30C9\u30EC\u30B9\u304C\u7A7A\u3067\u3059\u3002"
+      - "L'adresse de mise \xE0 jour prioritaire est vide."
+      - Die Hot-Update-Adresse ist leer.
+      - "\u0410\u0434\u0440\u0435\u0441 \u0434\u043B\u044F \u0433\u043E\u0440\u044F\u0447\u0435\u0433\u043E
+        \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F \u043F\u0443\u0441\u0442."
+      - "La direcci\xF3n de actualizaci\xF3n en caliente est\xE1 vac\xEDa."
+      - "O endere\xE7o de atualiza\xE7\xE3o a quente est\xE1 vazio."
+      - "L'indirizzo per l'aggiornamento a caldo \xE8 vuoto."
+      - Het adres voor de hot-update is leeg.
+      - "G\xFCncellenen adresin bo\u015F oldu\u011Funu belirtiyor."
+      - Alamat pembaruan cepat (hot update) kosong.
+      - "Adres gor\u0105cej aktualizacji jest pusty."
+      - "\u0E17\u0E35\u0E48\u0E2D\u0E22\u0E39\u0E48\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15\u0E14\u0E48\u0E27\u0E19\u0E27\u0E48\u0E32\u0E07\u0E40\u0E1B\u0E25\u0E48\u0E32"
+      - "Adresa pentru actualizarea rapid\u0103 este goal\u0103."
+      - "\u0639\u0646\u0648\u0627\u0646 \u0627\u0644\u062A\u062D\u062F\u064A\u062B
+        \u0627\u0644\u0633\u0627\u062E\u0646 \u0641\u0627\u0631\u063A."
+      - "\u0110\u1ECBa ch\u1EC9 c\u1EADp nh\u1EADt n\xF3ng hi\u1EC7n \u0111ang tr\u1ED1ng."
+      - "\u0410\u0434\u0440\u0435\u0441\u0430 \u0434\u043B\u044F \u0433\u0430\u0440\u044F\u0447\u043E\u0433\u043E
+        \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F \u043F\u043E\u0440\u043E\u0436\u043D\u044F."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_FirstPackageNotFound
+      TermType: 0
+      Description: 
+      Languages:
+      - First package resource loading failed
+      - "\u9996\u5305\u8D44\u6E90\u52A0\u8F7D\u5931\u8D25"
+      - "\u9996\u5305\u8CC7\u6E90\u8F09\u5165\u5931\u6557"
+      - "\uCCAB \uBC88\uC9F8 \uD328\uD0A4\uC9C0 \uB9AC\uC18C\uC2A4 \uB85C\uB529\uC5D0
+        \uC2E4\uD328\uD588\uC2B5\uB2C8\uB2E4."
+      - "\u6700\u521D\u306E\u30D1\u30C3\u30B1\u30FC\u30B8\u30EA\u30BD\u30FC\u30B9\u306E\u8AAD\u307F\u8FBC\u307F\u306B\u5931\u6557\u3057\u307E\u3057\u305F"
+      - "Le chargement des ressources du premier paquet a \xE9chou\xE9."
+      - Das Laden der ersten Paketressource ist fehlgeschlagen.
+      - "\u041F\u0435\u0440\u0432\u0430\u044F \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0430
+        \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432 \u043F\u0430\u043A\u0435\u0442\u0430
+        \u0437\u0430\u0432\u0435\u0440\u0448\u0438\u043B\u0430\u0441\u044C \u043D\u0435\u0443\u0434\u0430\u0447\u0435\u0439."
+      - "Fall\xF3 la carga de recursos del primer paquete."
+      - O carregamento do primeiro recurso do pacote falhou
+      - "Il caricamento della risorsa del primo pacchetto non \xE8 riuscito."
+      - Het laden van de eerste pakketbron is mislukt.
+      - "\u0130lk paket kaynak y\xFCkleme ba\u015Far\u0131s\u0131z oldu"
+      - Pemuatan sumber daya paket pertama gagal.
+      - "Pierwsze \u0142adowanie zasobu pakietu nie powiod\u0142o si\u0119"
+      - "\u0E01\u0E32\u0E23\u0E42\u0E2B\u0E25\u0E14\u0E17\u0E23\u0E31\u0E1E\u0E22\u0E32\u0E01\u0E23\u0E41\u0E1E\u0E47\u0E01\u0E40\u0E01\u0E08\u0E41\u0E23\u0E01\u0E44\u0E21\u0E48\u0E2A\u0E33\u0E40\u0E23\u0E47\u0E08"
+      - "\xCEnc\u0103rcarea primei resurse a pachetului a e\u0219uat"
+      - "\u0641\u0634\u0644 \u062A\u062D\u0645\u064A\u0644 \u0645\u0648\u0627\u0631\u062F
+        \u0627\u0644\u062D\u0632\u0645\u0629 \u0627\u0644\u0623\u0648\u0644\u0649"
+      - "L\u1EA7n t\u1EA3i t\xE0i nguy\xEAn g\xF3i \u0111\u1EA7u ti\xEAn th\u1EA5t
+        b\u1EA1i"
+      - "\u041D\u0435 \u0432\u0434\u0430\u043B\u043E\u0441\u044F \u0437\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0438\u0442\u0438
+        \u043F\u0435\u0440\u0448\u0438\u0439 \u043F\u0430\u043A\u0435\u0442 \u0440\u0435\u0441\u0443\u0440\u0441\u0456\u0432"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_RequestReginInfo
+      TermType: 0
+      Description: 
+      Languages:
+      - Requesting server information {0} times
+      - "\u6B63\u5728\u8BF7\u6C42\u533A\u670D\u4FE1\u606F{0}\u6B21"
+      - "\u6B63\u5728\u8ACB\u6C42\u5340\u670D\u8CC7\u8A0A{0}\u6B21"
+      - "\uC11C\uBC84 \uC815\uBCF4 \uC694\uCCAD {0}\uD68C"
+      - "\u30B5\u30FC\u30D0\u30FC\u60C5\u5831\u3092{0}\u56DE\u30EA\u30AF\u30A8\u30B9\u30C8\u3057\u3066\u3044\u307E\u3059"
+      - Demande d'informations serveur {0} fois
+      - Serverinformationen wurden {0} Mal angefordert.
+      - "\u0417\u0430\u043F\u0440\u043E\u0441 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0438
+        \u043E \u0441\u0435\u0440\u0432\u0435\u0440\u0435 {0} \u0440\u0430\u0437"
+      - "Solicitando informaci\xF3n del servidor {0} veces"
+      - "Solicitando informa\xE7\xF5es do servidor {0} vezes"
+      - Richiesta di informazioni sul server {0} volte
+      - Serverinformatie opvragen {0} keer
+      - "Sunucu bilgisi talebi {0} kez yap\u0131l\u0131yor."
+      - Meminta informasi server sebanyak {0} kali
+      - "\u017B\u0105danie informacji o serwerze {0} razy"
+      - "\u0E01\u0E33\u0E25\u0E31\u0E07\u0E02\u0E2D\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E40\u0E0B\u0E34\u0E23\u0E4C\u0E1F\u0E40\u0E27\u0E2D\u0E23\u0E4C
+        {0} \u0E04\u0E23\u0E31\u0E49\u0E07"
+      - "Se solicit\u0103 informa\u021Bii despre server de {0} ori"
+      - "\u0637\u0644\u0628 \u0645\u0639\u0644\u0648\u0645\u0627\u062A \u0627\u0644\u062E\u0627\u062F\u0645
+        {0} \u0645\u0631\u0629"
+      - "Y\xEAu c\u1EA7u th\xF4ng tin m\xE1y ch\u1EE7 {0} l\u1EA7n"
+      - "\u0417\u0430\u043F\u0438\u0442 \u0456\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0456\u0457
+        \u043F\u0440\u043E \u0441\u0435\u0440\u0432\u0435\u0440: {0} \u0440\u0430\u0437\u0456\u0432"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_RequestTimeOut
+      TermType: 0
+      Description: 
+      Languages:
+      - The request for server information timed out. Do you want to retry?
+      - "\u8BF7\u6C42\u533A\u670D\u4FE1\u606F\u8D85\u65F6,\u662F\u5426\u91CD\u8BD5\uFF1F"
+      - "\u8ACB\u6C42\u5340\u670D\u8CC7\u8A0A\u8D85\u6642,\u662F\u5426\u91CD\u8A66\uFF1F"
+      - "\uC11C\uBC84 \uC815\uBCF4 \uC694\uCCAD \uC2DC\uAC04\uC774 \uCD08\uACFC\uB418\uC5C8\uC2B5\uB2C8\uB2E4.
+        \uB2E4\uC2DC \uC2DC\uB3C4\uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?"
+      - "\u30B5\u30FC\u30D0\u30FC\u60C5\u5831\u306E\u53D6\u5F97\u8981\u6C42\u304C\u30BF\u30A4\u30E0\u30A2\u30A6\u30C8\u3057\u307E\u3057\u305F\u3002\u518D\u8A66\u884C\u3057\u307E\u3059\u304B\uFF1F"
+      - "La requ\xEAte d'informations du serveur a expir\xE9. Voulez-vous r\xE9essayer\_?"
+      - "Die Anfrage nach Serverinformationen ist abgelaufen. M\xF6chten Sie es erneut
+        versuchen?"
+      - "\u0417\u0430\u043F\u0440\u043E\u0441 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0438
+        \u043E \u0441\u0435\u0440\u0432\u0435\u0440\u0435 \u0437\u0430\u0432\u0435\u0440\u0448\u0438\u043B\u0441\u044F
+        \u043F\u043E \u0438\u0441\u0442\u0435\u0447\u0435\u043D\u0438\u0438 \u0432\u0440\u0435\u043C\u0435\u043D\u0438
+        \u043E\u0436\u0438\u0434\u0430\u043D\u0438\u044F. \u0425\u043E\u0442\u0438\u0442\u0435
+        \u043F\u043E\u0432\u0442\u043E\u0440\u0438\u0442\u044C \u043F\u043E\u043F\u044B\u0442\u043A\u0443?"
+      - "La solicitud de informaci\xF3n del servidor ha caducado. \xBFDesea volver
+        a intentarlo?"
+      - "A solicita\xE7\xE3o de informa\xE7\xF5es do servidor expirou. Deseja tentar
+        novamente?"
+      - "La richiesta di informazioni sul server \xE8 scaduta. Vuoi riprovare?"
+      - Het verzoek om serverinformatie is verlopen. Wilt u het opnieuw proberen?
+      - "Sunucu bilgisi iste\u011Fi zaman a\u015F\u0131m\u0131na u\u011Frad\u0131.
+        Tekrar denemek ister misiniz?"
+      - Permintaan informasi server telah habis waktu. Apakah Anda ingin mencoba
+        lagi?
+      - "\u017B\u0105danie informacji o serwerze przekroczy\u0142o limit czasu. Czy
+        chcesz spr\xF3bowa\u0107 ponownie?"
+      - "\u0E01\u0E32\u0E23\u0E02\u0E2D\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E40\u0E0B\u0E34\u0E23\u0E4C\u0E1F\u0E40\u0E27\u0E2D\u0E23\u0E4C\u0E2B\u0E21\u0E14\u0E40\u0E27\u0E25\u0E32
+        \u0E04\u0E38\u0E13\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E25\u0E2D\u0E07\u0E43\u0E2B\u0E21\u0E48\u0E2D\u0E35\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07\u0E2B\u0E23\u0E37\u0E2D\u0E44\u0E21\u0E48?"
+      - "Solicitarea pentru informa\u021Bii despre server a expirat. Dori\u021Bi
+        s\u0103 \xEEncerca\u021Bi din nou?"
+      - "\u0627\u0646\u062A\u0647\u062A \u0645\u0647\u0644\u0629 \u0637\u0644\u0628
+        \u0645\u0639\u0644\u0648\u0645\u0627\u062A \u0627\u0644\u062E\u0627\u062F\u0645.
+        \u0647\u0644 \u062A\u0631\u064A\u062F \u0625\u0639\u0627\u062F\u0629 \u0627\u0644\u0645\u062D\u0627\u0648\u0644\u0629\u061F"
+      - "Y\xEAu c\u1EA7u th\xF4ng tin m\xE1y ch\u1EE7 \u0111\xE3 h\u1EBFt th\u1EDDi
+        gian ch\u1EDD. B\u1EA1n c\xF3 mu\u1ED1n th\u1EED l\u1EA1i kh\xF4ng?"
+      - "\u0427\u0430\u0441 \u043E\u0447\u0456\u043A\u0443\u0432\u0430\u043D\u043D\u044F
+        \u0437\u0430\u043F\u0438\u0442\u0443 \u043D\u0430 \u0456\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0456\u044E
+        \u043F\u0440\u043E \u0441\u0435\u0440\u0432\u0435\u0440 \u043C\u0438\u043D\u0443\u0432.
+        \u041F\u043E\u0432\u0442\u043E\u0440\u0438\u0442\u0438 \u0441\u043F\u0440\u043E\u0431\u0443?"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Region_ArgumentError
+      TermType: 0
+      Description: 
+      Languages:
+      - Parameter error
+      - "\u53C2\u6570\u9519\u8BEF"
+      - "\u53C3\u6578\u932F\u8AA4"
+      - "\uB9E4\uAC1C\uBCC0\uC218 \uC624\uB958"
+      - "\u30D1\u30E9\u30E1\u30FC\u30BF\u30A8\u30E9\u30FC"
+      - "Erreur de param\xE8tre"
+      - Parameterfehler
+      - "\u041E\u0448\u0438\u0431\u043A\u0430 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u0430"
+      - "Error de par\xE1metro"
+      - "Erro de par\xE2metro"
+      - Errore di parametro
+      - Parameterfout
+      - "Parametre hatas\u0131"
+      - Kesalahan parameter
+      - "B\u0142\u0105d parametru"
+      - "\u0E02\u0E49\u0E2D\u0E1C\u0E34\u0E14\u0E1E\u0E25\u0E32\u0E14\u0E02\u0E2D\u0E07\u0E1E\u0E32\u0E23\u0E32\u0E21\u0E34\u0E40\u0E15\u0E2D\u0E23\u0E4C"
+      - Eroare de parametru
+      - "\u062E\u0637\u0623 \u0641\u064A \u0627\u0644\u0645\u0639\u0644\u0645\u0629"
+      - "L\u1ED7i tham s\u1ED1"
+      - "\u041F\u043E\u043C\u0438\u043B\u043A\u0430 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u0430"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Region_IndexOutOfRange
+      TermType: 0
+      Description: 
+      Languages:
+      - Index out of bounds
+      - "\u7D22\u5F15\u8D8A\u754C"
+      - "\u7D22\u5F15\u8D8A\u754C"
+      - "\uC778\uB371\uC2A4 \uBC94\uC704\uB97C \uBC97\uC5B4\uB0AC\uC2B5\uB2C8\uB2E4"
+      - "\u30A4\u30F3\u30C7\u30C3\u30AF\u30B9\u304C\u7BC4\u56F2\u5916\u3067\u3059"
+      - Index hors limites
+      - "Index au\xDFerhalb des g\xFCltigen Bereichs"
+      - "\u0418\u043D\u0434\u0435\u043A\u0441 \u0432\u044B\u0445\u043E\u0434\u0438\u0442
+        \u0437\u0430 \u043F\u0440\u0435\u0434\u0435\u043B\u044B \u0434\u043E\u043F\u0443\u0441\u0442\u0438\u043C\u043E\u0433\u043E
+        \u0434\u0438\u0430\u043F\u0430\u0437\u043E\u043D\u0430."
+      - "\xCDndice fuera de rango"
+      - "\xCDndice fora dos limites"
+      - Indice fuori dai limiti
+      - Index buiten bereik
+      - "Dizin s\u0131n\u0131rlar\u0131n\u0131n d\u0131\u015F\u0131nda"
+      - Indeks di luar batas
+      - Indeks poza zakresem
+      - "\u0E14\u0E31\u0E0A\u0E19\u0E35\u0E2D\u0E22\u0E39\u0E48\u0E19\u0E2D\u0E01\u0E02\u0E2D\u0E1A\u0E40\u0E02\u0E15"
+      - "Index \xEEn afara limitelor"
+      - "\u0641\u0647\u0631\u0633 \u062E\u0627\u0631\u062C \u0627\u0644\u0646\u0637\u0627\u0642"
+      - "Ch\u1EC9 s\u1ED1 n\u1EB1m ngo\xE0i ph\u1EA1m vi cho ph\xE9p."
+      - "\u0406\u043D\u0434\u0435\u043A\u0441 \u0432\u0438\u0445\u043E\u0434\u0438\u0442\u044C
+        \u0437\u0430 \u043C\u0435\u0436\u0456"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Region_NonConfigApplication
+      TermType: 0
+      Description: 
+      Languages:
+      - This application is not configured.
+      - "\u672A\u914D\u7F6E\u6B64\u5E94\u7528"
+      - "\u672A\u914D\u7F6E\u6B64\u61C9\u7528"
+      - "\uC774 \uC560\uD50C\uB9AC\uCF00\uC774\uC158\uC740 \uAD6C\uC131\uB418\uC9C0
+        \uC54A\uC558\uC2B5\uB2C8\uB2E4."
+      - "\u3053\u306E\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u306F\u8A2D\u5B9A\u3055\u308C\u3066\u3044\u307E\u305B\u3093\u3002"
+      - "Cette application n'est pas configur\xE9e."
+      - Diese Anwendung ist nicht konfiguriert.
+      - "\u0414\u0430\u043D\u043D\u043E\u0435 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435
+        \u043D\u0435 \u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043D\u043E."
+      - "Esta aplicaci\xF3n no est\xE1 configurada."
+      - "Este aplicativo n\xE3o est\xE1 configurado."
+      - "Questa applicazione non \xE8 configurata."
+      - Deze applicatie is niet geconfigureerd.
+      - "Bu uygulama yap\u0131land\u0131r\u0131lmam\u0131\u015F."
+      - Aplikasi ini belum dikonfigurasi.
+      - Ta aplikacja nie jest skonfigurowana.
+      - "\u0E41\u0E2D\u0E1B\u0E1E\u0E25\u0E34\u0E40\u0E04\u0E0A\u0E31\u0E19\u0E19\u0E35\u0E49\u0E22\u0E31\u0E07\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E16\u0E39\u0E01\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32"
+      - "Aceast\u0103 aplica\u021Bie nu este configurat\u0103."
+      - "\u0647\u0630\u0627 \u0627\u0644\u062A\u0637\u0628\u064A\u0642 \u063A\u064A\u0631
+        \u0645\u064F\u0647\u064A\u0623."
+      - "\u1EE8ng d\u1EE5ng n\xE0y ch\u01B0a \u0111\u01B0\u1EE3c c\u1EA5u h\xECnh."
+      - "\u0426\u0435\u0439 \u0437\u0430\u0441\u0442\u043E\u0441\u0443\u043D\u043E\u043A
+        \u043D\u0435 \u043D\u0430\u043B\u0430\u0448\u0442\u043E\u0432\u0430\u043D\u043E."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Region_SystemError
+      TermType: 0
+      Description: 
+      Languages:
+      - System malfunction
+      - "\u7CFB\u7EDF\u5F02\u5E38"
+      - "\u7CFB\u7D71\u7570\u5E38"
+      - "\uC2DC\uC2A4\uD15C \uC624\uB958"
+      - "\u30B7\u30B9\u30C6\u30E0\u969C\u5BB3"
+      - "Dysfonctionnement du syst\xE8me"
+      - "Systemst\xF6rung"
+      - "\u0421\u0431\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u044B"
+      - Mal funcionamiento del sistema
+      - Mau funcionamento do sistema
+      - Malfunzionamento del sistema
+      - Systeemstoring
+      - "Sistem ar\u0131zas\u0131"
+      - Kerusakan sistem
+      - Awaria systemu
+      - "\u0E23\u0E30\u0E1A\u0E1A\u0E17\u0E33\u0E07\u0E32\u0E19\u0E1C\u0E34\u0E14\u0E1E\u0E25\u0E32\u0E14"
+      - "Defec\u021Biune a sistemului"
+      - "\u0639\u0637\u0644 \u0641\u064A \u0627\u0644\u0646\u0638\u0627\u0645"
+      - "L\u1ED7i h\u1EC7 th\u1ED1ng"
+      - "\u041D\u0435\u0441\u043F\u0440\u0430\u0432\u043D\u0456\u0441\u0442\u044C
+        \u0441\u0438\u0441\u0442\u0435\u043C\u0438"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_PreventionOfAddiction
+      TermType: 0
+      Description: 
+      Languages:
+      - "Copyright \xA9 2022 TEngine Co., Ltd., XX City. Software Registration No.:
+        2022SR0000000. Resist harmful games and reject pirated games. Protect yourself
+        and beware of scams. Moderate gaming is beneficial, but excessive gaming
+        is harmful to your health. Manage your time wisely and enjoy a healthy life."
+      - "\u8457\u4F5C\u4EBA\u6743\uFF1AXX\u5E02TEngine\u6709\u9650\u516C\u53F8 \u8F6F\u8457\u767B\u8BB0\u53F7\uFF1A2022SR0000000\\n\u62B5\u5236\u4E0D\u826F\u6E38\u620F\uFF0C\u62D2\u7EDD\u76D7\u7248\u6E38\u620F\u3002\u6CE8\u610F\u81EA\u6211\u4FDD\u62A4\uFF0C\u8C28\u9632\u53D7\u9A97\u4E0A\u5F53\u3002\u9002\u5EA6\u6E38\u620F\u76CA\u8111\uFF0C\u6C89\u8FF7\u6E38\u620F\u4F24\u8EAB\u3002\u5408\u7406\u5B89\u6392\u65F6\u95F4\uFF0C\u4EAB\u53D7\u5065\u5EB7\u751F\u6D3B\u3002"
+      - "\u8457\u4F5C\u4EBA\u6743\uFF1AXX\u5E02TEngine\u6709\u9650\u516C\u53F8 \u8F6F\u8457\u767B\u8BB0\u53F7\uFF1A2022SR0000000\\n\u62B5\u5236\u4E0D\u826F\u6E38\u620F\uFF0C\u62D2\u7EDD\u76D7\u7248\u6E38\u620F\u3002\u6CE8\u610F\u81EA\u6211\u4FDD\u62A4\uFF0C\u8C28\u9632\u53D7\u9A97\u4E0A\u5F53\u3002\u9002\u5EA6\u6E38\u620F\u76CA\u8111\uFF0C\u6C89\u8FF7\u6E38\u620F\u4F24\u8EAB\u3002\u5408\u7406\u5B89\u6392\u65F6\u95F4\uFF0C\u4EAB\u53D7\u5065\u5EB7\u751F\u6D3B\u3002"
+      - "\uC800\uC791\uAD8C \xA9 2022 TEngine Co., Ltd., XX\uC2DC. \uC18C\uD504\uD2B8\uC6E8\uC5B4
+        \uB4F1\uB85D \uBC88\uD638: 2022SR0000000. \uC720\uD574\uD55C \uAC8C\uC784\uC744
+        \uBA40\uB9AC\uD558\uACE0 \uBD88\uBC95 \uBCF5\uC81C \uAC8C\uC784\uC744 \uAC70\uBD80\uD558\uC138\uC694.
+        \uC790\uC2E0\uC744 \uBCF4\uD638\uD558\uACE0 \uC0AC\uAE30\uC5D0 \uC8FC\uC758\uD558\uC138\uC694.
+        \uC801\uB2F9\uD55C \uAC8C\uC784\uC740 \uC720\uC775\uD558\uC9C0\uB9CC \uACFC\uB3C4\uD55C
+        \uAC8C\uC784\uC740 \uAC74\uAC15\uC5D0 \uD574\uB86D\uC2B5\uB2C8\uB2E4. \uC2DC\uAC04\uC744
+        \uD604\uBA85\uD558\uAC8C \uAD00\uB9AC\uD558\uACE0 \uAC74\uAC15\uD55C \uC0B6\uC744
+        \uB204\uB9AC\uC138\uC694."
+      - "\u8457\u4F5C\u6A29 \xA9 2022 TEngine Co., Ltd., XX City. \u30BD\u30D5\u30C8\u30A6\u30A7\u30A2\u767B\u9332\u756A\u53F7:
+        2022SR0000000. \u6709\u5BB3\u306A\u30B2\u30FC\u30E0\u306B\u62B5\u6297\u3057\u3001\u6D77\u8CCA\u7248\u30B2\u30FC\u30E0\u3092\u62D2\u5426\u3057\u3066\u304F\u3060\u3055\u3044\u3002\u8EAB\u3092\u5B88\u308A\u3001\u8A50\u6B3A\u306B\u6CE8\u610F\u3057\u3066\u304F\u3060\u3055\u3044\u3002\u9069\u5EA6\u306A\u30B2\u30FC\u30E0\u306F\u6709\u76CA\u3067\u3059\u304C\u3001\u904E\u5EA6\u306A\u30B2\u30FC\u30E0\u306F\u5065\u5EB7\u306B\u5BB3\u3092\u53CA\u307C\u3057\u307E\u3059\u3002\u6642\u9593\u3092\u8CE2\u304F\u7BA1\u7406\u3057\u3001\u5065\u5EB7\u7684\u306A\u751F\u6D3B\u3092\u304A\u697D\u3057\u307F\u304F\u3060\u3055\u3044\u3002"
+      - "Copyright \xA9 2022 TEngine Co., Ltd., XX City. Num\xE9ro d'enregistrement
+        du logiciel\_: 2022SR0000000. \xC9vitez les jeux dangereux et rejetez les
+        jeux pirat\xE9s. Prot\xE9gez-vous et m\xE9fiez-vous des arnaques. Jouer avec
+        mod\xE9ration est b\xE9n\xE9fique, mais jouer excessivement est n\xE9faste
+        pour votre sant\xE9. G\xE9rez votre temps judicieusement et profitez d'une
+        vie saine."
+      - "Copyright \xA9 2022 TEngine Co., Ltd., XX City. Software-Registrierungsnummer:
+        2022SR0000000. Sch\xFCtzen Sie sich vor sch\xE4dlichen Spielen und lehnen
+        Sie Raubkopien ab. Seien Sie wachsam gegen\xFCber Betrug. M\xE4\xDFiges Spielen
+        ist vorteilhaft, exzessives Spielen hingegen sch\xE4dlich f\xFCr Ihre Gesundheit.
+        Gehen Sie sorgsam mit Ihrer Zeit um und genie\xDFen Sie ein gesundes Leben."
+      - "\u0410\u0432\u0442\u043E\u0440\u0441\u043A\u0438\u0435 \u043F\u0440\u0430\u0432\u0430
+        \xA9 2022 TEngine Co., Ltd., \u0433\u043E\u0440\u043E\u0434 XX. \u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0439
+        \u043D\u043E\u043C\u0435\u0440 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u043D\u043E\u0433\u043E
+        \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0435\u043D\u0438\u044F: 2022SR0000000.
+        \u0418\u0437\u0431\u0435\u0433\u0430\u0439\u0442\u0435 \u0432\u0440\u0435\u0434\u043E\u043D\u043E\u0441\u043D\u044B\u0445
+        \u0438\u0433\u0440 \u0438 \u043F\u0438\u0440\u0430\u0442\u0441\u043A\u0438\u0445
+        \u0438\u0433\u0440. \u0417\u0430\u0449\u0438\u0442\u0438\u0442\u0435 \u0441\u0435\u0431\u044F
+        \u0438 \u043E\u0441\u0442\u0435\u0440\u0435\u0433\u0430\u0439\u0442\u0435\u0441\u044C
+        \u043C\u043E\u0448\u0435\u043D\u043D\u0438\u0447\u0435\u0441\u0442\u0432\u0430.
+        \u0423\u043C\u0435\u0440\u0435\u043D\u043D\u043E\u0435 \u0443\u0432\u043B\u0435\u0447\u0435\u043D\u0438\u0435
+        \u0438\u0433\u0440\u0430\u043C\u0438 \u043F\u043E\u043B\u0435\u0437\u043D\u043E,
+        \u043D\u043E \u0447\u0440\u0435\u0437\u043C\u0435\u0440\u043D\u043E\u0435
+        \u0443\u0432\u043B\u0435\u0447\u0435\u043D\u0438\u0435 \u0432\u0440\u0435\u0434\u0438\u0442
+        \u0432\u0430\u0448\u0435\u043C\u0443 \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u044E.
+        \u0420\u0430\u0437\u0443\u043C\u043D\u043E \u0440\u0430\u0441\u043F\u043E\u0440\u044F\u0436\u0430\u0439\u0442\u0435\u0441\u044C
+        \u0441\u0432\u043E\u0438\u043C \u0432\u0440\u0435\u043C\u0435\u043D\u0435\u043C
+        \u0438 \u043D\u0430\u0441\u043B\u0430\u0436\u0434\u0430\u0439\u0442\u0435\u0441\u044C
+        \u0437\u0434\u043E\u0440\u043E\u0432\u043E\u0439 \u0436\u0438\u0437\u043D\u044C\u044E."
+      - "Copyright \xA9 2022 TEngine Co., Ltd., Ciudad XX. N\xFAmero de registro
+        de software: 2022SR0000000. Resiste los juegos da\xF1inos y rechaza los juegos
+        piratas. Prot\xE9gete y ten cuidado con las estafas. Jugar con moderaci\xF3n
+        es beneficioso, pero jugar en exceso es perjudicial para la salud. Administra
+        tu tiempo sabiamente y disfruta de una vida sana."
+      - "Copyright \xA9 2022 TEngine Co., Ltd., XX City. N\xFAmero de registro do
+        software: 2022SR0000000. Resista a jogos nocivos e rejeite jogos piratas.
+        Proteja-se e fique atento a golpes. Jogar com modera\xE7\xE3o \xE9 ben\xE9fico,
+        mas jogar em excesso \xE9 prejudicial \xE0 sa\xFAde. Administre seu tempo
+        com sabedoria e desfrute de uma vida saud\xE1vel."
+      - "Copyright \xA9 2022 TEngine Co., Ltd., XX City. Numero di registrazione
+        del software: 2022SR0000000. Evita i giochi dannosi e rifiuta quelli pirata.
+        Proteggiti e fai attenzione alle truffe. Giocare con moderazione \xE8 benefico,
+        ma giocare in modo eccessivo \xE8 dannoso per la salute. Gestisci il tuo
+        tempo con saggezza e goditi una vita sana."
+      - "Copyright \xA9 2022 TEngine Co., Ltd., XX City. Softwareregistratienummer:
+        2022SR0000000. Weersta schadelijke games en weiger illegale kopie\xEBn. Bescherm
+        jezelf en wees alert op oplichting. Matig gamen is goed voor je gezondheid,
+        maar overmatig gamen is schadelijk. Ga verstandig om met je tijd en geniet
+        van een gezond leven."
+      - "Telif Hakk\u0131 \xA9 2022 TEngine Co., Ltd., XX \u015Eehri. Yaz\u0131l\u0131m
+        Kay\u0131t No.: 2022SR0000000. Zararl\u0131 oyunlara kar\u015F\u0131 koyun
+        ve korsan oyunlar\u0131 reddedin. Kendinizi koruyun ve doland\u0131r\u0131c\u0131l\u0131klara
+        kar\u015F\u0131 dikkatli olun. Orta d\xFCzeyde oyun oynamak faydal\u0131d\u0131r,
+        ancak a\u015F\u0131r\u0131 oyun oynamak sa\u011Fl\u0131\u011F\u0131n\u0131z
+        i\xE7in zararl\u0131d\u0131r. Zaman\u0131n\u0131z\u0131 ak\u0131ll\u0131ca
+        y\xF6netin ve sa\u011Fl\u0131kl\u0131 bir ya\u015Fam\u0131n tad\u0131n\u0131
+        \xE7\u0131kar\u0131n."
+      - "Hak Cipta \xA9 2022 TEngine Co., Ltd., Kota XX. Nomor Registrasi Perangkat
+        Lunak: 2022SR0000000. Hindari game berbahaya dan tolak game bajakan. Lindungi
+        diri Anda dan waspadai penipuan. Bermain game secukupnya bermanfaat, tetapi
+        bermain game berlebihan berbahaya bagi kesehatan Anda. Kelola waktu Anda
+        dengan bijak dan nikmati hidup sehat."
+      - "Prawa autorskie \xA9 2022 TEngine Co., Ltd., XX City. Numer rejestracyjny
+        oprogramowania: 2022SR0000000. Unikaj szkodliwych gier i odrzucaj gry pirackie.
+        Chro\u0144 si\u0119 i uwa\u017Caj na oszustwa. Umiarkowane granie jest korzystne,
+        ale nadmierne granie szkodzi zdrowiu. Zarz\u0105dzaj m\u0105drze swoim czasem
+        i ciesz si\u0119 zdrowym \u017Cyciem."
+      - "\u0E25\u0E34\u0E02\u0E2A\u0E34\u0E17\u0E18\u0E34\u0E4C \xA9 2022 \u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17
+        \u0E17\u0E35\u0E40\u0E2D\u0E47\u0E19\u0E08\u0E34\u0E49\u0E19 \u0E08\u0E33\u0E01\u0E31\u0E14
+        \u0E40\u0E21\u0E37\u0E2D\u0E07 XX \u0E40\u0E25\u0E02\u0E17\u0E30\u0E40\u0E1A\u0E35\u0E22\u0E19\u0E0B\u0E2D\u0E1F\u0E15\u0E4C\u0E41\u0E27\u0E23\u0E4C:
+        2022SR0000000 \u0E2B\u0E25\u0E35\u0E01\u0E40\u0E25\u0E35\u0E48\u0E22\u0E07\u0E40\u0E01\u0E21\u0E17\u0E35\u0E48\u0E40\u0E1B\u0E47\u0E19\u0E2D\u0E31\u0E19\u0E15\u0E23\u0E32\u0E22\u0E41\u0E25\u0E30\u0E1B\u0E0F\u0E34\u0E40\u0E2A\u0E18\u0E40\u0E01\u0E21\u0E25\u0E30\u0E40\u0E21\u0E34\u0E14\u0E25\u0E34\u0E02\u0E2A\u0E34\u0E17\u0E18\u0E34\u0E4C
+        \u0E1B\u0E49\u0E2D\u0E07\u0E01\u0E31\u0E19\u0E15\u0E31\u0E27\u0E40\u0E2D\u0E07\u0E41\u0E25\u0E30\u0E23\u0E30\u0E27\u0E31\u0E07\u0E01\u0E32\u0E23\u0E2B\u0E25\u0E2D\u0E01\u0E25\u0E27\u0E07
+        \u0E01\u0E32\u0E23\u0E40\u0E25\u0E48\u0E19\u0E40\u0E01\u0E21\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E1E\u0E2D\u0E40\u0E2B\u0E21\u0E32\u0E30\u0E21\u0E35\u0E1B\u0E23\u0E30\u0E42\u0E22\u0E0A\u0E19\u0E4C
+        \u0E41\u0E15\u0E48\u0E01\u0E32\u0E23\u0E40\u0E25\u0E48\u0E19\u0E40\u0E01\u0E21\u0E21\u0E32\u0E01\u0E40\u0E01\u0E34\u0E19\u0E44\u0E1B\u0E40\u0E1B\u0E47\u0E19\u0E2D\u0E31\u0E19\u0E15\u0E23\u0E32\u0E22\u0E15\u0E48\u0E2D\u0E2A\u0E38\u0E02\u0E20\u0E32\u0E1E
+        \u0E1A\u0E23\u0E34\u0E2B\u0E32\u0E23\u0E40\u0E27\u0E25\u0E32\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E0A\u0E32\u0E0D\u0E09\u0E25\u0E32\u0E14\u0E41\u0E25\u0E30\u0E43\u0E0A\u0E49\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E21\u0E35\u0E2A\u0E38\u0E02\u0E20\u0E32\u0E1E\u0E14\u0E35"
+      - "Drepturi de autor \xA9 2022 TEngine Co., Ltd., XX City. Nr. \xEEnregistrare
+        software: 2022SR0000000. Rezista\u021Bi jocurilor d\u0103un\u0103toare \u0219i
+        respinge\u021Bi jocurile piratate. Proteja\u021Bi-v\u0103 \u0219i fi\u021Bi
+        aten\u021Bi la escrocherii. Jocurile moderate sunt benefice, dar jocurile
+        excesive sunt d\u0103un\u0103toare s\u0103n\u0103t\u0103\u021Bii. Gestiona\u021Bi-v\u0103
+        timpul cu \xEEn\u021Belepciune \u0219i bucura\u021Bi-v\u0103 de o via\u021B\u0103
+        s\u0103n\u0103toas\u0103."
+      - "\u062C\u0645\u064A\u0639 \u0627\u0644\u062D\u0642\u0648\u0642 \u0645\u062D\u0641\u0648\u0638\u0629
+        \xA9 2022 \u0644\u0634\u0631\u0643\u0629 TEngine \u0627\u0644\u0645\u062D\u062F\u0648\u062F\u0629\u060C
+        \u0645\u062F\u064A\u0646\u0629 XX. \u0631\u0642\u0645 \u062A\u0633\u062C\u064A\u0644
+        \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062C: 2022SR0000000. \u062A\u062C\u0646\u0628
+        \u0627\u0644\u0623\u0644\u0639\u0627\u0628 \u0627\u0644\u0636\u0627\u0631\u0629
+        \u0648\u0627\u0631\u0641\u0636 \u0627\u0644\u0623\u0644\u0639\u0627\u0628
+        \u0627\u0644\u0645\u0642\u0631\u0635\u0646\u0629. \u0627\u062D\u0645\u0650
+        \u0646\u0641\u0633\u0643 \u0648\u0627\u062D\u0630\u0631 \u0645\u0646 \u0639\u0645\u0644\u064A\u0627\u062A
+        \u0627\u0644\u0627\u062D\u062A\u064A\u0627\u0644. \u0627\u0644\u0644\u0639\u0628
+        \u0628\u0627\u0639\u062A\u062F\u0627\u0644 \u0645\u0641\u064A\u062F\u060C
+        \u0644\u0643\u0646 \u0627\u0644\u0625\u0641\u0631\u0627\u0637 \u0641\u064A\u0647
+        \u0636\u0627\u0631 \u0628\u0635\u062D\u062A\u0643. \u0646\u0638\u0645 \u0648\u0642\u062A\u0643
+        \u0628\u062D\u0643\u0645\u0629 \u0648\u0627\u0633\u062A\u0645\u062A\u0639
+        \u0628\u062D\u064A\u0627\u0629 \u0635\u062D\u064A\u0629."
+      - "B\u1EA3n quy\u1EC1n \xA9 2022 C\xF4ng ty TNHH TEngine, Th\xE0nh ph\u1ED1
+        XX. S\u1ED1 \u0111\u0103ng k\xFD ph\u1EA7n m\u1EC1m: 2022SR0000000. H\xE3y
+        ch\u1ED1ng l\u1EA1i c\xE1c tr\xF2 ch\u01A1i \u0111\u1ED9c h\u1EA1i v\xE0
+        t\u1EEB ch\u1ED1i c\xE1c tr\xF2 ch\u01A1i l\u1EADu. B\u1EA3o v\u1EC7 b\u1EA3n
+        th\xE2n v\xE0 c\u1EA3nh gi\xE1c v\u1EDBi c\xE1c chi\xEAu tr\xF2 l\u1EEBa
+        \u0111\u1EA3o. Ch\u01A1i game \u0111i\u1EC1u \u0111\u1ED9 c\xF3 l\u1EE3i,
+        nh\u01B0ng ch\u01A1i game qu\xE1 m\u1EE9c c\xF3 h\u1EA1i cho s\u1EE9c kh\u1ECFe.
+        H\xE3y qu\u1EA3n l\xFD th\u1EDDi gian m\u1ED9t c\xE1ch kh\xF4n ngoan v\xE0
+        t\u1EADn h\u01B0\u1EDFng cu\u1ED9c s\u1ED1ng l\xE0nh m\u1EA1nh."
+      - "\u0410\u0432\u0442\u043E\u0440\u0441\u044C\u043A\u0435 \u043F\u0440\u0430\u0432\u043E
+        \xA9 2022 TEngine Co., Ltd., \u043C\u0456\u0441\u0442\u043E XX. \u0420\u0435\u0454\u0441\u0442\u0440\u0430\u0446\u0456\u0439\u043D\u0438\u0439
+        \u043D\u043E\u043C\u0435\u0440 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043D\u043E\u0433\u043E
+        \u0437\u0430\u0431\u0435\u0437\u043F\u0435\u0447\u0435\u043D\u043D\u044F:
+        2022SR0000000. \u0423\u043D\u0438\u043A\u0430\u0439\u0442\u0435 \u0448\u043A\u0456\u0434\u043B\u0438\u0432\u0438\u0445
+        \u0456\u0433\u043E\u0440 \u0442\u0430 \u043F\u0456\u0440\u0430\u0442\u0441\u044C\u043A\u0438\u0445
+        \u043A\u043E\u043F\u0456\u0439. \u0417\u0430\u0445\u0438\u0441\u0442\u0456\u0442\u044C
+        \u0441\u0435\u0431\u0435 \u0442\u0430 \u043E\u0441\u0442\u0435\u0440\u0456\u0433\u0430\u0439\u0442\u0435\u0441\u044F
+        \u0448\u0430\u0445\u0440\u0430\u0439\u0441\u0442\u0432\u0430. \u041F\u043E\u043C\u0456\u0440\u043D\u0456
+        \u0456\u0433\u0440\u0438 \u043A\u043E\u0440\u0438\u0441\u043D\u0456, \u0430\u043B\u0435
+        \u043D\u0430\u0434\u043C\u0456\u0440\u043D\u0456 \u0456\u0433\u0440\u0438
+        \u0448\u043A\u0456\u0434\u043B\u0438\u0432\u0456 \u0434\u043B\u044F \u0432\u0430\u0448\u043E\u0433\u043E
+        \u0437\u0434\u043E\u0440\u043E\u0432'\u044F. \u0420\u043E\u0437\u0443\u043C\u043D\u043E
+        \u043A\u0435\u0440\u0443\u0439\u0442\u0435 \u0441\u0432\u043E\u0457\u043C
+        \u0447\u0430\u0441\u043E\u043C \u0442\u0430 \u043D\u0430\u0441\u043E\u043B\u043E\u0434\u0436\u0443\u0439\u0442\u0435\u0441\u044C
+        \u0437\u0434\u043E\u0440\u043E\u0432\u0438\u043C \u0436\u0438\u0442\u0442\u044F\u043C."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Btn_Update
+      TermType: 0
+      Description: 
+      Languages:
+      - Sure
+      - "\u786E\u5B9A"
+      - "\u78BA\u5B9A"
+      - "\uD655\uC2E0\uD558\uB294"
+      - "\u3082\u3061\u308D\u3093"
+      - "Bien s\xFBr"
+      - Sicher
+      - "\u041A\u043E\u043D\u0435\u0447\u043D\u043E"
+      - Seguro
+      - Claro
+      - Sicuro
+      - Zeker
+      - Elbette
+      - Tentu
+      - Jasne
+      - "\u0E41\u0E19\u0E48\u0E19\u0E2D\u0E19"
+      - Sigur
+      - "\u0628\u0627\u0644\u062A\u0623\u0643\u064A\u062F"
+      - "Ch\u1EAFc ch\u1EAFn"
+      - "\u0417\u0432\u0438\u0447\u0430\u0439\u043D\u043E"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Btn_Ignore
+      TermType: 0
+      Description: 
+      Languages:
+      - Cancel
+      - "\u53D6\u6D88"
+      - "\u53D6\u6D88"
+      - "\uCDE8\uC18C"
+      - "\u30AD\u30E3\u30F3\u30BB\u30EB"
+      - Annuler
+      - Stornieren
+      - "\u041E\u0442\u043C\u0435\u043D\u0430"
+      - Cancelar
+      - Cancelar
+      - Cancellare
+      - Annuleren
+      - "\u0130ptal etmek"
+      - Membatalkan
+      - "Anulowa\u0107"
+      - "\u0E22\u0E01\u0E40\u0E25\u0E34\u0E01"
+      - Anula
+      - "\u064A\u0644\u063A\u064A"
+      - "H\u1EE7y b\u1ECF"
+      - "\u0421\u043A\u0430\u0441\u0443\u0432\u0430\u0442\u0438"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Btn_Package
+      TermType: 0
+      Description: 
+      Languages:
+      - Update
+      - "\u66F4\u65B0"
+      - "\u66F4\u65B0"
+      - "\uACE0\uCCD0 \uC4F0\uB2E4"
+      - "\u66F4\u65B0\u3059\u308B"
+      - renouveler
+      - erneuern
+      - "\u043E\u0431\u043D\u043E\u0432\u0438\u0442\u044C"
+      - renovar
+      - renovar
+      - rinnovare
+      - vernieuwen
+      - yenilemek
+      - memperbarui
+      - "odnowi\u0107"
+      - "\u0E15\u0E48\u0E2D\u0E2D\u0E32\u0E22\u0E38"
+      - "re\xEEnnoi"
+      - "\u062A\u062C\u062F\u064A\u062F"
+      - "gia h\u1EA1n"
+      - "\u043F\u043E\u043D\u043E\u0432\u043B\u044E\u0432\u0430\u0442\u0438"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Dlc_ConfigVerificateStage
+      TermType: 0
+      Description: 
+      Languages:
+      - Configuration verification in progress...
+      - "\u914D\u7F6E\u6821\u9A8C\u4E2D..."
+      - "\u914D\u7F6E\u6821\u9A57\u4E2D..."
+      - "\uAD6C\uC131 \uAC80\uC99D\uC774 \uC9C4\uD589 \uC911\uC785\uB2C8\uB2E4..."
+      - "\u8A2D\u5B9A\u691C\u8A3C\u4E2D\u3067\u3059..."
+      - "V\xE9rification de la configuration en cours..."
+      - "Konfigurationspr\xFCfung l\xE4uft..."
+      - "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438
+        \u0432 \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u0435..."
+      - "Verificaci\xF3n de la configuraci\xF3n en curso..."
+      - "Verifica\xE7\xE3o de configura\xE7\xE3o em andamento..."
+      - Verifica della configurazione in corso...
+      - Configuratiecontrole bezig...
+      - "Yap\u0131land\u0131rma do\u011Frulama i\u015Flemi devam ediyor..."
+      - Verifikasi konfigurasi sedang berlangsung...
+      - Trwa weryfikacja konfiguracji...
+      - "\u0E01\u0E33\u0E25\u0E31\u0E07\u0E15\u0E23\u0E27\u0E08\u0E2A\u0E2D\u0E1A\u0E01\u0E32\u0E23\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32..."
+      - "Verificarea configura\u021Biei este \xEEn curs..."
+      - "\u062C\u0627\u0631\u064D \u0627\u0644\u062A\u062D\u0642\u0642 \u0645\u0646
+        \u0627\u0644\u062A\u0643\u0648\u064A\u0646..."
+      - "\u0110ang ti\u1EBFn h\xE0nh x\xE1c minh c\u1EA5u h\xECnh..."
+      - "\u0422\u0440\u0438\u0432\u0430\u0454 \u043F\u0435\u0440\u0435\u0432\u0456\u0440\u043A\u0430
+        \u043A\u043E\u043D\u0444\u0456\u0433\u0443\u0440\u0430\u0446\u0456\u0457..."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Dlc_ConfigLoadingStage
+      TermType: 0
+      Description: 
+      Languages:
+      - Downloading configuration...
+      - "\u4E0B\u8F7D\u914D\u7F6E\u4E2D..."
+      - "\u4E0B\u8F09\u914D\u7F6E\u4E2D..."
+      - "\uC124\uC815 \uB2E4\uC6B4\uB85C\uB4DC \uC911..."
+      - "\u8A2D\u5B9A\u3092\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9\u3057\u3066\u3044\u307E\u3059..."
+      - "T\xE9l\xE9chargement de la configuration..."
+      - Konfiguration wird heruntergeladen...
+      - "\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0430 \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438..."
+      - "Descargando configuraci\xF3n..."
+      - "Baixando a configura\xE7\xE3o..."
+      - Download della configurazione in corso...
+      - Configuratie downloaden...
+      - "Yap\u0131land\u0131rma dosyalar\u0131 indiriliyor..."
+      - Mengunduh konfigurasi...
+      - Pobieranie konfiguracji...
+      - "\u0E01\u0E33\u0E25\u0E31\u0E07\u0E14\u0E32\u0E27\u0E19\u0E4C\u0E42\u0E2B\u0E25\u0E14\u0E01\u0E32\u0E23\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32..."
+      - "Se descarc\u0103 configura\u021Bia..."
+      - "\u062C\u0627\u0631\u064D \u062A\u0646\u0632\u064A\u0644 \u0627\u0644\u0625\u0639\u062F\u0627\u062F\u0627\u062A..."
+      - "\u0110ang t\u1EA3i c\u1EA5u h\xECnh..."
+      - "\u0417\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0435\u043D\u043D\u044F
+        \u043A\u043E\u043D\u0444\u0456\u0433\u0443\u0440\u0430\u0446\u0456\u0457..."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Dlc_AssetsLoading
+      TermType: 0
+      Description: 
+      Languages:
+      - Downloading resources...
+      - "\u4E0B\u8F7D\u8D44\u6E90\u4E2D..."
+      - "\u4E0B\u8F09\u8CC7\u6E90\u4E2D..."
+      - "\uB9AC\uC18C\uC2A4 \uB2E4\uC6B4\uB85C\uB4DC \uC911..."
+      - "\u30EA\u30BD\u30FC\u30B9\u3092\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9\u3057\u3066\u3044\u307E\u3059..."
+      - "T\xE9l\xE9chargement des ressources..."
+      - Ressourcen werden heruntergeladen...
+      - "\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0430 \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432..."
+      - Descargando recursos...
+      - Baixando recursos...
+      - Download delle risorse in corso...
+      - Bronnen downloaden...
+      - Kaynaklar indiriliyor...
+      - Mengunduh sumber daya...
+      - "Pobieranie zasob\xF3w..."
+      - "\u0E01\u0E33\u0E25\u0E31\u0E07\u0E14\u0E32\u0E27\u0E19\u0E4C\u0E42\u0E2B\u0E25\u0E14\u0E17\u0E23\u0E31\u0E1E\u0E22\u0E32\u0E01\u0E23..."
+      - "Se descarc\u0103 resursele..."
+      - "\u062C\u0627\u0631\u064D \u062A\u0646\u0632\u064A\u0644 \u0627\u0644\u0645\u0648\u0627\u0631\u062F..."
+      - "\u0110ang t\u1EA3i xu\u1ED1ng t\xE0i nguy\xEAn..."
+      - "\u0417\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0435\u043D\u043D\u044F
+        \u0440\u0435\u0441\u0443\u0440\u0441\u0456\u0432..."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Dlc_LoadingFinish
+      TermType: 0
+      Description: 
+      Languages:
+      - Download complete
+      - "\u4E0B\u8F7D\u7ED3\u675F"
+      - "\u4E0B\u8F09\u7D50\u675F"
+      - "\uB2E4\uC6B4\uB85C\uB4DC \uC644\uB8CC"
+      - "\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9\u5B8C\u4E86"
+      - "T\xE9l\xE9chargement complet"
+      - Download abgeschlossen
+      - "\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0430 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u0430"
+      - Descarga completa
+      - Baixar completo
+      - Download completato
+      - Download voltooid
+      - "\u0130ndirme tamamland\u0131"
+      - Unduhan selesai
+      - "Pobieranie zako\u0144czone"
+      - "\u0E14\u0E32\u0E27\u0E19\u0E4C\u0E42\u0E2B\u0E25\u0E14\u0E09\u0E1A\u0E31\u0E1A\u0E2A\u0E21\u0E1A\u0E39\u0E23\u0E13\u0E4C"
+      - "Desc\u0103rcare finalizat\u0103"
+      - "\u0627\u0643\u062A\u0645\u0644 \u0627\u0644\u062A\u0646\u0632\u064A\u0644"
+      - "T\u1EA3i xu\u1ED1ng ho\xE0n t\u1EA5t"
+      - "\u0417\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0435\u043D\u043D\u044F
+        \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u043E"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Dlc_Load_Force_WIFI
+      TermType: 0
+      Description: 
+      Languages:
+      - New game content has been detected and requires an update. Canceling the
+        update will prevent you from entering the game. You are currently connected
+        to a Wi-Fi network. Please begin the update.
+      - "\u68C0\u6D4B\u5230\u6709\u65B0\u7684\u6E38\u620F\u5185\u5BB9\u9700\u8981\u66F4\u65B0,
+        \u53D6\u6D88\u66F4\u65B0\u5C06\u5BFC\u81F4\u65E0\u6CD5\u8FDB\u5165\u6E38\u620F\uFF0C\u60A8\u5F53\u524D\u5DF2\u4E3A<color=#BA3026>wifi\u7F51\u7EDC</color>\uFF0C\u8BF7\u5F00\u59CB\u66F4\u65B0"
+      - "\u5075\u6E2C\u5230\u6709\u65B0\u7684\u904A\u6232\u5167\u5BB9\u9700\u8981\u66F4\u65B0,
+        \u53D6\u6D88\u66F4\u65B0\u5C07\u5C0E\u81F4\u7121\u6CD5\u9032\u5165\u904A\u6232\uFF0C\u60A8\u76EE\u524D\u5DF2\u70BA<color=#BA3026>wifi\u7DB2\u8DEF</color>\uFF0C\u8ACB\u958B\u59CB\u66F4\u65B0"
+      - "\uC0C8\uB85C\uC6B4 \uAC8C\uC784 \uCF58\uD150\uCE20\uAC00 \uAC10\uC9C0\uB418\uC5B4
+        \uC5C5\uB370\uC774\uD2B8\uAC00 \uD544\uC694\uD569\uB2C8\uB2E4. \uC5C5\uB370\uC774\uD2B8\uB97C
+        \uCDE8\uC18C\uD558\uBA74 \uAC8C\uC784\uC5D0 \uC811\uC18D\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4.
+        \uD604\uC7AC Wi-Fi \uB124\uD2B8\uC6CC\uD06C\uC5D0 \uC5F0\uACB0\uB418\uC5B4
+        \uC788\uC2B5\uB2C8\uB2E4. \uC5C5\uB370\uC774\uD2B8\uB97C \uC2DC\uC791\uD558\uC138\uC694."
+      - "\u65B0\u3057\u3044\u30B2\u30FC\u30E0\u30B3\u30F3\u30C6\u30F3\u30C4\u304C\u691C\u51FA\u3055\u308C\u307E\u3057\u305F\u3002\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u304C\u5FC5\u8981\u3067\u3059\u3002\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u3092\u30AD\u30E3\u30F3\u30BB\u30EB\u3059\u308B\u3068\u3001\u30B2\u30FC\u30E0\u306B\u30ED\u30B0\u30A4\u30F3\u3067\u304D\u306A\u304F\u306A\u308A\u307E\u3059\u3002\u73FE\u5728\u3001Wi-Fi\u30CD\u30C3\u30C8\u30EF\u30FC\u30AF\u306B\u63A5\u7D9A\u3055\u308C\u3066\u3044\u307E\u3059\u3002\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u3092\u958B\u59CB\u3057\u3066\u304F\u3060\u3055\u3044\u3002"
+      - "Du nouveau contenu a \xE9t\xE9 d\xE9tect\xE9 et n\xE9cessite une mise \xE0
+        jour. L'annulation de la mise \xE0 jour vous emp\xEAchera d'acc\xE9der au
+        jeu. Vous \xEAtes actuellement connect\xE9 \xE0 un r\xE9seau Wi-Fi. Veuillez
+        lancer la mise \xE0 jour."
+      - "Neue Spielinhalte wurden erkannt und erfordern ein Update. Wenn Sie das
+        Update abbrechen, k\xF6nnen Sie das Spiel nicht mehr betreten. Sie sind derzeit
+        mit einem WLAN-Netzwerk verbunden. Bitte starten Sie das Update."
+      - "\u041E\u0431\u043D\u0430\u0440\u0443\u0436\u0435\u043D \u043D\u043E\u0432\u044B\u0439
+        \u0438\u0433\u0440\u043E\u0432\u043E\u0439 \u043A\u043E\u043D\u0442\u0435\u043D\u0442,
+        \u0442\u0440\u0435\u0431\u0443\u044E\u0449\u0438\u0439 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F.
+        \u041E\u0442\u043C\u0435\u043D\u0430 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F
+        \u043D\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u0438\u0442 \u0432\u0430\u043C
+        \u0432\u043E\u0439\u0442\u0438 \u0432 \u0438\u0433\u0440\u0443. \u0412 \u0434\u0430\u043D\u043D\u044B\u0439
+        \u043C\u043E\u043C\u0435\u043D\u0442 \u0432\u044B \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u044B
+        \u043A \u0441\u0435\u0442\u0438 Wi-Fi. \u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430,
+        \u043D\u0430\u0447\u043D\u0438\u0442\u0435 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435."
+      - "Se ha detectado nuevo contenido en el juego y requiere una actualizaci\xF3n.
+        Cancelar la actualizaci\xF3n impedir\xE1 que accedas al juego. Est\xE1s conectado
+        a una red Wi-Fi. Inicia la actualizaci\xF3n."
+      - "Novo conte\xFAdo foi detectado no jogo e requer uma atualiza\xE7\xE3o. Cancelar
+        a atualiza\xE7\xE3o impedir\xE1 que voc\xEA entre no jogo. Voc\xEA est\xE1
+        conectado a uma rede Wi-Fi. Inicie a atualiza\xE7\xE3o."
+      - Sono stati rilevati nuovi contenuti di gioco che richiedono un aggiornamento.
+        Annullando l'aggiornamento non potrai accedere al gioco. Attualmente sei
+        connesso a una rete Wi-Fi. Avvia l'aggiornamento.
+      - Er is nieuwe gamecontent gedetecteerd waarvoor een update nodig is. Als u
+        de update annuleert, kunt u het spel niet meer starten. U bent momenteel
+        verbonden met een wifi-netwerk. Start de update.
+      - "Yeni oyun i\xE7eri\u011Fi tespit edildi ve g\xFCncelleme gerekiyor. G\xFCncellemeyi
+        iptal etmek oyuna girmenizi engelleyecektir. \u015Eu anda bir Wi-Fi a\u011F\u0131na
+        ba\u011Fl\u0131s\u0131n\u0131z. L\xFCtfen g\xFCncellemeyi ba\u015Flat\u0131n."
+      - Konten game baru telah terdeteksi dan memerlukan pembaruan. Membatalkan pembaruan
+        akan mencegah Anda memasuki game. Anda saat ini terhubung ke jaringan Wi-Fi.
+        Silakan mulai pembaruan.
+      - "Wykryto now\u0105 zawarto\u015B\u0107 gry, kt\xF3ra wymaga aktualizacji.
+        Anulowanie aktualizacji uniemo\u017Cliwi Ci wej\u015Bcie do gry. Aktualnie
+        jeste\u015B po\u0142\u0105czony z sieci\u0105 Wi-Fi. Rozpocznij aktualizacj\u0119."
+      - "\u0E15\u0E23\u0E27\u0E08\u0E1E\u0E1A\u0E40\u0E19\u0E37\u0E49\u0E2D\u0E2B\u0E32\u0E40\u0E01\u0E21\u0E43\u0E2B\u0E21\u0E48\u0E41\u0E25\u0E30\u0E08\u0E33\u0E40\u0E1B\u0E47\u0E19\u0E15\u0E49\u0E2D\u0E07\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15
+        \u0E01\u0E32\u0E23\u0E22\u0E01\u0E40\u0E25\u0E34\u0E01\u0E01\u0E32\u0E23\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15\u0E08\u0E30\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E04\u0E38\u0E13\u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E40\u0E02\u0E49\u0E32\u0E40\u0E01\u0E21\u0E44\u0E14\u0E49
+        \u0E02\u0E13\u0E30\u0E19\u0E35\u0E49\u0E04\u0E38\u0E13\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D\u0E01\u0E31\u0E1A\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22
+        Wi-Fi \u0E2D\u0E22\u0E39\u0E48 \u0E42\u0E1B\u0E23\u0E14\u0E40\u0E23\u0E34\u0E48\u0E21\u0E01\u0E32\u0E23\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15"
+      - "A fost detectat con\u021Binut nou \xEEn joc \u0219i necesit\u0103 o actualizare.
+        Anularea actualiz\u0103rii nu v\u0103 va permite s\u0103 accesa\u021Bi jocul.
+        Sunte\u021Bi conectat(\u0103) \xEEn prezent la o re\u021Bea Wi-Fi. V\u0103
+        rug\u0103m s\u0103 \xEEncepe\u021Bi actualizarea."
+      - "\u062A\u0645 \u0627\u0643\u062A\u0634\u0627\u0641 \u0645\u062D\u062A\u0648\u0649
+        \u062C\u062F\u064A\u062F \u0644\u0644\u0639\u0628\u0629 \u0648\u064A\u062A\u0637\u0644\u0628
+        \u062A\u062D\u062F\u064A\u062B\u064B\u0627. \u0633\u064A\u0624\u062F\u064A
+        \u0625\u0644\u063A\u0627\u0621 \u0627\u0644\u062A\u062D\u062F\u064A\u062B
+        \u0625\u0644\u0649 \u0645\u0646\u0639\u0643 \u0645\u0646 \u062F\u062E\u0648\u0644
+        \u0627\u0644\u0644\u0639\u0628\u0629. \u0623\u0646\u062A \u0645\u062A\u0635\u0644
+        \u062D\u0627\u0644\u064A\u064B\u0627 \u0628\u0634\u0628\u0643\u0629 Wi-Fi.
+        \u064A\u064F\u0631\u062C\u0649 \u0628\u062F\u0621 \u0627\u0644\u062A\u062D\u062F\u064A\u062B."
+      - "\u0110\xE3 ph\xE1t hi\u1EC7n n\u1ED9i dung tr\xF2 ch\u01A1i m\u1EDBi v\xE0
+        y\xEAu c\u1EA7u c\u1EADp nh\u1EADt. H\u1EE7y c\u1EADp nh\u1EADt s\u1EBD khi\u1EBFn
+        b\u1EA1n kh\xF4ng th\u1EC3 v\xE0o tr\xF2 ch\u01A1i. B\u1EA1n hi\u1EC7n \u0111ang
+        k\u1EBFt n\u1ED1i v\u1EDBi m\u1EA1ng Wi-Fi. Vui l\xF2ng b\u1EAFt \u0111\u1EA7u
+        c\u1EADp nh\u1EADt."
+      - "\u0412\u0438\u044F\u0432\u043B\u0435\u043D\u043E \u043D\u043E\u0432\u0438\u0439
+        \u0456\u0433\u0440\u043E\u0432\u0438\u0439 \u043A\u043E\u043D\u0442\u0435\u043D\u0442,
+        \u044F\u043A\u0438\u0439 \u043F\u043E\u0442\u0440\u0435\u0431\u0443\u0454
+        \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F. \u0421\u043A\u0430\u0441\u0443\u0432\u0430\u043D\u043D\u044F
+        \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F \u043D\u0435 \u0434\u043E\u0437\u0432\u043E\u043B\u0438\u0442\u044C
+        \u0432\u0430\u043C \u0443\u0432\u0456\u0439\u0442\u0438 \u0432 \u0433\u0440\u0443.
+        \u0412\u0438 \u0437\u0430\u0440\u0430\u0437 \u043F\u0456\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0456
+        \u0434\u043E \u043C\u0435\u0440\u0435\u0436\u0456 Wi-Fi. \u0411\u0443\u0434\u044C
+        \u043B\u0430\u0441\u043A\u0430, \u0440\u043E\u0437\u043F\u043E\u0447\u043D\u0456\u0442\u044C
+        \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Dlc_Load_Force_NO_WIFI
+      TermType: 0
+      Description: 
+      Languages:
+      - New game content has been detected and requires an update. Canceling the
+        update will prevent you from entering the game. Please begin the update.
+      - "\u68C0\u6D4B\u5230\u6709\u65B0\u7684\u6E38\u620F\u5185\u5BB9\u9700\u8981\u66F4\u65B0,
+        \u53D6\u6D88\u66F4\u65B0\u5C06\u5BFC\u81F4\u65E0\u6CD5\u8FDB\u5165\u6E38\u620F\uFF0C\u8BF7\u5F00\u59CB\u66F4\u65B0"
+      - "\u5075\u6E2C\u5230\u6709\u65B0\u7684\u904A\u6232\u5167\u5BB9\u9700\u8981\u66F4\u65B0,
+        \u53D6\u6D88\u66F4\u65B0\u5C07\u5C0E\u81F4\u7121\u6CD5\u9032\u5165\u904A\u6232\uFF0C\u8ACB\u958B\u59CB\u66F4\u65B0"
+      - "\uC0C8\uB85C\uC6B4 \uAC8C\uC784 \uCF58\uD150\uCE20\uAC00 \uAC10\uC9C0\uB418\uC5B4
+        \uC5C5\uB370\uC774\uD2B8\uAC00 \uD544\uC694\uD569\uB2C8\uB2E4. \uC5C5\uB370\uC774\uD2B8\uB97C
+        \uCDE8\uC18C\uD558\uBA74 \uAC8C\uC784\uC5D0 \uC811\uC18D\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4.
+        \uC5C5\uB370\uC774\uD2B8\uB97C \uC2DC\uC791\uD574 \uC8FC\uC138\uC694."
+      - "\u65B0\u3057\u3044\u30B2\u30FC\u30E0\u30B3\u30F3\u30C6\u30F3\u30C4\u304C\u691C\u51FA\u3055\u308C\u307E\u3057\u305F\u3002\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u304C\u5FC5\u8981\u3067\u3059\u3002\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u3092\u30AD\u30E3\u30F3\u30BB\u30EB\u3059\u308B\u3068\u30B2\u30FC\u30E0\u306B\u30ED\u30B0\u30A4\u30F3\u3067\u304D\u306A\u304F\u306A\u308A\u307E\u3059\u3002\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u3092\u958B\u59CB\u3057\u3066\u304F\u3060\u3055\u3044\u3002"
+      - "Du nouveau contenu a \xE9t\xE9 d\xE9tect\xE9 et n\xE9cessite une mise \xE0
+        jour. L'annulation de la mise \xE0 jour vous emp\xEAchera d'acc\xE9der au
+        jeu. Veuillez lancer la mise \xE0 jour."
+      - "Neue Spielinhalte wurden erkannt und erfordern ein Update. Wenn Sie das
+        Update abbrechen, k\xF6nnen Sie das Spiel nicht mehr betreten. Bitte starten
+        Sie das Update."
+      - "\u041E\u0431\u043D\u0430\u0440\u0443\u0436\u0435\u043D \u043D\u043E\u0432\u044B\u0439
+        \u0438\u0433\u0440\u043E\u0432\u043E\u0439 \u043A\u043E\u043D\u0442\u0435\u043D\u0442,
+        \u0442\u0440\u0435\u0431\u0443\u044E\u0449\u0438\u0439 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F.
+        \u041E\u0442\u043C\u0435\u043D\u0430 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F
+        \u043D\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u0438\u0442 \u0432\u0430\u043C
+        \u0432\u043E\u0439\u0442\u0438 \u0432 \u0438\u0433\u0440\u0443. \u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430,
+        \u043D\u0430\u0447\u043D\u0438\u0442\u0435 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435."
+      - "Se ha detectado nuevo contenido en el juego y requiere una actualizaci\xF3n.
+        Cancelar la actualizaci\xF3n impedir\xE1 que accedas al juego. Inicia la
+        actualizaci\xF3n."
+      - "Novo conte\xFAdo foi detectado no jogo e requer uma atualiza\xE7\xE3o. Cancelar
+        a atualiza\xE7\xE3o impedir\xE1 que voc\xEA entre no jogo. Por favor, inicie
+        a atualiza\xE7\xE3o."
+      - Sono stati rilevati nuovi contenuti di gioco che richiedono un aggiornamento.
+        Annullando l'aggiornamento non potrai accedere al gioco. Avvia l'aggiornamento.
+      - Er is nieuwe gamecontent gedetecteerd waarvoor een update nodig is. Als u
+        de update annuleert, kunt u het spel niet meer starten. Start de update.
+      - "Yeni oyun i\xE7eri\u011Fi tespit edildi ve g\xFCncelleme gerekiyor. G\xFCncellemeyi
+        iptal etmek oyuna girmenizi engelleyecektir. L\xFCtfen g\xFCncellemeyi ba\u015Flat\u0131n."
+      - Konten game baru telah terdeteksi dan memerlukan pembaruan. Membatalkan pembaruan
+        akan mencegah Anda memasuki game. Silakan mulai pembaruan.
+      - "Wykryto now\u0105 zawarto\u015B\u0107 gry, kt\xF3ra wymaga aktualizacji.
+        Anulowanie aktualizacji uniemo\u017Cliwi Ci wej\u015Bcie do gry. Rozpocznij
+        aktualizacj\u0119."
+      - "\u0E15\u0E23\u0E27\u0E08\u0E1E\u0E1A\u0E40\u0E19\u0E37\u0E49\u0E2D\u0E2B\u0E32\u0E40\u0E01\u0E21\u0E43\u0E2B\u0E21\u0E48\u0E41\u0E25\u0E30\u0E08\u0E33\u0E40\u0E1B\u0E47\u0E19\u0E15\u0E49\u0E2D\u0E07\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15
+        \u0E01\u0E32\u0E23\u0E22\u0E01\u0E40\u0E25\u0E34\u0E01\u0E01\u0E32\u0E23\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15\u0E08\u0E30\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E04\u0E38\u0E13\u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E40\u0E02\u0E49\u0E32\u0E40\u0E01\u0E21\u0E44\u0E14\u0E49
+        \u0E42\u0E1B\u0E23\u0E14\u0E40\u0E23\u0E34\u0E48\u0E21\u0E01\u0E32\u0E23\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15"
+      - "A fost detectat con\u021Binut nou \xEEn joc \u0219i necesit\u0103 o actualizare.
+        Anularea actualiz\u0103rii nu v\u0103 va permite s\u0103 accesa\u021Bi jocul.
+        V\u0103 rug\u0103m s\u0103 \xEEncepe\u021Bi actualizarea."
+      - "\u062A\u0645 \u0627\u0643\u062A\u0634\u0627\u0641 \u0645\u062D\u062A\u0648\u0649
+        \u062C\u062F\u064A\u062F \u0644\u0644\u0639\u0628\u0629 \u0648\u064A\u062A\u0637\u0644\u0628
+        \u062A\u062D\u062F\u064A\u062B\u064B\u0627. \u0633\u064A\u0624\u062F\u064A
+        \u0625\u0644\u063A\u0627\u0621 \u0627\u0644\u062A\u062D\u062F\u064A\u062B
+        \u0625\u0644\u0649 \u0645\u0646\u0639\u0643 \u0645\u0646 \u062F\u062E\u0648\u0644
+        \u0627\u0644\u0644\u0639\u0628\u0629. \u064A\u0631\u062C\u0649 \u0628\u062F\u0621
+        \u0627\u0644\u062A\u062D\u062F\u064A\u062B."
+      - "\u0110\xE3 ph\xE1t hi\u1EC7n n\u1ED9i dung tr\xF2 ch\u01A1i m\u1EDBi v\xE0
+        y\xEAu c\u1EA7u c\u1EADp nh\u1EADt. H\u1EE7y c\u1EADp nh\u1EADt s\u1EBD khi\u1EBFn
+        b\u1EA1n kh\xF4ng th\u1EC3 v\xE0o tr\xF2 ch\u01A1i. Vui l\xF2ng b\u1EAFt
+        \u0111\u1EA7u c\u1EADp nh\u1EADt."
+      - "\u0412\u0438\u044F\u0432\u043B\u0435\u043D\u043E \u043D\u043E\u0432\u0438\u0439
+        \u0456\u0433\u0440\u043E\u0432\u0438\u0439 \u043A\u043E\u043D\u0442\u0435\u043D\u0442,
+        \u044F\u043A\u0438\u0439 \u043F\u043E\u0442\u0440\u0435\u0431\u0443\u0454
+        \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F. \u0421\u043A\u0430\u0441\u0443\u0432\u0430\u043D\u043D\u044F
+        \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F \u043D\u0435 \u0434\u043E\u0437\u0432\u043E\u043B\u0438\u0442\u044C
+        \u0432\u0430\u043C \u0443\u0432\u0456\u0439\u0442\u0438 \u0432 \u0433\u0440\u0443.
+        \u0411\u0443\u0434\u044C \u043B\u0430\u0441\u043A\u0430, \u0440\u043E\u0437\u043F\u043E\u0447\u043D\u0456\u0442\u044C
+        \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_Had_Update
+      TermType: 0
+      Description: 
+      Languages:
+      - A version update has been detected...
+      - "\u68C0\u6D4B\u5230\u6709\u7248\u672C\u66F4\u65B0..."
+      - "\u5075\u6E2C\u5230\u6709\u7248\u672C\u66F4\u65B0..."
+      - "\uBC84\uC804 \uC5C5\uB370\uC774\uD2B8\uAC00 \uAC10\uC9C0\uB418\uC5C8\uC2B5\uB2C8\uB2E4..."
+      - "\u30D0\u30FC\u30B8\u30E7\u30F3\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u304C\u691C\u51FA\u3055\u308C\u307E\u3057\u305F..."
+      - "Une mise \xE0 jour de version a \xE9t\xE9 d\xE9tect\xE9e..."
+      - Es wurde ein Versionsupdate erkannt...
+      - "\u041E\u0431\u043D\u0430\u0440\u0443\u0436\u0435\u043D\u043E \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435
+        \u0432\u0435\u0440\u0441\u0438\u0438..."
+      - "Se ha detectado una actualizaci\xF3n de versi\xF3n..."
+      - "Uma atualiza\xE7\xE3o de vers\xE3o foi detectada..."
+      - "\xC8 stato rilevato un aggiornamento di versione..."
+      - Er is een versie-update gedetecteerd...
+      - "S\xFCr\xFCm g\xFCncellemesi tespit edildi..."
+      - Pembaruan versi telah terdeteksi...
+      - "Wykryto aktualizacj\u0119 wersji..."
+      - "\u0E15\u0E23\u0E27\u0E08\u0E1E\u0E1A\u0E01\u0E32\u0E23\u0E2D\u0E31\u0E1B\u0E40\u0E14\u0E15\u0E40\u0E27\u0E2D\u0E23\u0E4C\u0E0A\u0E31\u0E19..."
+      - "A fost detectat\u0103 o actualizare a versiunii..."
+      - "\u062A\u0645 \u0627\u0643\u062A\u0634\u0627\u0641 \u062A\u062D\u062F\u064A\u062B
+        \u0644\u0644\u0625\u0635\u062F\u0627\u0631..."
+      - "\u0110\xE3 ph\xE1t hi\u1EC7n b\u1EA3n c\u1EADp nh\u1EADt phi\xEAn b\u1EA3n..."
+      - "\u0412\u0438\u044F\u0432\u043B\u0435\u043D\u043E \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F
+        \u0432\u0435\u0440\u0441\u0456\u0457..."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_RequestVersionIng
+      TermType: 0
+      Description: 
+      Languages:
+      - Requesting version information from the server...
+      - "\u6B63\u5728\u5411\u670D\u52A1\u5668\u8BF7\u6C42\u7248\u672C\u4FE1\u606F\u4E2D..."
+      - "\u6B63\u5728\u5411\u4F3A\u670D\u5668\u8ACB\u6C42\u7248\u672C\u8CC7\u8A0A..."
+      - "\uC11C\uBC84\uC5D0\uC11C \uBC84\uC804 \uC815\uBCF4\uB97C \uC694\uCCAD\uD558\uB294
+        \uC911..."
+      - "\u30B5\u30FC\u30D0\u30FC\u304B\u3089\u30D0\u30FC\u30B8\u30E7\u30F3\u60C5\u5831\u3092\u8981\u6C42\u3057\u3066\u3044\u307E\u3059..."
+      - "Demande d'informations de version aupr\xE8s du serveur..."
+      - Versionsinformationen werden vom Server angefordert...
+      - "\u0417\u0430\u043F\u0440\u043E\u0441 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0438
+        \u043E \u0432\u0435\u0440\u0441\u0438\u0438 \u0441 \u0441\u0435\u0440\u0432\u0435\u0440\u0430..."
+      - "Solicitando informaci\xF3n de versi\xF3n al servidor..."
+      - "Solicitando informa\xE7\xF5es de vers\xE3o do servidor..."
+      - Richiesta di informazioni sulla versione al server...
+      - Versie-informatie opvragen bij de server...
+      - "Sunucudan s\xFCr\xFCm bilgisi isteniyor..."
+      - Meminta informasi versi dari server...
+      - "\u017B\u0105danie informacji o wersji z serwera..."
+      - "\u0E01\u0E33\u0E25\u0E31\u0E07\u0E02\u0E2D\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E40\u0E27\u0E2D\u0E23\u0E4C\u0E0A\u0E31\u0E19\u0E08\u0E32\u0E01\u0E40\u0E0B\u0E34\u0E23\u0E4C\u0E1F\u0E40\u0E27\u0E2D\u0E23\u0E4C..."
+      - "Se solicit\u0103 informa\u021Bii despre versiune de la server..."
+      - "\u062C\u0627\u0631\u064D \u0637\u0644\u0628 \u0645\u0639\u0644\u0648\u0645\u0627\u062A
+        \u0627\u0644\u0625\u0635\u062F\u0627\u0631 \u0645\u0646 \u0627\u0644\u062E\u0627\u062F\u0645..."
+      - "\u0110ang y\xEAu c\u1EA7u th\xF4ng tin phi\xEAn b\u1EA3n t\u1EEB m\xE1y
+        ch\u1EE7..."
+      - "\u0417\u0430\u043F\u0438\u0442 \u0456\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0456\u0457
+        \u043F\u0440\u043E \u0432\u0435\u0440\u0441\u0456\u044E \u0437 \u0441\u0435\u0440\u0432\u0435\u0440\u0430..."
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: LC_LAUNCHER_Label_RequestVersionInfo
+      TermType: 0
+      Description: 
+      Languages:
+      - Requesting version information from the server {0} times.
+      - "\u6B63\u5728\u5411\u670D\u52A1\u5668\u8BF7\u6C42\u7248\u672C\u4FE1\u606F{0}\u6B21"
+      - "\u6B63\u5728\u5411\u4F3A\u670D\u5668\u8ACB\u6C42\u7248\u672C\u8CC7\u8A0A{0}\u6B21"
+      - "\uC11C\uBC84\uC5D0\uC11C \uBC84\uC804 \uC815\uBCF4\uB97C {0}\uBC88 \uC694\uCCAD\uD588\uC2B5\uB2C8\uB2E4."
+      - "\u30B5\u30FC\u30D0\u30FC\u304B\u3089\u30D0\u30FC\u30B8\u30E7\u30F3\u60C5\u5831\u3092{0}\u56DE\u8981\u6C42\u3057\u307E\u3057\u305F\u3002"
+      - Demande d'informations de version au serveur {0} fois.
+      - Versionsinformationen vom Server {0} Mal angefordert.
+      - "\u0417\u0430\u043F\u0440\u043E\u0441 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0438
+        \u043E \u0432\u0435\u0440\u0441\u0438\u0438 \u0441 \u0441\u0435\u0440\u0432\u0435\u0440\u0430
+        {0} \u0440\u0430\u0437."
+      - "Solicitando informaci\xF3n de versi\xF3n al servidor {0} veces."
+      - "Solicitando informa\xE7\xF5es de vers\xE3o do servidor {0} vezes."
+      - Richiesta di informazioni sulla versione al server {0} volte.
+      - Er worden {0} keer versie-informatie opgevraagd bij de server.
+      - "Sunucudan s\xFCr\xFCm bilgisi {0} kez isteniyor."
+      - Meminta informasi versi dari server sebanyak {0} kali.
+      - "\u017B\u0105danie od serwera informacji o wersji {0} razy."
+      - "\u0E01\u0E33\u0E25\u0E31\u0E07\u0E02\u0E2D\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E40\u0E27\u0E2D\u0E23\u0E4C\u0E0A\u0E31\u0E19\u0E08\u0E32\u0E01\u0E40\u0E0B\u0E34\u0E23\u0E4C\u0E1F\u0E40\u0E27\u0E2D\u0E23\u0E4C
+        {0} \u0E04\u0E23\u0E31\u0E49\u0E07"
+      - "Se solicit\u0103 informa\u021Bii despre versiune de la server de {0} ori."
+      - "\u0637\u0644\u0628 \u0645\u0639\u0644\u0648\u0645\u0627\u062A \u0627\u0644\u0625\u0635\u062F\u0627\u0631
+        \u0645\u0646 \u0627\u0644\u062E\u0627\u062F\u0645 {0} \u0645\u0631\u0627\u062A."
+      - "Y\xEAu c\u1EA7u th\xF4ng tin phi\xEAn b\u1EA3n t\u1EEB m\xE1y ch\u1EE7 {0}
+        l\u1EA7n."
+      - "\u0417\u0430\u043F\u0438\u0442 \u0456\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0456\u0457
+        \u043F\u0440\u043E \u0432\u0435\u0440\u0441\u0456\u044E \u0437 \u0441\u0435\u0440\u0432\u0435\u0440\u0430:
+        {0} \u0440\u0430\u0437\u0456\u0432."
       Flags: 0000000000000000000000000000000000000000
       Languages_Touch: []
     CaseInsensitiveTerms: 1
@@ -439,7 +2684,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: ca49134522e59fc4bb1afe170ed77ecf, type: 3}
     - {fileID: 21300000, guid: 85dd03aaa47a044408d08c892bfdf624, type: 3}
     - {fileID: 21300000, guid: 4a9962c5ee1a4ba41a4a19341313e80d, type: 3}
-    Spreadsheet_LocalFileName: AssetBundle/Configs/Common_text2.csv.txt
+    Spreadsheet_LocalFileName: Launcher/Resources/Launcher_text.csv.txt
     Spreadsheet_LocalCSVSeparator: ','
     Spreadsheet_LocalCSVEncoding: utf-8
     Spreadsheet_SpecializationAsRows: 1
