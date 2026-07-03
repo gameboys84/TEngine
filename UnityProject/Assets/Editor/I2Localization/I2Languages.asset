@@ -121,82 +121,30 @@ MonoBehaviour:
       - ui_nation_flag_ukraine
       Flags: 0000000000000000000000000000000000000000
       Languages_Touch: []
-    - Term: Language
+    - Term: LC_LAUNCHER_Connect
       TermType: 0
       Description: 
       Languages:
-      - Language
-      - "\u8BED\u8A00"
-      - "\u8A9E\u8A00"
-      - "\uC5B8\uC5B4"
-      - "\u8A00\u8A9E"
-      - Langue
-      - Sprache
-      - "\u042F\u0437\u044B\u043A"
-      - Idioma
-      - Lingua
-      - Lingua
-      - Taal
-      - Dil
-      - Bahasa
-      - "J\u0119zyk"
-      - "\u0E20\u0E32\u0E29\u0E32"
-      - Limba
-      - "\u0644\u063A\u0629"
-      - "Ng\xF4n ng\u1EEF"
-      - "\u041C\u043E\u0432\u0430"
-      Flags: 0000000000000000000000000000000000000000
-      Languages_Touch: []
-    - Term: PlayerName
-      TermType: 0
-      Description: 
-      Languages:
-      - PlayerName
-      - "\u73A9\u5BB6\u540D\u79F0"
-      - "\u73A9\u5BB6\u540D\u7A31"
-      - "\uD50C\uB808\uC774\uC5B4\u540D"
-      - "\u30D7\u30EC\u30A4\u30E4\u30FC\u540D"
-      - Nom du joueur
-      - Spielername
-      - "\u0418\u043C\u044F \u0438\u0433\u0440\u043E\u043A\u0430"
-      - Nombre del Jugador
-      - Nome do Jogador
-      - Nome del Giocatore
-      - Spelersnaam
-      - "Oyuncu Ad\u0131"
-      - Nama Pemain
-      - "Gracz\u0E0A\u0E37\u0E48\u0E2D\u0E1C\u0E39\u0E49\u0E40\u0E25\u0E48\u0E19"
-      - "Nume juc\u0103tor"
-      - "Nume juc\u0103tor"
-      - "\u0627\u0633\u0645 \u0627\u0644\u0644\u0627\u0639\u0628"
-      - "T\xEAn ng\u01B0\u1EDDi ch\u01A1i"
-      - "\u0406\u043C'\u044F \u0433\u0440\u0430\u0432\u0446\u044F"
-      Flags: 0000000000000000000000000000000000000000
-      Languages_Touch: []
-    - Term: Tips
-      TermType: 0
-      Description: 
-      Languages:
-      - Tips
-      - "\u5C0F\u63D0\u793A"
-      - "\u5C0F\u63D0\u793A"
-      - "\uD78C\uD2B8"
-      - "\u30D2\u30F3\u30C8"
-      - Conseils
-      - Tipps
-      - "\u0421\u043E\u0432\u0435\u0442\u044B"
-      - Consejos
-      - Dicas
-      - Suggerimenti
-      - Tips
-      - "\u0130pu\xE7lar\u0131"
-      - Saran
-      - "Wskaz\xF3wki"
-      - "\u0E40\u0E04\u0E25\u0E47\u0E14\u0E25\u0E31\u0E1A"
-      - Sfaturi
-      - "\u0646\u0635\u0627\u0626\u062D"
-      - "M\u1EB9o"
-      - "\u041F\u043E\u0440\u0430\u0434\u0438"
+      - Connect
+      - "\u8FDE\u63A5"
+      - "\u9023\u63A5"
+      - "\uC5F0\uACB0"
+      - "\u63A5\u7D9A"
+      - Connecter
+      - Verbinden
+      - "\u041F\u043E\u0434\u043A\u043B\u044E\u0447\u0438\u0442\u044C\u0441\u044F"
+      - Conectar
+      - Conectar
+      - Collegare
+      - Verbinden
+      - "Ba\u011Flan"
+      - Hubungkan
+      - "Po\u0142\u0105cz"
+      - "\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D"
+      - Conectare
+      - "\u0627\u062A\u0635\u0644"
+      - "K\u1EBFt n\u1ED1i"
+      - "\u041F\u0456\u0434\u043A\u043B\u044E\u0447\u0438\u0442\u0438"
       Flags: 0000000000000000000000000000000000000000
       Languages_Touch: []
     - Term: LC_LAUNCHER_Input_Account
@@ -278,32 +226,6 @@ MonoBehaviour:
       - "\u0423\u0432\u0456\u0439\u0442\u0438"
       Flags: 0000000000000000000000000000000000000000
       Languages_Touch: []
-    - Term: LC_LAUNCHER_Connect
-      TermType: 0
-      Description: 
-      Languages:
-      - Connect
-      - "\u8FDE\u63A5"
-      - "\u9023\u63A5"
-      - "\uC5F0\uACB0"
-      - "\u63A5\u7D9A"
-      - Connecter
-      - Verbinden
-      - "\u041F\u043E\u0434\u043A\u043B\u044E\u0447\u0438\u0442\u044C\u0441\u044F"
-      - Conectar
-      - Conectar
-      - Collegare
-      - Verbinden
-      - "Ba\u011Flan"
-      - Hubungkan
-      - "Po\u0142\u0105cz"
-      - "\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D"
-      - Conectare
-      - "\u0627\u062A\u0635\u0644"
-      - "K\u1EBFt n\u1ED1i"
-      - "\u041F\u0456\u0434\u043A\u043B\u044E\u0447\u0438\u0442\u0438"
-      Flags: 0000000000000000000000000000000000000000
-      Languages_Touch: []
     - Term: LC_LAUNCHER_SayHi
       TermType: 0
       Description: 
@@ -328,6 +250,84 @@ MonoBehaviour:
       - "\u0645\u0631\u062D\u0628\u0627"
       - "Xin ch\xE0o"
       - "\u041F\u0440\u0438\u0432\u0456\u0442!"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language
+      TermType: 0
+      Description: 
+      Languages:
+      - Language
+      - "\u8BED\u8A00"
+      - "\u8A9E\u8A00"
+      - "\uC5B8\uC5B4"
+      - "\u8A00\u8A9E"
+      - Langue
+      - Sprache
+      - "\u042F\u0437\u044B\u043A"
+      - Idioma
+      - Lingua
+      - Lingua
+      - Taal
+      - Dil
+      - Bahasa
+      - "J\u0119zyk"
+      - "\u0E20\u0E32\u0E29\u0E32"
+      - Limba
+      - "\u0644\u063A\u0629"
+      - "Ng\xF4n ng\u1EEF"
+      - "\u041C\u043E\u0432\u0430"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: PlayerName
+      TermType: 0
+      Description: 
+      Languages:
+      - PlayerName
+      - "\u73A9\u5BB6\u540D\u79F0"
+      - "\u73A9\u5BB6\u540D\u7A31"
+      - "\uD50C\uB808\uC774\uC5B4\u540D"
+      - "\u30D7\u30EC\u30A4\u30E4\u30FC\u540D"
+      - Nom du joueur
+      - Spielername
+      - "\u0418\u043C\u044F \u0438\u0433\u0440\u043E\u043A\u0430"
+      - Nombre del Jugador
+      - Nome do Jogador
+      - Nome del Giocatore
+      - Spelersnaam
+      - "Oyuncu Ad\u0131"
+      - Nama Pemain
+      - "Gracz\u0E0A\u0E37\u0E48\u0E2D\u0E1C\u0E39\u0E49\u0E40\u0E25\u0E48\u0E19"
+      - "Nume juc\u0103tor"
+      - "Nume juc\u0103tor"
+      - "\u0627\u0633\u0645 \u0627\u0644\u0644\u0627\u0639\u0628"
+      - "T\xEAn ng\u01B0\u1EDDi ch\u01A1i"
+      - "\u0406\u043C'\u044F \u0433\u0440\u0430\u0432\u0446\u044F"
+      Flags: 0000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Tips
+      TermType: 0
+      Description: 
+      Languages:
+      - Tips
+      - "\u5C0F\u63D0\u793A"
+      - "\u5C0F\u63D0\u793A"
+      - "\uD78C\uD2B8"
+      - "\u30D2\u30F3\u30C8"
+      - Conseils
+      - Tipps
+      - "\u0421\u043E\u0432\u0435\u0442\u044B"
+      - Consejos
+      - Dicas
+      - Suggerimenti
+      - Tips
+      - "\u0130pu\xE7lar\u0131"
+      - Saran
+      - "Wskaz\xF3wki"
+      - "\u0E40\u0E04\u0E25\u0E47\u0E14\u0E25\u0E31\u0E1A"
+      - Sfaturi
+      - "\u0646\u0635\u0627\u0626\u062D"
+      - "M\u1EB9o"
+      - "\u041F\u043E\u0440\u0430\u0434\u0438"
       Flags: 0000000000000000000000000000000000000000
       Languages_Touch: []
     CaseInsensitiveTerms: 0
@@ -396,9 +396,9 @@ MonoBehaviour:
       Flags: 0
     IgnoreDeviceLanguage: 0
     _AllowUnloadingLanguages: 0
-    Google_WebServiceURL: https://script.google.com/macros/s/AKfycbxKtFMSyShfspoK7qZ1HMBnPICTxQERQeh_eieV2Q--OuZuGPdyqw-R7zsPDU8UAKEH/exec
-    Google_SpreadsheetKey: 
-    Google_SpreadsheetName: 
+    Google_WebServiceURL: https://script.google.com/macros/s/AKfycbxXFB5JSGbPiUGKJjyFg4e_axDgApruE3oR_YRH5jzCfugZ6q_EyORH7qQz4aQBGmeo/exec
+    Google_SpreadsheetKey: 1nEGaYG2UL7V_sgd2Tw8WZULD8JapKdBotJ6WH0XyV7g
+    Google_SpreadsheetName: I2Loc UnityFrameDemo Localization
     Google_LastUpdatedVersion: 
     Google_Password: 1234
     GoogleUpdateFrequency: 3

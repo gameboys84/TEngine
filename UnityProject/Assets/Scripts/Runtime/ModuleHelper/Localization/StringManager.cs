@@ -25,15 +25,19 @@ namespace GameLogic
             GameEvent.RemoveEventListener(EngineEvent.Event_OnLocalizationChanged, OnLocalizationChanged);
         }
         
-        public string GetText(string key)
+        public LocConfig GetTextConfig(string key)
         {
             if (string.IsNullOrEmpty(key))
             {
                 Log.Warning("Key is null or empty");
-                return string.Empty;
+                return null;
             }
+            return tbLocConfig.GetOrDefault(key);
+        }
 
-            var locConfig = tbLocConfig.GetOrDefault(key);
+        public string GetText(string key)
+        {
+            var locConfig = GetTextConfig(key);
             if (locConfig == null)
             {
                 Log.Error($"LocConfig not found for key: {key}");
@@ -41,6 +45,28 @@ namespace GameLogic
             }
 
             return locConfig.Content[(int)locLanguage];
+        }
+        
+        public string GetText(string key, params object[] args)
+        {
+            var locConfig = GetTextConfig(key);
+            if (locConfig == null)
+            {
+                Log.Error($"LocConfig not found for key: {key}");
+                return $"{IDError}{key}";
+            }
+
+            return string.Format(locConfig.Content[(int)locLanguage], args);
+        }
+
+        public static string LocFormat(string value, params object[] args)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                Log.Warning("Value is null or empty");
+                return value;
+            }
+            return string.Format(value, args);
         }
         
         private void OnLocalizationChanged()
