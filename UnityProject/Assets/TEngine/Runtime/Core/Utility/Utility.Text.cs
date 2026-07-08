@@ -18,6 +18,44 @@
                 _textHelper = textHelper;
             }
 
+            #region LocaleFormat
+
+            public static string LocaleFormat<T>(string key, T arg)
+            {
+                var translationFormat = Localization.LocalizationManager.GetTranslation(key, false);
+                var translation = Format(translationFormat, arg);
+                // translation = Localization.LocalizationManager.FixRTL_IfNeeded(translation);
+                return translation;
+            }
+            
+            public static string LocaleFormat<T1, T2>(string key, T1 arg1, T2 arg2)
+            {
+                var translationFormat = Localization.LocalizationManager.GetTranslation(key, false);
+                return Format(translationFormat, arg1, arg2);
+            }
+            
+            public static string LocaleFormat<T1, T2, T3>(string key, T1 arg1, T2 arg2, T3 arg3)
+            {
+                var translationFormat = Localization.LocalizationManager.GetTranslation(key, false);
+                return Format(translationFormat, arg1, arg2, arg3);
+            }
+            
+            public static string LocaleFormat<T1, T2, T3, T4>(string key, T1 arg1, T2 arg2, T3 arg3, T4 arg4)
+            {
+                var translationFormat = Localization.LocalizationManager.GetTranslation(key, false);
+                return Format(translationFormat, arg1, arg2, arg3, arg4);
+            }
+            
+            public static string LocaleFormat<T1, T2, T3, T4, T5>(string key, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5)
+            {
+                var translationFormat = Localization.LocalizationManager.GetTranslation(key, false);
+                return Format(translationFormat, arg1, arg2, arg3, arg4, arg5);
+            }
+
+            #endregion
+
+            #region Format
+
             /// <summary>
             /// 获取格式化字符串。
             /// </summary>
@@ -609,6 +647,8 @@
 
                 return _textHelper.Format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16);
             }
+
+            #endregion
         }
     }
 }

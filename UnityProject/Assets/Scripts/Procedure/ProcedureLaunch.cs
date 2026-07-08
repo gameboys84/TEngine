@@ -44,13 +44,15 @@ namespace Procedure
 
         private void InitLanguageSettings()
         {
-            if (_resourceModule.PlayMode == EPlayMode.EditorSimulateMode && RootModule.Instance.EditorLanguage == Language.Unspecified)
+            ILocalizationModule localizationModule = ModuleSystem.GetModule<ILocalizationModule>();
+            if (_resourceModule.PlayMode == EPlayMode.EditorSimulateMode && RootModule.Instance.EditorLanguage != Language.Unspecified)
             {
                 // 编辑器资源模式直接使用 Inspector 上设置的语言
+                localizationModule.Language = RootModule.Instance.EditorLanguage;
                 return;
             }
 
-            var language = GameModule.Localization.Language;
+            var language = localizationModule.Language;
             if (Utility.PlayerPrefs.HasSetting(Constant.Setting.Language))
             {
                 string languageString = Utility.PlayerPrefs.GetString(Constant.Setting.Language);
@@ -58,14 +60,14 @@ namespace Procedure
             }
 
             var languageName = LocalizationUtility.GetLanguageStr(language);
-            if (!GameModule.Localization.CheckLanguage(languageName))
+            if (!localizationModule.CheckLanguage(languageName))
             {
                 // 没找到对应语言配置就自动转为英文
                 language = Language.English;
                 Utility.PlayerPrefs.SetString(Constant.Setting.Language, languageName);
                 Utility.PlayerPrefs.Save();
             }
-            GameModule.Localization.Language = language;
+            localizationModule.Language = language;
 
             Log.Info("Init language settings complete, current language is '{0}'.", language.ToString());
         }

@@ -67,12 +67,12 @@ namespace Launcher
             return FindChildImp(trans, path);
         }
 
-        public T FindChildComponent<T>(string path) where T : Component
+        public T FindChildComponent<T>(string path)
         {
             return FindChildComponentImp<T>(rectTransform, path);
         }
 
-        public T FindChildComponent<T>(Transform trans, string path) where T : Component
+        public T FindChildComponent<T>(Transform trans, string path)
         {
             return FindChildComponentImp<T>(trans, path);
         }
@@ -83,10 +83,10 @@ namespace Launcher
             return findTrans == null ? null : findTrans;
         }
 
-        private static T FindChildComponentImp<T>(Transform trans, string path) where T : Component
+        private static T FindChildComponentImp<T>(Transform trans, string path)
         {
             var findTrans = trans.Find(path);
-            return findTrans == null ? null : findTrans.gameObject.GetComponent<T>();
+            return findTrans == null ? default : findTrans.gameObject.GetComponent<T>();
         }
 
         #endregion

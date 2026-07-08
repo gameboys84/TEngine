@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 #if ENABLE_HYBRIDCLR
 using HybridCLR;
 #endif

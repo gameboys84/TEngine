@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Threading;
 using Cysharp.Threading.Tasks;
 using Launcher;
 using TEngine;
+using TEngine.Localization;
 using UnityEngine;
-using UnityEngine.Networking;
 using YooAsset;
 using ProcedureOwner = TEngine.IFsm<TEngine.IProcedureModule>;
 using Utility = TEngine.Utility;
@@ -36,7 +35,7 @@ namespace Procedure
 
             Log.Info("创建补丁下载器");
 
-            LauncherMgr.ShowUI<LoadUpdateUI>($"创建补丁下载器...");
+            LauncherMgr.ShowUI<LoadUpdateUI>(ScriptLocalization.LC_LAUNCHER_CreatePatchDownloader);
 
             CreateDownloader().Forget();
         }
@@ -66,7 +65,7 @@ namespace Procedure
                 sizeMb = Mathf.Clamp(sizeMb, 0.1f, float.MaxValue);
                 _totalSizeMb = sizeMb.ToString("f1");
 
-                LauncherMgr.ShowMessageBox($"Found update patch files, Total count {_totalDownloadCount} Total size {_totalSizeMb}MB",
+                LauncherMgr.ShowMessageBox(Utility.Text.Format(ScriptLocalization.LC_LAUNCHER_FoundPatchFiles, _totalDownloadCount, _totalSizeMb),
                     StartDownFile, Application.Quit);
             }
         }

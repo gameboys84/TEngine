@@ -1,7 +1,0 @@
-Key,Type,Desc,English,ChineseSimplified [zh-CN],ChineseTraditional [zh-TW],Korean,Japanese,French,German,Russian,Spanish,Portuguese,Italian,Dutch,Turkish,Indonesian,Polish,Thai,Romanian,Arabic,Vietnamese,Ukrainian
-LOC_CODE_ID,Text,,en,zh,zh-Hant,ko,ja,fr,de,ru,es,pt,it,nl,tr,id,pl,th,ro,ar,vi,uk
-LC_LAUNCHER_Connect,Text,,Connect,连接,連接,연결하다,接続する,connecter,verbinden,соединять,conectar,conectar,collegare,verbinden,bağlamak,menghubungkan,łączyć,เชื่อมต่อ,conectați,يتصل,kết nối,з'єднати
-LC_LAUNCHER_Input_Account,Text,,Enter Account,输入账号,輸入帳號,계정을 입력하세요,アカウントを入力してください,Saisir le compte,Konto eingeben,Введите номер счета,Ingrese su cuenta,Insira a conta,Accedi all'account,Voer account in,Hesap girin,Masukkan akun,Wprowadź konto,ป้อนบัญชี,Introduceți contul,أدخل الحساب,Đăng nhập tài khoản,Введіть обліковий запис
-LC_LAUNCHER_Input_Password,Text,,Enter Password,输入密码,輸入密碼,비밀번호를 입력하세요,パスワードを入力してください,Saisissez le mot de passe,Passwort eingeben,Введите пароль,Introduzca la contraseña,Digite a senha,Inserisci la password,Voer wachtwoord in,Şifrenizi girin,Masukkan kata sandi,Wprowadź hasło,ป้อนรหัสผ่าน,Introduceți parola,أدخل كلمة المرور,Nhập mật khẩu,Введіть пароль
-LC_LAUNCHER_Login,Text,,Login,登录,登入,로그인,ログイン,Se connecter,Einloggen,Авторизоваться,Acceso,Conecte-se,Login,Inloggen,Giriş yapmak,Masuk,Zaloguj się,เข้าสู่ระบบ,Log in,تسجيل الدخول,Đăng nhập,Увійти
-LC_LAUNCHER_SayHi,Text,,Hello!,你好,你好,안녕하세요,こんにちは,Bonjour,Hallo,Привет,Hola,Olá,Ciao,Hallo,Merhaba,Halo,Cześć,สวัสดี,Buna ziua,مرحبًا,Xin chào,Привіт

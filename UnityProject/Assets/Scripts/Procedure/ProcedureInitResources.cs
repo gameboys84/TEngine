@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using Launcher;
 using TEngine;
+using TEngine.Localization;
 using UnityEngine;
 using YooAsset;
 using ProcedureOwner = TEngine.IFsm<TEngine.IProcedureModule>;
@@ -26,7 +27,7 @@ namespace Procedure
 
             _initResourcesComplete = false;
 
-            LauncherMgr.ShowUI<LoadUpdateUI>("初始化资源中...");
+            LauncherMgr.ShowUI<LoadUpdateUI>(ScriptLocalization.LC_LAUNCHER_InitResources);
 
             // 注意：使用单机模式并初始化资源前，需要先构建 AssetBundle 并复制到 StreamingAssets 中，否则会产生 HTTP 404 错误
             Utility.Unity.StartCoroutine(InitResources(procedureOwner));
@@ -74,14 +75,15 @@ namespace Procedure
         private IEnumerator InitResources(ProcedureOwner procedureOwner)
         {
             Log.Info("更新资源清单！！！");
-            LauncherMgr.ShowUI<LoadUpdateUI>($"更新清单文件...");
+            LauncherMgr.ShowUI<LoadUpdateUI>(ScriptLocalization.LC_LAUNCHER_UpdateManifest);
 
             // 1. 获取资源清单的版本信息
             var operation1 = _resourceModule.RequestPackageVersionAsync();
             yield return operation1;
             if (operation1.Status != EOperationStatus.Succeed)
             {
-                OnInitResourcesError(procedureOwner, operation1.Error);
+                Log.Error($"获取资源清单版本失败！ {operation1.Error}");
+                OnInitResourcesError(procedureOwner, "");
                 yield break;
             }
 
@@ -100,7 +102,8 @@ namespace Procedure
             yield return operation2;
             if (operation2.Status != EOperationStatus.Succeed)
             {
-                OnInitResourcesError(procedureOwner, operation2.Error);
+                Log.Error($"更新资源清单失败！ {operation2.Error}");
+                OnInitResourcesError(procedureOwner, "");
                 yield break;
             }
 
@@ -124,16 +127,18 @@ namespace Procedure
                 else
                 {
                     Log.Error(message);
-                    LauncherMgr.ShowMessageBox($"获取远程版本失败！点击确认重试\n <color=#FF0000>{message}</color>"
-                    , () => { Utility.Unity.StartCoroutine(InitResources(procedureOwner)); }
-                    ,Application.Quit);
+                    LauncherMgr.ShowMessageBox(
+                        Utility.Text.LocaleFormat(ScriptTerms.LC_LAUNCHER_GetRemoteVersionFailed, message),
+                        () => { Utility.Unity.StartCoroutine(InitResources(procedureOwner)); },
+                        Application.Quit);
                     return;
                 }
             }
 
             Log.Error(message);
-            LauncherMgr.ShowMessageBox($"初始化资源失败！点击确认重试 \n <color=#FF0000>{message}</color>"
-                ,() => { Utility.Unity.StartCoroutine(InitResources(procedureOwner)); }, Application.Quit);
+            LauncherMgr.ShowMessageBox(
+                Utility.Text.Format(ScriptLocalization.LC_LAUNCHER_InitResourcesFailedRetryWithReason, message),
+                () => { Utility.Unity.StartCoroutine(InitResources(procedureOwner)); }, Application.Quit);
         }
 
         private bool IsNeedUpdate()
@@ -145,8 +150,8 @@ namespace Procedure
                 string packageVersion = Utility.PlayerPrefs.GetString("GAME_VERSION", string.Empty);
                 if (string.IsNullOrEmpty(packageVersion))
                 {
-                    LauncherMgr.ShowUI<LoadUpdateUI>(LoadText.Instance.Label_Net_UnReachable);
-                    LauncherMgr.ShowMessageBox("没有找到本地版本记录，需要更新资源！",
+                    LauncherMgr.ShowUI<LoadUpdateUI>(ScriptLocalization.LC_LAUNCHER_Net_UnReachable);
+                    LauncherMgr.ShowMessageBox(ScriptLocalization.LC_LAUNCHER_NoLocalVersion,
                         () => { Utility.Unity.StartCoroutine(InitResources(_procedureOwner)); },
                         Application.Quit);
                     return false;
@@ -156,8 +161,9 @@ namespace Procedure
 
                 if (Settings.UpdateSetting.UpdateNotice == UpdateNotice.Notice)
                 {
-                    LauncherMgr.ShowUI<LoadUpdateUI>(LoadText.Instance.Label_Load_Notice);
-                    LauncherMgr.ShowMessageBox($"更新失败，检测到可选资源更新，推荐完成更新提升游戏体验！ \\n \\n 确定再试一次，取消进入游戏",
+                    LauncherMgr.ShowUI<LoadUpdateUI>(ScriptLocalization.LC_LAUNCHER_Load_Notice);
+                    LauncherMgr.ShowMessageBox(
+                        ScriptLocalization.LC_LAUNCHER_UpdateFailedOptional,
                         () => { Utility.Unity.StartCoroutine(InitResources(_procedureOwner)); },
                         () => { ChangeState<ProcedurePreload>(_procedureOwner); });
                 }

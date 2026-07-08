@@ -2,7 +2,8 @@
     "name": "Launcher",
     "rootNamespace": "Launcher",
     "references": [
-        "GUID:13ba8ce62aa80c74598530029cb2d649"
+        "GUID:13ba8ce62aa80c74598530029cb2d649",
+        "GUID:1fbc052e3ea2ff24b8874f1cedb59b6c"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

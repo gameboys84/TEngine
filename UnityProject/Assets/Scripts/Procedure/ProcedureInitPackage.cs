@@ -2,6 +2,7 @@
 using Cysharp.Threading.Tasks;
 using Launcher;
 using TEngine;
+using TEngine.Localization;
 using UnityEngine;
 using YooAsset;
 using ProcedureOwner = TEngine.IFsm<TEngine.IProcedureModule>;
@@ -36,9 +37,6 @@ namespace Procedure
 
                 if (initializationOperation.Status == EOperationStatus.Succeed)
                 {
-                    //热更新阶段文本初始化
-                    LoadText.Instance.InitConfigData(null);
-
                     EPlayMode playMode = _resourceModule.PlayMode;
 
                     // 编辑器模式。
@@ -76,10 +74,9 @@ namespace Procedure
                     Log.Error($"{initializationOperation.Error}");
 
                     // 打开启动UI。
-                    LauncherMgr.ShowUI<LoadUpdateUI>($"资源初始化失败！");
+                    LauncherMgr.ShowUI<LoadUpdateUI>(ScriptLocalization.LC_LAUNCHER_InitResourcesFailed);
 
-                    LauncherMgr.ShowMessageBox(
-                        $"资源初始化失败！点击确认重试 \n \n <color=#FF0000>原因{initializationOperation.Error}</color>",
+                    LauncherMgr.ShowMessageBox(Utility.Text.Format(ScriptLocalization.LC_LAUNCHER_InitResourcesFailedRetryWithReason, initializationOperation.Error),
                         () => { Retry(procedureOwner); }, UnityEngine.Application.Quit);
                 }
             }
@@ -97,14 +94,15 @@ namespace Procedure
             Log.Error($"{message}");
 
             // 打开启动UI。
-            LauncherMgr.ShowUI<LoadUpdateUI>($"资源初始化失败！");
+            LauncherMgr.ShowUI<LoadUpdateUI>(ScriptLocalization.LC_LAUNCHER_InitResourcesFailed);
 
             if (message.Contains("PackageManifest_DefaultPackage.version Error : HTTP/1.1 404 Not Found"))
             {
-                message = "请检查StreamingAssets/package/DefaultPackage/PackageManifest_DefaultPackage.version是否存在";
+                message = Utility.Text.Format(ScriptLocalization.LC_LAUNCHER_CheckFileExists, "StreamingAssets/package/DefaultPackage/PackageManifest_DefaultPackage.version");
             }
 
-            LauncherMgr.ShowMessageBox($"资源初始化失败！点击确认重试 \n \n <color=#FF0000>原因{message}</color>",
+            LauncherMgr.ShowMessageBox(
+                Utility.Text.Format(ScriptLocalization.LC_LAUNCHER_InitResourcesFailedRetryWithReason, message),
                 () => { Retry(procedureOwner); },
                 Application.Quit);
         }
@@ -112,7 +110,7 @@ namespace Procedure
         private void Retry(ProcedureOwner procedureOwner)
         {
             // 打开启动UI。
-            LauncherMgr.ShowUI<LoadUpdateUI>($"重新初始化资源中...");
+            LauncherMgr.ShowUI<LoadUpdateUI>( ScriptLocalization.LC_LAUNCHER_ReinitResources);
 
             InitPackage(procedureOwner).Forget();
         }

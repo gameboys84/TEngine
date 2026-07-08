@@ -9,18 +9,16 @@
     {
         [Header("目录设置")]
         [Tooltip("生成的图集输出目录")]
-        public string outputAtlasDir = "Assets/AssetArt/Atlas";
+        public string outputAtlasDir = "Assets/AssetBundle/Texture/SpriteImage/AtlasSprite";
 
         [Tooltip("需要生成图集的UI根目录")]
-        // public string sourceAtlasRoot = "Assets/AssetBundle/UIRaw/Atlas";
-        public string[] sourceAtlasRootDir = new string[] { "Assets/AssetBundle/Texture/SpriteImage/Atlas" };
+        public string[] sourceAtlasRootDir = new string[] { "Assets/AssetBundle/Texture/AtlasSource" };
         [Tooltip("以当前目录的子级生成子级图集")]
         public string[] rootChildAtlasDir = new string[] {  };
         [Tooltip("每张图都单独生成图集")]
-        public string[] singleAtlasDir = new string[] { "Assets/AssetBundle/UIRaw/Atlas/Background" };
+        public string[] singleAtlasDir = new string[] { "Assets/AssetBundle/Texture/Background" };
         [Tooltip("不需要生成图集的UI目录")]
-        // public string excludeFolder = "Assets/AssetBundle/UIRaw/Raw";
-        public string[] excludeFolder = new string[] { "Assets/AssetBundle/Texture/SpriteImage/Raw" };
+        public string[] excludeFolder = new string[] { "Assets/AssetBundle/Texture/SpriteImage/RawSprite" };
 
         [Header("平台格式设置")]
         public TextureImporterFormat androidFormat = TextureImporterFormat.ASTC_6x6;

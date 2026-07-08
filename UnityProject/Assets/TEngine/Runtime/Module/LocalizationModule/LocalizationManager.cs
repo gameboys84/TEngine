@@ -307,21 +307,5 @@ namespace TEngine
             Log.Error($"Localization could not load {path}  assetsType :{typeof(T).Name}.");
             return null;
         }
-        
-        /// <summary>
-        /// 可以使用预定义的 文本KEY, 或者从多语言导出的 Common_test.csv 中获取
-        /// </summary>
-        /// <param name="key"></param>
-        /// <returns></returns>
-        public string GetText(string key)
-        {
-            if (string.IsNullOrEmpty(key))
-            {
-                Debug.Log("Key is null or empty");
-                return string.Empty;
-            }
-
-            return key;
-        }
     }
 }

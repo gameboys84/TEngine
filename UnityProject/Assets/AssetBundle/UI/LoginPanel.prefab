@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: English
+  m_text: "Fran\xE7ais"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 12e928faf040ca34abb831e2319e4259, type: 2}
   m_sharedMaterial: {fileID: 7535359772088352606, guid: 12e928faf040ca34abb831e2319e4259, type: 2}
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTerm: CurrentLanguage
+  mTerm: LC_LAUNCHER_CurrentLanguage
   mTermSecondary: 
   PrimaryTermModifier: 0
   SecondaryTermModifier: 0
@@ -495,7 +495,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Connect
+  m_Text: connecter
 --- !u!114 &6312003495610207698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -603,7 +603,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3b68a72ede288c6468c9009f7715c48d, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -669,7 +669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTerm: Flag
+  mTerm: LC_LAUNCHER_Flag
   mTermSecondary: 
   PrimaryTermModifier: 0
   SecondaryTermModifier: 0
@@ -683,13 +683,7 @@ MonoBehaviour:
   AddSpacesToJoinedLanguages: 0
   AllowLocalizedParameters: 1
   AllowParameters: 1
-  TranslatedObjects:
-  - {fileID: 21300000, guid: 3b68a72ede288c6468c9009f7715c48d, type: 3}
-  - {fileID: 21300000, guid: ccf93692647925a4986601de239bf3cd, type: 3}
-  - {fileID: 21300000, guid: a5517d6d2dfce604585c5496cf9dd680, type: 3}
-  - {fileID: 21300000, guid: ca49134522e59fc4bb1afe170ed77ecf, type: 3}
-  - {fileID: 21300000, guid: 85dd03aaa47a044408d08c892bfdf624, type: 3}
-  - {fileID: 21300000, guid: 4a9962c5ee1a4ba41a4a19341313e80d, type: 3}
+  TranslatedObjects: []
   LocalizeEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -781,7 +775,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hello!
+  m_Text: Bonjour
 --- !u!114 &6327602240500708916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -900,7 +894,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter Password
+  m_Text: Saisissez le mot de passe
 --- !u!114 &7500321160953110552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1590,7 +1584,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter Account
+  m_Text: Saisir le compte
 --- !u!114 &4849379619700233743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1859,7 +1853,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Login
+  m_Text: Se connecter
 --- !u!114 &2571750623765556166
 MonoBehaviour:
   m_ObjectHideFlags: 0

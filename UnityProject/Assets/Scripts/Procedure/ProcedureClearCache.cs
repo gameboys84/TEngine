@@ -1,5 +1,6 @@
 ﻿using Launcher;
 using TEngine;
+using TEngine.Localization;
 using ProcedureOwner = TEngine.IFsm<TEngine.IProcedureModule>;
 
 namespace Procedure
@@ -18,7 +19,7 @@ namespace Procedure
             _procedureOwner = procedureOwner;
             Log.Info("清理未使用的缓存文件！");
 
-            LauncherMgr.ShowUI<LoadUpdateUI>($"清理未使用的缓存文件...");
+            LauncherMgr.ShowUI<LoadUpdateUI>(ScriptLocalization.LC_LAUNCHER_CleanCache);
 
             var operation = _resourceModule.ClearCacheFilesAsync();
             operation.Completed += Operation_Completed;
@@ -27,7 +28,7 @@ namespace Procedure
 
         private void Operation_Completed(YooAsset.AsyncOperationBase obj)
         {
-            LauncherMgr.ShowUI<LoadUpdateUI>($"清理完成 即将进入游戏...");
+            LauncherMgr.ShowUI<LoadUpdateUI>(ScriptLocalization.LC_LAUNCHER_CleanComplete);
 
             ChangeState<ProcedurePreload>(_procedureOwner);
         }

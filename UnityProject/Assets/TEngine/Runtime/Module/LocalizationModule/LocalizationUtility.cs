@@ -219,5 +219,24 @@ namespace TEngine
             ret = "English";
             return ret;
         }
+
+
+        /// <summary>
+        /// 可以使用预定义的 KEY, 从I2Localization导出的多语言表 Launcher_test.csv.txt 中获取
+        /// </summary>
+        /// <param name="key">LC_LAUCNHER_开头， 或者基于 ScriptTerms 中导出的key, 也可以直接通过ScriptLocalization获取对应多语言的内容</param>
+        /// <param name="isFixForRTL">是否需要针对RTL修正，默认保持true即可，除非只想取翻译的原文，如果是RTL的语言结果会反序</param>
+        /// <returns></returns>
+        public static string GetText(string key, bool isFixForRTL = true)
+        {
+            if (string.IsNullOrEmpty(key))
+            {
+                Debug.Log("Key is null or empty");
+                return string.Empty;
+            }
+
+            var rawText = Localization.LocalizationManager.GetTranslation(key, isFixForRTL);
+            return rawText;
+        }
     }
 }

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿using RTLTMPro;
 using UnityEngine.UI;
 
 namespace Launcher
@@ -12,17 +12,17 @@ namespace Launcher
 
         private Image m_imgBg;
         private Scrollbar m_scrollBarProgress;
-        private Text m_textUpdateDesc;
-        private Text m_textVersion;
-        private Text m_textLabelAppid;
+        private RTLTextMeshPro m_textUpdateDesc;
+        private RTLTextMeshPro m_textVersion;
+        private RTLTextMeshPro m_textLabelAppid;
 
         protected override void ScriptGenerator()
         {
             m_imgBg = FindChildComponent<Image>("m_imgBg");
             m_scrollBarProgress = FindChildComponent<Scrollbar>("m_scrollBarProgress");
-            m_textUpdateDesc = FindChildComponent<Text>("m_scrollBarProgress/m_textUpdateDesc");
-            m_textVersion = FindChildComponent<Text>("m_textVersion");
-            m_textLabelAppid = FindChildComponent<Text>("m_textLabelAppid");
+            m_textUpdateDesc = FindChildComponent<RTLTextMeshPro>("m_scrollBarProgress/m_textUpdateDesc");
+            m_textVersion = FindChildComponent<RTLTextMeshPro>("m_textVersion");
+            m_textLabelAppid = FindChildComponent<RTLTextMeshPro>("m_textLabelAppid");
         }
 
         #endregion

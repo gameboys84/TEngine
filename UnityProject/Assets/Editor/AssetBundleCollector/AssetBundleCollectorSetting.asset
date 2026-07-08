@@ -90,7 +90,7 @@ MonoBehaviour:
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
-    - GroupName: UI
+    - GroupName: UIPrefab
       GroupDesc: 
       AssetTags: 
       ActiveRuleName: EnableGroup
@@ -103,7 +103,7 @@ MonoBehaviour:
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
-    - GroupName: UIRaw
+    - GroupName: TextureRaw
       GroupDesc: 
       AssetTags: 
       ActiveRuleName: EnableGroup
@@ -116,8 +116,21 @@ MonoBehaviour:
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
-      - CollectPath: Assets/AssetBundle/Texture/SpriteImage
-        CollectorGUID: d478c5580d37fcd4891d1eac9b7c769f
+    - GroupName: TextureSprite
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/AssetBundle/Texture/SpriteImage/AtlasSprite
+        CollectorGUID: e352026409f398a4697c2299be839a7a
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/AssetBundle/Texture/SpriteImage/RawSprite
+        CollectorGUID: 7e44a1b0384a3e9448d2b77f79bf58f0
         CollectorType: 0
         AddressRuleName: AddressByFileName
         PackRuleName: PackDirectory

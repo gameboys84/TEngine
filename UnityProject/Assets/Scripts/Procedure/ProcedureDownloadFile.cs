@@ -2,6 +2,7 @@
 using Cysharp.Threading.Tasks;
 using Launcher;
 using TEngine;
+using TEngine.Localization;
 using UnityEngine;
 using YooAsset;
 using ProcedureOwner = TEngine.IFsm<TEngine.IProcedureModule>;
@@ -41,7 +42,7 @@ namespace Procedure
 
             Log.Info("开始下载更新文件！");
 
-            LauncherMgr.ShowUI<LoadUpdateUI>("开始下载更新文件...");
+            LauncherMgr.ShowUI<LoadUpdateUI>(ScriptLocalization.LC_LAUNCHER_StartDownload);
 
             BeginDownload().Forget();
         }
@@ -65,7 +66,7 @@ namespace Procedure
 
         private void OnDownloadErrorCallback(DownloadErrorData downloadErrorData)
         {
-            LauncherMgr.ShowMessageBox($"Failed to download file : {downloadErrorData.FileName}",
+            LauncherMgr.ShowMessageBox(Utility.Text.Format(ScriptLocalization.LC_LAUNCHER_DownloadFileFailed, downloadErrorData.FileName),
                 () => { ChangeState<ProcedureCreateDownloader>(_procedureOwner); }, UnityEngine.Application.Quit);
         }
 
@@ -76,15 +77,14 @@ namespace Procedure
             float progressPercentage = _resourceModule.Downloader.Progress * 100;
             string speed = Utility.FileUtils.GetLengthString((int)CurrentSpeed);
 
-            string line1 = Utility.Text.Format("正在更新，已更新 {0}/{1} ({2:F2}%)", downloadUpdateData.CurrentDownloadCount,
-                downloadUpdateData.TotalDownloadCount, progressPercentage);
-            string line2 = Utility.Text.Format("已更新大小 {0}MB/{1}MB", currentSizeMb, totalSizeMb);
-            string line3 = Utility.Text.Format("当前网速 {0}/s，剩余时间 {1}", speed,
-                GetRemainingTime(downloadUpdateData.TotalDownloadBytes, downloadUpdateData.CurrentDownloadBytes,
-                    CurrentSpeed));
+            string line1 = Utility.Text.Format(ScriptLocalization.LC_LAUNCHER_UpdatingProgress,
+                downloadUpdateData.CurrentDownloadCount, downloadUpdateData.TotalDownloadCount, progressPercentage);
+            string line2 = Utility.Text.Format(ScriptLocalization.LC_LAUNCHER_UpdatedSize, currentSizeMb, totalSizeMb);
+            string line3 = Utility.Text.Format(ScriptLocalization.LC_LAUNCHER_CurrentSpeed, speed,
+                GetRemainingTime(downloadUpdateData.TotalDownloadBytes, downloadUpdateData.CurrentDownloadBytes, CurrentSpeed));
 
             LauncherMgr.RefreshProgress(_resourceModule.Downloader.Progress);
-            LauncherMgr.ShowUI<LoadUpdateUI>($"{line1}\n{line2}\n{line3}");
+            LauncherMgr.ShowUI<LoadUpdateUI>(Utility.Text.Format(ScriptLocalization.LC_LAUNCHER_DownloadFileDetail, line1, line2, line3));
 
             Log.Info($"{line1} {line2} {line3}");
         }

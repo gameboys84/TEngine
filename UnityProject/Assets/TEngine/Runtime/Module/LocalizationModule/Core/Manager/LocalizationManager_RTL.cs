@@ -8,6 +8,8 @@ namespace TEngine.Localization
         static string[] LanguagesRTL = {"ar-DZ", "ar","ar-BH","ar-EG","ar-IQ","ar-JO","ar-KW","ar-LB","ar-LY","ar-MA","ar-OM","ar-QA","ar-SA","ar-SY","ar-TN","ar-AE","ar-YE",
                                         "fa", "he","ur","ji"};
 
+        // 对于RTL语言的支持， I2Localization 做的只能算一般， 不混合使用时还行
+        // 混合使用时， 要求不高可以使用 RTLTMPro 插件， 如果只是显示建议使用 UniText 插件，目前发现支持RTL最好的插件
         public static string ApplyRTLfix(string line) { return ApplyRTLfix(line, 0, true); }
         public static string ApplyRTLfix(string line, int maxCharacters, bool ignoreNumbers)
         {

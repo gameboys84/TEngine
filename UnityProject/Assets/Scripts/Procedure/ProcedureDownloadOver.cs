@@ -1,6 +1,6 @@
 ﻿using Launcher;
 using TEngine;
-using UnityEngine;
+using TEngine.Localization;
 using ProcedureOwner = TEngine.IFsm<TEngine.IProcedureModule>;
 
 namespace Procedure
@@ -15,7 +15,7 @@ namespace Procedure
         {
             Log.Info("下载完成!!!");
 
-            LauncherMgr.ShowUI<LoadUpdateUI>($"下载完成...");
+            LauncherMgr.ShowUI<LoadUpdateUI>(ScriptLocalization.LC_LAUNCHER_DownloadComplete);
 
             // 下载完成之后再保存本地版本。
             Utility.PlayerPrefs.SetString("GAME_VERSION", _resourceModule.PackageVersion);
