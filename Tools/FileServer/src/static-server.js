@@ -107,7 +107,10 @@ class StaticServer {
      */
     responseFile(stat, pathName, req, res) {
         // 设置响应头
-        res.setHeader('Content-Type', `${mime.lookup(pathName)}; charset=${this.charset}`);
+        const contentType = mime.lookup(pathName);
+        const contentEncoding = mime.encoding(pathName);
+        res.setHeader('Content-Type', mime.shouldAppendCharset(contentType) ? `${contentType}; charset=${this.charset}` : contentType);
+        if (contentEncoding) res.setHeader('Content-Encoding', contentEncoding);
         res.setHeader('Accept-Ranges', 'bytes');
 
         // 添加跨域
