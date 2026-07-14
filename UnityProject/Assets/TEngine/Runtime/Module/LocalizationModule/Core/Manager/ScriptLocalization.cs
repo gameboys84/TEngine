@@ -8,6 +8,8 @@ namespace TEngine.Localization
 		public static string LC_AppName 		{ get{ return LocalizationManager.GetTranslation ("LC_AppName"); } }
 		public static string LC_CODE_ID 		{ get{ return LocalizationManager.GetTranslation ("LC_CODE_ID"); } }
 		public static string LC_LAUNCHER_App_id 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_App_id"); } }
+		public static string LC_LAUNCHER_Btn_Cancel 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_Btn_Cancel"); } }
+		public static string LC_LAUNCHER_Btn_OK 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_Btn_OK"); } }
 		public static string LC_LAUNCHER_Btn_Update 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_Btn_Update"); } }
 		public static string LC_LAUNCHER_CheckFileExists 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_CheckFileExists"); } }
 		public static string LC_LAUNCHER_CleanCache 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_CleanCache"); } }
@@ -20,6 +22,7 @@ namespace TEngine.Localization
 		public static string LC_LAUNCHER_CurrentLanguage 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_CurrentLanguage"); } }
 		public static string LC_LAUNCHER_CurrentSpeed 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_CurrentSpeed"); } }
 		public static string LC_LAUNCHER_Data_Empty 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_Data_Empty"); } }
+		public static string LC_LAUNCHER_Disconnect 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_Disconnect"); } }
 		public static string LC_LAUNCHER_Dlc_AssetsLoading 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_Dlc_AssetsLoading"); } }
 		public static string LC_LAUNCHER_Dlc_ConfigLoadingStage 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_Dlc_ConfigLoadingStage"); } }
 		public static string LC_LAUNCHER_Dlc_ConfigVerificateStage 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_Dlc_ConfigVerificateStage"); } }
@@ -28,6 +31,7 @@ namespace TEngine.Localization
 		public static string LC_LAUNCHER_Dlc_LoadingFinish 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_Dlc_LoadingFinish"); } }
 		public static string LC_LAUNCHER_DownLoadFailed 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_DownLoadFailed"); } }
 		public static string LC_LAUNCHER_DownloadComplete 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_DownloadComplete"); } }
+		public static string LC_LAUNCHER_DownloadFileDetail 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_DownloadFileDetail"); } }
 		public static string LC_LAUNCHER_DownloadFileFailed 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_DownloadFileFailed"); } }
 		public static string LC_LAUNCHER_FirstPackageNotFound 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_FirstPackageNotFound"); } }
 		public static string LC_LAUNCHER_Flag 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_Flag"); } }
@@ -85,14 +89,12 @@ namespace TEngine.Localization
 		public static string LC_LAUNCHER_RestartApp 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_RestartApp"); } }
 		public static string LC_LAUNCHER_SayHi 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_SayHi"); } }
 		public static string LC_LAUNCHER_StartDownload 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_StartDownload"); } }
-		public static string LC_LAUNCHER_Tips 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_Tips"); } }
+		public static string LC_LAUNCHER_Title_Error 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_Title_Error"); } }
+		public static string LC_LAUNCHER_Title_Tips 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_Title_Tips"); } }
 		public static string LC_LAUNCHER_UpdateFailedOptional 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_UpdateFailedOptional"); } }
 		public static string LC_LAUNCHER_UpdateManifest 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_UpdateManifest"); } }
 		public static string LC_LAUNCHER_UpdatedSize 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_UpdatedSize"); } }
 		public static string LC_LAUNCHER_UpdatingProgress 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_UpdatingProgress"); } }
-		public static string LC_LAUNCHER_DownloadFileDetail 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_DownloadFileDetail"); } }
-		public static string LC_LAUNCHER_Btn_OK 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_Btn_OK"); } }
-		public static string LC_LAUNCHER_Btn_Cancel 		{ get{ return LocalizationManager.GetTranslation ("LC_LAUNCHER_Btn_Cancel"); } }
 	}
 
     public static class ScriptTerms
@@ -101,6 +103,8 @@ namespace TEngine.Localization
 		public const string LC_AppName = "LC_AppName";
 		public const string LC_CODE_ID = "LC_CODE_ID";
 		public const string LC_LAUNCHER_App_id = "LC_LAUNCHER_App_id";
+		public const string LC_LAUNCHER_Btn_Cancel = "LC_LAUNCHER_Btn_Cancel";
+		public const string LC_LAUNCHER_Btn_OK = "LC_LAUNCHER_Btn_OK";
 		public const string LC_LAUNCHER_Btn_Update = "LC_LAUNCHER_Btn_Update";
 		public const string LC_LAUNCHER_CheckFileExists = "LC_LAUNCHER_CheckFileExists";
 		public const string LC_LAUNCHER_CleanCache = "LC_LAUNCHER_CleanCache";
@@ -113,6 +117,7 @@ namespace TEngine.Localization
 		public const string LC_LAUNCHER_CurrentLanguage = "LC_LAUNCHER_CurrentLanguage";
 		public const string LC_LAUNCHER_CurrentSpeed = "LC_LAUNCHER_CurrentSpeed";
 		public const string LC_LAUNCHER_Data_Empty = "LC_LAUNCHER_Data_Empty";
+		public const string LC_LAUNCHER_Disconnect = "LC_LAUNCHER_Disconnect";
 		public const string LC_LAUNCHER_Dlc_AssetsLoading = "LC_LAUNCHER_Dlc_AssetsLoading";
 		public const string LC_LAUNCHER_Dlc_ConfigLoadingStage = "LC_LAUNCHER_Dlc_ConfigLoadingStage";
 		public const string LC_LAUNCHER_Dlc_ConfigVerificateStage = "LC_LAUNCHER_Dlc_ConfigVerificateStage";
@@ -121,6 +126,7 @@ namespace TEngine.Localization
 		public const string LC_LAUNCHER_Dlc_LoadingFinish = "LC_LAUNCHER_Dlc_LoadingFinish";
 		public const string LC_LAUNCHER_DownLoadFailed = "LC_LAUNCHER_DownLoadFailed";
 		public const string LC_LAUNCHER_DownloadComplete = "LC_LAUNCHER_DownloadComplete";
+		public const string LC_LAUNCHER_DownloadFileDetail = "LC_LAUNCHER_DownloadFileDetail";
 		public const string LC_LAUNCHER_DownloadFileFailed = "LC_LAUNCHER_DownloadFileFailed";
 		public const string LC_LAUNCHER_FirstPackageNotFound = "LC_LAUNCHER_FirstPackageNotFound";
 		public const string LC_LAUNCHER_Flag = "LC_LAUNCHER_Flag";
@@ -178,13 +184,11 @@ namespace TEngine.Localization
 		public const string LC_LAUNCHER_RestartApp = "LC_LAUNCHER_RestartApp";
 		public const string LC_LAUNCHER_SayHi = "LC_LAUNCHER_SayHi";
 		public const string LC_LAUNCHER_StartDownload = "LC_LAUNCHER_StartDownload";
-		public const string LC_LAUNCHER_Tips = "LC_LAUNCHER_Tips";
+		public const string LC_LAUNCHER_Title_Error = "LC_LAUNCHER_Title_Error";
+		public const string LC_LAUNCHER_Title_Tips = "LC_LAUNCHER_Title_Tips";
 		public const string LC_LAUNCHER_UpdateFailedOptional = "LC_LAUNCHER_UpdateFailedOptional";
 		public const string LC_LAUNCHER_UpdateManifest = "LC_LAUNCHER_UpdateManifest";
 		public const string LC_LAUNCHER_UpdatedSize = "LC_LAUNCHER_UpdatedSize";
 		public const string LC_LAUNCHER_UpdatingProgress = "LC_LAUNCHER_UpdatingProgress";
-		public const string LC_LAUNCHER_DownloadFileDetail = "LC_LAUNCHER_DownloadFileDetail";
-		public const string LC_LAUNCHER_Btn_OK = "LC_LAUNCHER_Btn_OK";
-		public const string LC_LAUNCHER_Btn_Cancel = "LC_LAUNCHER_Btn_Cancel";
 	}
 }

@@ -22,20 +22,20 @@ namespace TEngine.Localization
 
         #endregion
 
-        public static string GetTranslation(string Term, bool FixForRTL = true, int maxLineLengthForRTL = 0, bool ignoreRTLnumbers = true, bool applyParameters = false, GameObject localParametersRoot = null, string overrideLanguage = null, bool allowLocalizedParameters=true)
+        public static string GetTranslation(string Term, bool FixForRTL = true, int maxLineLengthForRTL = 0, bool ignoreRTLnumbers = true, bool fixTagForRTL = true, bool applyParameters = false, GameObject localParametersRoot = null, string overrideLanguage = null, bool allowLocalizedParameters=true)
         {
             string Translation = null;
-            TryGetTranslation(Term, out Translation, FixForRTL, maxLineLengthForRTL, ignoreRTLnumbers, applyParameters, localParametersRoot, overrideLanguage, allowLocalizedParameters);
+            TryGetTranslation(Term, out Translation, FixForRTL, maxLineLengthForRTL, ignoreRTLnumbers, fixTagForRTL, applyParameters, localParametersRoot, overrideLanguage, allowLocalizedParameters);
 
             return Translation;
         }
-        public static string GetTermTranslation(string Term, bool FixForRTL = true, int maxLineLengthForRTL = 0, bool ignoreRTLnumbers = true, bool applyParameters = false, GameObject localParametersRoot = null, string overrideLanguage = null, bool allowLocalizedParameters=true)
+        public static string GetTermTranslation(string Term, bool FixForRTL = true, int maxLineLengthForRTL = 0, bool ignoreRTLnumbers = true, bool fixTagForRTL = true, bool applyParameters = false, GameObject localParametersRoot = null, string overrideLanguage = null, bool allowLocalizedParameters=true)
         {
-            return GetTranslation(Term, FixForRTL, maxLineLengthForRTL, ignoreRTLnumbers, applyParameters, localParametersRoot, overrideLanguage, allowLocalizedParameters);
+            return GetTranslation(Term, FixForRTL, maxLineLengthForRTL, ignoreRTLnumbers, fixTagForRTL, applyParameters, localParametersRoot, overrideLanguage, allowLocalizedParameters);
         }
 
 
-        public static bool TryGetTranslation(string Term, out string Translation, bool FixForRTL = true, int maxLineLengthForRTL = 0, bool ignoreRTLnumbers = true, bool applyParameters = false, GameObject localParametersRoot = null, string overrideLanguage = null, bool allowLocalizedParameters=true)
+        public static bool TryGetTranslation(string Term, out string Translation, bool FixForRTL = true, int maxLineLengthForRTL = 0, bool ignoreRTLnumbers = true, bool fixTagForRTL = true, bool applyParameters = false, GameObject localParametersRoot = null, string overrideLanguage = null, bool allowLocalizedParameters=true)
         {
             Translation = null;
             if (string.IsNullOrEmpty(Term))
@@ -51,7 +51,7 @@ namespace TEngine.Localization
                         ApplyLocalizationParams(ref Translation, localParametersRoot, allowLocalizedParameters);
 
                     if (IsRight2Left && FixForRTL)
-                        Translation = ApplyRTLfix(Translation, maxLineLengthForRTL, ignoreRTLnumbers);
+                        Translation = ApplyRTLfix(Translation, maxLineLengthForRTL, ignoreRTLnumbers, fixTagForRTL);
                     return true;
                 }
             }

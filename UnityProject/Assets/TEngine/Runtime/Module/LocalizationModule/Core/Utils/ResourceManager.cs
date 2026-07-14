@@ -44,7 +44,18 @@ namespace TEngine.Localization
 
 		#region Management
 
-		public List<IResourceManager_Bundles> mBundleManagers = new List<IResourceManager_Bundles>();
+		private List<IResourceManager_Bundles> mBundleManagers = new List<IResourceManager_Bundles>();
+		public void AddBundleManager( IResourceManager_Bundles manager )
+		{
+			if (!mBundleManagers.Contains( manager ))
+				mBundleManagers.Add( manager );
+		}
+
+		public void RemoveBundleManager( IResourceManager_Bundles manager )
+		{
+			if (mBundleManagers.Contains( manager ))
+				mBundleManagers.Remove( manager );
+		}
 
 		#if UNITY_5_4_OR_NEWER
 		public static void MyOnLevelWasLoaded(UnityEngine.SceneManagement.Scene scene, LoadSceneMode mode)
@@ -161,6 +172,7 @@ namespace TEngine.Localization
 
 		public T LoadFromBundle<T>(string path ) where T : Object
 		{
+			Log.Debug($"ResourceManager LoadFromBundle: {path}, BundleManagers: {mBundleManagers.Count}");
 			for (int i = 0, imax = mBundleManagers.Count; i < imax; ++i)
 				if (mBundleManagers[i]!=null)
 				{

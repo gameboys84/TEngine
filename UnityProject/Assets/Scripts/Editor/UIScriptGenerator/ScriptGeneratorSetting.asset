@@ -94,3 +94,6 @@ MonoBehaviour:
   - uiElementRegex: m_tmp
     componentName: 19
     isUIWidget: 0
+  - uiElementRegex: m_rtl
+    componentName: 24
+    isUIWidget: 0

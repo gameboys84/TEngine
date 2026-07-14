@@ -187,7 +187,10 @@ namespace TEngine.Localization
 			{
 				Object Obj = Sources[i].FindAsset(value);
 				if (Obj)
+				{
+					Log.Debug("Found asset: " + Obj.name + " for value: " + value + " in Localization Resource.");
 					return Obj;
+				}
 			}
 			return null;
 		}

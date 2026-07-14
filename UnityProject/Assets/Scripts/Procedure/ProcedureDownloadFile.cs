@@ -66,7 +66,7 @@ namespace Procedure
 
         private void OnDownloadErrorCallback(DownloadErrorData downloadErrorData)
         {
-            LauncherMgr.ShowMessageBox(Utility.Text.Format(ScriptLocalization.LC_LAUNCHER_DownloadFileFailed, downloadErrorData.FileName),
+            LauncherMgr.ShowMessageBox(ScriptLocalization.LC_LAUNCHER_Title_Error, Utility.Text.Format(ScriptLocalization.LC_LAUNCHER_DownloadFileFailed, downloadErrorData.FileName),
                 () => { ChangeState<ProcedureCreateDownloader>(_procedureOwner); }, UnityEngine.Application.Quit);
         }
 

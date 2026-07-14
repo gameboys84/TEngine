@@ -74,6 +74,7 @@ namespace TEngine
             LocalizationModule localizationModule = new LocalizationModule();
             localizationModule.Bind(this);
             ModuleSystem.RegisterModule<ILocalizationModule>(localizationModule);
+            ResourceManager.pInstance.AddBundleManager(this);
         }
 
         private void Start()
@@ -89,6 +90,11 @@ namespace TEngine
                 rootModule.EditorLanguage != Language.Unspecified ? rootModule.EditorLanguage : SystemLanguage);
 
             AsyncInit().Forget();
+        }
+        
+        private void OnDestroy()
+        {
+            ResourceManager.pInstance.RemoveBundleManager(this);
         }
 
         private async UniTask<bool> AsyncInit()
@@ -298,6 +304,7 @@ namespace TEngine
         /// <returns>返回资源实例。</returns>
         public T LoadFromBundle<T>(string path) where T : Object
         {
+            Log.Debug($"LocalizationManager LoadFromBundle:{path}");
             var assetObject = _resourceModule.LoadAsset<T>(path);
             if (assetObject != null)
             {

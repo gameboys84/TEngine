@@ -22,7 +22,7 @@ namespace TEngine.Localization
 		SerializedProperty 	mProp_mTerm, mProp_mTermSecondary,
 							mProp_TranslatedObjects, mProp_LocalizeOnAwake, mProp_AlwaysForceLocalize, mProp_AllowLocalizedParameters, mProp_AllowParameters,
                             mProp_IgnoreRTL, mProp_MaxCharactersInRTL, mProp_CorrectAlignmentForRTL, mProp_IgnoreNumbersInRTL, mProp_TermSuffix, mProp_TermPrefix, mProp_SeparateWords,
-                            mProp_CallbackEvent;
+                            mProp_CallbackEvent, mProp_FixTagForRTL;
 
 
 		bool mAllowEditKeyName;
@@ -51,6 +51,7 @@ namespace TEngine.Localization
 			mProp_mTermSecondary	 		= serializedObject.FindProperty("mTermSecondary");
 			mProp_TranslatedObjects  		= serializedObject.FindProperty("TranslatedObjects");
 			mProp_IgnoreRTL			 		= serializedObject.FindProperty("IgnoreRTL");
+			mProp_FixTagForRTL			 	= serializedObject.FindProperty("FixTagForRTL");
             mProp_SeparateWords             = serializedObject.FindProperty("AddSpacesToJoinedLanguages");
             mProp_MaxCharactersInRTL 		= serializedObject.FindProperty ("MaxCharactersInRTL");
 			mProp_IgnoreNumbersInRTL        = serializedObject.FindProperty("IgnoreNumbersInRTL");
@@ -329,7 +330,7 @@ namespace TEngine.Localization
 
                 //--[ Right To Left ]-------------
                 if (!mLocalize.IgnoreRTL && mLocalize.Term!="-" &&  termData != null && termData.TermType == eTermType.Text)
-				{ 
+				{
 					GUILayout.BeginVertical("Box");
                         //GUILayout.BeginHorizontal();
                         //    mProp_IgnoreRTL.boolValue = GUILayout.Toggle(mProp_IgnoreRTL.boolValue, new GUIContent(" Ignore Right To Left", "Arabic and other RTL languages require processing them so they render correctly, this toogle allows ignoring that processing (in case you are doing it manually during a callback)"));
@@ -342,6 +343,7 @@ namespace TEngine.Localization
 							mProp_CorrectAlignmentForRTL.boolValue = GUILayout.Toggle(mProp_CorrectAlignmentForRTL.boolValue, new GUIContent(" Adjust Alignment", "Right-align when Right-To-Left Language, and Left-Align otherwise") );
 							GUILayout.FlexibleSpace();
 							mProp_IgnoreNumbersInRTL.boolValue = GUILayout.Toggle(mProp_IgnoreNumbersInRTL.boolValue, new GUIContent(" Ignore Numbers", "Preserve numbers as latin characters instead of converting them"));
+							mProp_FixTagForRTL.boolValue = GUILayout.Toggle(mProp_FixTagForRTL.boolValue, new GUIContent("Fix Tag ForRTL", "Keep content in brace, so that can keep the content like {0} etc."));
 						    GUILayout.EndHorizontal();
 						}
 
@@ -362,6 +364,7 @@ namespace TEngine.Localization
             if (mProp_AllowLocalizedParameters.boolValue) mask |= 1 << 3;
             if (mProp_SeparateWords.boolValue)            mask |= 1 << 4;
             if (mProp_IgnoreRTL.boolValue)                mask |= 1 << 5;
+            if (mProp_FixTagForRTL.boolValue)             mask |= 1 << 6;
 
             EditorGUI.BeginChangeCheck();
             mask = EditorGUILayout.MaskField(new GUIContent("Options"), mask, new []{
@@ -380,6 +383,7 @@ namespace TEngine.Localization
                 mProp_AllowLocalizedParameters.boolValue = (mask & (1 << 3))> 0;
                 mProp_SeparateWords.boolValue            = (mask & (1 << 4))> 0;
                 mProp_IgnoreRTL.boolValue                = (mask & (1 << 5))> 0;
+                mProp_FixTagForRTL.boolValue             = (mask & (1 << 6))> 0;
             }
         }
 

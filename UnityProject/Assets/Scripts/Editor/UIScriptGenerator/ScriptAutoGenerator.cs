@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using GameCore;
+using RTLTMPro;
 using TMPro;
 using UnityEditor;
 using UnityEditor.SceneManagement;
@@ -151,6 +152,8 @@ namespace TEngine.Editor.UI
                 strFile.AppendLine("using UnityEngine;");
                 strFile.AppendLine("using UnityEngine.UI;");
                 strFile.AppendLine("using TEngine;");
+                strFile.AppendLine("using GameCore;");
+                strFile.AppendLine("using RTLTMPro;");
                 strFile.AppendLine();
                 strFile.AppendLine($"namespace {ScriptGeneratorSetting.GetUINameSpace()}");
                 strFile.AppendLine("{");
@@ -696,6 +699,7 @@ namespace TEngine.Editor.UI
                 UIComponentName.TMP_Dropdown => typeof(TMP_Dropdown),
                 UIComponentName.TextMeshProUGUI => typeof(TextMeshProUGUI),
 #endif
+                UIComponentName.RTLTextMeshPro => typeof(RTLTextMeshPro),
                 _ => null,
             };
         }

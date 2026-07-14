@@ -126,17 +126,17 @@ namespace Procedure
                 }
                 else
                 {
-                    Log.Error(message);
                     LauncherMgr.ShowMessageBox(
+                        ScriptLocalization.LC_LAUNCHER_Title_Error, 
                         Utility.Text.LocaleFormat(ScriptTerms.LC_LAUNCHER_GetRemoteVersionFailed, message),
                         () => { Utility.Unity.StartCoroutine(InitResources(procedureOwner)); },
                         Application.Quit);
                     return;
                 }
             }
-
-            Log.Error(message);
+            
             LauncherMgr.ShowMessageBox(
+                ScriptLocalization.LC_LAUNCHER_Title_Error,
                 Utility.Text.Format(ScriptLocalization.LC_LAUNCHER_InitResourcesFailedRetryWithReason, message),
                 () => { Utility.Unity.StartCoroutine(InitResources(procedureOwner)); }, Application.Quit);
         }
@@ -151,7 +151,9 @@ namespace Procedure
                 if (string.IsNullOrEmpty(packageVersion))
                 {
                     LauncherMgr.ShowUI<LoadUpdateUI>(ScriptLocalization.LC_LAUNCHER_Net_UnReachable);
-                    LauncherMgr.ShowMessageBox(ScriptLocalization.LC_LAUNCHER_NoLocalVersion,
+                    LauncherMgr.ShowMessageBox(
+                        ScriptLocalization.LC_LAUNCHER_Title_Error, 
+                        ScriptLocalization.LC_LAUNCHER_NoLocalVersion,
                         () => { Utility.Unity.StartCoroutine(InitResources(_procedureOwner)); },
                         Application.Quit);
                     return false;
@@ -163,6 +165,7 @@ namespace Procedure
                 {
                     LauncherMgr.ShowUI<LoadUpdateUI>(ScriptLocalization.LC_LAUNCHER_Load_Notice);
                     LauncherMgr.ShowMessageBox(
+                        ScriptLocalization.LC_LAUNCHER_Title_Error,
                         ScriptLocalization.LC_LAUNCHER_UpdateFailedOptional,
                         () => { Utility.Unity.StartCoroutine(InitResources(_procedureOwner)); },
                         () => { ChangeState<ProcedurePreload>(_procedureOwner); });

@@ -65,7 +65,7 @@ namespace Procedure
                 sizeMb = Mathf.Clamp(sizeMb, 0.1f, float.MaxValue);
                 _totalSizeMb = sizeMb.ToString("f1");
 
-                LauncherMgr.ShowMessageBox(Utility.Text.Format(ScriptLocalization.LC_LAUNCHER_FoundPatchFiles, _totalDownloadCount, _totalSizeMb),
+                LauncherMgr.ShowMessageBox(ScriptLocalization.LC_LAUNCHER_Title_Tips, Utility.Text.Format(ScriptLocalization.LC_LAUNCHER_FoundPatchFiles, _totalDownloadCount, _totalSizeMb),
                     StartDownFile, Application.Quit);
             }
         }

@@ -115,10 +115,10 @@ namespace Launcher
 
         #region UI调用
 
-        public static void ShowMessageBox(string desc, Action onConfirm = null,
+        public static void ShowMessageBox(string title, string desc, Action onConfirm = null,
             Action onCancel = null, Action onUpdate = null)
         {
-            ShowUI<LoadTipsUI>(desc);
+            ShowUI<LoadTipsUI>((title, desc));
             var ui = GetActiveUI<LoadTipsUI>();
             ui?.SetAllCallback(onConfirm, onUpdate, onCancel);
         }

@@ -104,7 +104,7 @@ namespace TEngine
         /// 资源服务备用地址。
         /// </summary>
         [SerializeField]
-        private string FallbackResDownLoadPath = "http://127.0.0.1:8082";
+        private string FallbackResDownLoadPath = "http://127.0.0.1:8081";
 
         /// <summary>
         /// WebGL平台加载本地资源/加载远程资源。

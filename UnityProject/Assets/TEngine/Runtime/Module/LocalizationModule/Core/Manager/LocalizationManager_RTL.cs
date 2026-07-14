@@ -10,8 +10,8 @@ namespace TEngine.Localization
 
         // 对于RTL语言的支持， I2Localization 做的只能算一般， 不混合使用时还行
         // 混合使用时， 要求不高可以使用 RTLTMPro 插件， 如果只是显示建议使用 UniText 插件，目前发现支持RTL最好的插件
-        public static string ApplyRTLfix(string line) { return ApplyRTLfix(line, 0, true); }
-        public static string ApplyRTLfix(string line, int maxCharacters, bool ignoreNumbers)
+        public static string ApplyRTLfix(string line) { return ApplyRTLfix(line, 0, true, true); }
+        public static string ApplyRTLfix(string line, int maxCharacters, bool ignoreNumbers, bool fixTagForRTL)
         {
             if (string.IsNullOrEmpty(line))
                 return line;
@@ -47,7 +47,11 @@ namespace TEngine.Localization
             for (int i = 0; i < tags.Count; i++)
             {
                 string old_tag = ((char)(tagBase - i)).ToString();
-                string new_tag = I2Utils.ReverseText(tags[i]);
+                string new_tag = tags[i];
+                if (!fixTagForRTL)
+                {
+                    new_tag = I2Utils.ReverseText(tags[i]);
+                }
 
                 line = line.Replace(old_tag, new_tag);
             }
@@ -56,10 +60,10 @@ namespace TEngine.Localization
         }
 
        
-        public static string FixRTL_IfNeeded(string text, int maxCharacters = 0, bool ignoreNumber=false)
+        public static string FixRTL_IfNeeded(string text, int maxCharacters = 0, bool ignoreNumber=false, bool fixTagForRTL = true)
         {
             if (IsRight2Left)
-				return ApplyRTLfix(text, maxCharacters, ignoreNumber);
+				return ApplyRTLfix(text, maxCharacters, ignoreNumber, fixTagForRTL);
             return text;
         }
 

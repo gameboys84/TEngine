@@ -137,6 +137,14 @@ MonoBehaviour:
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
+      - CollectPath: Assets/AssetBundle/Texture/AtlasSource
+        CollectorGUID: 3e20876f4da1f1c43b414d22e5c35708
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
     - GroupName: AutoGen
       GroupDesc: 
       AssetTags: 

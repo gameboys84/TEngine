@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.U2D;
 using YooAsset;
 #if UNITY_WEBGL && WEIXINMINIGAME && !UNITY_EDITOR
 using WeChatWASM;
@@ -51,7 +52,7 @@ namespace TEngine
         public override void Shutdown()
         {
         }
-
+        
         /// <summary>
         /// 资源服务器地址。
         /// </summary>

@@ -191,7 +191,7 @@ namespace Procedure
             }
 
             var assetName = textAsset.name;
-            Log.Debug($"LoadAssetSuccess, assetName: [ {assetName} ]");
+            // Log.Debug($"LoadAssetSuccess, assetName: [ {assetName} ]");
 
             try
             {
@@ -201,7 +201,7 @@ namespace Procedure
                     _mainLogicAssembly = assembly;
                 }
                 _hotfixAssemblyList.Add(assembly);
-                Log.Debug($"Assembly [ {assembly.GetName().Name} ] loaded");
+                Log.Info($"Assembly [ {assembly.GetName().Name} ] loaded");
             }
             catch (Exception e)
             {

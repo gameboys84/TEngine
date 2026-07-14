@@ -53,6 +53,7 @@ namespace TEngine.Localization
         #region Variables: Target
 
         public bool IgnoreRTL;	// If false, no Right To Left processing will be done
+        public bool FixTagForRTL; // If true, the target will fix the tag (eg:{0}) to be kept
 		public int  MaxCharactersInRTL;     // If the language is RTL, the translation will be split in lines not longer than this amount and the RTL fix will be applied per line
 		public bool IgnoreNumbersInRTL = true; // If the language is RTL, the translation will not convert numbers (will preserve them like: e.g. 123)
 
@@ -226,7 +227,7 @@ namespace TEngine.Localization
                     MainTranslation = sb.ToString();
                 }
                 if (applyRTL && mLocalizeTarget.AllowMainTermToBeRTL() && !string.IsNullOrEmpty(MainTranslation))
-                    MainTranslation = LocalizationManager.ApplyRTLfix(MainTranslation, MaxCharactersInRTL, IgnoreNumbersInRTL);
+                    MainTranslation = LocalizationManager.ApplyRTLfix(MainTranslation, MaxCharactersInRTL, IgnoreNumbersInRTL, FixTagForRTL);
 
             }
 

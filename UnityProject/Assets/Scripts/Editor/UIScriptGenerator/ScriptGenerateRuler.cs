@@ -96,5 +96,6 @@ namespace TEngine.Editor.UI
         Dropdown,
         TMP_InputField,
         TMP_Dropdown,
+        RTLTextMeshPro,
     }
 }

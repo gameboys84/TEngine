@@ -9,6 +9,7 @@ namespace TEngine.Localization
         public bool mRTL_IgnoreArabicFix;
         public int  mRTL_MaxLineLength;
         public bool mRTL_ConvertNumbers;
+        public bool mRTL_FixTagForRTL;
         public bool m_DontLocalizeParameters;
 
         public static implicit operator string(LocalizedString s)
@@ -27,6 +28,7 @@ namespace TEngine.Localization
             mRTL_IgnoreArabicFix = str.mRTL_IgnoreArabicFix;
             mRTL_MaxLineLength = str.mRTL_MaxLineLength;
             mRTL_ConvertNumbers = str.mRTL_ConvertNumbers;
+            mRTL_FixTagForRTL = str.mRTL_FixTagForRTL;
             m_DontLocalizeParameters = str.m_DontLocalizeParameters;
         }
 
@@ -34,7 +36,7 @@ namespace TEngine.Localization
 
         public override string ToString()
         {
-            var translation = LocalizationManager.GetTranslation(mTerm, !mRTL_IgnoreArabicFix, mRTL_MaxLineLength, !mRTL_ConvertNumbers, true );
+            var translation = LocalizationManager.GetTranslation(mTerm, !mRTL_IgnoreArabicFix, mRTL_MaxLineLength, !mRTL_ConvertNumbers, mRTL_FixTagForRTL);
             LocalizationManager.ApplyLocalizationParams(ref translation, !m_DontLocalizeParameters);
             return translation;
         }

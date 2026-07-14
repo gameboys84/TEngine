@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using TEngine;
 using GameCore;
+using UnityEngine.U2D;
 using LocalizationManager = TEngine.Localization.LocalizationManager;
 
 namespace GameLogic
@@ -123,18 +125,12 @@ namespace GameLogic
 			}
 		}
 
+		//TODO: OnSetVisible的逻辑有问题，需要重新设计
 		protected override void OnSetVisible(bool visible)
 		{
 			base.OnSetVisible(visible);
             
 			Log.Debug($"OnSetVisible, visible:{visible}, {WindowName}");
-			// if (visible)
-			// {
-			//     if (!GameModule.Network.IsConnected())
-			//     {
-			//         GameModule.Network.Connect(ip, port, 3000);
-			//     }
-			// }
 		}
 
 		protected override void RegisterEvent()

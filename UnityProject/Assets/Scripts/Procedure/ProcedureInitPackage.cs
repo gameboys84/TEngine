@@ -76,7 +76,7 @@ namespace Procedure
                     // 打开启动UI。
                     LauncherMgr.ShowUI<LoadUpdateUI>(ScriptLocalization.LC_LAUNCHER_InitResourcesFailed);
 
-                    LauncherMgr.ShowMessageBox(Utility.Text.Format(ScriptLocalization.LC_LAUNCHER_InitResourcesFailedRetryWithReason, initializationOperation.Error),
+                    LauncherMgr.ShowMessageBox(ScriptLocalization.LC_LAUNCHER_Title_Error, Utility.Text.Format(ScriptLocalization.LC_LAUNCHER_InitResourcesFailedRetryWithReason, initializationOperation.Error),
                         () => { Retry(procedureOwner); }, UnityEngine.Application.Quit);
                 }
             }
@@ -102,6 +102,7 @@ namespace Procedure
             }
 
             LauncherMgr.ShowMessageBox(
+                ScriptLocalization.LC_LAUNCHER_Title_Error,
                 Utility.Text.Format(ScriptLocalization.LC_LAUNCHER_InitResourcesFailedRetryWithReason, message),
                 () => { Retry(procedureOwner); },
                 Application.Quit);

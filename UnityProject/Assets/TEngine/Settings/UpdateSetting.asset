@@ -28,7 +28,7 @@ MonoBehaviour:
   LogicMainDllName: GameCore.dll
   AssemblyTextAssetExtension: .bytes
   AssemblyTextAssetPath: AssetBundle/DLL
-  UpdateStyle: 1
+  UpdateStyle: 2
   UpdateNotice: 1
   ResDownLoadPath: http://172.20.213.191:8081
   FallbackResDownLoadPath: http://172.20.213.191:8082

@@ -66,8 +66,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Fran\xE7ais"
-  m_isRightToLeft: 0
+  m_text: "\uFECB\uFEAE\uFE91\uFEF2"
+  m_isRightToLeft: 1
   m_fontAsset: {fileID: 11400000, guid: 12e928faf040ca34abb831e2319e4259, type: 2}
   m_sharedMaterial: {fileID: 7535359772088352606, guid: 12e928faf040ca34abb831e2319e4259, type: 2}
   m_fontSharedMaterials: []
@@ -495,7 +495,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: connecter
+  m_Text: "\uFEDE\uFEBC\uFE98\uFEF3"
 --- !u!114 &6312003495610207698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -775,7 +775,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Bonjour
+  m_Text: "\uFE8E\u064B\uFE92\uFEA3\uFEAE\uFEE3"
 --- !u!114 &6327602240500708916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -894,7 +894,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Saisissez le mot de passe
+  m_Text: "\u0631\u0648\uFEAE\uFEE4\uFEDF\u0627 \uFE94\uFEE4\uFEE0\uFEDB \uFEDE\uFEA7\u062F\u0623"
 --- !u!114 &7500321160953110552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1584,7 +1584,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Saisir le compte
+  m_Text: "\u0628\uFE8E\uFEB4\uFEA4\uFEDF\u0627 \uFEDE\uFEA7\u062F\u0623"
 --- !u!114 &4849379619700233743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1853,7 +1853,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Se connecter
+  m_Text: "\u0644\uFEEE\uFEA7\uFEAA\uFEDF\u0627 \uFEDE\uFEF4\uFEA0\uFEB4\uFE97"
 --- !u!114 &2571750623765556166
 MonoBehaviour:
   m_ObjectHideFlags: 0
