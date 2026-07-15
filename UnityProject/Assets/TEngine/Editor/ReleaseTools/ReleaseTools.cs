@@ -93,7 +93,7 @@ namespace TEngine
             config.OutputRoot = Application.dataPath + "/../Bundles";
             config.BuildPlayer = true;
             config.PlayerPlatform = BuildTarget.Android;
-            config.PlayerOutputPath = $"{Application.dataPath}/../Build/Android/{BuildConfig.GetDefaultPackageVersion()}Android.apk";
+            config.PlayerOutputPath = $"{Application.dataPath}/../Build/Android/{BuildConfig.GetDefaultPackageVersion()}_Android.apk";
             BuildWithConfig(config, buildPlayer: true);
         }
 

@@ -359,6 +359,10 @@ namespace TEngine
 
                         EditorGUILayout.BeginHorizontal();
                         _config.PlayerOutputPath = EditorGUILayout.TextField("输出路径", _config.PlayerOutputPath);
+                        if (GUILayout.Button("自动", GUILayout.Width(50)))
+                        {
+                            _config.PlayerOutputPath = BuildConfig.GetDefaultPlayerOutputPath(EditorUserBuildSettings.activeBuildTarget, _config.PackageVersion);
+                        }
                         if (GUILayout.Button("浏览", GUILayout.Width(50)))
                         {
                             string selected = EditorUtility.SaveFilePanel("选择输出路径",

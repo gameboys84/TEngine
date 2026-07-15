@@ -53,13 +53,17 @@ namespace TEngine
             return System.DateTime.Now.ToString("yyyy-MM-dd") + "-" + totalMinutes;
         }
 
-        public static string GetDefaultPlayerOutputPath(BuildTarget target)
+        public static string GetDefaultPlayerOutputPath(BuildTarget target, string packageVersion = "")
         {
             string basePath = Application.dataPath + "/../Build/";
+            if (string.IsNullOrEmpty(packageVersion))
+            {
+                packageVersion = GetDefaultPackageVersion();
+            }
             return target switch
             {
                 BuildTarget.StandaloneWindows64 => basePath + "Windows/Release_Windows.exe",
-                BuildTarget.Android => basePath + $"Android/{GetDefaultPackageVersion()}Android.apk",
+                BuildTarget.Android => basePath + $"Android/{packageVersion}_Android.apk",
                 BuildTarget.iOS => basePath + "IOS/XCode_Project",
                 BuildTarget.StandaloneOSX => basePath + "MacOS/Release_MacOS.app",
                 BuildTarget.StandaloneLinux64 => basePath + "Linux/Release_Linux",
