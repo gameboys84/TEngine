@@ -43,9 +43,9 @@ The root node MAY include:
   "schemaVersion": 2,
   "designWidth": 1920,
   "designHeight": 1080,
-  "sourcePath": "I:/Project/prototypes/main.html",
-  "htmlFilePath": "I:/Project/prototypes/main.html",
-  "sourceDirectory": "I:/Project/prototypes"
+  "sourcePath": "prototypes/main.html",
+  "htmlFilePath": "prototypes/main.html",
+  "sourceDirectory": "prototypes"
 }
 ```
 
@@ -54,6 +54,8 @@ Meaning:
 - `schemaVersion`: `2` enables smart image and adaptive layout behavior.
 - `designWidth` / `designHeight`: CanvasScaler reference resolution.
 - `sourcePath` / `htmlFilePath` / `sourceDirectory`: used to resolve relative image sources.
+  The browser writes resolved local absolute paths at runtime; do not commit machine-specific results.
+  Hand-authored relative metadata is resolved against the Unity project. Omitting it uses the JSON directory.
 
 ## v2 Node Fields
 
@@ -112,7 +114,7 @@ The remaining CSS fields are retained as diagnostics and future extension points
   "schemaVersion": 2,
   "designWidth": 1920,
   "designHeight": 1080,
-  "sourceDirectory": "I:/Project/prototypes",
+  "sourceDirectory": "prototypes",
   "name": "m_mainWindow",
   "type": "div",
   "dir": "v",

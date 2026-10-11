@@ -1,0 +1,6 @@
+interface:
+  display_name: "TEngine Development"
+  short_description: "Source-grounded TEngine framework development and review"
+  default_prompt: "Use $tengine-dev to implement this TEngine change and verify the relevant APIs."
+policy:
+  allow_implicit_invocation: true

@@ -34,6 +34,7 @@ MonoBehaviour:
   enableV2: 1
   checkMipmaps: 1
   enableMipmaps: 0
+  textureCompression: 0
   excludeKeywords:
   - _Delete
   - _Temp

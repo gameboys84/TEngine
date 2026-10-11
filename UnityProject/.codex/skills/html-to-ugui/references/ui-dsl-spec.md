@@ -58,6 +58,10 @@ Supported source forms:
 - Relative local paths, resolved from the HTML/JSON source directory or configured source root.
 - Absolute local file paths, copied into the configured Unity import folder.
 
+For browser baking, use HTML-relative local image paths (or file URLs) that the browser can resolve.
+`Assets/...` and `Packages/...` are primarily JSON/Unity input forms, not a browser alias.
+All required files must be supplied; examples below need matching local images.
+
 Unsupported source forms:
 
 - `http://` or `https://` URLs.
@@ -113,6 +117,8 @@ Use `data-u-safe-area="true"` on fullscreen or edge-pinned nodes that should be 
 - Use `px` sizes for bake-time measurement.
 - Use real HTML layout (`flex`, absolute positioning, margins, padding) as needed; Playwright computes final rectangles.
 - Avoid CSS animation and transition properties during baking.
+- Scripts, event-handler attributes, external frames, links and metadata navigation are rejected.
+- Keep fonts local via CSS; wait for their load, then separately validate the Unity TMP font.
 - Use `background-color`, `color`, `font-size`, and `text-align` for visual style.
 - Prefer explicit `data-u-layout` when a node needs to adapt across PC/mobile/pad.
 

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Unity CLI"
+  short_description: "Project-bound Unity operations, tests and verification"
+  default_prompt: "Use $unity-cli to inspect this Unity project and collect verified results."
+policy:
+  allow_implicit_invocation: true

@@ -8,7 +8,6 @@ namespace TEngine
     internal partial class ResourceExtComponent
     {
         private static IResourceModule _resourceModule;
-        private LoadAssetCallbacks _loadAssetCallbacks;
 
         public static IResourceModule ResourceModule => _resourceModule;
 
@@ -17,13 +16,21 @@ namespace TEngine
             public CancellationTokenSource Cts { get; set; }
             public string Location { get; set; }
 
-            public void Clear()
+            public void Cancel()
             {
-                if (Cts != null)
+                if (Cts != null && !Cts.IsCancellationRequested)
                 {
                     Cts.Cancel();
-                    Cts.Dispose();
-                    Cts = null;
+                }
+            }
+
+            public void Clear()
+            {
+                var cts = Cts;
+                Cts = null;
+                if (cts != null)
+                {
+                    cts.Dispose();
                 }
 
                 Location = String.Empty;
@@ -35,47 +42,6 @@ namespace TEngine
         private void InitializedResources()
         {
             _resourceModule = ModuleSystem.GetModule<IResourceModule>();
-            _loadAssetCallbacks = new LoadAssetCallbacks(OnLoadAssetSuccess, OnLoadAssetFailure);
-        }
-
-        private void OnLoadAssetFailure(string assetName, LoadResourceStatus status, string errormessage, object userdata)
-        {
-            _assetLoadingList.Remove(assetName);
-            ISetAssetObject setAssetObject = (ISetAssetObject)userdata;
-            if (setAssetObject != null)
-            {
-                ClearLoadingState(setAssetObject.TargetObject);
-            }
-
-            Log.Error("Can not load asset from '{0}' with error message '{1}'.", assetName, errormessage);
-        }
-
-        private void OnLoadAssetSuccess(string assetName, object asset, float duration, object userdata)
-        {
-            _assetLoadingList.Remove(assetName);
-            ISetAssetObject setAssetObject = (ISetAssetObject)userdata;
-            UnityEngine.Object assetObject = asset as UnityEngine.Object;
-
-            if (assetObject != null)
-            {
-                // 检查资源是否仍然是当前需要的。
-                if (IsCurrentLocation(setAssetObject.TargetObject, setAssetObject.Location))
-                {
-                    ClearLoadingState(setAssetObject.TargetObject);
-
-                    _assetItemPool.Register(AssetItemObject.Create(setAssetObject.Location, assetObject), true);
-                    SetAsset(setAssetObject, assetObject);
-                }
-                else
-                {
-                    // 资源已经过期，卸载。
-                    _resourceModule.UnloadAsset(assetObject);
-                }
-            }
-            else
-            {
-                Log.Error($"Load failure asset type is {asset.GetType()}.");
-            }
         }
 
         /// <summary>
@@ -91,18 +57,21 @@ namespace TEngine
 
             if (target == null)
             {
+                MemoryPool.Release(setAssetObject);
                 return;
             }
-            
-            // 取消并清理旧的加载请求。
-            CancelAndCleanupOldRequest(target);
 
             // 创建新的加载状态
             var linkedTokenSource = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
             var loadingState = MemoryPool.Acquire<LoadingState>();
             loadingState.Cts = linkedTokenSource;
             loadingState.Location = location;
-            _loadingStates[target] = loadingState;
+            ReplaceLoadingState(target, loadingState);
+
+            var hasLoadingMarker = false;
+            var setAssetObjectTransferred = false;
+            T loadedResource = null;
+            var resourceRegistered = false;
 
             try
             {
@@ -110,7 +79,7 @@ namespace TEngine
                 await TryWaitingLoading(location).AttachExternalCancellation(linkedTokenSource.Token);
 
                 // 再次检查是否被新请求替换。
-                if (!IsCurrentLocation(target, location))
+                if (!IsCurrentRequest(target, loadingState))
                 {
                     return;
                 }
@@ -118,82 +87,102 @@ namespace TEngine
                 // 检查缓存。
                 if (_assetItemPool.CanSpawn(location))
                 {
-                    ClearLoadingState(target);
-
                     var assetObject = (T)_assetItemPool.Spawn(location).Target;
+                    DetachCurrentRequest(target, loadingState);
+                    setAssetObjectTransferred = true;
                     SetAsset(setAssetObject, assetObject);
                 }
                 else
                 {
-                    // 最后一次检查是否被替换。
-                    if (!IsCurrentLocation(target, location))
-                    {
-                        return;
-                    }
-
                     // 防止重复加载同一资源。
                     if (!_assetLoadingList.Add(location))
                     {
                         // 已经在加载中，等待回调处理。
+                        Log.Warning("资源仍在加载中，跳过重复请求 '{0}'", location);
                         return;
                     }
 
-                    T resource = await _resourceModule.LoadAssetAsync<T>(location, linkedTokenSource.Token);
-                    if (resource != null)
+                    hasLoadingMarker = true;
+
+                    loadedResource = await _resourceModule.LoadAssetAsync<T>(location, linkedTokenSource.Token);
+                    if (loadedResource == null)
                     {
-                        _loadAssetCallbacks?.LoadAssetSuccessCallback.Invoke(location,resource, 0f, setAssetObject);
-                        
+                        if (linkedTokenSource.IsCancellationRequested)
+                        {
+                            return;
+                        }
+                        Log.Error("加载资源失败，资源为空: '{0}'", location);
+                        return;
                     }
-                    _assetLoadingList.Remove(location);
+
+                    if (!IsCurrentRequest(target, loadingState))
+                    {
+                        return;
+                    }
+
+                    _assetItemPool.Register(AssetItemObject.Create(location, loadedResource), true);
+                    resourceRegistered = true;
+                    DetachCurrentRequest(target, loadingState);
+                    setAssetObjectTransferred = true;
+                    SetAsset(setAssetObject, loadedResource);
                 }
             }
-            catch (OperationCanceledException)
+            catch (OperationCanceledException) when (linkedTokenSource.IsCancellationRequested)
             {
-                // 请求被取消，正常情况，无需处理。
+                // 请求被替换或目标销毁属于正常取消流程。
             }
             catch (Exception ex)
             {
                 Log.Error($"Failed to load asset '{location}': {ex}");
-                ClearLoadingState(target);
+            }
+            finally
+            {
+                DetachCurrentRequest(target, loadingState);
+
+                if (hasLoadingMarker)
+                {
+                    _assetLoadingList.Remove(location);
+                }
+
+                if (loadedResource != null && !resourceRegistered)
+                {
+                    _resourceModule.UnloadAsset(loadedResource);
+                }
+
+                if (!setAssetObjectTransferred)
+                {
+                    MemoryPool.Release(setAssetObject);
+                }
+                MemoryPool.Release(loadingState);
             }
         }
 
-        /// <summary>
-        /// 取消并清理旧的加载请求。
-        /// <param name="target">Unity对象。</param>
-        /// </summary>
-        private void CancelAndCleanupOldRequest(UnityEngine.Object target)
+        private void DetachCurrentRequest(UnityEngine.Object target, LoadingState expectedState)
         {
-            if (_loadingStates.TryGetValue(target, out var oldState))
+            if (_loadingStates.TryGetValue(target, out var curState)
+                && ReferenceEquals(curState, expectedState))
             {
-                MemoryPool.Release(oldState);
                 _loadingStates.Remove(target);
             }
         }
 
-        /// <summary>
-        /// 清理加载状态。
-        /// <param name="target">Unity对象。</param>
-        /// </summary>
-        private void ClearLoadingState(UnityEngine.Object target)
+        private void ReplaceLoadingState(UnityEngine.Object target, LoadingState newState)
         {
-            if (_loadingStates.TryGetValue(target, out var state))
+            if (_loadingStates.Remove(target, out var oldState))
             {
-                MemoryPool.Release(state);
-                _loadingStates.Remove(target);
+                oldState.Cancel();
             }
+            _loadingStates[target] = newState;
         }
 
-        /// <summary>
-        /// 检查指定位置是否仍是该目标的当前加载位置。
-        /// </summary>
-        private bool IsCurrentLocation(UnityEngine.Object target, string location)
+        private bool IsCurrentRequest(UnityEngine.Object target, LoadingState expectedState)
         {
             if (target == null)
             {
                 return false;
             }
-            return _loadingStates.TryGetValue(target, out var state) && state.Location == location;
+            return _loadingStates.TryGetValue(target, out var curState)
+                   && ReferenceEquals(curState, expectedState);
         }
 
         /// <summary>
@@ -201,12 +190,13 @@ namespace TEngine
         /// </summary>
         private void OnDestroy()
         {
-            foreach (var state in _loadingStates.Values)
-            {
-                MemoryPool.Release(state);
-            }
-
+            var loadingStates = new LoadingState[_loadingStates.Count];
+            _loadingStates.Values.CopyTo(loadingStates, 0);
             _loadingStates.Clear();
+            foreach (var state in loadingStates)
+            {
+                state.Cancel();
+            }
         }
     }
 }

@@ -6,9 +6,22 @@ schemaVersion=2 metadata for image binding and adaptive Prefab generation.
 """
 
 import argparse
+import html
 import json
 import os
 import sys
+import tempfile
+from pathlib import Path
+from html.parser import HTMLParser
+
+
+class SafeMarkup(HTMLParser):
+    def handle_starttag(self, tag, attrs):
+        if tag.lower() in {"script", "iframe", "object", "embed", "base", "link", "meta"}:
+            raise ValueError(f"Unsupported active/external markup: {tag}")
+        for key, value in attrs:
+            if key.lower().startswith("on") or (value or "").lower().strip().startswith("javascript:"):
+                raise ValueError("Executable HTML attributes are not supported.")
 
 
 def bake_html_to_json(
@@ -16,7 +29,11 @@ def bake_html_to_json(
     width: int = 1920,
     height: int = 1080,
     source_path: str = "",
+    screenshot_path: str = "",
 ) -> dict:
+    if not all(isinstance(v, int) and 0 < v <= 8192 for v in (width, height)):
+        raise ValueError("Design dimensions must be integers in 1..8192.")
+    SafeMarkup().feed(html_content)
     try:
         from playwright.sync_api import sync_playwright
     except ImportError:
@@ -26,9 +43,11 @@ def bake_html_to_json(
         )
         sys.exit(1)
 
-    injected_html = json.dumps(html_content)
+    injected_html = json.dumps(html_content).replace("</", "<\\/")
+    base_url = Path(source_path).resolve().parent.as_uri() + "/" if source_path else ""
     full_html = f"""<!DOCTYPE html>
 <html><head><meta charset="UTF-8">
+<base href="{html.escape(base_url, quote=True)}">
 <style>
 body {{ margin: 0; padding: 0; }}
 #canvas-sandbox {{ position: relative; width: {width}px; height: {height}px; }}
@@ -40,6 +59,23 @@ body {{ margin: 0; padding: 0; }}
 <script>
 const sandbox = document.getElementById('canvas-sandbox');
 sandbox.innerHTML = {injected_html};
+for (const element of sandbox.querySelectorAll('[data-u-src]')) {{
+    const source = element.getAttribute('data-u-src');
+    if (element.tagName.toLowerCase() === 'img') element.setAttribute('src', source);
+    else element.style.backgroundImage = 'url(' + JSON.stringify(source) + ')';
+}}
+for (const element of sandbox.querySelectorAll('[data-u-type="slider"]')) {{
+    if (element.tagName.toLowerCase() === 'input') {{
+        element.min = '0';
+        element.max = '1';
+        element.step = 'any';
+        element.value = element.getAttribute('data-u-value') ?? '0.5';
+    }}
+}}
+for (const element of sandbox.querySelectorAll('[data-u-type="toggle"]')) {{
+    if (element.tagName.toLowerCase() === 'input') element.checked = element.getAttribute('data-u-checked') === 'true';
+}}
+let groupId = 0;
 
 function rgb2hex(rgb) {{
     if (!rgb || rgb === 'rgba(0, 0, 0, 0)' || rgb === 'transparent') return '#FFFFFF00';
@@ -128,7 +164,10 @@ function traverseAndBake(element, rootRect, parentRect) {{
         const layoutHint = inferLayoutHint(element, rect, parentRect || rootRect, style);
         const safeArea = readAttr(element, ['data-u-safe-area']);
         const uDir = element.getAttribute('data-u-dir') || 'v';
-        const uValue = parseFloat(element.getAttribute('data-u-value')) || 0.5;
+        const rawValue = element.getAttribute('data-u-value');
+        const parsedValue = rawValue === null ? 0.5 : Number(rawValue);
+        if (!Number.isFinite(parsedValue)) throw new Error('Invalid control value: ' + uName);
+        const uValue = parsedValue;
         const uChecked = element.getAttribute('data-u-checked') === 'true';
         const uOptions = [];
 
@@ -194,18 +233,19 @@ function traverseAndBake(element, rootRect, parentRect) {{
     }}
 
     if (childrenData.length > 0) {{
+        const rect = element.getBoundingClientRect();
         return childrenData.length === 1 ? childrenData[0] : {{
             schemaVersion: 2,
-            name: 'layoutGroup_' + Math.random().toString(36).substr(2, 5),
+            name: 'layoutGroup_' + (++groupId),
             type: 'div',
             dir: 'v',
             value: 0,
             isChecked: false,
             options: [],
-            x: 0,
-            y: 0,
-            width: 0,
-            height: 0,
+            x: Math.round(rect.left - rootRect.left),
+            y: Math.round(rect.top - rootRect.top),
+            width: Math.round(rect.width),
+            height: Math.round(rect.height),
             color: '#FFFFFF00',
             fontColor: '#000000',
             fontSize: 14,
@@ -219,7 +259,34 @@ function traverseAndBake(element, rootRect, parentRect) {{
     return null;
 }}
 
-const rootElement = sandbox.querySelector('[data-u-name]');
+async function bake() {{
+// Force layout before waiting so CSS font faces have begun loading.
+sandbox.getBoundingClientRect();
+await document.fonts.ready;
+if ([...document.fonts].some(font => font.status === 'error'))
+    throw new Error('A required font failed to load.');
+const nodes = [...sandbox.querySelectorAll('*')];
+const imageSources = new Set();
+for (const element of nodes) {{
+    const cssUrl = firstCssUrl(getComputedStyle(element).backgroundImage);
+    const src = element.tagName.toLowerCase() === 'img' ? element.getAttribute('src') : '';
+    for (const value of [src, cssUrl]) {{
+        if (!value) continue;
+        const url = new URL(value, document.baseURI);
+        if (url.protocol !== 'file:') throw new Error('Only local image sources are supported: ' + value);
+        imageSources.add(url.href);
+    }}
+}}
+await Promise.all([...imageSources].map(src => new Promise((resolve, reject) => {{
+    const image = new Image();
+    image.onload = () => image.naturalWidth > 0 ? resolve() : reject(new Error('Empty image: ' + src));
+    image.onerror = () => reject(new Error('Missing image: ' + src));
+    image.src = src;
+}})));
+const roots = [...sandbox.querySelectorAll('[data-u-name]')]
+    .filter(element => !element.parentElement.closest('[data-u-name]'));
+if (roots.length !== 1) throw new Error('UI-DSL requires exactly one named root.');
+const rootElement = roots[0];
 if (!rootElement) {{
     throw new Error('No root node with data-u-name was found.');
 }}
@@ -229,19 +296,36 @@ result.schemaVersion = 2;
 result.designWidth = {width};
 result.designHeight = {height};
 window.__BAKE_RESULT__ = result;
+}}
+bake().catch(error => {{ window.__BAKE_ERROR__ = String(error); }});
 </script>
 </body></html>"""
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        page = browser.new_page(viewport={"width": width + 100, "height": height + 100})
-        page.set_content(full_html, wait_until="networkidle")
-        page.wait_for_timeout(250)
-        result = page.evaluate("window.__BAKE_RESULT__")
-        browser.close()
+        try:
+            page = browser.new_page(viewport={"width": width, "height": height})
+            page.route("http://**", lambda route: route.abort())
+            page.route("https://**", lambda route: route.abort())
+            # A real file origin permits local images/fonts without disabling browser security.
+            with tempfile.TemporaryDirectory(prefix="ugui-bake-") as directory:
+                page_file = Path(directory) / "bake.html"
+                page_file.write_text(full_html, encoding="utf-8")
+                page.goto(page_file.as_uri(), wait_until="load")
+                page.wait_for_function("window.__BAKE_RESULT__ || window.__BAKE_ERROR__", timeout=15000)
+                error = page.evaluate("window.__BAKE_ERROR__ || null")
+                if error:
+                    raise ValueError(error)
+                result = page.evaluate("window.__BAKE_RESULT__")
+                if screenshot_path:
+                    page.locator("#canvas-sandbox").screenshot(path=screenshot_path)
+        finally:
+            browser.close()
 
     if result is None:
         raise ValueError("Bake failed: no valid UI-DSL node was found.")
+    if result["width"] <= 0 or result["height"] <= 0:
+        raise ValueError("Root layout must have nonzero dimensions.")
 
     if source_path:
         full_source = os.path.abspath(source_path)
@@ -259,6 +343,7 @@ def main():
     parser.add_argument("-w", "--width", type=int, default=1920, help="Design canvas width")
     parser.add_argument("-H", "--height", type=int, default=1080, help="Design canvas height")
     parser.add_argument("--stdout", action="store_true", help="Print JSON instead of writing a file")
+    parser.add_argument("--screenshot", help="Optional browser evidence PNG")
     args = parser.parse_args()
 
     if not os.path.exists(args.input):
@@ -268,7 +353,7 @@ def main():
     with open(args.input, "r", encoding="utf-8") as f:
         html_content = f.read()
 
-    result = bake_html_to_json(html_content, args.width, args.height, args.input)
+    result = bake_html_to_json(html_content, args.width, args.height, args.input, args.screenshot or "")
     json_str = json.dumps(result, ensure_ascii=False, indent=2)
 
     if args.stdout:

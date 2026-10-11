@@ -2450,9 +2450,8 @@ class LubanConfigHelper:
             print("警告: 没有数据需要导入")
             return False
         
-        # TODO: 实现 replace 模式（需要先清空表）
         if mode == "replace":
-            print("警告: replace 模式暂未实现，使用 append 模式")
+            raise ValueError("replace 模式未实现；拒绝悄悄追加。请先确认明确的逐行修改范围。")
         
         success_count = 0
         for row in rows:
@@ -2605,87 +2604,8 @@ class LubanConfigHelper:
     # ==================== Luban CLI 集成 ====================
     
     def gen(self, output_dir: str = None, luban_cmd: str = "dotnet run --project Luban.CLI") -> bool:
-        """调用 Luban CLI 生成代码
-
-        Args:
-            output_dir: 输出目录
-            luban_cmd: Luban CLI 命令
-        """
-        import subprocess
-        import shutil
-
-        # Pre-validation: 检查所有表的数据文件格式
-        validate_result = self.validate_all()
-        format_errors = []
-        for detail in validate_result["details"]:
-            # 只关注 format_errors（结构错误），不关注值类型错误
-            for err in detail.get("errors", []):
-                if any(kw in err for kw in ["缺少", "##type", "##var", "A 列", "类型定义"]):
-                    format_errors.append(f"  {detail['table']}: {err}")
-
-        if format_errors:
-            print("✗ 数据文件格式检查失败，请先修复以下错误：")
-            for err in format_errors:
-                print(err)
-            print("\n提示: 使用 'validate' 命令查看完整错误列表")
-            return False
-        
-        # 检查 Luban.CLI 是否存在
-        luban_cli_path = self.data_dir.parent / "Luban.CLI"
-        if not luban_cli_path.exists():
-            # 尝试其他常见位置
-            possible_paths = [
-                self.data_dir / "Luban.CLI",
-                self.data_dir.parent.parent / "Luban.CLI",
-            ]
-            for p in possible_paths:
-                if p.exists():
-                    luban_cli_path = p
-                    break
-            else:
-                print("错误: 未找到 Luban.CLI 目录")
-                print("请确保 Luban.CLI 在项目目录中，或通过 --luban-cmd 指定完整命令")
-                return False
-        
-        # 构建命令
-        data_dir_str = str(self.data_dir)
-        
-        if output_dir:
-            output_arg = f"-o {output_dir}"
-        else:
-            output_arg = ""
-        
-        cmd = f"{luban_cmd} -t all --conf {data_dir_str}/luban.conf {output_arg}"
-        
-        print(f"执行: {cmd}")
-        print("-" * 50)
-        
-        try:
-            result = subprocess.run(
-                cmd,
-                shell=True,
-                cwd=str(luban_cli_path.parent) if luban_cli_path.exists() else ".",
-                capture_output=True,
-                text=True
-            )
-            
-            if result.stdout:
-                print(result.stdout)
-            if result.stderr:
-                print(result.stderr)
-            
-            if result.returncode == 0:
-                print("-" * 50)
-                print("✓ Luban 生成成功")
-                return True
-            else:
-                print("-" * 50)
-                print(f"✗ Luban 生成失败，返回码: {result.returncode}")
-                return False
-                
-        except Exception as e:
-            print(f"错误: 执行 Luban CLI 失败 - {e}")
-            return False
+        """旧入口显式失败；导出统一走可审计的项目工作流。"""
+        raise RuntimeError("请使用 workflow.py luban preview、workflow.py approve、workflow.py luban apply；不再接受任意 shell 导表命令。")
     
     # ==================== 引用完整性检查 ====================
     

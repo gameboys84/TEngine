@@ -44,6 +44,7 @@
         [Header("Sprite导入设置")]
         public bool checkMipmaps = true;
         public bool enableMipmaps = false;
+        public TextureImporterCompression textureCompression = TextureImporterCompression.Compressed;
 
         [Header("排除关键词")]
         public string[] excludeKeywords = { "_Delete", "_Temp" };

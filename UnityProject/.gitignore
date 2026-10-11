@@ -43,6 +43,12 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
+*.idea
+/Bin*/
+
+# DLL
+[Aa]ssets/AssetRaw/DLL/*.bytes
+[Aa]ssets/AssetRaw/DLL/*.bytes.meta
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -76,6 +82,12 @@ crashlytics-build.properties
 #Rider
 /.idea/
 
+# Local workflow evidence, approvals, and Python caches
+/.codex/runs/
+/.codex/.venv/
+/.codex/**/__pycache__/
+/.codex/**/*.pyc
+
 #Bundles
 Bundles/
 
@@ -98,8 +110,3 @@ package/
 yoo/
 [Aa]ssets/TEngine/AssetSetting/Resources/BuiltinFileManifest.asset
 [Aa]ssets/TEngine/AssetSetting/Resources/BuiltinFileManifest.asset.meta
-/Bin/
-
-# DLL
-[Aa]ssets/AssetRaw/DLL/*.bytes
-[Aa]ssets/AssetRaw/DLL/*.bytes.meta

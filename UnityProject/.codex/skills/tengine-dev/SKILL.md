@@ -1,19 +1,19 @@
 ---
 name: tengine-dev
-description: TEngine Unity 游戏框架开发指导。触发词：TEngine, UIWindow, UIWidget, GameEvent, AddUIEvent, LoadAssetAsync, SetSprite, HybridCLR, YooAsset, Luban, GameModule, 热更, 资源加载, UI开发, 事件系统, 配置表
+description: TEngine 框架开发与问题定位。修改 UIWindow/UIWidget、GameEvent、GameModule、YooAsset 资源生命周期、HybridCLR 热更代码时使用。配置数据维护交给 luban-dev，Editor 对象操作和实际验证交给 unity-cli；普通文案或无框架依赖的算法不触发。
 ---
 
 # TEngine 开发指导
 
 TEngine 是基于 HybridCLR + YooAsset + UniTask + Luban 的 Unity 游戏框架。
-本 skill 提供 AI 专用的精炼参考文档，确保生成的代码与框架 API 完全一致。
+先定位相关实现和调用方，再按下表读需要的主题。参考文档是导航，不是 API 保证；实际源码、程序集定义和测试结果是最终依据。
 
 ## 核心红线
 
-1. **异步优先**：IO 操作用 `UniTask`，禁止同步加载/Coroutine
-2. **模块访问**：通过 `GameModule.XXX` 访问，而非 `ModuleSystem.GetModule<T>()`
+1. **异步优先**：业务 IO 用 `UniTask`，处理取消、失败和销毁竞争；不引入 Coroutine。
+2. **模块访问**：业务代码通过 `GameModule.XXX`；框架启动层保留现有模块初始化方式。
 3. **资源必须释放**：`LoadAssetAsync` 对应 `UnloadAsset`，GameObject 用 `LoadGameObjectAsync`
-4. **热更边界**：`GameScripts/Main` 不热更，`GameScripts/HotFix/` 全部热更
+4. **热更边界**：`GameEntry`、`Procedure`、`Launcher` 不热更；`GameScripts/HotFix/` 按 asmdef 划分热更程序集。
 5. **事件解耦**：模块间用 `GameEvent`，UI 内部用 `AddUIEvent`
 
 ## 文档路由
@@ -31,5 +31,11 @@ TEngine 是基于 HybridCLR + YooAsset + UniTask + Luban 的 Unity 游戏框架�
 | Luban 配置 | [luban-config.md](references/luban-config.md) | — | P1 |
 | 项目结构 | [architecture.md](references/architecture.md) | — | P2 |
 | 问题排查 | [troubleshooting.md](references/troubleshooting.md) | — | P2 |
-| MCP 场景/GO/UI/脚本/Editor | [mcp-tools.md](references/mcp-tools.md) | — | P1 |
-| MCP 材质/Shader/动画/VFX | [mcp-visual.md](references/mcp-visual.md) | — | P2 |
+
+## 实现与交付
+
+- 输入：需求、相关源码、资源地址和验收条件；缺失的 API/地址先搜索，不凭名称补造。
+- 修改调用前核实方法签名、返回类型和取消语义。生成代码回溯到模板。
+- 配置数据及导出读取 [luban-dev](../luban-dev/SKILL.md)。序列化、资源导入和 Editor 验证读取 [unity-cli](../unity-cli/SKILL.md)。
+- C# 修改至少执行完整解决方案构建和相关测试；Editor 不可用时明确剩余验证。
+- 输出：实现变更、运行证据、资源/事件所有权、兼容性影响和未完成的验证。不得只凭代码片段或关键词评测宣称正确。

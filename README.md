@@ -88,189 +88,13 @@
 
 ## 🤖 AI 开发工作流
 
-TEngine 深度集成了一套面向 Claude Code 的 AI 辅助开发工作流。通过 **tengine-dev skill 按需查询架构**、**任务等级分级触发**和**会话内缓存机制**，实现了规范驱动、高效的 AI 开发体验。
+本地与 CI 共用“需求确认 → 实现 → 自动验证 → 审查 → 证据交付”闭环，以 Unity CLI 获取真实 Editor 结果。
+四项项目技能分别负责 TEngine、Unity 操作、Luban 和 HTML → UGUI；写入先预览并确认，报告明确区分通过、失败、阻塞和未运行。
 
----
+从 Unity 项目运行 `python .codex/scripts/workflow.py doctor` 检查环境，`check` 检查技能与脚本，`verify --profile full` 执行完整门禁。
+小改交付摘要，重要任务只维护一份记录；不自动安装、提交、打包或发布。
 
-### 核心工具
-
-| 工具 | 用途 |
-|------|------|
-| **tengine-dev** | Claude Code 专用 TEngine 开发技能，从 `references/` 提供全模块规范 |
-| **Unity-MCP** | Unity Editor 自动化操作（场景、资源、脚本） |
-| **openspec** | 规范驱动的变更管理 |
-| **wiki-synchelper** | Wiki 文档同步助手（手动触发时使用） |
-
----
-
-### 整体工作流总览
-
-```mermaid
-flowchart TD
-    A([用户发起任务]) --> B{判断任务等级}
-
-    B -->|L1 简单\ntypo/注释/日志| C[直接编写代码]
-    B -->|L2 调用\n单一 API 修改| D[触发 tengine-dev skill\n只查该主题]
-    B -->|L3 功能\n新功能/跨文件| E[触发 tengine-dev skill\n全量相关主题]
-    B -->|L4 架构\n系统设计/重构| F[触发 tengine-dev skill\n并行多主题]
-
-    D --> G{会话缓存命中?}
-    E --> G
-    F --> G
-
-    G -->|命中| H[复用已有规范摘要]
-    G -->|未命中| I[skill 读取 references/\n提炼规范指引]
-
-    I --> L[输出代码/方案]
-    H --> L
-    C --> L
-
-    L --> M{规范与代码冲突?}
-    M -->|有冲突| N[标注冲突点\n记录到 .claude/memory/]
-    M -->|无冲突| O([任务完成])
-    N --> O
-```
-
----
-
-### 时序图一：规范获取流程
-
-> **核心优势**：tengine-dev skill 直接从精炼的 `references/` 文档提取规范，无多余上下文噪声。
-
-```mermaid
-sequenceDiagram
-    participant U as 用户
-    participant M as 主 Agent (Claude)
-    participant S as tengine-dev (skill)
-    participant R as references/
-
-    U->>M: 请实现背包 UI
-    Note over M: 判断等级: L3 功能
-    M->>S: 触发 skill<br/>查询: UIWindow规范 + 资源管理规范
-
-    activate S
-    S->>R: 读取 ui-development.md
-    S->>R: 读取 resource-management.md
-    S->>R: 读取 event-system.md
-    Note over S: 提炼关键规范指引
-    S-->>M: 返回规范摘要
-    deactivate S
-
-    M-->>U: 输出符合规范的代码
-```
-
----
-
-### 时序图二：会话内缓存机制
-
-> **核心优势**：同一会话中相同主题只查询一次，后续任务直接复用，避免重复消耗。
-
-```mermaid
-sequenceDiagram
-    participant U as 用户
-    participant M as 主 Agent
-    participant S as tengine-dev skill
-    participant C as 会话缓存
-
-    U->>M: 任务①: 实现登录界面 UI
-    M->>S: 查询 UIWindow 规范
-    S-->>M: 返回 UIWindow 规范摘要
-    M->>C: 缓存: UIWindow 规范 ✅
-    M-->>U: 输出登录界面代码
-
-    U->>M: 任务②: 实现设置界面 UI
-    M->>C: 检查缓存: UIWindow 规范
-    C-->>M: 命中缓存 ✅ 直接复用
-    Note over M: 无需重复触发 skill<br/>零等待，零额外消耗
-    M-->>U: 输出设置界面代码
-
-    U->>M: 任务③: 设置界面添加音效按钮
-    M->>C: 检查缓存: UIWindow ✅ / Audio ❌
-    C-->>M: UIWindow 命中，Audio 未命中
-    M->>S: 仅补充查询 AudioModule 规范
-    S-->>M: 返回 Audio 规范摘要
-    M->>C: 缓存: Audio 规范 ✅
-    M-->>U: 输出音效按钮代码
-```
-
----
-
-### 时序图三：并行多主题查询（L4 架构任务）
-
-> **核心优势**：架构级任务并行查询多个主题，汇总后统一决策，大幅减少串行等待。
-
-```mermaid
-sequenceDiagram
-    participant U as 用户
-    participant M as 主 Agent
-    participant S1 as tengine-dev #1
-    participant S2 as tengine-dev #2
-    participant S3 as tengine-dev #3
-
-    U->>M: 设计战斗系统架构<br/>涉及: UI + 事件 + FSM + 资源
-
-    Note over M: 判断等级: L4 架构<br/>并行触发多主题查询
-
-    par 并行查询
-        M->>S1: 查询 UIWindow + UIWidget 规范
-        M->>S2: 查询 GameEvent 事件系统规范
-        M->>S3: 查询 FSM 状态机 + 资源加载规范
-    end
-
-    S1-->>M: UI 规范摘要
-    S2-->>M: 事件系统摘要
-    S3-->>M: FSM + 资源摘要
-
-    Note over M: 汇总三份摘要<br/>统一架构决策
-    M-->>U: 输出完整战斗系统架构方案
-```
-
----
-
-### 时序图四：规范冲突处理
-
-> **核心优势**：AI 主动检测 references 与代码的不一致，标注冲突并记录，以代码实现为最终依据。
-
-```mermaid
-sequenceDiagram
-    participant M as 主 Agent
-    participant S as tengine-dev skill
-    participant Code as 项目代码
-    participant Mem as .claude/memory/
-
-    M->>S: 查询某 API 规范
-    S-->>M: references 描述: API_X(param1, param2)
-
-    M->>Code: 读取实际代码实现
-    Code-->>M: 实际签名: API_X(param1, param2, param3)
-
-    Note over M: 检测到冲突!<br/>references 描述与代码不符
-
-    M->>Mem: 记录 problem_YYYY-MM-DD.md<br/>冲突详情 + 分析
-
-    Note over M: 以代码实现为准<br/>在输出中标注差异
-
-    M-->>U: 输出代码，并标注冲突点
-```
-
----
-
-### 工作流快速参考
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                   TEngine AI 工作流                      │
-├─────────────────────────────────────────────────────────┤
-│  Step 0  判断任务等级 L1/L2/L3/L4                        │
-│  Step 1  L1 直接编码                                     │
-│         L2-L4 触发 tengine-dev skill 获取规范            │
-│         （会话内缓存命中则直接复用，无需重复触发）        │
-│  Step 2  基于规范输出代码/方案                            │
-│  Step 3  若规范与代码冲突，标注冲突，记录到 .claude/memory/│
-└─────────────────────────────────────────────────────────┘
-```
-
-详细规范请参考：[CLAUDE.md](UnityProject/CLAUDE.md) | [AI 开发工作流指南](Books/AI-Development-Workflow.md)
+入口：[AGENTS.md](AGENTS.md) | [Unity 项目约束](UnityProject/AGENTS.md) | [团队使用手册](Books/AI-Development-Workflow.md)
 
 ---
 
@@ -284,7 +108,7 @@ sequenceDiagram
 | [🏗️ 框架概览](Books/2-框架概览.md) | 框架架构与设计理念 |
 | [🚀 快速开始](Books/1-快速开始.md) | 5 分钟快速上手教程 |
 | [🌍 全平台运行](Books/99-各平台运行RunAble.md) | 各平台运行截图展示 |
-| [🤖 AI 开发工作流](Books/AI-Development-Workflow.md) | openspec + tengine-dev AI 开发指南 |
+| [🤖 AI 开发工作流](Books/AI-Development-Workflow.md) | Unity CLI、四项技能与本地/CI 验证闭环 |
 
 ### 核心模块文档
 

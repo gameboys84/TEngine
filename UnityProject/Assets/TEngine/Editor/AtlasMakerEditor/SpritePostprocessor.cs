@@ -227,6 +227,12 @@ namespace TEngine.Editor
                 }
             }
 
+            if (importer.textureCompression != AtlasConfiguration.Instance.textureCompression)
+            {
+                importer.textureCompression = AtlasConfiguration.Instance.textureCompression;
+                isChange = true;
+            }
+
             if (isChange)
             {
                 LogProcessed("[Sprite Import Changed Reimport]", path);

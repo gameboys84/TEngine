@@ -1,6 +1,6 @@
 # Control Mapping
 
-`HtmlToUGUIBaker.cs` maps `data-u-type` values to Unity UGUI objects.
+`HtmlToUGUIBakeService` maps `data-u-type` values to Unity UGUI objects; the window and CLI share it.
 
 ## Component Mapping
 
@@ -28,20 +28,28 @@ Supported path resolution:
 - `Assets/...`
 - `Packages/...`
 - absolute paths inside the Unity project
-- relative paths from configured source root, JSON directory, or project root
-- absolute local paths outside the project, copied into `HtmlToUGUIConfig.importedImageFolder`
+- relative paths from the explicit configured/JSON source root
+- absolute local paths inside the explicit source root, copied into `HtmlToUGUIConfig.importedImageFolder`
 
-Unsupported sources log warnings and do not stop baking:
+The automated path fails preflight for unsupported or missing required images:
 
 - remote HTTP/HTTPS URLs
 - `data:` URIs
 - missing local files
+
+The interactive window retains its older warning-only image behavior. It is not the CI acceptance path.
+Imported copies have deterministic relative-source hashes; repeated bakes do not allocate new filenames.
+Package textures must already be imported Sprites; automation never changes package importers.
 
 `imageFit` behavior:
 
 - `contain`, `cover`, `scale-down`: set `Image.preserveAspect = true`
 - `stretch`: no aspect preservation
 - `slice`: use `Image.Type.Sliced` when the Sprite has a border
+
+`cover` currently preserves aspect, but does not implement browser-style crop-to-fill.
+CSS fonts are not converted into TMP assets. The CLI requires an existing TMP default font when text is generated.
+Validate glyph coverage and metrics in Unity. Zero slider values and unchecked toggles must survive round trips.
 
 ## RectTransform Mapping
 
