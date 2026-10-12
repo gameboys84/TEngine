@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Reflection;
-using Fantasy.Helper;
 using GameCore;
 #if ENABLE_OBFUZ
 using Obfuz;
@@ -28,11 +27,11 @@ public partial class GameApp
         // 为UI接口声明 [EventInterface(EEventGroup.GroupUI)] 时会自动生成 static class GameEventHelper
         // GameEventHelper.Init();
         
-        _hotfixAssembly = (List<Assembly>)objects[0];
-        foreach (var assembly in _hotfixAssembly)
-        {
-            assembly.EnsureLoaded();
-        }
+        // _hotfixAssembly = (List<Assembly>)objects[0];
+        // foreach (var assembly in _hotfixAssembly)
+        // {
+        //     assembly.EnsureLoaded();
+        // }
         
         Log.Warning("======= 看到此条日志代表你成功运行了热更新代码 =======");
         Log.Warning("======= Entrance GameApp =======");

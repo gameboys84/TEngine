@@ -45,7 +45,8 @@ namespace GameLogic
 			m_btnRegion = m_bindComponent.GetComponent<Button>(6);
 			m_tmpRegion = m_bindComponent.GetComponent<TextMeshProUGUI>(7);
 			m_btnLogin.onClick.RemoveAllListeners();
-			m_btnLogin.onClick.AddListener(UniTask.UnityAction(OnClickLoginBtn));
+			// m_btnLogin.onClick.AddListener(UniTask.UnityAction(OnClickLoginBtn));
+			m_btnLogin.onClick.AddListener(OnClickLoginBtn);
 			m_btnSayHi.onClick.RemoveAllListeners();
 			m_btnSayHi.onClick.AddListener(OnClickSayHiBtn);
 			m_btnConnect.onClick.RemoveAllListeners();
@@ -58,7 +59,7 @@ namespace GameLogic
 
 		#region 事件
 
-		private partial UniTaskVoid OnClickLoginBtn();
+		private partial void OnClickLoginBtn();
 
 		private partial void OnClickSayHiBtn();
 

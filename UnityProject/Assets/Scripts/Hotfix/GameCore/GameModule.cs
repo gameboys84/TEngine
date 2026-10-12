@@ -109,9 +109,9 @@ public class GameModule
     /// <summary>
     /// 网络模块。
     /// </summary>
-    public static INetworkFantasyModule Network => _network ??= Get<INetworkFantasyModule>();
+    public static INetworkModule Network => _network ??= Get<INetworkModule>();
 
-    private static INetworkFantasyModule _network;
+    private static INetworkModule _network;
     
     
     #endregion

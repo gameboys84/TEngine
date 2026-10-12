@@ -14,8 +14,19 @@ namespace GameLogic
 	{
 		#region UI事件
 
-		private partial async UniTaskVoid OnClickLoginBtn()
+		private partial void OnClickLoginBtn()
 		{
+			GameEvent.Send(GameEventLogic.Event_UIEvent);
+			m_btnLogin.interactable = false;
+
+			GameModule.Timer.AddTimer(_ =>
+			{
+				m_btnLogin.interactable = true;
+				GameModule.UI.ShowUIAsync<LoadingPanel>();
+				Close();
+			}, 3f, false);
+			
+			/*
 			if (!GameModule.Network.IsConnected())
 			{
 				GameModule.Network.Connect(ip, port, 3000);
@@ -33,22 +44,14 @@ namespace GameLogic
 				return;
 			}
 			
-			GameEvent.Send(GameEventLogic.Event_UIEvent);
-            
+			Debug.Log($"G2C_TestResponse return Success: {result.Tag}");            
 			if (result is not { ErrorCode: 0 })
 			{
 				Debug.LogError($"G2C_TestResponse return Error: {result.Tag}, {result.ErrorCode}");
 				return;
 			}
 
-			m_btnLogin.interactable = false;
-			Debug.Log($"G2C_TestResponse return Success: {result.Tag}");
-			GameModule.Timer.AddTimer(_ =>
-			{
-				m_btnLogin.interactable = true;
-				GameModule.UI.ShowUIAsync<LoadingPanel>();
-				Close();
-			}, 3f, false);
+			*/
 		}
 
 		
@@ -67,31 +70,32 @@ namespace GameLogic
 		
 		private partial void OnClickSayHiBtn()
 		{
-			if (!GameModule.Network.IsConnected())
-			{
-				GameModule.Network.Connect(ip, port, 3000);
-				return;
-			}
-	        
-			Debug.Log("Send Message: Hello World");
-			GameModule.Network.Send(new Fantasy.C2G_TestMessage()
-			{
-				Tag = "OnClickSendButtonBtn"
-			});
+			// if (!GameModule.Network.IsConnected())
+			// {
+			// 	GameModule.Network.Connect(ip, port, 3000);
+			// 	return;
+			// }
+	  //       
+			// Debug.Log("Send Message: Hello World");
+			// GameModule.Network.Send(new Fantasy.C2G_TestMessage()
+			// {
+			// 	Tag = "OnClickSendButtonBtn"
+			// });
 		}
 
 		private partial void OnClickConnectBtn()
 		{
-			var connected = GameModule.Network.IsConnected();
-			Debug.Log($"IsConnected: {connected}");
-			if (connected)
-			{
-				GameModule.Network.Disconnect();
-			}
-			else
-			{
-				GameModule.Network.Connect(ip, port, 3000);
-			}
+			Debug.Log($"网络模块待实现");
+			// var connected = GameModule.Network.IsConnected();
+			// Debug.Log($"IsConnected: {connected}");
+			// if (connected)
+			// {
+			// 	GameModule.Network.Disconnect();
+			// }
+			// else
+			// {
+			// 	GameModule.Network.Connect(ip, port, 3000);
+			// }
 		}
 		#endregion
 		
@@ -119,10 +123,10 @@ namespace GameLogic
             
 			RefreshNetWorkStatus();
 
-			if (!GameModule.Network.IsConnected())
-			{
-				GameModule.Network.Connect(ip, port, 3000);
-			}
+			// if (!GameModule.Network.IsConnected())
+			// {
+			// 	GameModule.Network.Connect(ip, port, 3000);
+			// }
 		}
 
 		//TODO: OnSetVisible的逻辑有问题，需要重新设计

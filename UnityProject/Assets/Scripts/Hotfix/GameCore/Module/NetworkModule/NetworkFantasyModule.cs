@@ -1,4 +1,6 @@
-﻿#define USING_FANTASY_RUNTIME
+﻿// #define USING_FANTASY_RUNTIME
+
+#if USING_FANTASY_RUNTIME
 
 using Cysharp.Threading.Tasks;
 using Fantasy;
@@ -9,7 +11,6 @@ using Log = TEngine.Log;
 
 namespace GameCore
 {
-    
     public class NetworkFantasyModule : Module, INetworkFantasyModule
     {
         #region Module
@@ -28,8 +29,11 @@ namespace GameCore
 
         public override void Shutdown()
         {
-            _scene.Dispose();
-            _scene = null;
+            if (_scene != null)
+            {
+                _scene.Dispose();
+                _scene = null;
+            }
             
 #if USING_FANTASY_RUNTIME
             Runtime.OnDestroy();
@@ -41,7 +45,7 @@ namespace GameCore
 
         private void Initialize()
         {
-#if !USING_FANTASY_RUNTIME            
+#if USING_FANTASY_RUNTIME            
             // 初始化框架
             await Fantasy.Platform.Unity.Entry.Initialize();
             
@@ -49,10 +53,10 @@ namespace GameCore
             // 那就把Scene当网络接口使用。
             _scene = await Fantasy.Platform.Unity.Entry.CreateScene();
 #endif
-            if (!isConnected && !string.IsNullOrEmpty(ip) && port > 0 && timeout > 0)
-            {
-                Connect(ip, port, timeout);
-            }
+             if (!isConnected && !string.IsNullOrEmpty(ip) && port > 0 && timeout > 0)
+             {
+                 Connect(ip, port, timeout);
+             }
         }
 
         #endregion
@@ -237,3 +241,5 @@ namespace GameCore
         #endregion
     }
 }
+
+#endif

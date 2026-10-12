@@ -7,36 +7,11 @@
       "dependencies": {},
       "hash": "4df417e56ad827cd7e70a54662f0e8bab90aafe9"
     },
-    "com.coplaydev.unity-mcp": {
-      "version": "file:MCPForUnity",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {
-        "com.unity.modules.animation": "1.0.0",
-        "com.unity.modules.imageconversion": "1.0.0",
-        "com.unity.modules.physics": "1.0.0",
-        "com.unity.modules.physics2d": "1.0.0",
-        "com.unity.modules.uielements": "1.0.0",
-        "com.unity.modules.screencapture": "1.0.0",
-        "com.unity.modules.unitywebrequest": "1.0.0",
-        "com.unity.nuget.newtonsoft-json": "3.0.2",
-        "com.unity.test-framework": "1.1.31"
-      }
-    },
     "com.cysharp.unitask": {
       "version": "file:UniTask",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}
-    },
-    "com.fantasy.unity": {
-      "version": "https://github.com/qq362946/Fantasy.git?path=Fantasy.Packages/Fantasy.Unity",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "3.2.1"
-      },
-      "hash": "eb3b6b06ba80b025fd12f3256f897aea561e8dee"
     },
     "com.tuyoogame.yooasset": {
       "version": "file:YooAsset",

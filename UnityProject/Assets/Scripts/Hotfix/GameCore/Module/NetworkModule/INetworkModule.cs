@@ -1,35 +1,32 @@
-﻿using Cysharp.Threading.Tasks;
-using Fantasy.Network.Interface;
-
-namespace GameCore
+﻿namespace GameCore
 {
-    public class BaseMessage : IMessage
-    {
-        protected uint opCode;
-        public void Dispose()
-        {
-
-        }
-
-        public uint OpCode()
-        {
-            return opCode;
-        }
-    }
-
-    public class BaseRequest : IRequest
-    {
-        protected uint opCode;
-        public void Dispose()
-        {
-
-        }
-
-        public uint OpCode()
-        {
-            return opCode;
-        }
-    }
+    // public class BaseMessage : IMessage
+    // {
+    //     protected uint opCode;
+    //     public void Dispose()
+    //     {
+    //
+    //     }
+    //
+    //     public uint OpCode()
+    //     {
+    //         return opCode;
+    //     }
+    // }
+    //
+    // public class BaseRequest : IRequest
+    // {
+    //     protected uint opCode;
+    //     public void Dispose()
+    //     {
+    //
+    //     }
+    //
+    //     public uint OpCode()
+    //     {
+    //         return opCode;
+    //     }
+    // }
     
     public enum ConnectionState
     {
@@ -47,9 +44,9 @@ namespace GameCore
         ConnectionState GetConnectionState();
     }
 
-    public interface INetworkFantasyModule : INetworkModule
-    {
-        void Send<T>(T message) where T : IMessage;
-        UniTask<V> Call<T, V>(T request) where T : IRequest where V : class, IResponse;
-    }
+    // public interface INetworkFantasyModule : INetworkModule
+    // {
+    //     void Send<T>(T message) where T : IMessage;
+    //     UniTask<V> Call<T, V>(T request) where T : IRequest where V : class, IResponse;
+    // }
 }
