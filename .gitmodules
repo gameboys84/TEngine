@@ -1,0 +1,4 @@
+[submodule "FrameworkPackages"]
+	path = FrameworkPackages
+	url = git@github.com:gameboys84/TEngineNi_UPM.git
+	branch = main

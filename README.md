@@ -1,5 +1,7 @@
 # TEngine
 
+> Ni 共用包说明（2026-10-27）：`tengineni_upm` 分支通过 [FrameworkPackages](FrameworkPackages/README.md) Git 子模块引用独立 [TEngineNi_UPM](https://github.com/gameboys84/TEngineNi_UPM) 仓库。克隆后执行 `git submodule update --init FrameworkPackages`，或使用 `git clone --recurse-submodules`。包名称为 `com.ni.tengine`、`com.ni.gamecore`，项目配置仍在 UnityProject/Assets。维护、上游同步与验证边界见 [UPM 集成说明](Books/UPM-Packages.md)。下文保留上游介绍；旧覆盖式更新脚本已对新包布局禁用。
+
 <div align="center">
 
 ![TEngine Logo](Books/src/TEngine.png)

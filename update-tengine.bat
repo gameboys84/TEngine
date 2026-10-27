@@ -6,6 +6,14 @@ set TEMP_DIR=%TEMP%\TEngine_tmp_%RANDOM%
 :: 脚本所在目录即工程根目录
 set PROJECT_DIR=%~dp0
 
+:: Shared packages must be reviewed/merged; the legacy mirror would recreate duplicate Assets.
+if exist "%PROJECT_DIR%FrameworkPackages\com.ni.tengine\package.json" (
+    echo [ERROR] This repository uses FrameworkPackages. The legacy directory mirror is disabled.
+    echo         Review upstream changes and merge them into com.ni.tengine instead.
+    echo         See FrameworkPackages\README.md for the shared-package workflow.
+    exit /b 2
+)
+
 echo ========================================
 echo  TEngine Updater
 echo ========================================
